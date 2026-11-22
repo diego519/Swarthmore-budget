@@ -126,6 +126,7 @@ svg .label-2 { fill: var(--text-2); }
 .bars .val .pct { color: var(--text-2); margin-left: 4px; }
 .bars .total-name { font-weight: 600; }
 .bars .rule { grid-column: 1 / -1; border-top: 1px solid var(--grid); margin: 4px 0; }
+@media (max-width: 600px) { .bars { grid-template-columns: minmax(90px, 38%) 1fr; gap: 2px 8px; } .bars .name { font-size: 13px; } }
 
 /* Tables */
 details { margin-top: 12px; }

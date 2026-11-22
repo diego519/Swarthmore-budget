@@ -299,14 +299,16 @@ function drawDrivers() {
   }
   const totalChange = total(to) - total(from);
   const rows = driverRows().sort((a, b) => (a.other ? 1 : b.other ? -1 : b.change - a.change));
+  const years = to - from;
   document.getElementById("drivers-sub").textContent =
     `Change in each ${state.detail === "broad" ? "category" : "budget line"}'s adopted budget, ${dollarsPhrase()}. ` +
-    `Together they add up to the total change of ${signedMoney(totalChange, true)}.`;
+    `Together they add up to the total change of ${signedMoney(totalChange, true)}. Percentages are the total ` +
+    `change and, where room allows, the average change per year (compound annual growth rate, CAGR).`;
 
   const changesList = rows.map((r) => r.change).concat([totalChange]);
   const lo = Math.min(0, ...changesList), hi = Math.max(0, ...changesList);
   // Leave room beyond each bar's tip for its label.
-  const pad = (hi - lo) * 0.42 || 1;
+  const pad = (hi - lo) * 0.55 || 1;
   const domLo = lo < 0 ? lo - pad : 0, domHi = hi > 0 ? hi + pad : 0;
   const pos = (v) => ((v - domLo) / (domHi - domLo)) * 100;
   const tip = document.querySelector("#drivers-chart .tooltip");
@@ -337,8 +339,12 @@ function drawDrivers() {
     val.className = "val";
     val.textContent = signedMoney(r.change, true);
     const p = pctChange(r.v1, r.v0);
+    const rate = annualRate(r.v0, r.v1, years);
     if (p !== null && Math.abs(p) < 10000) {
       const s = document.createElement("span"); s.className = "pct"; s.textContent = pct(p, 0); val.appendChild(s);
+      if (rate !== null) {
+        const c = document.createElement("span"); c.className = "pct rate"; c.textContent = "· " + pct(rate) + "/yr"; val.appendChild(c);
+      }
     }
     if (r.change < 0) val.style.right = 100 - pos(r.change) + 1 + "%";
     else val.style.left = pos(r.change) + 1 + "%";
@@ -350,6 +356,7 @@ function drawDrivers() {
       tipRow(tip, "transparent", money(r.v1), String(to));
       tipRow(tip, r.change < 0 ? "var(--negative)" : "var(--series-1)", signedMoney(r.change, false),
         p === null ? "change" : pct(p) + " change", "tt-total");
+      if (rate !== null) tipText(tip, "tt-note", `${pct(rate)} a year on average (CAGR, ${from}-${to})`);
       if (!isTotal && totalChange) tipText(tip, "tt-note", `${pct((r.change / totalChange) * 100, 0).replace("+", "")} of the total change`);
       if (r.link) tipText(tip, "tt-note", "Click the name to explore this line");
       tip.hidden = false;
@@ -370,11 +377,25 @@ function drawDrivers() {
   const rule = document.createElement("div"); rule.className = "rule"; box.appendChild(rule);
   addRow({ label: `Total ${noun}`, link: view().total, v0: total(from), v1: total(to), change: totalChange }, true);
 
+  // Labels never overflow their track: drop the per-year rate, then the
+  // percentage, where they don't fit (both stay in the tooltip and table).
+  box.querySelectorAll(".val").forEach((val) => {
+    const fits = () => {
+      const t = val.parentElement.getBoundingClientRect(), v = val.getBoundingClientRect();
+      return v.right <= t.right + 1 && v.left >= t.left - 1;
+    };
+    for (const sel of [".rate", ".pct"]) {
+      if (fits()) break;
+      val.querySelector(sel)?.remove();
+    }
+  });
+
   // Table view.
   const table = document.getElementById("drivers-table");
   table.textContent = "";
   const head = table.createTHead().insertRow();
-  for (const h of [state.detail === "broad" ? "Category" : "Budget line", String(from), String(to), "Change", "Change (%)", "Share of total change"]) {
+  for (const h of [state.detail === "broad" ? "Category" : "Budget line", String(from), String(to), "Change", "Change (%)",
+    "Per year (CAGR)", "Share of total change"]) {
     const th = document.createElement("th"); th.textContent = h; head.appendChild(th);
   }
   const body = table.createTBody();
@@ -387,6 +408,7 @@ function drawDrivers() {
     tr.insertCell().textContent = money(r.v1);
     tr.insertCell().textContent = signedMoney(r.change, false);
     tr.insertCell().textContent = pct(pctChange(r.v1, r.v0));
+    tr.insertCell().textContent = pct(annualRate(r.v0, r.v1, years));
     tr.insertCell().textContent = totalChange ? pct((r.change / totalChange) * 100, 0).replace("+", "") : "";
   }
 }
