@@ -1,0 +1,17 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded source documents (~400 MB). They are fetched from the borough
+# website by scripts/fetch_documents.py and verified against the SHA-256
+# checksums committed in data/downloads.csv.
+data/raw/
+
+# Partial downloads
+*.part
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

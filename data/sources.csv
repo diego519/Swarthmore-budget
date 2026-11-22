@@ -1,0 +1,122 @@
+doc_id,include,category,entity,fiscal_year,period,title,notes
+519,yes,budget_adopted,borough,2017,,2017 Adopted Budget,Adopted 2016-12-19.
+706,yes,budget_adopted,borough,2018,,2018 Adopted Budget,Adopted 2017-12-18.
+909,yes,budget_adopted,borough,2019,,2019 Adopted Budget,Adopted 2018-12-17.
+1007,yes,budget_adopted,borough,2020,,2020 Adopted Budget,Adopted 2019-12-16.
+1464,yes,budget_adopted,borough,2021,,2021 Adopted Budget,Adopted 2020-12-21.
+1964,yes,budget_adopted,borough,2022,,2022 Adopted Budget,Adopted 2021-12-20.
+2408,yes,budget_adopted,borough,2023,,2023 Adopted Budget,Scanned image (no text layer).
+2676,yes,budget_adopted,borough,2024,,2024 Adopted Budget,Scanned image (no text layer).
+3017,yes,budget_adopted,borough,2025,,2025 Adopted Budget,"Titled ""2025 Zero Deficit Budget"" on the website. Scanned image (no text layer)."
+3466,yes,budget_adopted,borough,2026,,2026 Adopted Budget - Revenue,
+3467,yes,budget_adopted,borough,2026,,2026 Adopted Budget - Expenses,
+3822,no,budget_adopted,borough,2026,,2026 Adopted Budget - Expenses (duplicate),Byte-identical to 3467 (same SHA-256); linked separately from the Taxes & Finance page.
+3823,no,budget_adopted,borough,2026,,2026 Adopted Budget - Revenue (duplicate),Byte-identical to 3466 (same SHA-256); linked separately from the Taxes & Finance page.
+3821,yes,budget_proposed,borough,2027,2026-11-09,2027 Advertised (Proposed) Budget,
+3734,yes,budget_draft,borough,2027,2026-09-15,2027 Liquid Fuels Fund Draft 2026-09-15,
+3735,yes,budget_draft,borough,2027,2026-09-15,2027 Sewer Fund Draft 2026-09-15,
+3736,yes,budget_draft,borough,2027,2026-09-15,2027 General Fund Draft 2026-09-15,
+3739,yes,budget_draft,borough,2027,2026-09-15,2027-2032 Capital Plan Draft 2026-09-15,Website and filename say 2027-2031; the document's heading says 2027-2032.
+3741,no,budget_draft,borough,2027,2026-09-15,2027 Capital Fund Draft 2026-09-15 (mislinked),"Linked as ""2027 Capital Fund Draft 9.15.26"" but the file is byte-identical to 3736 (the General Fund draft). The 9/15 Capital Fund draft does not appear to be posted."
+3754,yes,budget_draft,borough,2027,2026-10-01,2027-2032 Capital Plan Draft 2026-10-01,Website and filename say 2027-2031; the document's heading says 2027-2032.
+3755,yes,budget_draft,borough,2027,2026-10-01,2027 Capital Fund Draft 2026-10-01,
+3757,yes,budget_draft,borough,2027,2026-10-01,2027 General Fund Draft 2026-10-01,
+3758,yes,budget_draft,borough,2027,2026-10-01,2027 Sewer Fund Draft 2026-10-01,
+3759,yes,budget_draft,borough,2027,2026-10-01,2027 Liquid Fuels Fund Draft 2026-10-01,
+3733,yes,presentation,borough,2027,2026-09-15,2027 Budget Presentation 2026-09-15,"Website and filename date this 9.15.26; the cover page reads ""2027 Budget Session 9.10.2026""."
+3746,yes,presentation,borough,2027,2026-09-14,Earned Income Tax Analysis 2026-09-14,Prepared by Keystone Municipal Solutions.
+3789,yes,presentation,borough,2027,2026-10-07,PAC Center Presentation 2026-10-07,"Information session on borough services, revenues and the proposed Earned Income Tax."
+3794,yes,presentation,borough,2027,2026-10-07,Earned Income Tax Presentation 2026-10-07,PowerPoint file (.pptx).
+3819,yes,ordinance,borough,2027,,Ordinance 05-2026 Earned Income Tax,Proposed to take effect 2027-01-01. Scanned image (no text layer).
+3820,yes,ordinance,borough,2027,,Ordinance 06-2026 2027 Taxes and Fees,Sets the 2027 real estate tax levy and fees.
+960,yes,audit,borough,2018,,2018 Borough Audited Financial Statements,
+1542,yes,audit,borough,2019,,2019 Borough Audited Financial Statements,
+1801,yes,audit,borough,2020,,2020 Borough Audited Financial Statements,
+2042,yes,audit,borough,2021,,2021 Borough Audited Financial Statements,
+2510,yes,audit,borough,2022,,2022 Borough Audited Financial Statements,
+2968,yes,audit,borough,2023,,2023 Borough Audited Financial Statements,
+2472,yes,dced_report,borough,2022,,2022 DCED Municipal Annual Audit and Financial Report,State form DCED-CLGS-30.
+3207,yes,dced_report,borough,2024,,2024 DCED Municipal Annual Audit and Financial Report,"State form DCED-CLGS-30. Linked as ""2024 Audit and Financial Report""; it is not the auditor's basic financial statements, which are not posted for 2024."
+3301,yes,audit,borough_authority,2024,,2024 Borough Authority Audited Financial Statements,
+3302,yes,audit_summary,borough_authority,2024,,2024 Borough Authority Summary Financial Statement,Scanned image (no text layer).
+976,yes,audit,police_pension,2018,,2018 Police Pension Plan Audited Financial Statements,
+1547,yes,audit,police_pension,2019,,2019 Police Pension Plan Audited Financial Statements,Scanned image (no text layer).
+1803,yes,audit,police_pension,2020,,2020 Police Pension Plan Audited Financial Statements,
+2679,yes,audit,police_pension,2022,,2022 Police Pension Plan Audited Financial Statements,
+2878,yes,audit,police_pension,2023,,2023 Police Pension Plan Audited Financial Statements,
+1456,yes,pension_mmo,police_pension,2021,,2021 Police Pension Minimum Municipal Obligation (Resolution 2020-19),"Linked as ""2021 Police Pension Audited Financial Statement"", but it is a council resolution acknowledging the plan's 2021 Minimum Municipal Obligation. No 2021 police pension audit is posted."
+808,yes,audit,nonuniformed_pension,2017,,2017 Non-Uniformed Pension Plan Audited Financial Statements,"Linked as ""2017 ACT 205 Pension Valuation - Non-Uniformed"", but it is the 2017 plan audit (filename ""2017 Audit - Non-Uniformed""). No 2017 non-uniformed Act 205 valuation is posted."
+977,yes,audit,nonuniformed_pension,2018,,2018 Non-Uniformed Pension Plan Audited Financial Statements,
+1543,yes,audit,nonuniformed_pension,2019,,2019 Non-Uniformed Pension Plan Audited Financial Statements,
+1802,yes,audit,nonuniformed_pension,2020,,2020 Non-Uniformed Pension Plan Audited Financial Statements,
+2680,yes,audit,nonuniformed_pension,2022,,2022 Non-Uniformed Pension Plan Audited Financial Statements,
+2877,yes,audit,nonuniformed_pension,2023,,2023 Non-Uniformed Pension Plan Audited Financial Statements,"Also linked as ""2021 Non-Uniformed Audited Financial Statement"", but the document is the 2023 audit. No 2021 non-uniformed pension audit is posted."
+807,yes,pension_valuation,police_pension,2017,,2017 Act 205 Actuarial Valuation - Police Pension Plan,
+1091,yes,pension_valuation,police_pension,2019,,2019 Act 205 Actuarial Valuation - Police Pension Plan,Valuation as of 2019-01-01; prepared by Korn Ferry.
+1092,yes,pension_valuation,nonuniformed_pension,2019,,2019 Act 205 Actuarial Valuation - Non-Uniformed Pension Plan,Valuation as of 2019-01-01; prepared by Korn Ferry.
+445,yes,pension_disclosure,nonuniformed_pension,,,Act 44 Disclosure - HayGroup - Employees Pension Plan,Undated.
+2678,yes,pension_disclosure,borough,2023,,2023 Act 44 Disclosure - Korn Ferry,
+3032,yes,pension_disclosure,borough,2024,,2024 Act 44 Disclosure - Korn Ferry,Scanned image (no text layer).
+2133,yes,monthly_report,borough,2021,2021-06,2021-06 Monthly Financial Report,
+2134,yes,monthly_report,borough,2021,2021-07,2021-07 Monthly Financial Report,
+2135,yes,monthly_report,borough,2021,2021-08,2021-08 Monthly Financial Report,
+2136,yes,monthly_report,borough,2021,2021-09,2021-09 Monthly Financial Report,
+2137,yes,monthly_report,borough,2021,2021-10,2021-10 Monthly Financial Report,
+2138,yes,monthly_report,borough,2021,2021-11,2021-11 Monthly Financial Report,
+2139,yes,monthly_report,borough,2021,2021-12,2021-12 Monthly Financial Report,
+2140,yes,monthly_report,borough,2022,2022-01,2022-01 Monthly Financial Report,
+2141,yes,monthly_report,borough,2022,2022-02,2022-02 Monthly Financial Report,
+2142,yes,monthly_report,borough,2022,2022-03,2022-03 Monthly Financial Report,
+2143,yes,monthly_report,borough,2022,2022-04,2022-04 Monthly Financial Report,
+2081,yes,monthly_report,borough,2022,2022-05,2022-05 Monthly Financial Report,
+2096,yes,monthly_report,borough,2022,2022-06,2022-06 Monthly Financial Report,
+2151,yes,monthly_report,borough,2022,2022-07,2022-07 Monthly Financial Report,
+2195,yes,monthly_report,borough,2022,2022-08,2022-08 Monthly Financial Report,
+2226,yes,monthly_report,borough,2022,2022-09,2022-09 Monthly Financial Report,
+2245,yes,monthly_report,borough,2022,2022-10,2022-10 Monthly Financial Report,
+2262,yes,monthly_report,borough,2022,2022-11,2022-11 Monthly Financial Report,
+2285,yes,monthly_report,borough,2022,2022-11,2022-11 Wire Transactions (supplement),"Linked as ""November (part 2) 2022 Financial Report"". A 4-page list of wire transactions supplementing 2262; no revenue and expenditure summary."
+2364,yes,monthly_report,borough,2022,2022-12,2022-12 Monthly Financial Report,
+2398,yes,monthly_report,borough,2023,2023-01,2023-01 Monthly Financial Report,
+2423,yes,monthly_report,borough,2023,2023-02,2023-02 Monthly Financial Report,
+2468,yes,monthly_report,borough,2023,2023-03,2023-03 Monthly Financial Report,
+2492,yes,monthly_report,borough,2023,2023-04,2023-04 Monthly Financial Report,
+2514,yes,monthly_report,borough,2023,2023-05,2023-05 Monthly Financial Report,
+2529,yes,monthly_report,borough,2023,2023-06,2023-06 Monthly Financial Report,
+2542,yes,monthly_report,borough,2023,2023-07,2023-07 Monthly Financial Report,"Filename ""aug expenditures"" refers to the August meeting; the cover page confirms July 2023."
+2591,yes,monthly_report,borough,2023,2023-08,2023-08 Monthly Financial Report,
+2629,yes,monthly_report,borough,2023,2023-09,2023-09 Monthly Financial Report,
+2642,yes,monthly_report,borough,2023,2023-10,2023-10 Monthly Financial Report,
+2671,yes,monthly_report,borough,2023,2023-11,2023-11 Monthly Financial Report,
+2738,yes,monthly_report,borough,2023,2023-12,2023-12 Monthly Financial Report,
+2779,yes,monthly_report,borough,2024,2024-01,2024-01 Monthly Financial Report,
+2816,yes,monthly_report,borough,2024,2024-02,2024-02 Monthly Financial Report,
+2852,yes,monthly_report,borough,2024,2024-04,2024-04 Monthly Financial Report,
+2872,yes,monthly_report,borough,2024,2024-05,2024-05 Monthly Financial Report,
+2911,yes,monthly_report,borough,2024,2024-06,2024-06 Monthly Financial Report,
+2926,yes,monthly_report,borough,2024,2024-07,2024-07 Monthly Financial Report,"Filename ""August expenditures"" refers to the August meeting; the cover page confirms July 2024."
+2960,yes,monthly_report,borough,2024,2024-08,2024-08 Monthly Financial Report,
+2990,yes,monthly_report,borough,2024,2024-09,2024-09 Monthly Financial Report,
+3011,yes,monthly_report,borough,2024,2024-10,2024-10 Monthly Financial Report,
+3114,yes,monthly_report,borough,2024,2024-12,2024-12 Monthly Financial Report,"Filename ""jan financal report"" refers to the January meeting; the cover page confirms December 2024."
+3206,yes,monthly_report,borough,2025,2025-01,2025-01 Monthly Financial Report,
+3155,yes,monthly_report,borough,2025,2025-02,2025-02 Monthly Financial Report,
+3224,yes,monthly_report,borough,2025,2025-03,2025-03 Monthly Financial Report,
+3239,yes,monthly_report,borough,2025,2025-04,2025-04 Monthly Financial Report,
+3300,yes,monthly_report,borough,2025,2025-05,2025-05 Monthly Financial Report (bills list only),"Partial: contains only transactions to ratify, open invoices and bank balances; no revenue and expenditure summary."
+3304,yes,monthly_report,borough,2025,2025-06,2025-06 Monthly Financial Report,
+3336,yes,monthly_report,borough,2025,2025-07,2025-07 Monthly Financial Report (bills list only),"Partial: contains only wire transactions, open invoices and a check register; no revenue and expenditure summary."
+3343,yes,monthly_report,borough,2025,2025-08,2025-08 Monthly Financial Report,
+3378,yes,monthly_report,borough,2025,2025-09,2025-09 Monthly Financial Report,
+3442,yes,monthly_report,borough,2025,2025-11,2025-11 Monthly Financial Report,
+3522,yes,monthly_report,borough,2025,2025-12,2025-12 Monthly Financial Report,
+3602,yes,monthly_report,borough,2026,2026-01,2026-01 Monthly Financial Report (bills list only),"Partial: contains only wire transactions and open invoices; no revenue and expenditure summary."
+3610,yes,monthly_report,borough,2026,2026-02,2026-02 Monthly Financial Report,
+3638,yes,monthly_report,borough,2026,2026-03,2026-03 Monthly Financial Report,
+3651,yes,monthly_report,borough,2026,2026-04,2026-04 Monthly Financial Report,
+3666,yes,monthly_report,borough,2026,2026-05,2026-05 Monthly Financial Report,
+3718,yes,monthly_report,borough,2026,2026-06,2026-06 Monthly Financial Report,
+3719,yes,monthly_report,borough,2026,2026-07,2026-07 Monthly Financial Report,
+3744,yes,monthly_report,borough,2026,2026-08,2026-08 Monthly Financial Report,
+3793,yes,monthly_report,borough,2026,2026-09,2026-09 Monthly Financial Report,"Filename ""October Meeting Financials"" refers to the October meeting; the cover page confirms September 2026."
+3814,yes,monthly_report,borough,2026,2026-10,2026-10 Monthly Financial Report,

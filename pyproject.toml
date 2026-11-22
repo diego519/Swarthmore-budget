@@ -1,0 +1,18 @@
+[project]
+name = "swarthmore-budget"
+version = "0.1.0"
+description = "Open, reproducible analysis of Swarthmore Borough (PA) public financial documents."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "requests>=2.32",
+]
+
+[tool.uv]
+# This repo is a collection of scripts, not an installable package.
+package = false
+
+[tool.ruff]
+line-length = 110
