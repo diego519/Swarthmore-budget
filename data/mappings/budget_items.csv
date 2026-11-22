@@ -1,0 +1,86 @@
+item_id,section,group,subgroup,label,row_type,closing,raw_labels,note
+rev.total,revenue,,,Total revenue,total,,totalrevenue;totalrev,
+rev.property_taxes,revenue,,,Property taxes,item,subtotalmiscellaneous,propertytaxes,
+rev.sewer_fees,revenue,,,Sanitary sewer fees,item,subtotalmiscellaneous,sanitarysewerfees,
+rev.trash_fees,revenue,,,Trash fees,item,subtotalmiscellaneous,trashfees;solidwastefees,"Called ""Solid Waste Fees"" in the 2017 budget."
+rev.intergovernmental,revenue,,,Intergovernmental revenue,item,subtotalmiscellaneous,intergovernmentalrevenue,"Public Utility Realty Tax, Motor Vehicle Fuel Tax, Foreign Casualty Insurance Tax."
+rev.other_taxes,revenue,,,Other taxes,item,subtotalmiscellaneous,othertaxes,Real Estate Transfer Tax and Local Services Tax.
+rev.prior_year_revenue,revenue,,,Prior year revenue,item,subtotalmiscellaneous,prioryearrevenue,Use of unrestricted fund balance carried over from earlier years.
+rev.prior_year_pension_revenue,revenue,,,Prior year pension revenue,item,subtotalmiscellaneous,prioryearpensionrevenue,From restricted pension funds.
+rev.misc.subtotal,revenue,,Miscellaneous revenue,Miscellaneous revenue (subtotal),subtotal,,subtotalmiscellaneous,
+rev.misc.police_services,revenue,,Miscellaneous revenue,Police services (contracts),item,subtotalmiscellaneous,policeservices,Police services provided to Rutledge Borough and Swarthmore College.
+rev.misc.parking,revenue,,Miscellaneous revenue,Parking meters & permits,item,subtotalmiscellaneous,parkingmetersparkingpermits;parkingmetersparking,
+rev.misc.licenses_permits,revenue,,Miscellaneous revenue,Licenses & permits,item,subtotalmiscellaneous,licensesandpermits,
+rev.misc.fines,revenue,,Miscellaneous revenue,Fines,item,subtotalmiscellaneous,fines,
+rev.misc.cable_franchise,revenue,,Miscellaneous revenue,Cable TV franchise fees,item,subtotalmiscellaneous,cabletelevisionfranchisefees;cabletelevisionfranchise,
+rev.misc.recycling,revenue,,Miscellaneous revenue,Recycling revenue,item,subtotalmiscellaneous,recyclingrevenue;reeyelingrevenue,
+rev.misc.contributions_2016,revenue,,Miscellaneous revenue,Contributions from other sources (combined),item,subtotalmiscellaneous,contributionsothersources,"Only in the 2017 budget, for 2016, before contributions were split into the Borough Authority / College and fire & ambulance lines."
+rev.misc.college_authority,revenue,,Miscellaneous revenue,Swarthmore College / Borough Authority contribution,item,subtotalmiscellaneous,swarthmoreboroughauthority;swarthmorecollege,"Called ""Swarthmore Borough Authority"" through the 2022 budget and ""Swarthmore College"" from 2023 (life safety / Borough Authority contribution). Treated as one line: the 2023 budget reports the 2022 figure under the new name."
+rev.misc.fire_ambulance,revenue,,Miscellaneous revenue,Fire & ambulance service contribution,item,subtotalmiscellaneous,fireandambulanceservice,Contribution from Swarthmore College.
+rev.misc.interest,revenue,,Miscellaneous revenue,Interest,item,subtotalmiscellaneous,interest,
+rev.misc.street_trees,revenue,,Miscellaneous revenue,Street tree removal & replacement,item,subtotalmiscellaneous,streettreeremovalreplacement,Homeowners pay 70% of the cost of street tree removal and replacement.
+rev.misc.other,revenue,,Miscellaneous revenue,Other revenue,item,subtotalmiscellaneous,other;otherarpa;othermisc;othermise,"""Other"" through 2022, ""Other/ARPA"" in 2023 (including American Rescue Plan funds), ""Other/Misc"" from 2024."
+exp.total,expenditure,,,Total expenditures,total,,totalexpenditures,
+exp.net,expenditure,,,Revenue less expenditures,net,,totalrevenueslesstotalexpenditures;totalrevenueslessexpenditures,"Surplus (positive) or deficit (negative). Printed as ""Total revenues less total expenditures""."
+exp.gg.total,expenditure,General government,,General government (total),total,,totalgeneralgovt;totalgeneralgov,
+exp.gg.personnel,expenditure,General government,,Personnel,item,totalgeneralgovt;totalgeneralgov,personnel,"Borough Manager, office and bookkeeping staff: pay and benefits (General Fund share)."
+exp.gg.debt_service,expenditure,General government,,Debt service,item,totalgeneralgovt;totalgeneralgov,debtservice,
+exp.gg.buildings,expenditure,General government,,Borough buildings & property,item,totalgeneralgovt;totalgeneralgov,boroughbuildingsproperty,
+exp.gg.pension,expenditure,General government,,Municipal pension obligation,item,totalgeneralgovt;totalgeneralgov,municipalpensionobligation;municipapensionobligation,Administrative and public works share of the non-uniformed pension contribution.
+exp.gg.professional_services,expenditure,General government,,Professional services,item,totalgeneralgovt;totalgeneralgov,professionalservices,"Legal and auditing fees."
+exp.gg.general_admin,expenditure,General government,,General administrative,item,totalgeneralgovt;totalgeneralgov,generaladministrative,
+exp.gg.planning_zoning,expenditure,General government,,"Planning, zoning & code enforcement",item,totalgeneralgovt;totalgeneralgov,planningzoningcodeenforcement,
+exp.gg.insurance,expenditure,General government,,Insurance & bonding,item,totalgeneralgovt;totalgeneralgov,insurancebonding,
+exp.gg.tax_collection,expenditure,General government,,Tax collection,item,totalgeneralgovt;totalgeneralgov,taxcollection,
+exp.gg.contribution_capital,expenditure,General government,,Contribution to capital,item,totalgeneralgovt;totalgeneralgov,contributiontocapital,
+exp.gg.contribution_fund_balance,expenditure,General government,,Contribution to fund balance,item,totalgeneralgovt;totalgeneralgov,contributiontofundbalance,
+exp.gg.contribution_reserves,expenditure,General government,,Contribution to reserve funds,item,totalgeneralgovt;totalgeneralgov,contributiontoreservefunds,First appears in the 2026 budget.
+exp.gg.grants,expenditure,General government,,"Grants, awards & matching funds",item,totalgeneralgovt;totalgeneralgov,grants;grantsawardsandmatchingfunds,"""Grants"" in 2023-2025; ""Grants, Awards and Matching Funds"" in 2026."
+exp.gg.misc,expenditure,General government,,Miscellaneous,item,totalgeneralgovt;totalgeneralgov,miscellaneous,
+exp.ps.total,expenditure,Public safety,,Public safety (total),total,,totalpublicsafety,
+exp.ps.police.subtotal,expenditure,Public safety,Police services,Police services (subtotal),subtotal,,subtotalpoliceservices,
+exp.ps.police.personnel,expenditure,Public safety,Police services,Personnel,item,subtotalpoliceservices,personnel,"Chief, sergeants, officers, clerk, meter enforcement, crossing guards: pay and benefits."
+exp.ps.police.general,expenditure,Public safety,Police services,General expenditures,item,subtotalpoliceservices,generalexpenditures,
+exp.ps.police.pension,expenditure,Public safety,Police services,Municipal pension obligation,item,subtotalpoliceservices,municipalpensionobligation,Police pension contribution.
+exp.ps.police.insurance,expenditure,Public safety,Police services,Insurance,item,subtotalpoliceservices,insurance,
+exp.ps.police.vehicles,expenditure,Public safety,Police services,Vehicle operation & maintenance,item,subtotalpoliceservices,vehicleoperationmaintenance;vehiclemaintenance,
+exp.ps.fire.subtotal,expenditure,Public safety,Fire protection,Fire protection (subtotal),subtotal,,subtotalfireprotection,
+exp.ps.fire.hydrants,expenditure,Public safety,Fire protection,Fire hydrant rental,item,subtotalfireprotection,firehydrantrental,
+exp.ps.fire.fire_company,expenditure,Public safety,Fire protection,Swarthmore Fire Company contribution,item,subtotalfireprotection,swarthmorefirecompanycontribution;swarthmorefirecompany,
+exp.ps.fire.debt_service,expenditure,Public safety,Fire protection,Debt service,item,subtotalfireprotection,debtservice;dnterbibtustieornvice,"The 2017 budget's text layer garbles this label (""dnterbibtustieornvice""); the page shows ""Debt Service""."
+exp.ps.fire.insurance,expenditure,Public safety,Fire protection,Insurance,item,subtotalfireprotection,insurance,
+exp.pw.total,expenditure,Public works,,Public works (total),total,,totalpublicworks,
+exp.pw.streets.subtotal,expenditure,Public works,Streets,Streets (subtotal),subtotal,,subtotalstreets,
+exp.pw.streets.lighting,expenditure,Public works,Streets,Street lighting,item,subtotalstreets,streetlighting,
+exp.pw.streets.construction,expenditure,Public works,Streets,Construction & rebuilding,item,subtotalstreets,constructionrebuilding,Annual street paving program.
+exp.pw.streets.repairs,expenditure,Public works,Streets,Street repairs & cleaning,item,subtotalstreets,streetrepairscleaning,
+exp.pw.streets.signals,expenditure,Public works,Streets,"Traffic signals, signs & markings",item,subtotalstreets,trafficsignalsstreetsignsmarkings;trafficsignalsstreetsigns,
+exp.pw.streets.snow,expenditure,Public works,Streets,Snow & ice removal,item,subtotalstreets,snowiceremoval;asrknionwgsiceremoval,"The 2017 budget's text layer garbles this label (""asrknionwgsiceremoval""); the page shows ""Snow & Ice Removal""."
+exp.pw.streets.storm_sewers,expenditure,Public works,Streets,Storm sewers & drains,item,subtotalstreets,stormsewersdrains,
+exp.pw.streets.town_center,expenditure,Public works,Streets,Town center maintenance,item,subtotalstreets,towncentermaintenance,
+exp.pw.sewer.subtotal,expenditure,Public works,Sanitary sewer,Sanitary sewer (subtotal),subtotal,,subtotalsanitarysewer,
+exp.pw.sewer.treatment,expenditure,Public works,Sanitary sewer,Wastewater collection & treatment,item,subtotalsanitarysewer,wastewatercollectionandtreatment,
+exp.pw.sewer.debt_service,expenditure,Public works,Sanitary sewer,Debt service,item,subtotalsanitarysewer,debtservice,
+exp.pw.sewer.allocated,expenditure,Public works,Sanitary sewer,Allocated expenses,item,subtotalsanitarysewer,allocatedexpenses,"Sewer fund's share of administrative salaries, vehicles, insurance and pension."
+exp.pw.solid_waste.subtotal,expenditure,Public works,Solid waste,Solid waste (subtotal),subtotal,,subtotalsolidwaste,
+exp.pw.solid_waste.trash,expenditure,Public works,Solid waste,Trash collection,item,subtotalsolidwaste,trashcollection,
+exp.pw.solid_waste.recycling,expenditure,Public works,Solid waste,Recycling collection,item,subtotalsolidwaste,recyclingcollection;reeyelingcollection,
+exp.pw.solid_waste.allocated,expenditure,Public works,Solid waste,Allocated expenses,item,subtotalsolidwaste,allocatedexpenses,"Solid waste's share of administrative salaries, vehicles, insurance and pension."
+exp.pw.parks.subtotal,expenditure,Public works,Parks & street trees,Parks & street trees (subtotal),subtotal,,subtotalparksandstreettrees,
+exp.pw.parks.maintenance,expenditure,Public works,Parks & street trees,Parks maintenance,item,subtotalparksandstreettrees,parksmaintenance,
+exp.pw.parks.street_trees,expenditure,Public works,Parks & street trees,Street trees,item,subtotalparksandstreettrees,streettrees,
+exp.pw.vehicles.subtotal,expenditure,Public works,Vehicle operation & maintenance,Vehicle operation (subtotal),subtotal,,subtotalvehicleoperation,
+exp.pw.vehicles.general,expenditure,Public works,Vehicle operation & maintenance,General expenditures,item,subtotalvehicleoperation,generalexpenditures,"Fuel, maintenance."
+exp.pw.vehicles.insurance,expenditure,Public works,Vehicle operation & maintenance,Insurance,item,subtotalvehicleoperation,insurance,
+exp.pw.misc.subtotal,expenditure,Public works,Miscellaneous,Public works miscellaneous (subtotal),subtotal,,subtotalmiscellaneous;subtotamiscellaneous,
+exp.pw.misc.administration,expenditure,Public works,Miscellaneous,Administration,item,subtotalmiscellaneous;subtotamiscellaneous,administration,"Compensated time off, administrative duties, uniforms."
+exp.pw.misc.insurance,expenditure,Public works,Miscellaneous,Insurance,item,subtotalmiscellaneous;subtotamiscellaneous,insurance,
+exp.pw.misc.tools,expenditure,Public works,Miscellaneous,Tools,item,subtotalmiscellaneous;subtotamiscellaneous,tools,
+exp.cs.total,expenditure,Community services,,Community services (total),total,,totalcommunityservices,
+exp.cs.library,expenditure,Community services,,Swarthmore Public Library,item,totalcommunityservices,swarthmorepubliclibrary,
+exp.cs.recreation,expenditure,Community services,,Swarthmore Recreation Association,item,totalcommunityservices,swarthmorerecreationassociation,
+exp.cs.town_center_inc,expenditure,Community services,,Town Center Inc.,item,totalcommunityservices,towncenterinc,
+exp.cs.seniors,expenditure,Community services,,Senior citizens association,item,totalcommunityservices,seniorcitizensassociation;seniorservicesgrants,"""Senior Services Grants"" in the 2017 and 2018 budgets."
+exp.cs.community_center,expenditure,Community services,,Swarthmore Community Center,item,totalcommunityservices,swarthmorecommunitycenter,In the 2017-2019 budgets.
+exp.cs.pac_center,expenditure,Community services,,PAC Center,item,totalcommunityservices,paccenter,Park Avenue Community Center; from the 2023 budget.
+exp.cs.hra,expenditure,Community services,,HRA,item,totalcommunityservices,hra,First appears in the 2026 budget.

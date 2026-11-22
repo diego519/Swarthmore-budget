@@ -189,7 +189,8 @@ def apply_ocr_corrections(doc_id: str, pages: dict[int, list[Line]]) -> None:
       line_contains  text (as OCR'd) that picks out the word's line
       ocr_text       the word as OCR read it; empty to insert a missing word
       corrected_text what the page actually shows
-      x              for an inserted word: its left edge, in points
+      x              for an inserted word, or one OCR misplaced: its left
+                     edge, in points
       note           why, and how it was verified
 
     A correction must match exactly one word (or, for an insertion, one
@@ -215,6 +216,9 @@ def apply_ocr_corrections(doc_id: str, pages: dict[int, list[Line]]) -> None:
             raise CorrectionError(
                 f"{where}: OCR text {c['ocr_text']!r} matched {len(words)} words, expected 1"
             )
-        words[0].text = c["corrected_text"]
-        words[0].corrected = True
-        words[0].conf = 100.0  # checked by eye
+        word = words[0]
+        word.text = c["corrected_text"]
+        word.corrected = True
+        word.conf = 100.0  # checked by eye
+        if c["x"]:  # OCR misplaced the word: move it, keeping its width
+            word.x0, word.x1 = float(c["x"]), float(c["x"]) + (word.x1 - word.x0)

@@ -82,7 +82,18 @@ LINE_ITEM_FIELDS = [
     "doc_id", "fiscal_year", "page", "extraction", "section", "group", "table", "fund", "account",
     "account_number", "prior_year_budget", "budget", "corrected", "table_check",
 ]  # fmt: skip
-CHECK_FIELDS = ["doc_id", "page", "check", "column", "printed", "computed", "difference", "status", "note"]
+CHECK_FIELDS = [
+    "doc_id",
+    "page",
+    "check",
+    "printed_row",
+    "column",
+    "printed",
+    "computed",
+    "difference",
+    "status",
+    "note",
+]
 AMOUNT_COLUMNS = ["prior_year_budget", "prior_year_estimated_actual", "budget"]
 # The borough's spreadsheets show each figure rounded to the dollar, so a
 # printed total of n rows can differ from the sum of the printed rows by up to
@@ -113,7 +124,7 @@ def has_letters(text: str) -> bool:
 def parse_amount(text: str) -> int | None:
     """Parse a dollar amount such as "$1,234", "(1,234)", "1234." or "$0".
     Returns None if the text is not an amount. Budgets are in whole dollars."""
-    t = clean(text).replace("$", "").replace("§", "").strip(JUNK + " ")
+    t = clean(text).replace("$", "").replace("§", "").strip(JUNK + " ").rstrip(".,")
     # The budgets show negative amounts in parentheses. A leading dash is OCR
     # noise from a table border, not a minus sign.
     negative = t.startswith("(") and t.endswith(")")
@@ -245,6 +256,18 @@ class SummaryLayout:
         i = distances.index(min(distances))
         return self.columns[i] if distances[i] <= COLUMN_TOLERANCE else None
 
+    def is_zero(self, words: list[Word], col: str, text_layer: bool) -> bool:
+        """Whether a column cell shows a zero, printed in accounting format as
+        "$" at the left of the cell and "-" at the right. On a scan, a dash
+        alone may be a stray mark, so the "$" must be there too."""
+        i = self.columns.index(col)
+        left = self.right_edges[i - 1] + 2 if i else self.label_end
+        right = self.right_edges[i] + COLUMN_TOLERANCE
+        cell = [w.text.strip() for w in words if w.x0 >= left - 5 and w.x1 <= right]
+        dash = any(t and t[-1] in "-—–" and not any(c.isdigit() for c in t) for t in cell)
+        dollar = any(t.rstrip("-—–") and set(t.rstrip("-—–")) <= set("$S§") for t in cell)  # "$", "S$", "§"
+        return dash and (dollar or text_layer)
+
 
 COLUMN_TOLERANCE = 20  # points
 
@@ -347,6 +370,8 @@ def parse_summary(doc_id: str, fiscal_year: str, pages: list[Page]) -> tuple[lis
             if not is_header:
                 for col in layout.columns:
                     amounts[col], fixed = pick_amount([w for w in in_columns if layout.column_of(w) == col])
+                    if amounts[col] is None and layout.is_zero(in_columns, col, page.extraction == "text"):
+                        amounts[col] = 0
                     if fixed:
                         corrected.append(col)
             has_amounts = any(v is not None for v in amounts.values())
@@ -673,13 +698,14 @@ def normalize_account_number(text: str) -> str:
 # --------------------------------------------------------------------------
 
 
-def make_check(doc_id, page, check, column, printed, computed, note="", n_rows=1) -> dict:
+def make_check(doc_id, page, check, column, printed, computed, note="", n_rows=1, printed_row="") -> dict:
     diff = (computed or 0) - (printed or 0)
     rounding = abs(diff) <= max(1, n_rows / 2)
     return {
         "doc_id": doc_id,
         "page": page,
         "check": check,
+        "printed_row": printed_row,
         "column": column,
         "printed": printed,
         "computed": computed,
@@ -705,6 +731,7 @@ def summary_checks(sums: list[dict]) -> list[dict]:
                         row[col],
                         computed,
                         n_rows=len(s["items"]),
+                        printed_row=row["item"],
                     )
                 )
     return checks
@@ -752,6 +779,7 @@ def line_item_checks(doc_id, fiscal_year, rows, totals, statements) -> list[dict
                     "doc_id": doc_id,
                     "page": r["page"],
                     "check": f"account number format: {r['account']}",
+                    "printed_row": "",
                     "column": "account_number",
                     "printed": r["account_number"],
                     "computed": "",

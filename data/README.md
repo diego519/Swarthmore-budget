@@ -13,6 +13,9 @@
 | `processed/budget_summary.csv` | `parse_budgets.py` | Adopted budgets, summary level, 2017-2026. |
 | `processed/budget_line_items.csv` | `parse_budgets.py` | Adopted budgets, ledger-account level, 2023-2025. |
 | `processed/budget_checks.csv` | `parse_budgets.py` | Every printed subtotal and total, checked against the rows it covers. |
+| `mappings/budget_items.csv` | hand | Each summary budget line, with every label it has appeared under. |
+| `processed/budget_series.csv` | `build_budget_series.py` | Each summary line's figures by year, linked across documents. |
+| `processed/budget_series_checks.csv` | `build_budget_series.py` | Each year's adopted budget compared with the figure the next year's budget gives. |
 
 ## Coverage
 
@@ -170,9 +173,48 @@ Category" tables, which only the 2023, 2024 and 2025 budgets include.
 | --- | --- |
 | `doc_id`, `page` | Where the printed total is. |
 | `check` | What was checked, e.g. `subtotal: Police Services`, `table total: Fines`, `stated total revenue`. |
+| `printed_row` | For summary checks, the label of the row that prints the total. |
 | `column` | Which amount column. |
 | `printed`, `computed`, `difference` | The printed figure, the sum of the rows it covers, and `computed - printed`. |
 | `status` | `ok`; `rounding` (off by no more than half a dollar per row, from the borough's spreadsheets rounding each figure); `source error` (a mistake in the document itself, explained in `note`); or `FAIL`. |
+
+### `mappings/budget_items.csv`
+
+One row per budget line in the summary tables. A row in a budget document
+belongs to the line whose `section` and `row_type` match, whose `raw_labels`
+include the row's label (letters only, lower case: "Snow & Ice Removal" is
+`snowiceremoval`), and, for ordinary rows, whose `closing` includes the label
+of the subtotal or total that follows the row in the document. That is how,
+say, the three "Debt Service" rows (general government, fire, sewer) are told
+apart.
+
+| Column | Description |
+| --- | --- |
+| `item_id` | Stable id, e.g. `exp.ps.police.personnel`. |
+| `section`, `group`, `subgroup` | Where the line sits. |
+| `label` | Display name. |
+| `row_type` | `item`, `subtotal`, `total` or `net`. |
+| `closing` | For `item` rows: the subtotal/total label(s) that close it. |
+| `raw_labels` | Every label the line has been printed under. |
+| `note` | Renames, garbled labels, and what the line covers. |
+
+### `processed/budget_series.csv`
+
+| Column | Description |
+| --- | --- |
+| `item_id` | See `mappings/budget_items.csv`. |
+| `year` | Fiscal (calendar) year the figure is for. |
+| `measure` | `adopted_budget` (from that year's budget; 2016's from the 2017 budget), `estimated_actual` (from the next year's budget), or `restated_budget` (the year's budget as the next year's budget gives it). |
+| `amount` | Dollars. |
+| `doc_id`, `page`, `extraction` | Where the figure is printed, and whether it was read from text or OCR. |
+| `corrected` | `yes` if the figure comes from a hand correction of OCR. |
+| `source_error` | If the figure is a printed total that does not add up, the explanation. |
+
+### `processed/budget_series_checks.csv`
+
+Each year's `adopted_budget` beside its `restated_budget`, with the
+`difference` and the two documents. A difference is not necessarily an error:
+it can be rounding, or the borough revising the earlier year's figure.
 
 ### `ocr/<doc_id>.csv`
 
@@ -197,5 +239,5 @@ parse instead of being misapplied.
 | `line_contains` | Text (as OCR'd) that picks out the line. |
 | `ocr_text` | The word as OCR read it. Empty to insert a word OCR missed. |
 | `corrected_text` | What the page shows. |
-| `x` | For an inserted word, its left edge in points. |
+| `x` | For an inserted word, or one OCR placed in the wrong spot, its left edge in points. |
 | `note` | What was wrong and how the correct value was confirmed (by eye against the page image, and where possible against the printed totals or the same figure in another year's budget). |

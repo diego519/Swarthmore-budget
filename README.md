@@ -17,8 +17,9 @@ website.
 2. **Parse** them into clean, machine-readable tables. *(adopted budgets: in
    progress; see [status](#status))*
 3. **Summarize** the top-level picture: revenue, spending, fund balances, and
-   how they change over time.
-4. **Visualize** it on a public, interactive website.
+   how they change over time. *(adopted budgets: done)*
+4. **Visualize** it on a public, interactive website. *(the
+   [budget explorer](#budget-explorer))*
 
 Each step is a plain script that reads the previous step's output, so anyone
 can re-run the whole analysis and check every number back to its page in a
@@ -30,6 +31,7 @@ source PDF.
 | --- | --- | --- |
 | [`budget_summary.csv`](data/processed/budget_summary.csv) | 2017–2026 adopted budgets | **Complete.** Every printed subtotal and total reconciles with its rows, except six errors in the borough's own documents, which are documented. |
 | [`budget_line_items.csv`](data/processed/budget_line_items.csv) | 2023–2025 adopted budgets (the only years with line items) | **Partly reconciled.** Each row's `table_check` column says whether its table's printed total has been reconciled. Rows marked `FAIL` are not yet verified. |
+| [`budget_series.csv`](data/processed/budget_series.csv) | 2016–2026, one series per summary line | **Complete.** The summary lines linked across years (renamed lines combined), with adopted budget, estimated actual, and each figure's source page. |
 
 ## Reproducing the analysis
 
@@ -47,6 +49,10 @@ uv run scripts/fetch_documents.py verify      # confirm identical copies
 
 # 2. Parse the adopted budgets into data/processed/
 uv run scripts/parse_budgets.py
+
+# 3. Link each budget line across years, and build the explorer page
+uv run scripts/build_budget_series.py
+uv run scripts/build_site.py                  # writes docs/index.html
 ```
 
 Step 2 reads the OCR output committed in `data/ocr/`, so it does not need any
@@ -113,6 +119,36 @@ Differences caused by the borough's own documents, not by our reading of them,
 are explained in
 [`data/corrections/budget_source_errors.csv`](data/corrections/budget_source_errors.csv).
 
+### 4. Linking lines across years
+
+Each year's budget is a separate document, and the same line can be labelled
+differently from year to year: renamed ("Swarthmore Borough Authority" became
+"Swarthmore College"), or misspelt by OCR. The hand-curated
+[`data/mappings/budget_items.csv`](data/mappings/budget_items.csv) lists each
+budget line once, with every label it has appeared under and a note wherever
+two labels were judged to be the same line. `build_budget_series.py` uses it to
+build [`budget_series.csv`](data/processed/budget_series.csv), and stops if any
+row in any budget is not accounted for.
+
+As a check on those judgments, it compares each year's adopted budget with the
+figure the following year's budget gives for it
+([`budget_series_checks.csv`](data/processed/budget_series_checks.csv)). Of 701
+comparisons, 661 are identical; the rest are rounding, revisions by the borough
+(e.g. reallocating shared costs), or the known source errors.
+
+## Budget explorer
+
+[`docs/index.html`](docs/index.html) is an interactive page for exploring the
+summary lines: pick any line (from total spending down to, say, police
+personnel) to see its adopted budget and estimated actual each year since
+2016, and its change from year to year or since the first year, in percent or
+dollars. Every figure in its table links to the page of the borough's budget
+it comes from.
+
+It is one self-contained file with no external dependencies: open it in a
+browser, or host it anywhere. To publish it with GitHub Pages, set the
+repository's Pages source to the `main` branch, `/docs` folder.
+
 ### Updating when the borough posts something new
 
 ```sh
@@ -132,13 +168,18 @@ data/
   raw/               Downloaded documents (not committed; ~400 MB)
   ocr/               OCR output: every word on every scanned page, with position
   corrections/       Hand corrections to OCR, and known errors in the source documents
-  processed/         Parsed tables and the arithmetic checks
+  mappings/          Which rows in different years' budgets are the same budget line
+  processed/         Parsed tables, linked series, and the arithmetic checks
   README.md          Column definitions and known data issues
+docs/
+  index.html         The budget explorer (generated; do not edit by hand)
 scripts/
-  fetch_documents.py   discover / download / verify source documents
-  ocr_documents.py     OCR scanned pages
-  parse_budgets.py     parse adopted budgets and check their arithmetic
-  common.py            shared helpers
+  fetch_documents.py      discover / download / verify source documents
+  ocr_documents.py        OCR scanned pages
+  parse_budgets.py        parse adopted budgets and check their arithmetic
+  build_budget_series.py  link budget lines across years
+  build_site.py           build the budget explorer from templates/budget_explorer.html
+  common.py               shared helpers
 ```
 
 See [data/README.md](data/README.md) for what's covered, the column
