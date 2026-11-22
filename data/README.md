@@ -16,6 +16,7 @@
 | `mappings/budget_items.csv` | hand | Each summary budget line, with every label it has appeared under. |
 | `processed/budget_series.csv` | `build_budget_series.py` | Each summary line's figures by year, linked across documents. |
 | `processed/budget_series_checks.csv` | `build_budget_series.py` | Each year's adopted budget compared with the figure the next year's budget gives. |
+| `external/cpi_u.csv` | `fetch_cpi.py` | Consumer Price Index (CPI-U), monthly, for the inflation adjustment. |
 
 ## Coverage
 
@@ -215,6 +216,14 @@ apart.
 Each year's `adopted_budget` beside its `restated_budget`, with the
 `difference` and the two documents. A difference is not necessarily an error:
 it can be rounding, or the borough revising the earlier year's figure.
+
+### `external/cpi_u.csv`
+
+The Consumer Price Index for All Urban Consumers (CPI-U), U.S. city average,
+all items, not seasonally adjusted (1982-84 = 100), from the Bureau of Labor
+Statistics' public API. One row per month: `series_id` (`CUUR0000SA0`),
+`year`, `month`, `value`, and BLS's `note` for months it did not publish
+(their `value` is empty).
 
 ### `ocr/<doc_id>.csv`
 
