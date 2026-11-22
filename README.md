@@ -5,6 +5,8 @@ An independent, open, and reproducible look at the finances of
 Pennsylvania), built entirely from documents the borough publishes on its
 website.
 
+**Website: <https://diego519.github.io/Swarthmore-budget/>**
+
 > **Not affiliated with Swarthmore Borough.** This project only collects and
 > reorganizes public records. The borough's own documents are the
 > authoritative source; if anything here disagrees with them, they win. Please
@@ -164,8 +166,10 @@ did not publish (October 2025, during the federal government shutdown) are
 left out of their year's average.
 
 Each page is one self-contained HTML file with no external dependencies: open
-it in a browser, or host it anywhere. To publish with GitHub Pages, set the
-repository's Pages source to the `main` branch, `/docs` folder.
+it in a browser, or host it anywhere. The site is published with GitHub Pages
+from the `main` branch's `/docs` folder at
+<https://diego519.github.io/Swarthmore-budget/>; pushing rebuilt pages to
+`main` updates it.
 
 ### Updating when the borough posts something new
 
