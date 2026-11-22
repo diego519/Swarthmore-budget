@@ -17,6 +17,11 @@
 | `processed/budget_series.csv` | `build_budget_series.py` | Each summary line's figures by year, linked across documents. |
 | `processed/budget_series_checks.csv` | `build_budget_series.py` | Each year's adopted budget compared with the figure the next year's budget gives. |
 | `external/cpi_u.csv` | `fetch_cpi.py` | Consumer Price Index (CPI-U), monthly, for the inflation adjustment. |
+| `processed/proposed_budget_lines.csv` | `parse_proposed_budget.py` | Every line of the proposed budget(s), by fund. |
+| `processed/proposed_budget_checks.csv` | `parse_proposed_budget.py` | Each fund's printed subtotals vs. the sum of its lines. |
+| `mappings/proposed_budget_categories.csv` | hand | Which overview category each proposed-budget line belongs to. |
+| `processed/proposed_budget_summary.csv` | `build_proposed_summary.py` | The proposal totalled into the overview's categories. |
+| `corrections/proposed_budget_source_errors.csv` | hand | Arithmetic errors in proposed budgets (none so far). |
 
 ## Coverage
 
@@ -216,6 +221,40 @@ apart.
 Each year's `adopted_budget` beside its `restated_budget`, with the
 `difference` and the two documents. A difference is not necessarily an error:
 it can be rounding, or the borough revising the earlier year's figure.
+
+### `processed/proposed_budget_lines.csv`
+
+| Column | Description |
+| --- | --- |
+| `doc_id`, `fiscal_year`, `page` | The proposed budget, the year it is for, and the page. |
+| `fund` | `General Fund`, `Sewer & Solid Waste Fund`, `Liquid Fuels Fund` or `Capital Fund`. |
+| `section` | `revenue` or `expense`. |
+| `account` | The line's name, as printed. |
+| `budget` | The proposed amount for `fiscal_year`. |
+| `prior_year_budget`, `prior_year_to_date`, `two_years_prior_actual` | The document's other columns (for 2027: 2026 budget, 2026 to date, 2025 actual). Blank where the document leaves them blank, which it often does for reorganized lines, so the 2026 column is not a full restatement of the 2026 budget. |
+| `note` | The document's explanatory note. |
+
+### `mappings/proposed_budget_categories.csv`
+
+One row per proposed-budget line, identified by `fiscal_year`, `fund`,
+`section`, `page` and `account`. `category` is an overview category key
+(`police`, `fire`, `gg`, `streets`, `sewer`, `solid_waste`, `parks`,
+`pw_vehicles`, `pw_other`, `community`; `property_taxes`, `eit`,
+`sewer_fees`, `trash_fees`, `other_taxes`, `intergovernmental`,
+`misc_revenue`, `prior_year_funds`), a split such as
+`police:499375;fire:53000`, or one of `interfund`, `surplus`, `capital_fund`
+(left out of the comparison) and `payroll_benefits` (shared out by salaries).
+`payroll` marks salary lines; `note` explains judgment calls.
+
+### `processed/proposed_budget_summary.csv`
+
+| Column | Description |
+| --- | --- |
+| `fiscal_year`, `doc_id` | The proposal. |
+| `side` | `spending` or `revenue` for the categories; `excluded_revenue` / `excluded_expense` for amounts left out; `allocated` for the benefits shared out. |
+| `category`, `amount` | The category and its total. |
+| `estimated` | `yes` where the amount includes a share of centrally budgeted benefits. |
+| `lines` | How many proposed-budget lines it combines. |
 
 ### `external/cpi_u.csv`
 

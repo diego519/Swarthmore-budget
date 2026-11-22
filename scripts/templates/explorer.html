@@ -22,7 +22,8 @@
   <header>
     <h1>Explore a budget line</h1>
     <p class="lede">Choose any line of Swarthmore Borough's adopted budget to see its amount each year since 2016
-      and how much it rose or fell. Every figure links to the page of the borough's budget it comes from.</p>
+      and how much it rose or fell, and, where it can be matched, the latest proposed budget. Every figure links to the
+      page of the borough's budget it comes from.</p>
   </header>
 
   <div class="controls" role="group" aria-label="Chart options">
@@ -67,6 +68,7 @@
         <span class="legend" id="amount-legend">
           <span><span class="key" style="background: var(--series-1)"></span>Adopted budget</span>
           <span><span class="key" style="background: var(--series-2)"></span>Estimated actual</span>
+          <span id="proposed-legend" hidden><svg width="12" height="12" style="display:inline;vertical-align:-1px;margin-right:6px"><circle cx="6" cy="6" r="4" fill="var(--surface)" stroke="var(--series-1)" stroke-width="2"/></svg>Proposed</span>
         </span>
       </figcaption>
       <div class="plot"></div>
@@ -98,6 +100,7 @@
       <li><strong>Estimated actual</strong> is the borough's estimate, made late in the year, of what was actually spent or
         collected. It is printed in the following year's budget, so the latest available is for __LAST_ESTIMATE_YEAR__.</li>
       <li>__DOLLARS_NOTE__</li>
+      <li>__PROPOSED_NOTE__</li>
       <li>These are the <strong>summary lines</strong> of each budget ("Revenue/Expenditures - all operating funds"),
         which cover the General, Sewer &amp; Solid Waste, and Liquid Fuels funds.</li>
       <li>Where a line was renamed between years it is shown as one line; the note under its name says so.</li>
@@ -119,31 +122,47 @@
 const state = { item: DATA.default_item, base: "yoy", unit: "pct" };
 
 function isNet() { return ITEMS.get(state.item).type === "net"; }
+// The figure for a year: the adopted budget, or for the proposed year, the proposal.
+function amount(d) { return d.isProposed ? d.proposed : d.adopted; }
+// Years 2016-2026 from the adopted budgets, plus the latest proposal where
+// this line can be matched to it (see the overview's notes).
+function itemSeries(id) {
+  const series = seriesFor(id);
+  const pv = proposedValue(id);
+  if (pv !== null) {
+    series.push({ year: PROPOSED.year, isProposed: true, proposed: pv, proposedNominal: PROPOSED.items[id],
+      estimated: proposedEstimated(id), adopted: null, adoptedNominal: null, estimate: null, restated: null });
+  }
+  return series;
+}
 // Percent change is meaningless for the surplus/deficit line, which swings
 // around zero, so that line's changes are always shown in dollars.
 function itemPct(cur, base) { return isNet() ? null : pctChange(cur, base); }
 function unit() { return isNet() ? "usd" : state.unit; }
 
 function changes(series) {
-  const baseIdx = series.findIndex((d) => d.adopted !== null && (unit() === "usd" || d.adopted > 0));
+  const baseIdx = series.findIndex((d) => amount(d) !== null && (unit() === "usd" || amount(d) > 0));
   return series.map((d, i) => {
     let ref = null, refYear = null;
-    if (state.base === "yoy" && i > 0) { ref = series[i - 1].adopted; refYear = series[i - 1].year; }
-    if (state.base === "since" && baseIdx >= 0 && i > baseIdx) { ref = series[baseIdx].adopted; refYear = series[baseIdx].year; }
-    const usd = d.adopted !== null && ref !== null ? d.adopted - ref : null;
-    const p = itemPct(d.adopted, ref);
-    return { year: d.year, refYear, usd, pct: p, value: unit() === "pct" ? p : usd, isBase: state.base === "since" && i === baseIdx };
+    if (state.base === "yoy" && i > 0) { ref = amount(series[i - 1]); refYear = series[i - 1].year; }
+    if (state.base === "since" && baseIdx >= 0 && i > baseIdx) { ref = amount(series[baseIdx]); refYear = series[baseIdx].year; }
+    const usd = amount(d) !== null && ref !== null ? amount(d) - ref : null;
+    const p = itemPct(amount(d), ref);
+    return { year: d.year, refYear, usd, pct: p, value: unit() === "pct" ? p : usd,
+      isBase: state.base === "since" && i === baseIdx, isProposed: !!d.isProposed };
   });
 }
 
 function drawAmounts(series) {
   const fig = document.getElementById("amount-chart");
   document.getElementById("amount-caption").textContent = "Amount each year, " + dollarsPhrase();
-  const values = series.flatMap((d) => [d.adopted, d.estimate]).filter((v) => v !== null);
+  const values = series.flatMap((d) => [d.adopted, d.estimate, d.isProposed ? d.proposed : null]).filter((v) => v !== null);
   const { ticks, format } = moneyTicks(values);
-  const f = frame(fig, { height: 280, labels: YEARS, yTicks: ticks, tickFormat: format });
+  const f = frame(fig, { height: 280, labels: series.map((d) => d.year), yTicks: ticks, tickFormat: format });
   const hasEstimate = series.some((d) => d.estimate !== null);
-  document.getElementById("amount-legend").hidden = !hasEstimate;
+  const prop = series.findIndex((d) => d.isProposed);
+  document.getElementById("amount-legend").hidden = !hasEstimate && prop < 0;
+  document.getElementById("proposed-legend").hidden = prop < 0;
 
   const draw = (key, color) => {
     let path = "", pen = false;
@@ -160,11 +179,20 @@ function drawAmounts(series) {
   draw("estimate", "var(--series-2)");
   draw("adopted", "var(--series-1)");
 
-  // Label the latest adopted budget only (the series the page is about).
-  const last = series.map((d, i) => [d, i]).filter(([d]) => d.adopted !== null).pop();
+  // The proposal: a hollow point, joined faintly to the last adopted budget.
+  if (prop >= 0) {
+    const d = series[prop], prev = series[prop - 1];
+    if (prev && prev.adopted !== null) {
+      el("line", { x1: f.x(prop - 1), y1: f.y(prev.adopted), x2: f.x(prop), y2: f.y(d.proposed), stroke: "var(--series-1)",
+        "stroke-width": 2, opacity: 0.4, "stroke-linecap": "round" }, f.svg);
+    }
+    el("circle", { cx: f.x(prop), cy: f.y(d.proposed), r: 4.5, fill: "var(--surface)", stroke: "var(--series-1)", "stroke-width": 2 }, f.svg);
+  }
+  // Label the latest figure only.
+  const last = series.map((d, i) => [d, i]).filter(([d]) => amount(d) !== null).pop();
   if (last) {
-    const t = el("text", { x: f.x(last[1]) + 8, y: f.y(last[0].adopted) + 4, class: "label-strong" }, f.svg);
-    t.textContent = moneyCompact(last[0].adopted);
+    const t = el("text", { x: f.x(last[1]) + 8, y: f.y(amount(last[0])) + 4, class: "label-strong" }, f.svg);
+    t.textContent = moneyCompact(amount(last[0])) + (last[0].isProposed ? "*".repeat(last[0].estimated ? 1 : 0) : "");
   }
   f.svg.setAttribute("role", "img");
   f.svg.setAttribute("aria-label", "Line chart of the adopted budget" + (hasEstimate ? " and estimated actual" : "") +
@@ -172,7 +200,13 @@ function drawAmounts(series) {
 
   interact(fig, f, (i, tip) => {
     const d = series[i];
-    tipText(tip, "tt-title", String(d.year));
+    tipText(tip, "tt-title", yearLabel(d.year));
+    if (d.isProposed) {
+      tipRow(tip, "var(--series-1)", money(d.proposed), "Proposed budget");
+      tipText(tip, "tt-note", `Not yet adopted. Source: ${PROPOSED.title}, matched to this line by category` +
+        (d.estimated ? "; partly estimated (employee benefits shared out by salaries)" : ""));
+      return;
+    }
     tipRow(tip, "var(--series-1)", d.adopted === null ? "not in budget" : money(d.adopted), "Adopted budget");
     if (hasEstimate) tipRow(tip, "var(--series-2)", d.estimate === null ? "not available" : money(d.estimate), "Estimated actual");
     if (DOLLARS.mode === "real" && d.adoptedNominal !== null) tipText(tip, "tt-note", "Budgeted as " + money(d.adoptedNominal) + " in " + d.year + " dollars");
@@ -217,12 +251,13 @@ function drawChanges(series) {
   const fmt = unit() === "pct"
     ? (t) => (t === 0 ? "0%" : pct(t, decimals))
     : (t) => (t > 0 ? "+" : "") + (compact ? moneyCompact(t) : money(t));
-  const f = frame(fig, { height: 220, labels: YEARS, yTicks: ticks, tickFormat: fmt });
+  const f = frame(fig, { height: 220, labels: series.map((d) => d.year), yTicks: ticks, tickFormat: fmt });
   const bw = Math.min(24, f.step * 0.55);
   const bars = [];
   ch.forEach((c, i) => {
     if (c.value === null) return;
-    bars[i] = el("path", { d: barPath(f.x(i) - bw / 2, bw, f.y(0), f.y(c.value), 4), fill: c.value < 0 ? "var(--negative)" : "var(--series-1)" }, f.svg);
+    bars[i] = el("path", { d: barPath(f.x(i) - bw / 2, bw, f.y(0), f.y(c.value), 4), fill: c.value < 0 ? "var(--negative)" : "var(--series-1)",
+      opacity: c.isProposed ? 0.55 : 1 }, f.svg);
   });
   const last = ch.map((c, i) => [c, i]).filter(([c]) => c.value !== null).pop();
   if (last) {
@@ -235,34 +270,36 @@ function drawChanges(series) {
 
   interact(fig, f, (i, tip) => {
     const c = ch[i];
-    bars.forEach((b, j) => b && b.setAttribute("opacity", j === i ? 1 : 0.55));
-    tipText(tip, "tt-title", String(c.year));
+    bars.forEach((b, j) => b && b.setAttribute("opacity", (j === i ? 1 : 0.55) * (ch[j].isProposed ? 0.55 : 1)));
+    tipText(tip, "tt-title", yearLabel(c.year));
     if (c.isBase) { tipText(tip, "tt-row", "Base year for comparison"); return; }
     if (c.usd === null) { tipText(tip, "tt-row", "No change shown: a year is missing from the budgets"); return; }
     const color = c.usd < 0 ? "var(--negative)" : "var(--series-1)";
     if (c.pct !== null) tipRow(tip, color, pct(c.pct), "vs " + c.refYear);
     tipRow(tip, c.pct === null ? color : "transparent", signedMoney(c.usd, false), c.pct === null ? "vs " + c.refYear : "");
-  }, { onLeave: () => bars.forEach((b) => b && b.setAttribute("opacity", 1)) });
+    if (c.isProposed) tipText(tip, "tt-note", "Proposed, not yet adopted");
+  }, { onLeave: () => bars.forEach((b, j) => b && b.setAttribute("opacity", ch[j].isProposed ? 0.55 : 1)) });
 }
 
 function drawTiles(series) {
   const tiles = document.getElementById("tiles");
   tiles.textContent = "";
-  const known = series.filter((d) => d.adopted !== null);
+  const known = series.filter((d) => amount(d) !== null);
   if (!known.length) return;
   const last = known[known.length - 1];
   const prev = series.find((d) => d.year === last.year - 1);
-  const first = known.find((d) => d.adopted > 0) || known[0];
-  addTile(tiles, last.year + " adopted budget", moneyCompact(last.adopted), "", money(last.adopted));
-  if (prev && prev.adopted !== null) {
-    const d = last.adopted - prev.adopted;
-    const p = itemPct(last.adopted, prev.adopted);
+  const first = known.find((d) => amount(d) > 0) || known[0];
+  addTile(tiles, `${last.year} ${last.isProposed ? "proposed" : "adopted"} budget`, moneyCompact(amount(last)),
+    last.isProposed ? "Not yet adopted" + (last.estimated ? "; partly estimated" : "") : "", money(amount(last)));
+  if (prev && amount(prev) !== null) {
+    const d = amount(last) - amount(prev);
+    const p = itemPct(amount(last), amount(prev));
     addTile(tiles, "Change from " + prev.year, signedMoney(d, true), p === null ? "" : pct(p), signedMoney(d, false));
   }
   if (first.year < last.year) {
-    const d = last.adopted - first.adopted;
-    const p = itemPct(last.adopted, first.adopted);
-    const rate = isNet() ? null : annualRate(first.adopted, last.adopted, last.year - first.year);
+    const d = amount(last) - amount(first);
+    const p = itemPct(amount(last), amount(first));
+    const rate = isNet() ? null : annualRate(amount(first), amount(last), last.year - first.year);
     addTile(tiles, "Change since " + first.year, signedMoney(d, true),
       p === null ? "" : pct(p) + (rate === null ? "" : " · " + pct(rate) + " a year on average"), signedMoney(d, false));
   }
@@ -272,7 +309,7 @@ function drawTable(series) {
   const table = document.getElementById("table");
   const notes = document.getElementById("footnotes");
   table.textContent = ""; notes.textContent = "";
-  const yoy = series.map((d, i) => (i > 0 && d.adopted !== null && series[i - 1].adopted !== null ? d.adopted - series[i - 1].adopted : null));
+  const yoy = series.map((d, i) => (i > 0 && amount(d) !== null && amount(series[i - 1]) !== null ? amount(d) - amount(series[i - 1]) : null));
   const base = series.find((d) => d.adopted !== null && d.adopted > 0);
   const head = table.createTHead().insertRow();
   const since = base && !isNet() ? "Change since " + base.year : "";
@@ -290,11 +327,20 @@ function drawTable(series) {
     if (marks) { const s = document.createElement("sup"); s.textContent = marks; td.appendChild(s); }
   };
   series.forEach((d, i) => {
-    if (d.adopted === null && d.estimate === null) return;
+    if (amount(d) === null && d.estimate === null) return;
     const tr = body.insertRow();
     const cells = Array.from({ length: 6 }, () => tr.insertCell());
-    cells[0].textContent = String(d.year);
-    if (d.adopted !== null) {
+    cells[0].textContent = yearLabel(d.year);
+    if (d.isProposed) {
+      const a = document.createElement("a");
+      a.href = PROPOSED.url;
+      a.textContent = money(d.proposed);
+      a.title = "From the " + PROPOSED.title + " (matched to this line by category)";
+      cells[1].appendChild(a);
+      const sup = document.createElement("sup"); sup.textContent = d.estimated ? "¶*" : "¶"; cells[1].appendChild(sup);
+      footnotes.push(`¶ ${d.year}: the proposed budget (not yet adopted), totalled from its lines into this category; see the notes below.` +
+        (d.estimated ? " * Partly estimated: includes a share of employee benefits, which the proposal budgets centrally." : ""));
+    } else if (d.adopted !== null) {
       let marks = d.aCorrected ? "†" : "";
       if (revised(d)) {
         marks += "‡";
@@ -304,11 +350,11 @@ function drawTable(series) {
       link(cells[1], d.adopted, d.aDoc, d.aPage, marks);
     } else cells[1].textContent = "—";
     cells[2].textContent = yoy[i] === null ? "" : signedMoney(yoy[i], false);
-    const p = yoy[i] === null ? null : itemPct(d.adopted, series[i - 1].adopted);
+    const p = yoy[i] === null ? null : itemPct(amount(d), amount(series[i - 1]));
     cells[3].textContent = p === null ? "" : pct(p);
-    const ps = base && d.year > base.year ? itemPct(d.adopted, base.adopted) : null;
+    const ps = base && d.year > base.year ? itemPct(amount(d), base.adopted) : null;
     cells[4].textContent = ps === null ? "" : pct(ps);
-    if (d.estimate !== null) {
+    if (d.estimate !== null && d.estimate !== undefined) {
       let marks = d.eCorrected ? "†" : "";
       if (d.eError) { marks += "§"; footnotes.push(`§ ${d.year} estimated actual: ${d.eError}`); }
       link(cells[5], d.estimate, d.eDoc, d.ePage, marks);
@@ -321,10 +367,14 @@ function drawTable(series) {
 
 function render() {
   const item = ITEMS.get(state.item);
-  const series = seriesFor(state.item);
+  const series = itemSeries(state.item);
   document.getElementById("item-title").textContent = item.label;
   document.getElementById("item-path").textContent = item.path;
-  document.getElementById("item-note").textContent = item.note;
+  document.getElementById("item-note").textContent = item.note +
+    (PROPOSED && proposedValue(state.item) === null
+      ? (item.note ? " " : "") + `The ${PROPOSED.year} proposed budget is laid out differently and can't be matched to this ` +
+        "line; the overview compares it by category."
+      : "");
   const pctButton = document.querySelector('#unit-toggle button[data-value="pct"]');
   pctButton.disabled = isNet();
   pctButton.title = isNet() ? "Percent change isn't meaningful for a surplus or deficit" : "";

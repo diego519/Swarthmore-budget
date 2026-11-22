@@ -1,0 +1,243 @@
+doc_id,fiscal_year,page,fund,section,account,budget,prior_year_budget,prior_year_to_date,two_years_prior_actual,note
+3821,2027,1,General Fund,revenue,CURRENT YEAR REAL ESTATE TAXES,2590492,2707997,2570002,2560782,Millage rate is set to 3.996 Mills (99% Collection Rate)
+3821,2027,1,General Fund,revenue,EMERGENCY SERVICES TAX,0,295946,288783,0,Eliminated .045 Mill for EST (11% Property Tax Decrease in 2027)
+3821,2027,1,General Fund,revenue,PRIOR YEAR REAL ESTATE TAXES,25000,35000,11970,26840,Delinquent Property Tax Collections - 0.1% of Real Estate Tax
+3821,2027,1,General Fund,revenue,INTERIM REAL ESTATE TAXES,1500,1000,5948,1533,Taxes assessed for in-progress building permits
+3821,2027,1,General Fund,revenue,REAL ESTATE TRANSFER TAX,200000,340000,194569,335875,1% tax applied when properties are sold
+3821,2027,1,General Fund,revenue,LST/LOCAL SERVICES TAX,115000,110000,95329,125289,$2 per pay tax levied on workers in Swarthmore Borough
+3821,2027,1,General Fund,revenue,EARNED INCOME TAXES,1904500,0,0,0,New line - 1% tax on earned income (wages only)
+3821,2027,1,General Fund,revenue,BUILDING PERMITS,400000,300000,618273,335875,Fees for building permits. Raised to match yr-yr collections
+3821,2027,1,General Fund,revenue,CONTRACTOR'S LICENSE,12500,9000,10935,15126,"Fees for contractors to work in Swarthmore (HVAC, Electric, etc.)"
+3821,2027,1,General Fund,revenue,USE AND OCCUPANCY CERTIFICATES,6000,7500,5300,11800,Charges for building occupation inspections.
+3821,2027,1,General Fund,revenue,POLICE SERVICES,500,0,1340,0,Charges for misc. police services (events)
+3821,2027,1,General Fund,revenue,RENTAL INSPECTION,2500,3750,2400,0,Charges for rental inspections to be consistent with IBC
+3821,2027,1,General Fund,revenue,STREET OPENING,7500,2000,12950,7720,"Fees for opening of Borough Streets (PECO, Aqua, etc.)"
+3821,2027,1,General Fund,revenue,MOTOR VEHICLE FINES,35000,30000,22149,42010,"Fines for traffic citations (speeding, etc.)"
+3821,2027,1,General Fund,revenue,VIOLATION OF ORDINANCES,1500,2000,3315,5911,Misc. ordinance violations against Swarthmore Code violators
+3821,2027,1,General Fund,revenue,INTEREST,45000,48000,29331,46512,Anticipated to be 2.75%-3% of liquidity
+3821,2027,1,General Fund,revenue,PUBLIC UTILITES REALTY TAX,2500,2900,0,2651,Annual allocation from the PA PURTA system
+3821,2027,1,General Fund,revenue,COUNTY AID,5914,5914,6631,6372,Annual liquid fuels distribution from Delaware County
+3821,2027,1,General Fund,revenue,SEWAGE & SOLID WASTE FUND TRANSFER,180301,0,0,0,Reimbursement of staff time (15%) & direct expenses to Sewer & Solid Waste Fund
+3821,2027,1,General Fund,revenue,401 A REIMBURSEMENT,0,25000,0,0,"Eliminated, combined with Foreign Casualty Insurance Tax line"
+3821,2027,1,General Fund,revenue,FOREIGN CASUALTY INSURANCE TAX,213109,0,0,159976,"3 pension awards from the state - Police, Non-uniform, & Fire"
+3821,2027,1,General Fund,revenue,PARKING METER REVENUE,60000,55000,38700,66469,Increased slightly anticipating higher yr-yr collections Page 2
+3821,2027,2,General Fund,revenue,PARKING PERMITS,45000,40000,32016,52109,Increased slightly anticipating higher permit sales
+3821,2027,2,General Fund,revenue,POLICE SERVICES,258928,248806,182511,242270,Swarthmore College Pymt ($123K) & Rutledge Pymt ($182K) for police
+3821,2027,2,General Fund,revenue,LIFE SAFETY SERVICES,306081,758150,1018190,241650,Swarthmore College Pymt for fire services
+3821,2027,2,General Fund,revenue,RUTLEDGE BOROUGH - SNOW PLOWING,2500,0,0,0,"$1,250 charge to Rutledge per snow plowing day in winter"
+3821,2027,2,General Fund,revenue,TREE COMMITTEE SALES,8000,8750,7895,10000,Lowered to match tree sale revenue in 2026
+3821,2027,2,General Fund,revenue,CHARGE FOR TREE REMOVAL,13000,18000,13055,30041,Lowered to match tree removal fee revenue in 2026
+3821,2027,2,General Fund,revenue,MISCELLANEOUS REVENUE,84262,11759,128855,115582,Healthcare dividends & WSSD reimbursement for 50% of Crossing Guard wages
+3821,2027,2,General Fund,revenue,CABLE FRANCHISE FEES,55000,60000,53690,64569,Fees assessed to cable providers in Swarthmore Borough
+3821,2027,2,General Fund,revenue,ACCIDENT REPORTS,1500,2000,930,1560,Traffic report requests to Swarthmore Police
+3821,2027,2,General Fund,revenue,ZHB/SPECIAL EXCEPTION,4000,5000,1775,2950,Fees for Zoning Hearing requests throughout the year
+3821,2027,2,General Fund,revenue,SUB/LAND DEVELOPMENT APP.FEE,2500,1000,-100,2550,Fees for land development review throughout the year
+3821,2027,2,General Fund,revenue,STORM WATER MGNT APP. FEE,5000,3000,2000,9432,Fees for stormwater management review throughout the year
+3821,2027,2,General Fund,revenue,SUPPLEMENTAL CONTRIBUTION,125000,173644,86822,165375,Swarthmore College Pymt for emergency services
+3821,2027,2,General Fund,revenue,CONTRIBUTION FROM OTHER SOURCE,122000,122000,122000,122000,"$122,000 annual contribution from Swarthmore Authority"
+3821,2027,2,General Fund,expense,ADMINISTRATIVE ASSISTANT,63938,40478,24759,38758,Reallocated from Sewer and Garbage Fund plus annual 3.5% raise
+3821,2027,2,General Fund,expense,BOOKKEEPER,13600,40796,71986,38784,Payment to temporary bookkeeper Possenti for financial planning (Q1)
+3821,2027,2,General Fund,expense,MAYOR SALARY,8385,8385,0,0,Salary per PA Borough Code
+3821,2027,2,General Fund,expense,COUNCIL SALARIES,20950,20988,10478,0,Salary per PA Borough Code (5 eligible council members)
+3821,2027,2,General Fund,expense,SALARY OF MANAGER/SECRETARY,135000,98000,63207,126597,0% Salary increase for Manager
+3821,2027,2,General Fund,expense,SALARY OF ASST MANAGER,95000,0,0,0,"Salary of Asst Manager, position restructured replacing Bookkeeper job"
+3821,2027,2,General Fund,expense,OVERTIME,0,630,455,702,Eliminated for 2027
+3821,2027,2,General Fund,expense,OFFICE SUPPLIES,4500,3500,8406,4228,Increased slighlty for administrative office modernizations
+3821,2027,2,General Fund,expense,POSTAGE,1500,1500,803,1153,Kept consistent with YR - YR usage
+3821,2027,2,General Fund,expense,MEETING VIDEO,9600,9600,7700,6300,Audio Visual services for council meetings
+3821,2027,2,General Fund,expense,PROFESSIONAL DUES,8000,3831,375,5035,"Staff training and professional development - PSAB, PML"
+3821,2027,2,General Fund,expense,CONFERENCE FEES/CONTINUING ED,10500,8500,430,3673,"PSAB, PML, PELRAS Conferences, Notary Certification"
+3821,2027,2,General Fund,expense,IT SERVICE,15000,20800,3475,8411,IT and administrative services Page 3
+3821,2027,3,General Fund,expense,MISC ADMIN EXP,3000,0,11856,3937,Administrative expense contingency
+3821,2027,3,General Fund,expense,AM LEGAL (PUBLISHING),3500,0,1172,471,Quarterly Codification of Ordinances and Annual Renewal of Online Code
+3821,2027,3,General Fund,expense,ADMIN UNIFORMS,0,0,0,118,Eliminated for 2027
+3821,2027,3,General Fund,expense,LEGAL ADVERTISING,4500,3000,4244,5984,Increased utilization due to additional notices required
+3821,2027,3,General Fund,expense,AUDITING SERVICES,20400,14700,11786,9628,"Borough GF and pension audits, allocated 15% to Sewage Fund (Does not include SFPA audit)"
+3821,2027,3,General Fund,expense,LEGAL SERVICES,45000,25200,17733,18327,Hourly rate for Borough Solictior
+3821,2027,3,General Fund,expense,SPECIAL LEGAL SERVICES,12000,10000,9627,10780,Solicitor Misc. Services - Land Development / Litigation
+3821,2027,3,General Fund,expense,COMMUNICATION EXPENDITURES,19200,20431,8276,12277,"Website, phones, email systems"
+3821,2027,3,General Fund,expense,OFFICE EQUIPMENT - Maint,13000,6276,4369,1065,"3 Quickbooks users + annual office equipment fees (copiers, etc.)"
+3821,2027,3,General Fund,expense,SALARY OF TAX COLLECTOR,40000,8121,24961,7062,"$10,000 Real Estate Collection (Possenti), $30,000 EIT Collection (Keystone)"
+3821,2027,3,General Fund,expense,LOCAL SERVICES TAX EXPENSE,3000,2500,3656,3684,Consistent with 2023-2025 averages for collection costs
+3821,2027,3,General Fund,expense,TAX COLLECTOR'S BOND/INS.,500,1000,186,999,Insurance bond for real estate tax collector
+3821,2027,3,General Fund,expense,GENERAL EXPENSE:TAX COLLECTOR,1250,1250,723,796,Cost of bill production / mailing for real estate taxes
+3821,2027,3,General Fund,expense,MUNICIPAL BLDG:MATERIALS AND SUPPLIES,4500,3200,4039,4026,"Consumable Supplies Borough Hall (toileries, cleaning products, etc.)"
+3821,2027,3,General Fund,expense,MUNICIPAL BLDG:GAS,15000,9120,10545,8559,Heating Borough buildings - 2027 rate increase
+3821,2027,3,General Fund,expense,MUNICIPAL BLDG:ELECTRICITY,40000,21440,30477,19010,Electricity Borough buildings - 2027 rate increase
+3821,2027,3,General Fund,expense,MUNICIPAL BLDG:WATER,7400,6800,4991,6725,Water Borough buildings - 2027 rate increase
+3821,2027,3,General Fund,expense,PROPERTY MAINTENANCE,60000,52000,47975,97235,"Paint/Carpet - Comm Rm, Carpet - PD, Sidewalks, Central Park Drinking Fountain"
+3821,2027,3,General Fund,expense,CHIEF,184064,177840,106293,175445,3.5% Salary increase for Chief
+3821,2027,3,General Fund,expense,SERGEANT,241329,232047,129410,223184,3.5% Salary increase for two Sergeants
+3821,2027,3,General Fund,expense,RUTLEDGE BONUS,26400,26400,0,26400,Annual police bonus for coverage of Rutledge Borough
+3821,2027,3,General Fund,expense,PATROL OFFICER,635781,631144,356912,595238,3.5% Salary increase for six Officers
+3821,2027,3,General Fund,expense,CLERK/CROSSING GUARDS,40525,15661,9274,15053,Five crossing guards paid 50% by Borough / 50% by WSSD
+3821,2027,3,General Fund,expense,ANIMAL CONTROL,5000,5000,2783,6205,No Change - Annual animal control services to Swarthmore
+3821,2027,3,General Fund,expense,CLERK/METER ENFORCEMENT,48411,46772,26086,45191,3.5% Salary increase for Clerk
+3821,2027,3,General Fund,expense,LONGEVITY PAY,56047,65022,31347,56999,Annual longevity pay for officers in borough - lowered due to retirement
+3821,2027,3,General Fund,expense,SHIFT DIFFERENTIAL,63377,61374,33638,59447,Pay for afternoon/night shift of officers - increased with raises
+3821,2027,3,General Fund,expense,FESTIVE HOLIDAY PAY,30000,28980,20793,29803,Pay to officers for service on holidays - increased with raises
+3821,2027,3,General Fund,expense,OVERTIME,178000,120000,85332,153487,Overtime rates to meet minimum service requirements (2 officers per shift)
+3821,2027,3,General Fund,expense,OUTSIDE OVERTIME,2000,0,-2991,-2343,Service calls to other municipalities / DA / Task Forces
+3821,2027,3,General Fund,expense,REIMBURSE OUTSIDE OVERTIME,0,0,0,0,Eliminated and moved to Misc Revenue
+3821,2027,3,General Fund,expense,ON CALL TIME,1500,1500,0,210,No change - pay for on call services Page 4
+3821,2027,4,General Fund,expense,COMMUNITY EXPENSES,3000,3000,2974,3859,Annual barbeque / community cookout hosted by Swarthmore PD
+3821,2027,4,General Fund,expense,OFFICE MATERIALS AND SUPPLIES,8460,7000,6781,5634,Increased usage of supplies
+3821,2027,4,General Fund,expense,GENERAL EXPENDITURES,33000,19100,13268,22776,Reclass of equipment expense
+3821,2027,4,General Fund,expense,CONTINUING EDUCATION,6600,5000,3659,5244,Training for officers
+3821,2027,4,General Fund,expense,PROF DUES/CONFERENCE FEES,3295,2500,1323,2521,Training/conference for chief
+3821,2027,4,General Fund,expense,EDUCATIONAL REIMBURSEMENT,8000,8000,5424,6231,Pay for educational attainment
+3821,2027,4,General Fund,expense,UNIFORMS,17600,17600,8595,14147,Annual uniform replacement for officers
+3821,2027,4,General Fund,expense,AMMUNITION/POLICE SUPPLIES,8000,21500,19714,18737,Annual ammunition for officer training
+3821,2027,4,General Fund,expense,VEHICLE OPERATION EXPENSE,23450,24000,10530,28543,Slight decrease projected for vehicle repairs
+3821,2027,4,General Fund,expense,PAYMENT TO CAPITAL,0,37000,37000,37000,Eliminated and moved to Capital Fund
+3821,2027,4,General Fund,expense,COMMUNICATIONS EXPENSE,40000,40000,34589,53735,Radios / 911 connection expenses
+3821,2027,4,General Fund,expense,HEADQUARTERS EXPENSE,2000,2000,2594,1975,Misc supplies for Police Dept
+3821,2027,4,General Fund,expense,PARKING APPLICATION EXPENSES,10000,0,0,0,New line - Passport Parking Enforcement
+3821,2027,4,General Fund,expense,HYDRANT RENTAL,32000,40006,23120,29251,Slight decrease to be consistent with 2026 Costs
+3821,2027,4,General Fund,expense,CONTRIBUTION TO SF&PA,1100000,766000,626398,402649,"Annual Swat Fire & Protect Ass'n - increased for personnel, lost revenue, workers comp"
+3821,2027,4,General Fund,expense,ALS EXPENSE,23426,93676,355923,280264,Borough expense for annual ambulance services under DELCO MEMSA
+3821,2027,4,General Fund,expense,FIRE TRUCK REPAIR,50000,25000,45726,4720,Increased due to aging apparatus status
+3821,2027,4,General Fund,expense,FIRE ASSOCIATION AUDIT,12000,,,,New line - Payment to conduct audit of Borough provided funds
+3821,2027,4,General Fund,expense,FIRE ASSOCIATION CONSOLIDATION,6000,,,,New line - Funds allotted for SFPA to research consolidation with Media Fire & Garden City
+3821,2027,4,General Fund,expense,CODE INSPECTOR,1500,6000,2762,9110,Former Payroll Line - lowered for supplies in code enforcement
+3821,2027,4,General Fund,expense,ZONING OFFICER,25834,0,8940,0,3.5% Salary increase for P/T Zoning Officer
+3821,2027,4,General Fund,expense,DRAINAGE PLAN REVIEW,15000,6000,189835,135681,Payments for Drainage plan review of various Borough projects
+3821,2027,4,General Fund,expense,CONTRACTED BUILDING INSPECTION,35000,25000,28694,0,Contracted Services - Building Code Officer
+3821,2027,4,General Fund,expense,MISCELLANEOUS ENGINEERING,65000,0,15322,39357,"Rebalanced 15% to sewer fund, $ for miscellanous engineering services by Pennoni"
+3821,2027,4,General Fund,expense,EXPENSES FOR ZHB,4000,3000,1402,8840,Pass through to applicant
+3821,2027,4,General Fund,expense,PLANNING AND ZONING/GEN EXPENS,2500,1000,1044,3771,Supplies / Materials for Planning & Zoning
+3821,2027,4,General Fund,expense,ZONING LEGAL SERVICES,12000,4000,13797,7230,Increased to reflect higher ZHB utilization
+3821,2027,4,General Fund,expense,SUBDIVISION/LAND DEVELOPMENT E,2500,0,2438,0,Pass through to applicant
+3821,2027,4,General Fund,expense,HIGHWAY DEPT - ADMIN DUTIES,96876,9315,15873,14282,3.5% Salary increase for Public Works Director
+3821,2027,4,General Fund,expense,BEEPER PAY,5200,2691,2125,3905,On call pay for PW staff
+3821,2027,4,General Fund,expense,HIGHWAY DEPT - LABORORS,236614,,105932,174371,Consolidated various line items - Salary 3FT PWD laborers and 1PT Cleaner at Borough Hall
+3821,2027,4,General Fund,expense,HIGHWAY DEPT - OVERTIME,14000,,,,New line item - consolidation of PWD overtime wages Page 5
+3821,2027,5,General Fund,expense,STREET LIGHT MAINTENANCE,5000,10571,4274,13895,Reduced and moved majority of expenses to Liquid Fuels Fund
+3821,2027,5,General Fund,expense,STREET PAVING - COUNTY AID,5914,1145,968,1242,"Moved majority to Liquid Fuels FUnd, County Aid project only"
+3821,2027,5,General Fund,expense,EQUIPMENT & SUPPLIES,10600,,,,New line - misc needs - equipment / materials / supplies
+3821,2027,5,General Fund,expense,PARK MATERIALS AND SUPPLIES,3500,7000,353,496,Moved from Cost Center 454 - Reduced per 3 YR AVG
+3821,2027,5,General Fund,expense,VEHICLE REPAIRS & MAINTENANCE,15000,,,,New Line - Vehicle Repairs - Allocated 15% to Sewage & Garbage
+3821,2027,5,General Fund,expense,CLOTHING AND UNIFORMS,2100,2100,406,1963,"$525 per PWD employee for safety clothing, 15% allocated to Sewer & Garbage"
+3821,2027,5,General Fund,expense,PARK EQUIP MAINT/REPLACEMENT/R,1400,2000,992,514,"Funds for parks maintenance equipment - mowers, weed eaters, etc."
+3821,2027,5,General Fund,expense,PROFESSIONAL PARK MAINTENANCE,10000,10000,0,10000,Tree trimming in Borough parks
+3821,2027,5,General Fund,expense,STREET TREE PLANTING,15000,12300,3865,16050,Planting in various parks and along Borough streets
+3821,2027,5,General Fund,expense,STREET TREE MAINTENANCE AND RE,30000,22000,25725,28315,Maintainence of park trees and trees along Borough streets
+3821,2027,5,General Fund,expense,PAC CONTRIBUTION,25000,25000,25000,20000,Recommended by Gen Govt Committee
+3821,2027,5,General Fund,expense,SRA:CONTRIBUTION,20000,15000,15000,10000,Recommended by Gen Govt & PWD Committees
+3821,2027,5,General Fund,expense,SENIOR SERVICES,27500,27500,27500,25000,Recommended by Gen Govt Committee
+3821,2027,5,General Fund,expense,TOWN CENTER CONTRIBUTION,44360,44360,44360,48102,Recommended by Gen Govt Committee
+3821,2027,5,General Fund,expense,CONTRIBUTION TO HRC,1000,500,0,0,Recommended by Gen Govt Committee
+3821,2027,5,General Fund,expense,CONTRIBUTION TO HORT SOCIETY,3500,0,0,0,New Line Item - Recommended by Gen Govt Committee
+3821,2027,5,General Fund,expense,CONTRIBUTION TO EAC,900,0,0,0,New Line Item - Recommended by Environment Committee
+3821,2027,5,General Fund,expense,CONT TO SWARTHMORE LIBRARY,290728,276884,276884,236653,Annual contribution to Swarthmore Library (5% overall increase)
+3821,2027,5,General Fund,expense,2008 Note,35700,51300,,,"New Line Item, Consolidation of line items for debt service"
+3821,2027,5,General Fund,expense,2013 Note,30450,66049,,,"New Line Item, Consolidation of line items for debt service"
+3821,2027,5,General Fund,expense,2023 Note,65722,,,,"New Line Item, Consolidation of line items for debt service"
+3821,2027,5,General Fund,expense,MISCELLANEOUS EXPENDITURES,10000,14000,58628,376082,Reduced and moved expenses to more accurate line items
+3821,2027,5,General Fund,expense,UNEMPLOYMENT INSURANCE,5400,5400,3974,4739,"Set at 2026 budget level, projected to decrease"
+3821,2027,5,General Fund,expense,PROP/CASUALTY/LIABILITY/AUTO,116618,94893,49880,69768,"9% Increase, $7,775 credit applied, $9,446 applied to Sewer fund"
+3821,2027,5,General Fund,expense,SOCIAL SECURITY TAXES,169006,114132,82182,141766,7.65% FICA
+3821,2027,5,General Fund,expense,DISABILITY & LIFE INSURANCE,22000,21120,12328,18364,"Raised slightly, annual cost increases"
+3821,2027,5,General Fund,expense,HEALTH INSURANCE,728612,559948,392245,464264,Slight increase / rebalanced with Sewer & Garbage Fund. Utilizing $44K credit from DVT
+3821,2027,5,General Fund,expense,WORKER'S COMPENSATION,31726,50466,16529,19153,"9% Reduction, $17,517 Credit DVT, & $2,797 allocated to Sewer & Garbage"
+3821,2027,5,General Fund,expense,WORKERS COMP REIMBURSEMENTS,0,0,0,0,Line item eliminated
+3821,2027,5,General Fund,expense,POST-RETIREMENT HEALTH BENEFIT,13000,105232,0,110872,Reduced with creation of OPEB Fund
+3821,2027,5,General Fund,expense,CONTR. TO 457(b) PLAN,21656,33598,0,15239,4% Wage Match to 457B Plan for employees
+3821,2027,5,General Fund,expense,CONTR. TO 401A Plan,27070,0,0,0,5% Wage Match to 401A Plan for employees Page 6
+3821,2027,6,General Fund,expense,MINIMUM MUNICIPAL OBLIGATION,552375,,0,355727,"$499,375 - Police MMO, $53,000 Fire Relief"
+3821,2027,6,General Fund,expense,CONTRIB TO GRANT FUNDING,30000,,27504,0,"$30,000 for street light imrprovements in town center"
+3821,2027,6,General Fund,expense,CONTRIBUTION TO CAPITAL EXPENSES,187000,22913,0,28000,"See Capital Fund, below"
+3821,2027,6,General Fund,expense,CONTRIBUTION TO OPERATING RESERVE,70000,0,0,0,New Line - per Resolution
+3821,2027,6,General Fund,expense,BALANCE FORWARD,120238,0,0,0,Surplus carried forward to 2028 Page 7
+3821,2027,7,Sewer & Solid Waste Fund,revenue,INTEREST,42000,46200,28181,44688,Slightly lower collection due to market shifts
+3821,2027,7,Sewer & Solid Waste Fund,revenue,CURRENT YEAR SOLID WASTE FEES,774427,916250,896467,820440,$525 Annual Garbage Fee
+3821,2027,7,Sewer & Solid Waste Fund,revenue,PRIOR YEAR SOLID WASTE FEES,2000,5000,1820,11619,Significant drop off from prior years
+3821,2027,7,Sewer & Solid Waste Fund,revenue,CURRENT YEAR SEWER FEES,1320900,1295020,1253217,1302901,"$9.75 / 1,000 gallons"
+3821,2027,7,Sewer & Solid Waste Fund,revenue,PRIOR YEAR SEWER FEES,6500,6500,489,7098,Consistent with prior years
+3821,2027,7,Sewer & Solid Waste Fund,revenue,SALE OF RECYCLABLES,2000,1000,4224,4141,Annual sale of recycled misc materials
+3821,2027,7,Sewer & Solid Waste Fund,revenue,PERFORMANCE GRANT REVENUE,10000,9418,0,14806,Annual PA Recycling Performance grant award
+3821,2027,7,Sewer & Solid Waste Fund,revenue,LEAF MULCH SALES,14000,24000,11828,17362,Annual sale of leaf mulch
+3821,2027,7,Sewer & Solid Waste Fund,expense,ADMINISTRATIVE ASSISTANT,9591,17348,9975,15493,Rebalancing 15% of Administrative Asst
+3821,2027,7,Sewer & Solid Waste Fund,expense,BOOKKEEPER,0,17484,7762,15725,Eliminated in 2027
+3821,2027,7,Sewer & Solid Waste Fund,expense,SALARY OF MANAGER/SECRETARY,20250,42000,41613,25105,Rebalancing 15% of Manager salary
+3821,2027,7,Sewer & Solid Waste Fund,expense,SALARY OF ASST MANAGER,14250,0,0,0,Rebalancing 15% of Asst Manager salary
+3821,2027,7,Sewer & Solid Waste Fund,expense,OVERTIME,750,270,460,711,OT Reimbursement to GF for Public Works
+3821,2027,7,Sewer & Solid Waste Fund,expense,AUDITING SERVICES,3600,6300,11594,9472,Rebalancing 15% of annual audit cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,LEGAL SERVICES,6750,10800,14208,11902,Rebalancing 15% of annual Solicitor cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,SALARY OF TAX COLLECTOR,2000,8121,3113,6539,Rebalancing 15% of annual Tax Collector cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,TAX COLLECTOR'S BOND/INS.,750,1000,557,999,Rebalancing 15% of annual Tax Collector Bond/Insurance cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,GENERAL EXPENSE:TAX COLLECTOR,2600,1250,2468,2358,Rebalancing 15% of annual Tax Collector cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,BILLING EXPENSES,1600,1350,0,1520,Rebalancing 15% of annual tax billing cost
+3821,2027,7,Sewer & Solid Waste Fund,expense,BDG - MATERIALS & SUPPLIES,2200,800,1978,1933,"Supplies for PWD building (toiletries, cleaning supplies)"
+3821,2027,7,Sewer & Solid Waste Fund,expense,MUNICIPAL BUILDING - GAS,8500,2280,5893,4424,Gas for PWD building - increased due to market demand
+3821,2027,7,Sewer & Solid Waste Fund,expense,MUNICIPAL BUILDING - ELECTRIC,21000,5360,13885,9634,Elec for PWD building - increased due to market demand
+3821,2027,7,Sewer & Solid Waste Fund,expense,MUNICIPAL BLDG - WATER,3300,1700,2702,2896,Aqua water charges - slight increase due to demand
+3821,2027,7,Sewer & Solid Waste Fund,expense,BOROUGH CREW WAGES - SEWER,30841,11500,5247,6349,10% of PWD employee wages paid to General Fund Page 8
+3821,2027,8,Sewer & Solid Waste Fund,expense,BOROUGH CREW WAGES - RECYCLING,15887,8000,4292,8403,5% of PWD employee wages paid to General Fund
+3821,2027,8,Sewer & Solid Waste Fund,expense,RECYCLING COLLECTION,136895,131630,98723,128304,Recycling collection - 2027 rate increase
+3821,2027,8,Sewer & Solid Waste Fund,expense,RECYCLING DISPOSAL,28000,36244,10542,24662,Recycling tipping fee - 2027 rate decrease
+3821,2027,8,Sewer & Solid Waste Fund,expense,SEWER:MATERIAL & SUPPLIES,1500,500,3010,856,Annual supplies for sewer system maintenance
+3821,2027,8,Sewer & Solid Waste Fund,expense,PREV SEWER MAINT & ENGINEERING,10000,30000,40743,44935,Misc engineering (Pennoni) for sewer repairs
+3821,2027,8,Sewer & Solid Waste Fund,expense,SEWER EQUIP MAINT & REPAIR,10000,1000,5200,20525,Annual minor repairs to sewage system
+3821,2027,8,Sewer & Solid Waste Fund,expense,SEWER:PLANT OPERATIONS,1134580,1025690,810370,1101534,3% increase on 2025 Total Useage
+3821,2027,8,Sewer & Solid Waste Fund,expense,REFUSE COLLECTION,273790,263260,199170,257621,Garbage collection - 2027 rate increase
+3821,2027,8,Sewer & Solid Waste Fund,expense,REFUSE DISPOSAL/DCSWA,120000,133875,85166,107918,4% increase per DCSWA - 2027 rate increase
+3821,2027,8,Sewer & Solid Waste Fund,expense,LEAF COLLECTION WAGES,0,34000,1053,16169,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,COMPOST DELIVERY:WAGES,0,7000,6012,7097,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,YARD WASTE RECYCLING WAGES,0,6210,1270,2736,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,YARD WASTE DISPOSAL,17000,14000,11850,15490,Yard waste tipping fee - 2027 rate increase
+3821,2027,8,Sewer & Solid Waste Fund,expense,YARD WASTE COLLECTION,161472,214838,148212,75816,Yard waste collection fee - 2027 rate increase. Compost collection/tipping - 2027 cost decrease ($93K)
+3821,2027,8,Sewer & Solid Waste Fund,expense,COLLECTOR OPERATING EXPENSE,5000,6000,641,18116,Lowered to be consistent with prior years
+3821,2027,8,Sewer & Solid Waste Fund,expense,COMPOSTING EXPENSE,7500,3000,6522,3441,Increased to reflect annual cost of supplies
+3821,2027,8,Sewer & Solid Waste Fund,expense,COMPOSTING/SITE MAINT. WAGES,0,4658,4724,4134,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,HIGHWAY DEPT - ADMIN DUTIES,0,9315,4849,14664,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,BEEPER PAY,0,2691,675,1255,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,HIGHWAY DEPT - VACATION,0,10571,4304,7321,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,HIGHWAY DEPT - PERSONAL/COMP T,0,1145,0,370,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,HIGHWAY DEPT - SICK LEAVE,0,8586,3004,2568,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,HIGHWAY DEPT - HOLIDAY,0,7977,2207,4267,"Eliminated, combined into Cost Center 421"
+3821,2027,8,Sewer & Solid Waste Fund,expense,UNTITLED ADDITIONAL DUMP TRUCK EXP,0,15000,13792,9456,"Eliminated, Moved to Capital Fund"
+3821,2027,8,Sewer & Solid Waste Fund,expense,NEW MID SIZE DUMP TRUCK,0,6020,0,0,"Eliminated, Moved to Capital Fund"
+3821,2027,8,Sewer & Solid Waste Fund,expense,FUEL EXPENSE,8500,7500,2142,7657,Fuel charges for PWD vehicles
+3821,2027,8,Sewer & Solid Waste Fund,expense,VEHICLE MAINT:WAGES,2250,15500,9107,16811,15% of PWD Vehicle Maint costs paid to General Fund
+3821,2027,8,Sewer & Solid Waste Fund,expense,DVRFA PRINCIPAL,0,5700,0,5500,Moved to General Fund cost center 471
+3821,2027,8,Sewer & Solid Waste Fund,expense,DVRFA INTEREST,0,8010,7915,12201,Moved to General Fund cost center 471
+3821,2027,8,Sewer & Solid Waste Fund,expense,MISCELLANEOUS EXPENDITURES,315,0,15750,0,Annual PWD safety clothing paid to General Fund
+3821,2027,8,Sewer & Solid Waste Fund,expense,UNEMPLOYMENT INSURANCE,381,600,385,350,15% of PWD & Admin unemployment paid to General Fund
+3821,2027,8,Sewer & Solid Waste Fund,expense,PROP/CASUALTY/LIABILITY/AUTO,8770,15448,34249,40558,15% of PWD auto premium paid to General Fund Page 9
+3821,2027,9,Sewer & Solid Waste Fund,expense,SOCIAL SECURITY TAXES,6947,12681,4187,9599,15% PWD & ADMIN FICA
+3821,2027,9,Sewer & Solid Waste Fund,expense,DISABILITY & LIFE INSURANCE,1551,2880,3591,4319,15% PWD & ADMIN LIFE & DISABILITY
+3821,2027,9,Sewer & Solid Waste Fund,expense,HEALTH INSURANCE,51368,98814,130954,144053,15% PWD & ADMIN HEALTHCARE
+3821,2027,9,Sewer & Solid Waste Fund,expense,MINIMUM MUNICIPAL OBLIGATION,3881,0,53545,0,15% PWD & ADMIN PENSION
+3821,2027,9,Sewer & Solid Waste Fund,expense,WORKER'S COMPENSATION,3669,5607,28006,5931,15% PWD & ADMIN WORKERS COMP
+3821,2027,9,Sewer & Solid Waste Fund,expense,BALANCE FORWARD,34590,0,0,0,Surplus Carried forward to 2028 Page 10
+3821,2027,10,Liquid Fuels Fund,revenue,INTEREST,5000,10000,7062,10585,Decreased due to fund balance utilization
+3821,2027,10,Liquid Fuels Fund,revenue,MOTOR VEHICLE FUEL TAXES,162000,166431,164498,167021,Decrease in Borough revenues received from PA Gas Tax
+3821,2027,10,Liquid Fuels Fund,revenue,MISCELLANEOUS REVENUE,0,0,0,0,
+3821,2027,10,Liquid Fuels Fund,revenue,BALANCE FORWARD,120500,0,0,0,Fund Balance Utilization for 2027 (expected surplus carried to 2028)
+3821,2027,10,Liquid Fuels Fund,expense,SMALL TOOLS AND EQUIPMENT,1000,1000,0,154,Consistent with prior years for PW equipment
+3821,2027,10,Liquid Fuels Fund,expense,SNOW REMOVAL:MAT & SUPPLIES,30000,13000,7629,8833,Moved Road Salt from General Fund
+3821,2027,10,Liquid Fuels Fund,expense,SNOW EQUIP MAINT:MAT & SUPPLIE,5000,2200,3759,196,Increased to address PW equipment needs
+3821,2027,10,Liquid Fuels Fund,expense,TRAFFIC SIGNAL MAINT & POWER,18000,2500,15817,2570,Moved from General Fund for signal repairs
+3821,2027,10,Liquid Fuels Fund,expense,STREET SIGNS & MARKINGS,3000,2500,3783,1817,2027 expected cost for street signs / markings
+3821,2027,10,Liquid Fuels Fund,expense,ANNUAL STREET STRIPING,4000,4500,3015,0,2027 expected cost for street striping
+3821,2027,10,Liquid Fuels Fund,expense,STREET LIGHT POWER,63000,0,0,0,Moved from General Fund for street lighting
+3821,2027,10,Liquid Fuels Fund,expense,STREET LIGHT MAINTENANCE,15500,0,0,413,Moved from General Fund for street lighting maintenance
+3821,2027,10,Liquid Fuels Fund,expense,STORM SEWERS:MATERIALS AND SUP,1000,650,0,0,2027 expected cost
+3821,2027,10,Liquid Fuels Fund,expense,STORM SEWERS:ENGINEERING AND C,10000,6500,0,0,Added for Road Repairs - inlet boxes for stormwater
+3821,2027,10,Liquid Fuels Fund,expense,STREET REPAIR:MAT & SUPPLIES,5000,1000,233,3781,2027 expected cost
+3821,2027,10,Liquid Fuels Fund,expense,ANNUAL STREET PAVING CONTRACT,120000,99035,7904,65537,Increased to reflect $120K annual paving goal
+3821,2027,10,Liquid Fuels Fund,expense,ENGINEERING,0,8400,0,0,Eliminated
+3821,2027,10,Liquid Fuels Fund,expense,MISCELLANEOUS ENGINEERING,12000,5000,45338,11527,10% of street paving contract Page 11
+3821,2027,11,Capital Fund,revenue,General Fund Capital Transfer,187000,,,,Annual Allocation from General Fund
+3821,2027,11,Capital Fund,revenue,Interest,5000,,,,Annual reciepts for interest collections
+3821,2027,11,Capital Fund,revenue,General Fund Grant Funding Transfer,30000,,,,Annual Allocation from General Fund
+3821,2027,11,Capital Fund,revenue,Misc Revenue,0,,,,Used for grant revenues
+3821,2027,11,Capital Fund,revenue,Balance Forward,120420,,,,Existing Capital Fund Balance used
+3821,2027,11,Capital Fund,expense,Administration Capital Expense,12000,,,,"1 Computer, Furniture/Eq, Council Chairs"
+3821,2027,11,Capital Fund,expense,Public Works Capital Expense,207420,,,,"PWD Furnace, Blacktop, Salt Shed Door, Dump Truck, GIS System"
+3821,2027,11,Capital Fund,expense,Police Capital Expense,54000,,,,Equipment replacement
+3821,2027,11,Capital Fund,expense,Fire Department Capital Expense,37000,,,,Fire Intake & Fire Attack Hoses
+3821,2027,11,Capital Fund,expense,Library Capital Expense,2000,,,,Misc Equipment - Computers / Copiers
+3821,2027,11,Capital Fund,expense,Grant Project Expense,30000,,,,Town Center Light Replacement
+3821,2027,11,Capital Fund,expense,Misc Expenses,0,,,,"Emergency / Small Grant Expense, etc."

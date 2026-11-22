@@ -31,8 +31,10 @@ function writeParams(params) {
 const DOLLARS = { mode: "nominal" };
 const CPI = DATA.cpi;
 function hasCpi() { return !!(CPI && CPI.index); }
+// Years after the latest CPI (a proposed budget for next year) are left in
+// the latest year's prices: their inflation isn't known yet.
 function factor(year) {
-  if (DOLLARS.mode !== "real" || !hasCpi()) return 1;
+  if (DOLLARS.mode !== "real" || !hasCpi() || !(year in CPI.index)) return 1;
   return CPI.index[CPI.ref_year] / CPI.index[year];
 }
 function adjust(v, year) { return v === null || v === undefined ? null : v * factor(year); }
@@ -99,6 +101,18 @@ function seriesFor(id) {
 function revised(d) {
   return d.restated !== null && d.adoptedNominal !== null && Math.abs(d.restated - d.adoptedNominal) > ROUNDING;
 }
+
+// ---------------------------------------------------------------- proposed budget
+// The latest proposed (not yet adopted) budget, totalled into the overview's
+// categories; see scripts/build_proposed_summary.py.
+
+const PROPOSED = DATA.proposed || null;
+function isProposed(year) { return !!PROPOSED && year === PROPOSED.year; }
+function proposedValue(id) {
+  return PROPOSED && id in PROPOSED.items ? adjust(PROPOSED.items[id], PROPOSED.year) : null;
+}
+function proposedEstimated(id) { return !!PROPOSED && PROPOSED.items_estimated.includes(id); }
+function yearLabel(year) { return isProposed(year) ? `${year} (proposed)` : String(year); }
 
 // ---------------------------------------------------------------- page bits
 

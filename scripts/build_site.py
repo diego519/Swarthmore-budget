@@ -17,6 +17,9 @@ Inputs:
     data/sources.csv                   document titles
     data/external/cpi_u.csv            consumer prices, for the inflation
                                        adjustment (from fetch_cpi.py; optional)
+    data/processed/proposed_budget_summary.csv
+                                       the latest proposed budget, by category
+                                       (from build_proposed_summary.py; optional)
 
 Usage:
     uv run scripts/build_site.py
@@ -25,6 +28,7 @@ Usage:
 from __future__ import annotations
 
 import calendar
+import datetime
 import json
 import sys
 from collections import defaultdict
@@ -38,10 +42,16 @@ OUTPUT_DIR = REPO_ROOT / "docs"
 SERIES_CSV = PROCESSED_DIR / "budget_series.csv"
 ITEMS_CSV = DATA_DIR / "mappings" / "budget_items.csv"
 CPI_CSV = DATA_DIR / "external" / "cpi_u.csv"
+PROPOSED_CSV = PROCESSED_DIR / "proposed_budget_summary.csv"
 
 REPO_URL = "https://github.com/diego519/Swarthmore-budget"
 DOC_URL = "https://www.swarthmorepa.org/DocumentCenter/View/{doc_id}"
 DEFAULT_ITEM = "exp.total"
+
+
+def money(v: int) -> str:
+    return f"${v:,}"
+
 
 # Short keys keep the embedded JSON small: a = adopted budget, e = estimated
 # actual, r = restated budget; d = document id, p = page, c = hand-corrected,
@@ -49,54 +59,85 @@ DEFAULT_ITEM = "exp.total"
 MEASURE_KEYS = {"adopted_budget": "a", "estimated_actual": "e", "restated_budget": "r"}
 
 
-def cat(label: str, items: list[str], link: str | None = None) -> dict:
-    """A category on the overview page: the sum of one or more budget lines.
+def cat(key: str, label: str, items: list[str], link: str | None = None) -> dict:
+    """A "broad" category on the overview page: the sum of one or more budget
+    lines. `key` names it in proposed budgets (proposed_budget_summary.csv);
     `link` is the line the explorer opens for it (only for single lines)."""
-    return {"label": label, "items": items, "link": link or (items[0] if len(items) == 1 else None)}
+    return {
+        "key": key,
+        "label": label,
+        "items": items,
+        "link": link or (items[0] if len(items) == 1 else None),
+    }
 
 
-# The overview page's categories. "groups" stack up to the total each year,
-# bottom to top (they must add up to it: checked below). "broad" is the finer
-# split used for "what changed"; it must add up to the total too.
+def group(label: str, items: list[str], keys: list[str]) -> dict:
+    """A group of broad categories, stacked on the overview's column chart.
+    `items` give its adopted figures; `keys` its proposed ones."""
+    return {"label": label, "items": items, "keys": keys, "link": items[0] if len(items) == 1 else None}
+
+
+# The overview page's categories. "broad" is the split used for "what
+# changed"; "groups" stack up to the total each year, bottom to top. Both must
+# add up to the total (checked below), and each group's keys must cover the
+# same budget lines as its items.
 OVERVIEW = {
     "spending": {
         "total": "exp.total",
-        "groups": [
-            cat("Public safety", ["exp.ps.total"]),
-            cat("Public works", ["exp.pw.total"]),
-            cat("General government", ["exp.gg.total"]),
-            cat("Community services", ["exp.cs.total"]),
-        ],
         "broad": [
-            cat("Police", ["exp.ps.police.subtotal"]),
-            cat("Fire protection", ["exp.ps.fire.subtotal"]),
-            cat("General government", ["exp.gg.total"]),
-            cat("Streets", ["exp.pw.streets.subtotal"]),
-            cat("Sanitary sewer", ["exp.pw.sewer.subtotal"]),
-            cat("Solid waste (trash & recycling)", ["exp.pw.solid_waste.subtotal"]),
-            cat("Parks & street trees", ["exp.pw.parks.subtotal"]),
-            cat("Public works vehicles", ["exp.pw.vehicles.subtotal"]),
-            cat("Public works, other", ["exp.pw.misc.subtotal"]),
-            cat("Community services", ["exp.cs.total"]),
+            cat("police", "Police", ["exp.ps.police.subtotal"]),
+            cat("fire", "Fire protection", ["exp.ps.fire.subtotal"]),
+            cat("gg", "General government", ["exp.gg.total"]),
+            cat("streets", "Streets", ["exp.pw.streets.subtotal"]),
+            cat("sewer", "Sanitary sewer", ["exp.pw.sewer.subtotal"]),
+            cat("solid_waste", "Solid waste (trash & recycling)", ["exp.pw.solid_waste.subtotal"]),
+            cat("parks", "Parks & street trees", ["exp.pw.parks.subtotal"]),
+            cat("pw_vehicles", "Public works vehicles", ["exp.pw.vehicles.subtotal"]),
+            cat("pw_other", "Public works, other", ["exp.pw.misc.subtotal"]),
+            cat("community", "Community services", ["exp.cs.total"]),
+        ],
+        "groups": [
+            group("Public safety", ["exp.ps.total"], ["police", "fire"]),
+            group(
+                "Public works",
+                ["exp.pw.total"],
+                ["streets", "sewer", "solid_waste", "parks", "pw_vehicles", "pw_other"],
+            ),
+            group("General government", ["exp.gg.total"], ["gg"]),
+            group("Community services", ["exp.cs.total"], ["community"]),
         ],
     },
     "revenue": {
         "total": "rev.total",
-        "groups": [
-            cat("Property taxes", ["rev.property_taxes"]),
-            cat("Sewer & trash fees", ["rev.sewer_fees", "rev.trash_fees"]),
-            cat("Other taxes & state aid", ["rev.other_taxes", "rev.intergovernmental"]),
-            cat("Miscellaneous revenue", ["rev.misc.subtotal"]),
-            cat("Prior-year funds", ["rev.prior_year_revenue", "rev.prior_year_pension_revenue"]),
-        ],
         "broad": [
-            cat("Property taxes", ["rev.property_taxes"]),
-            cat("Sewer fees", ["rev.sewer_fees"]),
-            cat("Trash fees", ["rev.trash_fees"]),
-            cat("Other taxes", ["rev.other_taxes"]),
-            cat("Intergovernmental (state aid)", ["rev.intergovernmental"]),
-            cat("Miscellaneous revenue", ["rev.misc.subtotal"]),
-            cat("Prior-year funds", ["rev.prior_year_revenue", "rev.prior_year_pension_revenue"]),
+            cat("property_taxes", "Property taxes", ["rev.property_taxes"]),
+            cat("eit", "Earned income tax", []),
+            cat("sewer_fees", "Sewer fees", ["rev.sewer_fees"]),
+            cat("trash_fees", "Trash fees", ["rev.trash_fees"]),
+            cat("other_taxes", "Other taxes", ["rev.other_taxes"]),
+            cat("intergovernmental", "Intergovernmental (state aid)", ["rev.intergovernmental"]),
+            cat("misc_revenue", "Miscellaneous revenue", ["rev.misc.subtotal"]),
+            cat(
+                "prior_year_funds",
+                "Prior-year funds",
+                ["rev.prior_year_revenue", "rev.prior_year_pension_revenue"],
+            ),
+        ],
+        "groups": [
+            group("Property taxes", ["rev.property_taxes"], ["property_taxes"]),
+            group("Sewer & trash fees", ["rev.sewer_fees", "rev.trash_fees"], ["sewer_fees", "trash_fees"]),
+            group(
+                "Other taxes & state aid",
+                ["rev.other_taxes", "rev.intergovernmental"],
+                ["other_taxes", "intergovernmental"],
+            ),
+            group("Miscellaneous revenue", ["rev.misc.subtotal"], ["misc_revenue"]),
+            group(
+                "Prior-year funds",
+                ["rev.prior_year_revenue", "rev.prior_year_pension_revenue"],
+                ["prior_year_funds"],
+            ),
+            group("Earned income tax", [], ["eit"]),
         ],
     },
     "net": "exp.net",
@@ -113,6 +154,61 @@ CATEGORY_NOTE = (
     "<strong>prior-year funds</strong> are fund balances carried over from earlier years."
 )
 TOLERANCE = 5  # dollars: categories may differ from printed totals by rounding
+
+
+def load_proposed(sources: dict) -> dict | None:
+    """The latest proposed budget, totalled into the overview's categories
+    (from build_proposed_summary.py), and the explorer lines it can be
+    compared with: single-line categories, groups and totals."""
+    rows = read_csv(PROPOSED_CSV)
+    if not rows:
+        return None
+    year = max(int(r["fiscal_year"]) for r in rows)
+    rows = [r for r in rows if int(r["fiscal_year"]) == year]
+    other = {
+        (r["side"], r["category"]): int(r["amount"]) for r in rows if r["side"] not in ("spending", "revenue")
+    }
+    rows = [r for r in rows if r["side"] in ("spending", "revenue")]
+    amounts = {r["category"]: int(r["amount"]) for r in rows}
+    estimated = {r["category"] for r in rows if r["estimated"]}
+    keys_for: dict[str, list[str]] = {}
+    for view in ("spending", "revenue"):
+        for c in OVERVIEW[view]["broad"]:
+            if c["link"]:
+                keys_for[c["link"]] = [c["key"]]
+        for g in OVERVIEW[view]["groups"]:
+            if g["link"]:
+                keys_for[g["link"]] = g["keys"]
+        keys_for[OVERVIEW[view]["total"]] = [c["key"] for c in OVERVIEW[view]["broad"]]
+    spending = sum(int(r["amount"]) for r in rows if r["side"] == "spending")
+    revenue = sum(int(r["amount"]) for r in rows if r["side"] == "revenue")
+    items = {i: sum(amounts[k] for k in ks) for i, ks in keys_for.items()}
+    items[OVERVIEW["net"]] = revenue - spending
+    doc_id = rows[0]["doc_id"]
+    return {
+        "excluded": {
+            f"{side.split('_')[1]}_{cat}": amount
+            for (side, cat), amount in other.items()
+            if side != "allocated"
+        },
+        "benefits": other.get(("allocated", "payroll_benefits"), 0),
+        "advertised": sources[doc_id]["period"],
+        "year": year,
+        "doc_id": doc_id,
+        "title": sources[doc_id]["title"],
+        "url": DOC_URL.format(doc_id=doc_id),
+        "categories": amounts,
+        "estimated": sorted(estimated),
+        "spending": spending,
+        "revenue": revenue,
+        "items": items,
+        # The split between departments is estimated; the totals are exact.
+        "items_estimated": sorted(
+            i
+            for i, ks in keys_for.items()
+            if estimated & set(ks) and i not in (OVERVIEW["spending"]["total"], OVERVIEW["revenue"]["total"])
+        ),
+    }
 
 
 def load_cpi() -> dict | None:
@@ -180,6 +276,20 @@ def main() -> int:
                 if total is not None and abs(total - parts) > TOLERANCE:
                     sys.exit(f"overview {view_name}/{kind}: {y} categories add to {parts}, total is {total}")
 
+        # Each broad category belongs to exactly one group, and a group's
+        # keys must cover the same lines as its items.
+        broad = {c["key"]: c for c in view["broad"]}
+        grouped = [k for g in view["groups"] for k in g["keys"]]
+        if sorted(grouped) != sorted(broad):
+            sys.exit(f"overview {view_name}: groups' keys {sorted(grouped)} != broad keys {sorted(broad)}")
+        for g in view["groups"]:
+            for y in years:
+                a = sum(values[i].get(y, {}).get("a", 0) for i in g["items"])
+                b = sum(values[i].get(y, {}).get("a", 0) for k in g["keys"] for i in broad[k]["items"])
+                if abs(a - b) > TOLERANCE:
+                    sys.exit(f"overview {view_name}: group {g['label']} {y}: items {a} != keys {b}")
+
+    proposed = load_proposed(sources)
     cpi = load_cpi()
     if cpi and not all(y in cpi["index"] for y in years):
         sys.exit(f"{rel(CPI_CSV)} lacks some years in {years[0]}-{years[-1]}; run fetch_cpi.py")
@@ -207,6 +317,30 @@ def main() -> int:
     else:
         dollars_note = "Figures are in <strong>nominal dollars</strong>: they are not adjusted for inflation."
 
+    if proposed:
+        x = proposed["excluded"]
+        advertised = datetime.date.fromisoformat(proposed["advertised"]).strftime("%B %-d, %Y")
+        proposed_note = (
+            f"<strong>{proposed['year']} is the proposed budget</strong>, advertised on {advertised} and not yet "
+            "adopted. It is laid out by fund and type of expense rather than by department, so each of its lines was "
+            "matched by hand to these categories (<code>data/mappings/proposed_budget_categories.csv</code>). To "
+            "compare like with like: money moving between the borough's own funds is left out "
+            f"({money(x['revenue_interfund'])} of revenue and {money(x['expense_interfund'])} of matching sewer-fund "
+            "charges, which the document does not quite reconcile); planned surpluses carried to the next year "
+            f"({money(x['expense_surplus'])}) are not counted as spending; the new Capital Fund is left out, and the "
+            "General Fund's payments into it are counted under general government, as in earlier budgets. Employee "
+            f"benefits ({money(proposed['benefits'])}), now budgeted centrally, are shared among general government, "
+            "police and public works in proportion to salaries, so those category figures (marked *) are estimates. "
+            "Totals are exact."
+            + (
+                f" Adjusted for inflation, {proposed['year']} figures are left in {cpi['ref_year']} prices."
+                if cpi
+                else ""
+            )
+        )
+    else:
+        proposed_note = ""
+
     data = {
         "years": years,
         "default_item": DEFAULT_ITEM,
@@ -233,6 +367,7 @@ def main() -> int:
         "docs": docs,
         "overview": OVERVIEW,
         "cpi": cpi,
+        "proposed": proposed,
     }
 
     # Embedding JSON in a <script> element: "</" must not appear literally.
@@ -247,6 +382,7 @@ def main() -> int:
         ),
         "__DOLLARS_NOTE__": dollars_note,
         "__CATEGORY_NOTE__": CATEGORY_NOTE,
+        "__PROPOSED_NOTE__": proposed_note,
     }
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     for template, output in PAGES.items():

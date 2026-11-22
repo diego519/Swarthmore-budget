@@ -1,0 +1,243 @@
+fiscal_year,fund,section,page,account,category,payroll,note
+2027,General Fund,revenue,1,CURRENT YEAR REAL ESTATE TAXES,property_taxes,,
+2027,General Fund,revenue,1,EMERGENCY SERVICES TAX,other_taxes,,"Emergency services tax; counted with other taxes, as in the 2026 budget. Eliminated in 2027."
+2027,General Fund,revenue,1,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,
+2027,General Fund,revenue,1,INTERIM REAL ESTATE TAXES,property_taxes,,
+2027,General Fund,revenue,1,REAL ESTATE TRANSFER TAX,other_taxes,,
+2027,General Fund,revenue,1,LST/LOCAL SERVICES TAX,other_taxes,,
+2027,General Fund,revenue,1,EARNED INCOME TAXES,eit,,New 1% tax on earned income (wages).
+2027,General Fund,revenue,1,BUILDING PERMITS,misc_revenue,,
+2027,General Fund,revenue,1,CONTRACTOR'S LICENSE,misc_revenue,,
+2027,General Fund,revenue,1,USE AND OCCUPANCY CERTIFICATES,misc_revenue,,
+2027,General Fund,revenue,1,POLICE SERVICES,misc_revenue,,
+2027,General Fund,revenue,1,RENTAL INSPECTION,misc_revenue,,
+2027,General Fund,revenue,1,STREET OPENING,misc_revenue,,
+2027,General Fund,revenue,1,MOTOR VEHICLE FINES,misc_revenue,,
+2027,General Fund,revenue,1,VIOLATION OF ORDINANCES,misc_revenue,,
+2027,General Fund,revenue,1,INTEREST,misc_revenue,,
+2027,General Fund,revenue,1,PUBLIC UTILITES REALTY TAX,intergovernmental,,
+2027,General Fund,revenue,1,COUNTY AID,intergovernmental,,
+2027,General Fund,revenue,1,SEWAGE & SOLID WASTE FUND TRANSFER,interfund,,"Reimbursement from the Sewer & Solid Waste Fund for its share of staff and overhead: money moving between the borough's own funds, so excluded (the matching sewer-fund lines are excluded too)."
+2027,General Fund,revenue,1,401 A REIMBURSEMENT,intergovernmental,,
+2027,General Fund,revenue,1,FOREIGN CASUALTY INSURANCE TAX,intergovernmental,,
+2027,General Fund,revenue,1,PARKING METER REVENUE,misc_revenue,,
+2027,General Fund,revenue,2,PARKING PERMITS,misc_revenue,,
+2027,General Fund,revenue,2,POLICE SERVICES,misc_revenue,,
+2027,General Fund,revenue,2,LIFE SAFETY SERVICES,misc_revenue,,
+2027,General Fund,revenue,2,RUTLEDGE BOROUGH - SNOW PLOWING,misc_revenue,,
+2027,General Fund,revenue,2,TREE COMMITTEE SALES,misc_revenue,,
+2027,General Fund,revenue,2,CHARGE FOR TREE REMOVAL,misc_revenue,,
+2027,General Fund,revenue,2,MISCELLANEOUS REVENUE,misc_revenue,,
+2027,General Fund,revenue,2,CABLE FRANCHISE FEES,misc_revenue,,
+2027,General Fund,revenue,2,ACCIDENT REPORTS,misc_revenue,,
+2027,General Fund,revenue,2,ZHB/SPECIAL EXCEPTION,misc_revenue,,
+2027,General Fund,revenue,2,SUB/LAND DEVELOPMENT APP.FEE,misc_revenue,,
+2027,General Fund,revenue,2,STORM WATER MGNT APP. FEE,misc_revenue,,
+2027,General Fund,revenue,2,SUPPLEMENTAL CONTRIBUTION,misc_revenue,,
+2027,General Fund,revenue,2,CONTRIBUTION FROM OTHER SOURCE,misc_revenue,,
+2027,General Fund,expense,2,ADMINISTRATIVE ASSISTANT,gg,yes,
+2027,General Fund,expense,2,BOOKKEEPER,gg,,"Temporary contracted bookkeeper, not payroll."
+2027,General Fund,expense,2,MAYOR SALARY,gg,yes,
+2027,General Fund,expense,2,COUNCIL SALARIES,gg,yes,
+2027,General Fund,expense,2,SALARY OF MANAGER/SECRETARY,gg,yes,
+2027,General Fund,expense,2,SALARY OF ASST MANAGER,gg,yes,
+2027,General Fund,expense,2,OVERTIME,gg,yes,
+2027,General Fund,expense,2,OFFICE SUPPLIES,gg,,
+2027,General Fund,expense,2,POSTAGE,gg,,
+2027,General Fund,expense,2,MEETING VIDEO,gg,,
+2027,General Fund,expense,2,PROFESSIONAL DUES,gg,,
+2027,General Fund,expense,2,CONFERENCE FEES/CONTINUING ED,gg,,
+2027,General Fund,expense,2,IT SERVICE,gg,,
+2027,General Fund,expense,3,MISC ADMIN EXP,gg,,
+2027,General Fund,expense,3,AM LEGAL (PUBLISHING),gg,,
+2027,General Fund,expense,3,ADMIN UNIFORMS,gg,,
+2027,General Fund,expense,3,LEGAL ADVERTISING,gg,,
+2027,General Fund,expense,3,AUDITING SERVICES,gg,,
+2027,General Fund,expense,3,LEGAL SERVICES,gg,,
+2027,General Fund,expense,3,SPECIAL LEGAL SERVICES,gg,,
+2027,General Fund,expense,3,COMMUNICATION EXPENDITURES,gg,,
+2027,General Fund,expense,3,OFFICE EQUIPMENT - Maint,gg,,
+2027,General Fund,expense,3,SALARY OF TAX COLLECTOR,gg,,
+2027,General Fund,expense,3,LOCAL SERVICES TAX EXPENSE,gg,,
+2027,General Fund,expense,3,TAX COLLECTOR'S BOND/INS.,gg,,
+2027,General Fund,expense,3,GENERAL EXPENSE:TAX COLLECTOR,gg,,
+2027,General Fund,expense,3,MUNICIPAL BLDG:MATERIALS AND SUPPLIES,gg,,
+2027,General Fund,expense,3,MUNICIPAL BLDG:GAS,gg,,
+2027,General Fund,expense,3,MUNICIPAL BLDG:ELECTRICITY,gg,,
+2027,General Fund,expense,3,MUNICIPAL BLDG:WATER,gg,,
+2027,General Fund,expense,3,PROPERTY MAINTENANCE,gg,,
+2027,General Fund,expense,3,CHIEF,police,yes,
+2027,General Fund,expense,3,SERGEANT,police,yes,
+2027,General Fund,expense,3,RUTLEDGE BONUS,police,yes,
+2027,General Fund,expense,3,PATROL OFFICER,police,yes,
+2027,General Fund,expense,3,CLERK/CROSSING GUARDS,police,yes,
+2027,General Fund,expense,3,ANIMAL CONTROL,police,,
+2027,General Fund,expense,3,CLERK/METER ENFORCEMENT,police,yes,
+2027,General Fund,expense,3,LONGEVITY PAY,police,yes,
+2027,General Fund,expense,3,SHIFT DIFFERENTIAL,police,yes,
+2027,General Fund,expense,3,FESTIVE HOLIDAY PAY,police,yes,
+2027,General Fund,expense,3,OVERTIME,police,yes,
+2027,General Fund,expense,3,OUTSIDE OVERTIME,police,yes,
+2027,General Fund,expense,3,REIMBURSE OUTSIDE OVERTIME,police,,
+2027,General Fund,expense,3,ON CALL TIME,police,yes,
+2027,General Fund,expense,4,COMMUNITY EXPENSES,police,,
+2027,General Fund,expense,4,OFFICE MATERIALS AND SUPPLIES,police,,
+2027,General Fund,expense,4,GENERAL EXPENDITURES,police,,
+2027,General Fund,expense,4,CONTINUING EDUCATION,police,,
+2027,General Fund,expense,4,PROF DUES/CONFERENCE FEES,police,,
+2027,General Fund,expense,4,EDUCATIONAL REIMBURSEMENT,police,,
+2027,General Fund,expense,4,UNIFORMS,police,,
+2027,General Fund,expense,4,AMMUNITION/POLICE SUPPLIES,police,,
+2027,General Fund,expense,4,VEHICLE OPERATION EXPENSE,police,,
+2027,General Fund,expense,4,PAYMENT TO CAPITAL,police,,
+2027,General Fund,expense,4,COMMUNICATIONS EXPENSE,police,,
+2027,General Fund,expense,4,HEADQUARTERS EXPENSE,police,,
+2027,General Fund,expense,4,PARKING APPLICATION EXPENSES,police,,
+2027,General Fund,expense,4,HYDRANT RENTAL,fire,,
+2027,General Fund,expense,4,CONTRIBUTION TO SF&PA,fire,,
+2027,General Fund,expense,4,ALS EXPENSE,fire,,
+2027,General Fund,expense,4,FIRE TRUCK REPAIR,fire,,
+2027,General Fund,expense,4,FIRE ASSOCIATION AUDIT,fire,,
+2027,General Fund,expense,4,FIRE ASSOCIATION CONSOLIDATION,fire,,
+2027,General Fund,expense,4,CODE INSPECTOR,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,ZONING OFFICER,gg,yes,Part-time zoning officer.
+2027,General Fund,expense,4,DRAINAGE PLAN REVIEW,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,CONTRACTED BUILDING INSPECTION,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,MISCELLANEOUS ENGINEERING,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,EXPENSES FOR ZHB,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,PLANNING AND ZONING/GEN EXPENS,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,ZONING LEGAL SERVICES,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,SUBDIVISION/LAND DEVELOPMENT E,gg,,"Planning, zoning, code enforcement and engineering: general government, as in earlier budgets."
+2027,General Fund,expense,4,HIGHWAY DEPT - ADMIN DUTIES,pw_other,yes,"Public works director and on-call pay; earlier budgets showed public works administration under public works, miscellaneous."
+2027,General Fund,expense,4,BEEPER PAY,pw_other,yes,"Public works director and on-call pay; earlier budgets showed public works administration under public works, miscellaneous."
+2027,General Fund,expense,4,HIGHWAY DEPT - LABORORS,streets,yes,"Public works crew wages and overtime, consolidated in 2027 from lines previously spread across streets, parks and sanitation; counted under streets."
+2027,General Fund,expense,4,HIGHWAY DEPT - OVERTIME,streets,yes,"Public works crew wages and overtime, consolidated in 2027 from lines previously spread across streets, parks and sanitation; counted under streets."
+2027,General Fund,expense,5,STREET LIGHT MAINTENANCE,streets,,
+2027,General Fund,expense,5,STREET PAVING - COUNTY AID,streets,,
+2027,General Fund,expense,5,EQUIPMENT & SUPPLIES,pw_other,,
+2027,General Fund,expense,5,PARK MATERIALS AND SUPPLIES,parks,,
+2027,General Fund,expense,5,VEHICLE REPAIRS & MAINTENANCE,pw_vehicles,,
+2027,General Fund,expense,5,CLOTHING AND UNIFORMS,pw_other,,
+2027,General Fund,expense,5,PARK EQUIP MAINT/REPLACEMENT/R,parks,,
+2027,General Fund,expense,5,PROFESSIONAL PARK MAINTENANCE,parks,,
+2027,General Fund,expense,5,STREET TREE PLANTING,parks,,
+2027,General Fund,expense,5,STREET TREE MAINTENANCE AND RE,parks,,
+2027,General Fund,expense,5,PAC CONTRIBUTION,community,,
+2027,General Fund,expense,5,SRA:CONTRIBUTION,community,,
+2027,General Fund,expense,5,SENIOR SERVICES,community,,
+2027,General Fund,expense,5,TOWN CENTER CONTRIBUTION,community,,
+2027,General Fund,expense,5,CONTRIBUTION TO HRC,community,,
+2027,General Fund,expense,5,CONTRIBUTION TO HORT SOCIETY,community,,
+2027,General Fund,expense,5,CONTRIBUTION TO EAC,community,,
+2027,General Fund,expense,5,CONT TO SWARTHMORE LIBRARY,community,,
+2027,General Fund,expense,5,2008 Note,gg,,"Debt service, consolidated in the General Fund in 2027 (including loans earlier budgets showed under fire protection and sewer)."
+2027,General Fund,expense,5,2013 Note,gg,,"Debt service, consolidated in the General Fund in 2027 (including loans earlier budgets showed under fire protection and sewer)."
+2027,General Fund,expense,5,2023 Note,gg,,"Debt service, consolidated in the General Fund in 2027 (including loans earlier budgets showed under fire protection and sewer)."
+2027,General Fund,expense,5,MISCELLANEOUS EXPENDITURES,gg,,
+2027,General Fund,expense,5,UNEMPLOYMENT INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,PROP/CASUALTY/LIABILITY/AUTO,gg,,"Property, casualty, liability and auto insurance for the whole borough, budgeted centrally; counted under general government."
+2027,General Fund,expense,5,SOCIAL SECURITY TAXES,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,DISABILITY & LIFE INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,HEALTH INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,WORKER'S COMPENSATION,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,WORKERS COMP REIMBURSEMENTS,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,POST-RETIREMENT HEALTH BENEFIT,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,CONTR. TO 457(b) PLAN,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,5,CONTR. TO 401A Plan,payroll_benefits,,"Employee benefits, budgeted centrally in 2027. Earlier budgets included them in each department's personnel costs, so they are shared among general government, police and public works in proportion to each one's 2027 salaries (an estimate)."
+2027,General Fund,expense,6,MINIMUM MUNICIPAL OBLIGATION,police:499375;fire:53000,,"Minimum municipal obligation: $499,375 police pension and $53,000 fire relief, per the explanatory note."
+2027,General Fund,expense,6,CONTRIB TO GRANT FUNDING,gg,,Contribution to grant-funded projects (paid into the Capital Fund); earlier budgets showed grants under general government.
+2027,General Fund,expense,6,CONTRIBUTION TO CAPITAL EXPENSES,gg,,"Contribution to the Capital Fund; earlier budgets showed contributions to capital under general government. The Capital Fund itself is not counted, to avoid counting this money twice."
+2027,General Fund,expense,6,CONTRIBUTION TO OPERATING RESERVE,gg,,Contribution to operating reserve; earlier budgets showed contributions to reserves under general government.
+2027,General Fund,expense,6,BALANCE FORWARD,surplus,,Planned surplus carried forward to 2028: not spending.
+2027,Sewer & Solid Waste Fund,revenue,7,INTEREST,misc_revenue,,
+2027,Sewer & Solid Waste Fund,revenue,7,CURRENT YEAR SOLID WASTE FEES,trash_fees,,
+2027,Sewer & Solid Waste Fund,revenue,7,PRIOR YEAR SOLID WASTE FEES,trash_fees,,
+2027,Sewer & Solid Waste Fund,revenue,7,CURRENT YEAR SEWER FEES,sewer_fees,,
+2027,Sewer & Solid Waste Fund,revenue,7,PRIOR YEAR SEWER FEES,sewer_fees,,
+2027,Sewer & Solid Waste Fund,revenue,7,SALE OF RECYCLABLES,misc_revenue,,Recycling revenue; earlier budgets counted it in miscellaneous revenue.
+2027,Sewer & Solid Waste Fund,revenue,7,PERFORMANCE GRANT REVENUE,misc_revenue,,Recycling revenue; earlier budgets counted it in miscellaneous revenue.
+2027,Sewer & Solid Waste Fund,revenue,7,LEAF MULCH SALES,misc_revenue,,Recycling revenue; earlier budgets counted it in miscellaneous revenue.
+2027,Sewer & Solid Waste Fund,expense,7,ADMINISTRATIVE ASSISTANT,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,BOOKKEEPER,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,SALARY OF MANAGER/SECRETARY,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,SALARY OF ASST MANAGER,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,OVERTIME,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,AUDITING SERVICES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,LEGAL SERVICES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,SALARY OF TAX COLLECTOR,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,TAX COLLECTOR'S BOND/INS.,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,GENERAL EXPENSE:TAX COLLECTOR,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,BILLING EXPENSES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,7,BDG - MATERIALS & SUPPLIES,pw_other,,Public works building supplies and utilities.
+2027,Sewer & Solid Waste Fund,expense,7,MUNICIPAL BUILDING - GAS,pw_other,,Public works building supplies and utilities.
+2027,Sewer & Solid Waste Fund,expense,7,MUNICIPAL BUILDING - ELECTRIC,pw_other,,Public works building supplies and utilities.
+2027,Sewer & Solid Waste Fund,expense,7,MUNICIPAL BLDG - WATER,pw_other,,Public works building supplies and utilities.
+2027,Sewer & Solid Waste Fund,expense,7,BOROUGH CREW WAGES - SEWER,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,8,BOROUGH CREW WAGES - RECYCLING,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,8,RECYCLING COLLECTION,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,RECYCLING DISPOSAL,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,SEWER:MATERIAL & SUPPLIES,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,PREV SEWER MAINT & ENGINEERING,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,SEWER EQUIP MAINT & REPAIR,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,SEWER:PLANT OPERATIONS,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,REFUSE COLLECTION,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,REFUSE DISPOSAL/DCSWA,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,LEAF COLLECTION WAGES,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,COMPOST DELIVERY:WAGES,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,YARD WASTE RECYCLING WAGES,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,YARD WASTE DISPOSAL,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,YARD WASTE COLLECTION,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,COLLECTOR OPERATING EXPENSE,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,COMPOSTING EXPENSE,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,COMPOSTING/SITE MAINT. WAGES,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,HIGHWAY DEPT - ADMIN DUTIES,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,BEEPER PAY,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,HIGHWAY DEPT - VACATION,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,HIGHWAY DEPT - PERSONAL/COMP T,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,HIGHWAY DEPT - SICK LEAVE,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,HIGHWAY DEPT - HOLIDAY,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,UNTITLED ADDITIONAL DUMP TRUCK EXP,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,NEW MID SIZE DUMP TRUCK,solid_waste,,
+2027,Sewer & Solid Waste Fund,expense,8,FUEL EXPENSE,pw_vehicles,,
+2027,Sewer & Solid Waste Fund,expense,8,VEHICLE MAINT:WAGES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,8,DVRFA PRINCIPAL,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,DVRFA INTEREST,sewer,,
+2027,Sewer & Solid Waste Fund,expense,8,MISCELLANEOUS EXPENDITURES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,8,UNEMPLOYMENT INSURANCE,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,8,PROP/CASUALTY/LIABILITY/AUTO,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,SOCIAL SECURITY TAXES,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,DISABILITY & LIFE INSURANCE,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,HEALTH INSURANCE,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,MINIMUM MUNICIPAL OBLIGATION,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,WORKER'S COMPENSATION,interfund,,"The sewer fund's share (mostly 15%) of staff, overhead and benefits, paid to the General Fund, which budgets the full cost: excluded so each cost is counted once."
+2027,Sewer & Solid Waste Fund,expense,9,BALANCE FORWARD,surplus,,Planned surplus carried forward to 2028: not spending.
+2027,Liquid Fuels Fund,revenue,10,INTEREST,misc_revenue,,
+2027,Liquid Fuels Fund,revenue,10,MOTOR VEHICLE FUEL TAXES,intergovernmental,,State liquid fuels (motor vehicle fuel tax) allocation.
+2027,Liquid Fuels Fund,revenue,10,MISCELLANEOUS REVENUE,misc_revenue,,
+2027,Liquid Fuels Fund,revenue,10,BALANCE FORWARD,prior_year_funds,,Use of the fund's balance from earlier years.
+2027,Liquid Fuels Fund,expense,10,SMALL TOOLS AND EQUIPMENT,pw_other,,
+2027,Liquid Fuels Fund,expense,10,SNOW REMOVAL:MAT & SUPPLIES,streets,,
+2027,Liquid Fuels Fund,expense,10,SNOW EQUIP MAINT:MAT & SUPPLIE,streets,,
+2027,Liquid Fuels Fund,expense,10,TRAFFIC SIGNAL MAINT & POWER,streets,,
+2027,Liquid Fuels Fund,expense,10,STREET SIGNS & MARKINGS,streets,,
+2027,Liquid Fuels Fund,expense,10,ANNUAL STREET STRIPING,streets,,
+2027,Liquid Fuels Fund,expense,10,STREET LIGHT POWER,streets,,
+2027,Liquid Fuels Fund,expense,10,STREET LIGHT MAINTENANCE,streets,,
+2027,Liquid Fuels Fund,expense,10,STORM SEWERS:MATERIALS AND SUP,streets,,
+2027,Liquid Fuels Fund,expense,10,STORM SEWERS:ENGINEERING AND C,streets,,
+2027,Liquid Fuels Fund,expense,10,STREET REPAIR:MAT & SUPPLIES,streets,,
+2027,Liquid Fuels Fund,expense,10,ANNUAL STREET PAVING CONTRACT,streets,,
+2027,Liquid Fuels Fund,expense,10,ENGINEERING,streets,,
+2027,Liquid Fuels Fund,expense,10,MISCELLANEOUS ENGINEERING,streets,,
+2027,Capital Fund,revenue,11,General Fund Capital Transfer,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,revenue,11,Interest,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,revenue,11,General Fund Grant Funding Transfer,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,revenue,11,Misc Revenue,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,revenue,11,Balance Forward,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Administration Capital Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Public Works Capital Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Police Capital Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Fire Department Capital Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Library Capital Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Grant Project Expense,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.
+2027,Capital Fund,expense,11,Misc Expenses,capital_fund,,The new Capital Fund is outside the operating funds that earlier budgets' summaries covered; the General Fund's contribution to it is counted under general government instead.

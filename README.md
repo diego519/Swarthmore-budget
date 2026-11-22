@@ -34,6 +34,8 @@ source PDF.
 | [`budget_summary.csv`](data/processed/budget_summary.csv) | 2017–2026 adopted budgets | **Complete.** Every printed subtotal and total reconciles with its rows, except six errors in the borough's own documents, which are documented. |
 | [`budget_line_items.csv`](data/processed/budget_line_items.csv) | 2023–2025 adopted budgets (the only years with line items) | **Partly reconciled.** Each row's `table_check` column says whether its table's printed total has been reconciled. Rows marked `FAIL` are not yet verified. |
 | [`budget_series.csv`](data/processed/budget_series.csv) | 2016–2026, one series per summary line | **Complete.** The summary lines linked across years (renamed lines combined), with adopted budget, estimated actual, and each figure's source page. |
+| [`proposed_budget_lines.csv`](data/processed/proposed_budget_lines.csv) | 2027 proposed (advertised) budget | **Complete.** Every line of every fund, with the 2026 budget, 2026 year-to-date and 2025 actual columns; every fund subtotal reconciles. |
+| [`proposed_budget_summary.csv`](data/processed/proposed_budget_summary.csv) | 2027 proposed budget | The proposal totalled into the categories of the 2016–2026 summaries, for comparison (see [Comparing a proposed budget](#5-comparing-a-proposed-budget)). |
 
 ## Reproducing the analysis
 
@@ -52,7 +54,11 @@ uv run scripts/fetch_documents.py verify      # confirm identical copies
 # 2. Parse the adopted budgets into data/processed/
 uv run scripts/parse_budgets.py
 
-# 3. Link each budget line across years, and build the website
+# 3. Parse the latest proposed budget and total it into comparable categories
+uv run scripts/parse_proposed_budget.py
+uv run scripts/build_proposed_summary.py
+
+# 4. Link each budget line across years, and build the website
 uv run scripts/build_budget_series.py
 uv run scripts/build_site.py                  # writes docs/index.html and docs/explorer.html
 ```
@@ -142,14 +148,47 @@ figure the following year's budget gives for it
 comparisons, 661 are identical; the rest are rounding, revisions by the borough
 (e.g. reallocating shared costs), or the known source errors.
 
+### 5. Comparing a proposed budget
+
+From 2027 the borough lays out its budget by fund (General, Sewer & Solid
+Waste, Liquid Fuels, and a new Capital Fund) and by type of expense, not by the
+department groups of its 2016–2026 summaries. `parse_proposed_budget.py`
+reads every line of the proposal and checks each fund's lines against its
+printed subtotals. To set the proposal beside earlier years, each line is
+assigned by hand to one of the overview's categories in
+[`data/mappings/proposed_budget_categories.csv`](data/mappings/proposed_budget_categories.csv),
+with a note wherever the choice needed judgment. `build_proposed_summary.py`
+then totals the categories, making four adjustments so the comparison is like
+for like:
+
+- **Money moving between the borough's own funds is left out.** The Sewer &
+  Solid Waste Fund pays the General Fund for its share of staff and overhead
+  ($188,001 of charges; the General Fund books $180,301 as received, a $7,700
+  difference the document does not explain). The General Fund already budgets
+  those costs in full.
+- **Planned surpluses** carried into 2028 ("balance forward" expense lines,
+  $154,828) are not spending.
+- **The new Capital Fund is left out.** The General Fund's payments into it are
+  counted under general government, as contributions to capital were before.
+- **Employee benefits** ($1.02M), now budgeted centrally, are shared among
+  general government, police and public works in proportion to each one's
+  2027 salaries, since earlier budgets included benefits in each department's
+  personnel costs. Category figures that include a share are **estimates**;
+  the totals are exact.
+
+Comparisons are firmest for the totals and the department groups. Within
+public works, for example, crew wages are now budgeted together (and counted
+under streets), which moves money between public works categories.
+
 ## Website
 
 Two interactive pages, built from the summary series:
 
 - **Overview** ([`docs/index.html`](docs/index.html)): where the budget is
-  headed. Total adopted spending or revenue each year, stacked by department
-  group (spending) or source (revenue), and a ranked breakdown of what drove
-  the change between any two years, by category or by individual budget line.
+  headed. Total adopted spending or revenue each year, plus the latest
+  proposed budget, stacked by department group (spending) or source
+  (revenue), and a ranked breakdown of what drove the change between any two
+  years, by category or (for adopted years) by individual budget line.
 - **Explore a budget line** ([`docs/explorer.html`](docs/explorer.html)): any
   single line, from total spending down to, say, police personnel, with its
   adopted budget and estimated actual each year and its change from year to
@@ -202,6 +241,8 @@ scripts/
   ocr_documents.py        OCR scanned pages
   parse_budgets.py        parse adopted budgets and check their arithmetic
   build_budget_series.py  link budget lines across years
+  parse_proposed_budget.py   parse proposed budgets (fund-by-fund layout, from 2027)
+  build_proposed_summary.py  total a proposed budget into comparable categories
   fetch_cpi.py            download the Consumer Price Index
   build_site.py           build the website from templates/
   common.py               shared helpers
