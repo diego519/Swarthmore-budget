@@ -34,7 +34,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import csv
 import hashlib
 import re
 import sys
@@ -46,6 +45,17 @@ from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
+from common import (
+    DOWNLOADS_CSV,
+    RAW_DIR,
+    REPO_ROOT,
+    SITE_LINKS_CSV,
+    SOURCES_CSV,
+    read_csv,
+    rel,
+    sha256_of,
+    write_csv,
+)
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -57,13 +67,6 @@ SOURCE_PAGES = [
     "/407/Borough-Budget",  # current budget cycle: drafts, presentations
     "/2272/Financial-Reports",  # monthly financial reports
 ]
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = REPO_ROOT / "data"
-RAW_DIR = DATA_DIR / "raw"
-SOURCES_CSV = DATA_DIR / "sources.csv"
-SITE_LINKS_CSV = DATA_DIR / "site_links.csv"
-DOWNLOADS_CSV = DATA_DIR / "downloads.csv"
 
 SITE_LINKS_FIELDS = ["doc_id", "source_page", "section_heading", "link_text"]
 DOWNLOADS_FIELDS = [
@@ -101,20 +104,6 @@ def doc_url(doc_id: str) -> str:
     return f"{BASE_URL}/DocumentCenter/View/{doc_id}"
 
 
-def read_csv(path: Path) -> list[dict[str, str]]:
-    if not path.exists():
-        return []
-    with path.open(newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-
-def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
-    with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(rows)
-
-
 def clean_text(text: str) -> str:
     return " ".join(text.split())
 
@@ -123,23 +112,11 @@ def slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
-def sha256_of(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1 << 20), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-
 def local_stem(row: dict[str, str]) -> Path:
     """Where a catalogued document is stored, minus the file extension, e.g.
     data/raw/monthly_report/2081_monthly-financial-report-2022-05
     (the extension comes from the server: almost always .pdf)."""
     return RAW_DIR / row["category"] / f"{row['doc_id']}_{slugify(row['title'])}"
-
-
-def rel(path: Path) -> str:
-    return path.relative_to(REPO_ROOT).as_posix()
 
 
 def filename_from_headers(headers: requests.structures.CaseInsensitiveDict) -> str:

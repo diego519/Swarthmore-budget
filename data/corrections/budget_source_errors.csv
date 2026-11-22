@@ -1,0 +1,7 @@
+doc_id,page,check,column,note
+519,2,subtotal: Parks and Street Trees,prior_year_estimated_actual,"Printed subtotal ($58,000) does not equal its two rows ($40,000 + $57,500 = $97,500). Text layer, so these are the printed figures."
+519,2,group total: PUBLIC WORKS,prior_year_estimated_actual,"Off by the same $39,500 as the Parks and Street Trees subtotal above it, which it appears to be built from."
+519,2,section total: expenditure,prior_year_estimated_actual,"Off by the same $39,500 as the Parks and Street Trees subtotal (see above)."
+3467,3,section total: expenditure,prior_year_budget,"Printed TOTAL EXPENDITURES for 2025 ($6,622,538) is $1,000 less than the sum of the four printed group totals ($6,623,538). Text layer, so these are the printed figures."
+2676,2,section total: revenue,prior_year_budget,"Printed TOTAL REVENUE for 2023 ($6,301,151) includes $107,124 of Prior Year Pension Revenue, but that row's 2023 cell is blank on this page. The 2023 budget (doc 2408) shows the $107,124. Checked by eye."
+2676,9,section total: expenditure,prior_year_budget,"Printed TOTAL EXPENDITURES for 2023 is $5,628,873 - the 2022 figure, apparently not updated. The rows, and the four printed group totals, add to $6,218,188. Checked by eye."

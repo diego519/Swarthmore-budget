@@ -1,0 +1,33 @@
+doc_id,page,line_contains,ocr_text,corrected_text,x,note
+2408,7,"147,218","47,487","147,487",,"Sewer Allocated Expenses, 2023 budget: OCR read the leading 1 as a separate 'j'. Page shows $147,487; matches the printed Sanitary Sewer subtotal ($1,209,511)."
+2408,8,S03,S03,503,,"Public Works Misc. Insurance, 2022 budget: page shows $503. Matches the printed subtotal and the 2022 budget (doc 1964)."
+2676,2,"224,233",,Intergovernmental Revenue,54,Row label lost by OCR; page shows 'Intergovernmental Revenue' (row 5).
+2676,2,"302,686",,Other Taxes,54,Row label lost by OCR; page shows 'Other Taxes' (row 6).
+2676,2,"ey 7 $ 40,000",ey,Prior Year Revenue,,Row label garbled by OCR; page shows 'Prior Year Revenue' (row 7).
+2676,2,Prior Year Pension,,0,470,Page shows '$ -' (zero) in the 2024 budget column; OCR lost the dash's position.
+2676,2,Other Revenue,Other,Other,,Heading 'Other Revenue' (row 9) read correctly but with very low OCR confidence; confirmed by eye.
+2676,2,Other Revenue,Revenue,Revenue,,Heading 'Other Revenue' (row 9) read correctly but with very low OCR confidence; confirmed by eye.
+2676,2,"760,373",“7764116,"776,116",,"Trash Fees, 2024 budget: page shows $776,116; matches the 2025 budget's prior-year column."
+2676,2,Recycling,"34,41","34,418",,"Recycling Revenue, 2023 budget: OCR read the final 8 as a separate mark; page shows $34,418, as in the 2023 budget (doc 2408)."
+2676,8,Traffic,"27,0","27,010",,"Traffic Signals, 2023 budget: OCR split $27,010 into '27,0' + 'i0'; matches the 2023 budget (doc 2408)."
+2676,8,"85,460","$9,214","89,214",,"Solid Waste Allocated Expenses, 2024 budget: OCR read the leading 8 as '$'; page shows $89,214, matching the Solid Waste subtotal and the 2025 budget's prior-year column."
+2676,9,Town Center,"535,795","55,795",,"Town Center Inc, 2023 budget: page shows $55,795, as in the 2023 budget (doc 2408); matches the printed Community Services total."
+2676,9,PAC,"26,000","20,000",,"PAC Center, 2023 budget: page shows $20,000, as in the 2023 budget (doc 2408); matches the printed Community Services total."
+3017,1,TrashFees,"716,116","776,116",,"Trash Fees, 2024 budget: page shows $776,116, as in the 2024 budget (doc 2676); matches the printed revenue total."
+3017,6,Professional Services,"""53,","53,180",,"Professional Services, 2024 budget: OCR split $53,180 into '""53,' + '30°'; matches the 2024 budget (doc 2676)."
+3017,6,"1,788,453","4,908,453","1,908,453",,"Police Personnel, 2024 estimated actual: page shows $1,908,453 (checked by eye); matches the printed Police Services subtotal."
+3017,6,General Expenditures,110,"110,711",,"Police General Expenditures, 2024 estimated actual: OCR split $110,711 into '110' + 'F11.'; page shows $110,711 (checked by eye)."
+3017,7,"16,267",,"3,067",461,"Fire Debt Service, 2025 budget: OCR missed the value; page shows $3,067 (checked by eye); matches the Fire Protection subtotal."
+3017,7,PUBLIC SAFETY,,"2,920,002",357,"TOTAL - PUBLIC SAFETY, 2024 estimated actual: OCR missed the value; page shows $2,920,002 (checked by eye)."
+3017,7,Street Lighting,,"71,300",297,"Street Lighting, 2024 budget: OCR missed the value; page shows $71,300, as in the 2024 budget (doc 2676)."
+3017,7,Snow,,"22,595",297,"Snow & Ice Removal, 2024 budget: OCR missed the value; page shows $22,595, as in the 2024 budget (doc 2676)."
+3017,7,"41,622",,Town Center Maintenance,72,Row label lost by OCR; page shows 'Town Center Maintenance'.
+3017,7,"26,440)",,"26,440",297,"Sewer Debt Service, 2024 budget: OCR missed the value; page shows $26,440, as in the 2024 budget (doc 2676); matches the Sanitary Sewer subtotal."
+3017,7,Subtotal - Solid,"710,826","770,826",,"Subtotal - Solid Waste, 2024 budget: page shows $770,826, as in the 2024 budget (doc 2676); equals the sum of its rows."
+3017,8,——s«857,——s«857,"1,857",,"Vehicle Operation Insurance, 2024 budget: page shows $1,857, as in the 2024 budget (doc 2676); matches the subtotal."
+3017,8,Administration,"10,372","70,372",,"Public Works Administration, 2024 estimated actual: page shows $70,372; matches the Miscellaneous subtotal."
+3017,8,Library,"136,653","236,653",,"Swarthmore Public Library, 2025 budget: page shows $236,653, as in the 2026 budget's prior-year column (doc 3467)."
+3017,8,Recreation,"10,060","10,000",,"Swarthmore Recreation Association, 2024 budget: page shows $10,000, as in the 2024 budget (doc 2676); matches the Community Services total."
+3017,8,PAC,"20,060","20,000",,"PAC Center, 2024 budget: page shows $20,000, as in the 2024 budget (doc 2676); matches the Community Services total."
+3017,8,"324,608",,TOTAL - COMMUNITY SERVICES,61,Row label lost by OCR; page shows 'TOTAL - COMMUNITY SERVICES'.
+3017,8,"6,328,868",,TOTAL EXPENDITURES,61,Row label lost by OCR; page shows 'TOTAL EXPENDITURES'.

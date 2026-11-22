@@ -1,0 +1,592 @@
+doc_id,fiscal_year,page,extraction,section,group,table,fund,account,account_number,prior_year_budget,budget,corrected,table_check
+2408,2023,2,ocr,revenue,,Property Taxes,General,Current- RE Taxes,300.010,1447488,2406963,,FAIL
+2408,2023,2,ocr,revenue,,Property Taxes,General,Prior Year- RE Taxes,300.030,30000,37250,,FAIL
+2408,2023,2,ocr,revenue,,Property Taxes,General,Interim RE Taxes,300.040,1000,1500,,FAIL
+2408,2023,2,ocr,revenue,,Sewer Fees,SSW,Current- Sewer Fees,360.081,1201028,1212798,,ok
+2408,2023,2,ocr,revenue,,Sewer Fees,SSW,Delinquent- Sewer Fees,360.082,6500,6500,,ok
+2408,2023,2,ocr,revenue,,Solid Waste (Trash & Recycling),SSW,Current- Solid Waste,360.011,623500,747660,,ok
+2408,2023,2,ocr,revenue,,Solid Waste (Trash & Recycling),SSW,Delinquent- Sewer Fees,360.012,5000,5000,,ok
+2408,2023,2,ocr,revenue,,Intergovernmental,General,Public Utility Realty,350.020,2500,2500,,ok
+2408,2023,2,ocr,revenue,,Intergovernmental,General,County Aid,350.030,8000,7965,,ok
+2408,2023,2,ocr,revenue,,Intergovernmental,Pension,Foreign Casualty (state aid),355.120,81500,47973,,ok
+2408,2023,2,ocr,revenue,,Intergovernmental,Highway,Fuel Tax,355.050,157089,165795,,ok
+2408,2023,2,ocr,revenue,,Other Taxes,General,RE Transfer Tax,310.030,180000,180000,,ok
+2408,2023,2,ocr,revenue,,Other Taxes,General,Local Services Tax,310.040,110000,110000,,ok
+2408,2023,3,ocr,revenue,,Prior Year Revenue,General,Unrestricted Fund Balance,,37500,40000,,ok
+2408,2023,3,ocr,revenue,,Prior Year Revenue,General,Pension Cary over,,0,107124,,ok
+2408,2023,3,ocr,revenue,,Police Services,Genéral,Police Services,360.050,221265,227245,,ok
+2408,2023,3,ocr,revenue,,Parking Meters,General,Parking Meter,360.030,95000,90000,,ok
+2408,2023,3,ocr,revenue,,Parking Meters,General,Parking Permits,360.031,20000,20000,,ok
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,Building Permits,320.020,175000,175000,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,Contractor’s License,320.021,6500,6500,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,U&O Permits,320.022,6500,6500,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,Street Openings,320.820,3000,1500,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,SLDO Applications,380.400,1000,1000,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,ZHB Applications,380.100,500,5000,,FAIL
+2408,2023,3,ocr,revenue,,Licenses and Permits,General,Stormwater Permits,380.500,6000,2000,,FAIL
+2408,2023,3,ocr,revenue,,Fines,General,Parking Motor Vehicle,330.010,40000,30000,,ok
+2408,2023,3,ocr,revenue,,Fines,General,Ordinance Violations,330.020,2500,2000,,ok
+2408,2023,4,ocr,revenue,,Cable Franchise Fee,General,Cable Franchise,380.010,93000,90000,,ok
+2408,2023,4,ocr,revenue,,Recycling Revenue,SSW,Recycling Sales,380.020,1000,1000,,ok
+2408,2023,4,ocr,revenue,,Recycling Revenue,SSW,Performance Grant,380.030,9418,9418,,ok
+2408,2023,4,ocr,revenue,,Recycling Revenue,SSW,Leaf Mulch Sales,380.040,24500,24000,,ok
+2408,2023,4,ocr,revenue,,,General,Swarthmore Authority,387.100,115000,125660,,FAIL
+2408,2023,4,ocr,revenue,,,General,Supplemental Life Safety (Swarthmore College),,25000,150000,,FAIL
+2408,2023,4,ocr,revenue,,,General,Fire& Ambulance,360.051,106750,110000,,FAIL
+2408,2023,4,ocr,revenue,,Interest,General,Interest,341.010,2500,20000,,FAIL
+2408,2023,4,ocr,revenue,,Interest,SSW,Interest,341.010,2500,20000,,FAIL
+2408,2023,4,ocr,revenue,,Interest,Highway,Interest,341.010,250,800,,FAIL
+2408,2023,4,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Sales trees at per tree) replacement trees and new trees,367.000,9000,9000,,ok
+2408,2023,4,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Replacement tree removals at of the cost),360.100,31000,31000,,ok
+2408,2023,5,ocr,revenue,,Miscellaneous Revenue,General,Misc Revenue/ARPA,380.000,12500,64500,,ok
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Office Secretary,400.020,33122,34778,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Office Secretary,400.020,14195,14905,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Bookkeeper,400.030,26881,28225,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Bookkeeper,400.030,11521,12097,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Borough Manager,400.060,92614,78645,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Borough Manager,400.060,39692,33705,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Administrative Overtime,400.090,420,630,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Administrative Overtime,400.090,180,270,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Administrative Benefits,,65358,62303,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Administrative Benefits,,28011,31151,,FAIL
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Principal,471.000,47700,48600,,ok
+2408,2023,9,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Interest,472.000,11874,12350,,ok
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Bldg. Maintenance Wages,402.000,19000,19000,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GF),Bldg Materials Supplies,402.100,4400,3600,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Bldg Materials Supplies,402.100,1100,900,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GF),Utility-Gas,402.110,10000,12000,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Utility-Gas,402.110,2500,3000,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GF),Utility-Electric,402.120,17040,17040,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Utility-Electric,402.120,4260,4260,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GF),Utility-Water,402.130,6000,6000,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Utility-Water,402.130,1500,1500,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Property Maintenance,402.400,56000,60000,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Benefits,,9029,10184,,FAIL
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,Allocated,MMO- Nonuniform,,9338,,,ok
+2408,2023,10,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,General,Contributions,457.158,12684,13804,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated (GF),Auditing,400.280,11715,11218,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated (SSW),Auditing,400.280,4785,4582,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated (GF),Legal Solicitor,400.290,21300,21300,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated (SSW),Legal-Solicitor,400.290,8700,8700,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Special Legal,400.291,12000,22000,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Engineering,480.1800,5000,5000,,FAIL
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Supplies,400.100,3000,4500,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Administrative Postage,400.101,750,750,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,General Administrative,400.200,11700,17000,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Professional Dues,400.201,1900,3620,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Conferences,400.202,500,6500,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Legal Advertising,400.210,2000,3000,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Communication,400.300,11760,14035,,ok
+2408,2023,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Equipment,400.400,3000,8315,,ok
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Code Enforcement,400.009,6000,,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,U&O Inspection,414.100,6000,6000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Drainage Plan Review,414.110,6000,6000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Contracted Bldg Inspector,414.120,25000,25000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Zoning Hearing Expenses,414.200,4000,4000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,P&Z Expenses,414.220,1000,1000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Legal-ZHB,414.290,5000,5000,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,® General Admin (400.200),General,Benefits oo,,5702,6432,,rounding
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,Insurance and Bonding,Allocated,Insurance Bonding,,3350,5544,,ok
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Salary- Treasurer,401.020,5351,5619,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Salary- Treasurer,401.020,5351,5619,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Tax Collector Bond,401.150,1000,1000,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Tax Collector Bond,401.150,1000,1000,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,General,LST Collection,401.040,2500,2500,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,SSW,Sewer Billing,401.300,1350,1350,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Tax Collector Expenses,401.200,1250,1250,,FAIL
+2408,2023,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Tax Collector Expenses,401.200,1250,1250,,FAIL
+2408,2023,13,ocr,expenditure,GENERAL GOVERNMENT,Contribution to Capital,General,Contribution to Capital,492.300,0,100000,,ok
+2408,2023,13,ocr,expenditure,GENERAL GOVERNMENT,Grants,General,Grants,492.280,0,75000,,ok
+2408,2023,13,ocr,expenditure,GENERAL GOVERNMENT,"Matching funds, DECD applications and engineering expenses",General,Misc Expenses,480.000,2500,13412,,ok
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Police Chief,410.010,131360,135629,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary-Sergeant,410.020,197928,204362,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Patrol,410.040,453393,468494,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Longevity,410.180,70616,56261,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Shift Differential,410.181,44644,51341,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Festive Holiday Pay,410.182,24496,22343,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Rutledge Bonus,410.021,23100,28325,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Overtime/PT Wages,410.183,110000,95000,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Call Time,410.186,1500,1500,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Crossing Guards,410.050,14579,15052,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Contribution to Future Medical Benefits,487.157,95157,87720,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Clerk/Meter Enforcement,410.052,34353,35470,,FAIL
+2408,2023,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Benefits,,390068,444034,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Animal Control,410.051,3000,3000,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Office Supplies,410.200,5500,5500,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,General Expenses,410.220,17510,19100,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Continuing Education,410.221,3000,4000,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Dues and Conferences,410.222,1495,1420,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Education Reimbursement,410.230,5000,10000,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Uniforms,410.238,11500,11700,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Ammo/Supplies,410.242,19000,18000,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Communications,410.320,23500,23500,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Headquarters,410.373,1800,1800,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Public Relations,410.188,2000,1800,,FAIL
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police Pension Obligation,General,Pension Obligation,,296451,257373,,ok
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Insurance,General,Insurance,,20650,26680,,ok
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Operations,410.251,23450,23450,,ok
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Payment to Capital,410.252,37000,37000,,ok
+2408,2023,14,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Insurance,,4300,9472,,ok
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Hydrants,413.140,25250,25250,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Contribution to SFPA,413.200,300000,450000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service- Principal,413.471,0,,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service-Interest,413.472,2123,2356,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Insurance- Auto,,8500,11008,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Insurance- Workers Comp,,12500,12351,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Electric,434.000,55000,58800,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Repair,434.100,17500,18500,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Annual Paving,439.000,99035,99035,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Engineering,439.313,8400,8400,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Annual Street Paving,439.000,7965,7965,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Repairs- Wages,438.120,5000,5000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Repairs- Materials and Supplies,438.220,1000,1000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Sweeping,431.300,550,550,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Cleaning- Wages,431.100,10000,8000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,7128,8790,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Traffic Signals -Electric,433.000,2500,2500,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Signs and Markings Wages,433.110,11400,11400,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Signs and Markings Supplies,433.200,2500,2500,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Professional Street Striping,433.300,4500,4500,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,5417,6860,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Snow Removal Wages,432.100,13000,11000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Removal- Materials,432.200,6000,6000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Equipment Materials and Supplies,432.330,2000,2000,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,6178,8217,,FAIL
+2408,2023,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Storm Sewer Wages,436.100,9000,9000,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer- Materials and Supplies,436.200,650,650,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer Engineering,436.300,6500,6500,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,4277,5574,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Town Center- Maintenance Wages,435.100,15000,15000,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,7128,8790,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Meter Maintenance- wages,435.105,9000,8000,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,4277,5574,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Meters- Maintenance and Repair,435.110,3000,3600,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Plant Operations,422.300,1009000,1011312,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Public Works Wages,421.000,11500,10500,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Materials and Supplies,421.200,500,500,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Preventative Maintenance,421.220,30000,30000,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Equipment Maintenance,421.440,1000,1000,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service-Principal,471.000,5300,55400,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service- Interest,472.000,3091,3312,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,Allocated,Allocated Expenses,,147218,147487,,FAIL
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Collection,425.000,193846,220000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Disposal (DCSWA),425.100,98500,103750,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Center Wages,421.060,8000,8000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Collection,421.150,76000,110000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Disposal Republic,421.155,15450,33750,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Wages,427.200,6000,6000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Disposal,427.300,9500,9500,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Collection,427.350,36750,65000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Leaf Collection Wages,427.100,34000,33000,,ok
+2408,2023,16,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Compost Deliveries,427.110,7000,7000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,ssw,Leaf Collection Operating Expenses,427.375,6000,6000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Composting Expense,427.381,2750,2750,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Composting Site Wages,427.382,4500,4500,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,Allocated,Allocated Expenses,,85377,83853,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Benefits,,28274,32891,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Mowing Wages,454.100,10000,10000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Park Maintenance Wages,454.110,12500,12500,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Park Materials and Supplies,454.200,1300,8000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Park Equipment Repair and Replacement,454.260,3050,3000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Professional Park Maintenance,454.270,10000,8000,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Benefits,,10692,12060,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Purchase,455.221,13500,14700,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Maintenance and Repair,455.250,300,2800,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Removal,455.451,35500,35500,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree Wages,455.100,2500,2500,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Benefits,,1188,1340,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Allocated Expenses,,,29489,,FAIL
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Insurance,,,1434,,FAIL
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Miscellaneous,Allocated,Administration,,72483,67904,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Miscellaneous,Allocated,Insurance,,503,832,,ok
+2408,2023,17,ocr,expenditure,PUBLIC WORKS,Miscellaneous,,Tools,,1000,1000,,ok
+2408,2023,18,ocr,expenditure,COMMUNITY SERVICES,,General,Library,456.000,200700,206721,,FAIL
+2408,2023,18,ocr,expenditure,COMMUNITY SERVICES,,General,SRA,450.500,30000,30000,,FAIL
+2408,2023,18,ocr,expenditure,COMMUNITY SERVICES,,General,Senior Sitizens Assoc.,450.530,2500,2500,,FAIL
+2408,2023,18,ocr,expenditure,COMMUNITY SERVICES,,General,Town Center,450.540,41300,55795,,FAIL
+2408,2023,18,ocr,expenditure,COMMUNITY SERVICES,,General,PAC,,0,20000,,FAIL
+2676,2024,3,ocr,revenue,,Property Taxes +,General,Cutrent- RE Taxes,300.010,2406963,2476199,,ok
+2676,2024,3,ocr,revenue,,Property Taxes +,General,Prior Year- RB Taxes,300.030,37250,30000,,ok
+2676,2024,3,ocr,revenue,,Property Taxes +,General,Interim RE Taxes,300.040,1500,1000,,ok
+2676,2024,3,ocr,revenue,,Sewer Fees,SSW,Current- Sewer Fees,360.081,1212798,94256854,,FAIL
+2676,2024,3,ocr,revenue,,Sewer Fees,Ssw,Delinquent- Sewer,360.082,6500,6500,,FAIL
+2676,2024,3,ocr,revenue,,Intergovernmental,General,Public Utility Realty,350.020,2500,2500,,ok
+2676,2024,3,ocr,revenue,,Intergovernmental,General,County Aid,350.030,7965,7965,,ok
+2676,2024,3,ocr,revenue,,Intergovernmental,Pension,Foreign Casualty (state,355.120,47973,72526,,ok
+2676,2024,3,ocr,revenue,,Intergovernmental,aiid) Highway,FuelTax,7355.050,165795,166431,,ok
+2676,2024,3,ocr,revenue,,Other Taxes,General,RET Transfer Tax,310.030,480000,180000,,FAIL
+2676,2024,3,ocr,revenue,,Other Taxes,Gener al,Local Services Tax,316.040,10000,110000,,FAIL
+2676,2024,4,ocr,revenue,,Police Services,General,Police Services,360.050,227245,234658,,ok
+2676,2024,4,ocr,revenue,,Parking Meters,General General en,Parking Parking Meter Permits,.360.030.360.031,20000,75000,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,Building Permits,320.020,175000,250000,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,Contractor’s License,320.021,6500,6500,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,U&O Permits,320.022,6500,6500,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,Street Openings,320.820,500,1500,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,SLDO Applications,380.400,1000,4000,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,ZHB Applications,380.100,5000,5000,,FAIL
+2676,2024,4,ocr,revenue,,Licenses and Permits,General,Stormwater Permits,380.500,2000,2000,,FAIL
+2676,2024,4,ocr,revenue,,Fines,General,Parking Motor,330.010,30000,30000,,FAIL
+2676,2024,4,ocr,revenue,,Fines,General,Or Vehicle dinance Violations,330.020,2000,0,,FAIL
+2676,2024,5,ocr,revenue,,Cable Franchise Fee,General,Cable Franchise,380.010,90000,90000,,ok
+2676,2024,5,ocr,revenue,,Recycling Revenue,SSW,sReeycling Sales,380.020,,1000,,FAIL
+2676,2024,5,ocr,revenue,,Recycling Revenue,SSW,Performance Grant.,380.030,,9418,,FAIL
+2676,2024,5,ocr,revenue,,Recycling Revenue,SSW,Leaf Mulch Sales,380.040,924,24000,,FAIL
+2676,2024,5,ocr,revenue,,,General,Swarthmore Authority,387.100,125660,122000,,ok
+2676,2024,5,ocr,revenue,,,General,Supplemental Life Safety (Swarthmore,,150000,157500,,ok
+2676,2024,5,ocr,revenue,,,General,College) Fire&Ambulance,360.05051.,110000,113250,,ok
+2676,2024,5,ocr,revenue,,Interest,General,Interest,341.010,20000,35000,,ok
+2676,2024,5,ocr,revenue,,Interest,ssw,Interest,341.010,20000,35000,,ok
+2676,2024,5,ocr,revenue,,Interest,Highway,Interest,341.010,800,2000,,ok
+2676,2024,5,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Sales per tree sold,367.000,9000,7000,,ok
+2676,2024,5,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Replacement tree removals at of,360.100,31000,18000,,ok
+2676,2024,6,ocr,revenue,,Miscellaneous Revenue,General,Misc Revenue/ARPA,380.000,64500,12500,,ok
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Office Secretary,400.020,34778,37612,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Office Secretary,400.020,14905,16120,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Bookkeeper,400.030,28225,30025,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Bookkeeper,400.030,12097,13082,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Borough Manager,400.060,78645,82578,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Borough Manager,400.060,33705,35390,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Administrative Overtime,400.090,630,630,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Administrative Overtime,400.090,270,270,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Administrative Benefits,,62303,77970,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Administrative Benefits,,31151,33415,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Principal,471.000,48600,76500,,FAIL
+2676,2024,10,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Interest,472.000,12350,515261,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Bldg. Maintenance Wages Soe,402.000,19000,19060,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GF),Bldg Materials Supplies,402.100,3600,3600,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Bldg Materials Supplies,402.100,900,900,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated,Utility-Gas,402.110,12000,12000,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated,Utility-Gas,402.110,3000,3000,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (GFY,Utility-Electric,402.120,17040,18240,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated,Utility-Electric,402.1420,4260,54560,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated,Utility-Water,402.130,6000,6000,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,Allocated (SSW),Utility-Water ok,402.130,1500,1500,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Property Maintenance,402.400,60000,60000,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Borough Building Expenses,General,Benefits,,10184,10598,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,Allocated,MMO- Nonuniform,,0,,,FAIL
+2676,2024,11,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,General,Contributions,457.158,13804,45117,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Auditing,400.280,11218,12180,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated (SSW),Auditing Be,400.280,4582,5220,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Legal Solicitor,400.290,21300,21000,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Legal-Solicitor,400.290,8700,9000,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Special Legal,400.291,22000,15000,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Engineering,480.1800,5000,5000,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Supplies,400.100,4500,3500,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Administrative Postage,400.101,750,7500,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,General Administrative,400.200,17000,16620,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Professional Dues,400.201,3620,3268,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Conferences,400.202,6500,8500,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Legal Advertising,400.210,3000,3000,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Communication,400.300,14035,16312,,FAIL
+2676,2024,12,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Equipment,400.400,8315,6276,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Code Enforcement,400.009,0,0,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,U&O Inspection,414.100,6000,6000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Drainage Plan Review,414.110,6000,6000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Contracted Bldg Inspector,414.120,25000,25000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Zoning Hearing Expenses,414.200,4000,4000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,P&Z Expenses,414.220,1000,1000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Legal-ZHB,414.290,5000,5000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,Benefits,,6432,6694,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,Insurance and Bonding,Allocated,Insurance Bonding,,5544,7180,,ok
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated AGF),Salary- Treasurer,401.020,5619,6076,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Salary- Treasurer,401.020,5619,6076,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Tax Collector Bond,401.150,1000,1000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated,Tax Collector Bond,401.150,1000,1000,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,General,LST Collection,401.040,2500,2500,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,SSW,Sewer Billing,401.300,1350,1350,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated,Tax Collector Expenses,401.200,1250,1250,,FAIL
+2676,2024,13,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Tax Collector Expenses,401.200,1250,1250,,FAIL
+2676,2024,14,ocr,expenditure,GENERAL GOVERNMENT,Contribution to Capital,General,Contribution to Capital,492.300,100000,14000,,ok
+2676,2024,14,ocr,expenditure,GENERAL GOVERNMENT,"$7,000 for PW Building roof and $7,000 for PW Building Heaters",General,Grants,492.280,75000,,,ok
+2676,2024,14,ocr,expenditure,GENERAL GOVERNMENT,"Matching funds, DECD applications and engineering expenses",General,Misc Expenses,480.000,13412,14000,,ok
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Police Chief,410.010,135629,143767,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary-Sergeant,410.020,204362,214600,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Patrol,410.040,468494,526477,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Longevity,410.180,56261,53175,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Shift Differential,410.181,51341,55698,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Festive Holiday Pay,410.182,22343,28000,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Rutledge Bonus,410.021,28325,26400,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Overtime/PT Wages,410.183,95000,100000,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Call Time,410.186,1500,1500,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Crossing Guards,410.050,15052,15053,,FAIL
+2676,2024,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Contribution to Future Medical Benefits,487.157,87720,99058,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Cllerk/Meter Enforcement.,410.052,35470,43462,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Benefits,,444034,481263,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Animal Control,410.051,3000,3000,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Office Supplies,410.200,5500,6860,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,General Expenses,410.220,19100,19100,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Continuing Education,410.221,4000,4000,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Dues and Conferences,410.222,1420,2295,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Education Reimbursement,410.230,10000,10000,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Uniforms,410.238,11700,12200,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Ammo/Supplies,410.242,18000,21500,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Communications,410.320,23500,23500,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Headquarters,410.373,1800,1800,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Public Relations,410.188,2000,3000,,FAIL
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police Pension Obligation,General,Pension Obligation,,257373,307499,,ok
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Insurance,General,Insurance,,26680,34555,,ok
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Operations,410.251,23450,23450,,ok
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Payment to Capital,410.252,37000,37000,,ok
+2676,2024,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Insurance,,9472,12268,,ok
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Hydrants,413.140,25250,25250,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Contribution to SFPA,413.200,450000,400000,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service- Principal,413.471,0,,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service-Interest.,413.472,2356,3067,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Insurance- Auto,,11008,14257,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,-Insurance- Workers Comp,,12351,17000,,FAIL
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Electric,434.000,58800,58800,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Repair,434.100,18500,12500,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Annual Paving,439.000,99035,99035,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Engineering,439.313,8400,8400,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Annual Street Paving,439.000,7965,7965,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Repairs- Wages,438.120,5000,5000,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Repairs- Materials and Supplies,438.220,1000,1000,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Sweeping,431.300.,550,550,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Cleaning- Wages,431.100,8000,10000,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,8790,8763,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Traffic Signals -Electric,433.000,2500,2500,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Signs and Markings Wages,433.110,11400,11400,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Signs and Markings Supplies,433.200,2500,2500,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Professional Street Striping,433.300,4500,4500,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,6860,6660,,rounding
+2676,2024,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Snow Removal Wages,432.100,11000,13000,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Removal-- Materials,432.200,6000,0,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Equipment Materials and Supplies,432.330,2000,2000,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,8217,7595,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Storm Sewer Wages,436.100,9000,9000,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer- Materials and Supplies,436.200,650,650,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer Engineering,436.300,6500,6500,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,5574,5258,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Town Center- Maintenance Wages,435.100,15000,15000,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,8790,8763,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Meter Maintenance- wages,435.105,8000,9000,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,5574,5258,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Streets,General,Meters- Maintenance and Repair,435.110,3600,3600,,rounding
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Plant Operations,422.300,1011312,1025690,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Public Works Wages,421.000,10500,11500,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Materials and Supplies,421.200,500,500,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Preventative Maintenance,421.220,30000,30000,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Equipment Maintenance,421.440,1000,1000,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service-Principal,471.000,5400,22300,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service- Interest,472.000,3312,4140,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,Allocated,Allocated Expenses,,149206,156399,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Collection,425.000,220000,237600,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Disposal (DCSWA),425.100,103750,108750,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Center Wages,421.060,8000,58000,,FAIL
+2676,2024,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Collection,421.150,110000,118800,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Disposal Republic,421.155,33750,33750,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Wages,427.200,6000,6000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,"Yard Waste Disposal,",427.300,9500,9500,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Collection,427.350,65000,70200,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Leaf Collection Wages,427.100,33000,34000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Compost Deliveries,427.110,7000,97000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Leaf Collection Operating Expenses,427.375,6000,6000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Composting Expense,427.381,2750,2750,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Composting Site Wages,427.382,4500,34500,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,Allocated,Allocated Expenses,,83853,89439,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Benefits,,32891,34762,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Mowing Wages,454.100,10000,10000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General Lo,Park Maintenance Wages,454.110,12500,12500,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Park Materials and Supplies,454.200,8000,1300,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Park Equipment Repair and Replacement,454.260,30000,3000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Professional Park Maintenance,454.270,8000,10000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Benefits,,12060,13145,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Purchase,455.221,14700,10000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Maintenance and Repair,455.250,2800,2500,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree- Removal,455.451,35500,22000,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Street Tree Wages,455.100,2500,2500,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Parks and Street Trees,General,Benefits,7,1340,1461,,FAIL
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Allocated Expenses,7,29489,28700,,ok
+2676,2024,18,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Insurance,,1434,1857,,ok
+2676,2024,19,ocr,expenditure,PUBLIC WORKS,Miscellaneous,Allocated,Administration,,67904,70372,,FAIL
+2676,2024,19,ocr,expenditure,PUBLIC WORKS,Miscellaneous,Allocated,Insurance,,,1077,,FAIL
+2676,2024,19,ocr,expenditure,PUBLIC WORKS,Miscellaneous,,Tools,,1000,1000,,FAIL
+2676,2024,19,ocr,expenditure,COMMUNITY SERVICES,,General,Library,456.000,206721,223258,,ok
+2676,2024,19,ocr,expenditure,COMMUNITY SERVICES,,General,SRA,450.500,30000,10000,,ok
+2676,2024,19,ocr,expenditure,COMMUNITY SERVICES,,General,Senior Sitizens Assoc.,450.530,25000,25000,,ok
+2676,2024,19,ocr,expenditure,COMMUNITY SERVICES,,General,Town Center,450.540,55795,46350,,ok
+2676,2024,19,ocr,expenditure,COMMUNITY SERVICES,,General,PAC,,20000,20000,,ok
+3017,2025,2,ocr,revenue,,"Property Taxes (Boroughs mileage value went from 644,340 to 645,452)",General,Current- RE Taxes,300.010,2476199,2579226,,FAIL
+3017,2025,2,ocr,revenue,,"Property Taxes (Boroughs mileage value went from 644,340 to 645,452)",General,Prior Year-RE Taxes,300.030,30000,,,FAIL
+3017,2025,2,ocr,revenue,,"Property Taxes (Boroughs mileage value went from 644,340 to 645,452)",General,InterimRE Taxes,300.040,1000,0,,FAIL
+3017,2025,2,ocr,revenue,,Sewer Fees,SSW,Current-Sewer Fees,360.081,1256854,1275206,,ok
+3017,2025,2,ocr,revenue,,Sewer Fees,ssw,Delinquent- Sewer Fees,360.082,6500,6500,,ok
+3017,2025,2,ocr,revenue,,Solid Waste (Trash & Recycling),SSW,Current- Solid Waste,360.011,771116,823892,,ok
+3017,2025,2,ocr,revenue,,Solid Waste (Trash & Recycling),SSW,Delinquent- Sewer Fees,360.012,5000,5000,,ok
+3017,2025,2,ocr,revenue,,Intergovernmental,General,Public Utility Realty,350.020,2500,2500,,ok
+3017,2025,2,ocr,revenue,,Intergovernmental,General,County Aid,350.030,7965,7965,,ok
+3017,2025,2,ocr,revenue,,Intergovernmental,Pension,Foreign Casualty (state aid),355.120,72526,93246,,ok
+3017,2025,2,ocr,revenue,,Intergovernmental,Highway,Fuel Tax,355.050,166431,166431,,ok
+3017,2025,2,ocr,revenue,,Intergovernmental,General,Reimbursement,,0,25000,,ok
+3017,2025,2,ocr,revenue,,Other Taxes,General,RE TransferTax,310.030,180000,190000,,ok
+3017,2025,2,ocr,revenue,,Other Taxes,General,Local Services Tax,310.040,110000,110000,,ok
+3017,2025,3,ocr,revenue,,Prior Year Revenue,General,Unrestricted Fund Balance,,0,0,,ok
+3017,2025,3,ocr,revenue,,Prior Year Revenue,General,Pension Cary over,,0,0,,ok
+3017,2025,3,ocr,revenue,,Police Services,General,Police Services,360.050,234058,242270,,FAIL
+3017,2025,3,ocr,revenue,,Parking Meters,General,Parking Meter (s—=«édt,360.030,75000,55000,,ok
+3017,2025,3,ocr,revenue,,Parking Meters,General,Parking Permits,360.031,20000,40000,,ok
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,Building Permits,320.020,250000,300000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,Contractor’s License,320.021,6500,9000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,U&O Permits,320.022,6500,7500,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,Street Openings,320.820,1500,2000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,SLDO Applications,380.400,1000,1000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,ZHB Applications,380.100,5000,5000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,Stormwater Permits,380.500,2000,3000,,FAIL
+3017,2025,3,ocr,revenue,,Licenses and Permits,General,Rental Inspection,,0,53750,,FAIL
+3017,2025,4,ocr,revenue,,Fines,General,Parking Motor,330.010,30000,30000,,ok
+3017,2025,4,ocr,revenue,,Fines,General,Ordinance Violations,,2000,2000,,ok
+3017,2025,4,ocr,revenue,,Cable Franchise Fee,General,Cable Franchise,380.010,90000,80000,,ok
+3017,2025,4,ocr,revenue,,"Total $34,418 $34,418",General,Swarthmore Authority,387.100,122000,122000,,ok
+3017,2025,4,ocr,revenue,,"Total $34,418 $34,418",General,Supplemental Life Safety (Swarthmore College),,157500,165375,,ok
+3017,2025,4,ocr,revenue,,"Total $34,418 $34,418",General,Fire& Ambulance,360.051,113250,241650,,ok
+3017,2025,4,ocr,revenue,,Interest,General,Interest,341.010,35000,940000,,FAIL
+3017,2025,4,ocr,revenue,,Interest,SSW,Interest,341.010,35000,40000,,FAIL
+3017,2025,4,ocr,revenue,,Interest,,Interest,341.010,2000,2500,,FAIL
+3017,2025,5,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Sales per tree sold trees),367.000,7000,8750,,ok
+3017,2025,5,ocr,revenue,,Street Tree Removal & Replacement,General,Street Tree Replacement tree removals at of the cost),360.100,18000,18000,,ok
+3017,2025,5,ocr,revenue,,Miscellaneous Revenue,General,Mise Revenue,380.000,12500,13759,,ok
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Office Secretary,400.020,37612,39115,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Office Secretary,400.020,16120,16764,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Bookkeeper,400.030,30025,39421,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Bookkeeper,400.030,13082,16895,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Borough Manager Co,400.060,82578,87532,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Borough Manager,400.060,335390,37514,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (GF),Administrative Overtime oo.,400.090,630,630,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Administrative Overtime,400.090,270,270,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated,Administrative Benefits,,77970,85133,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Personnel,Allocated (SSW),Administrative Benefits,,33415,107928,,FAIL
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Principal,471.000,76500,50400,,ok
+3017,2025,9,ocr,expenditure,GENERAL GOVERNMENT,Debt Service,General,Interest,472.000.,15261,73593,,ok
+3017,2025,10,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,Allocated,MMO- Nonuniform,,0,0,,ok
+3017,2025,10,ocr,expenditure,GENERAL GOVERNMENT,Municipal Pension Obligation and 457b Contribution,General,Contributions/401A Contribution,457.158,15117,30569,,ok
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Auditing,400.280,12180,13370,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Auditing,400.280,5220,5730,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Legal Solicitor,400.290,21000,21000,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,Allocated,Legal-Solicitor,400.290,9000,9000,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Special Legal,400.29,15000,12500,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,Professional Services,General,Engineering,480.1800,5000,5000,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Supplies,400.100,3500,3500,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Administrative Postage,400.101,750,1500,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,General Administrative,400.200,16620,15100,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Professional Dues,400.201,3268,3831,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Conferences,400.202,8500,8500,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Legal Advertising,400.210,3000,3000,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Communication,400.300,16312,20431,,FAIL
+3017,2025,11,ocr,expenditure,GENERAL GOVERNMENT,General Administrative,General,Office Equipment,400.400,6276,5200,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,Code Enforcement,400.009,,0,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,U&0O Inspection,414.100,6000,6000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,Drainage Plan Review,414.110,6000,6000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,ContractedBldg Inspector,414.120,25000,25000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,Zoning Hearing Expenses,414.200,4000,3000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,P&Z Expenses,414.220,1000,1000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,Legal-ZHB,414.290,5000,4000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,Benefits,,6694,7183,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,Insurance and Bonding,Allocated,Insurance Bonding,,7180,7647,,ok
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated,Salary- Treasurer,401.020,6076,6076,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated,Salary- Treasurer,401.020,6076,6076,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Tax Collector Bond,401.150,1000,1000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Tax Collector Bond,401.150,1000,1000,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,General,LST Collection,401.040,2500,2500,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,SSW,Sewer Billing,401.300,1350,1350,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (GF),Tax Collector Expenses,401.200,1250,1250,,FAIL
+3017,2025,12,ocr,expenditure,GENERAL GOVERNMENT,,Allocated (SSW),Tax Collector Expenses,401.200,1250,1250,,FAIL
+3017,2025,13,ocr,expenditure,GENERAL GOVERNMENT,Contribution to Capital,General,Contribution to Capital,492.300,14000,14000,,ok
+3017,2025,13,ocr,expenditure,GENERAL GOVERNMENT,"$7,000 for PW Building roof and $7,000 for PW Building Heaters",General,Grants,492.280,0,0,,ok
+3017,2025,13,ocr,expenditure,GENERAL GOVERNMENT,"Matching funds, DECD applications and engineering expenses",General,Misc Expenses,480.000,14000,14000,,ok
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Police Chief,410.010,143767,152393,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary-Sergeant,410.020,214600,223199,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Salary- Patrol,410.040,526477,578752,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Shift Differential,410.181,55698,59440,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Festive Holiday Pay,410.182,28000,28000,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Rutledge Bonus,410.021,26400,26400,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Overtime/PT Wages,410.183,100000,114619,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Call Time,410.186,1500,1500,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Crossing Guards,410.050,15053,15661,,FAIL
+3017,2025,13,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Contribution to Future Medical Benefits,487.157,99058,110872,,FAIL
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Clerk/Meter Enforcement,410.052,43462,45200,,FAIL
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Personnel,General,Benefits,,481263,499084,,FAIL
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Animal Control,410.051,3000,3000,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Office Supplies,410.200,6860,6860,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,General Expenses,410.220,19100,19100,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Continuing Education,410.221,4000,5000,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Dues and Conferences,410.222,2295,2295,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Education Reimbursement,410.230,10000,8000,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Uniforms,410.238,12200,15600,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Ammo/Supplies,410.242,21500,21500,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Communications,410.320,23500,40000,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Headquarters,410.373,1800,1800,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police General Expenditures,General,Public Relations,410.188,3000,3000,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Police Pension Obligation,General,Pension Obligation,,307499,336182,,ok
+3017,2025,14,ocr,expenditure,PUBLIC SAFETY,Insurance,General,Insurance,,34555,34555,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Operations,410.25,23450,23450,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Paymentto Capital,410.252,37000,37000,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Police Vehicle Operation & Maintenance,General,Vehicle Insurance,,12268,13064,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Hydrants,413.140,25250,26000,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Contribution to SFPA,413.200,400000,525000,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service- Principal,413.471,13200,0,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Debt Service-Interest,413.472,3067,3067,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Insurance- Auto,,14257,15183,,ok
+3017,2025,15,ocr,expenditure,PUBLIC SAFETY,Fire Expenses,General,Insurance- Workers Comp,,17000,14500,,ok
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Electric,434.000,58800,58800,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Light Repair,434.100,12500,18000,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Annual Paving,439.000,99035,99035,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Engineering,439.313,8400,8400,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Annual Street Paving,439.000,7965,7965,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Genera,Street Repairs- Wages,438.120,5000,5000,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Repairs- Materials and Supplies,438.220,1000,0,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Sweeping,431.300,550,0,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Cleaning- Wages,431.100,10000,10000,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,8763,9107,,FAIL
+3017,2025,15,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Traffic Signals -Electric,433.000,2500,2500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Street Signs and Markings Wages.,433.110,11400,11400,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Street Signs and Markings Supplies,433.200,2500,2500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Professional Street Striping,433.300,4500,4500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,6660,6922,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Snow Removal Wages,432.100,13000,13000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Removal- Materials,432.200,,0,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Snow Equipment Materials and Supplies,432.330,2000,2000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,7595,7893,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Storm Sewer Wages,436.100,9000,9000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer- Materials and Supplies,436.200,650,650,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,Highway,Storm Sewer Engineering,436.300,6500,6500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,5258,5464,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Town Center- Maintenance Wages,435.100,15000,15000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,8763,9107,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Meter Maintenance- Wages,435.105,9000,9000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Benefits,,5258,5465,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Streets,General,Meters- Maintenance and Repair,435.110,3600,3600,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Plant Operations,422.300,1025690,1025690,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Public Works Wages,421.000,11500,11500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Supplies Materials and,421.200,500,500,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer- Preventative Maintenance,421.220,30000,30000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Equipment Maintenance,421.440,1000,1000,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service-Principal,471.000,22300,5600,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Debt Service- Interest,472.000,4140,10621,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,Allocated,Allocated Expenses,,156399,166826,,FAIL
+3017,2025,16,ocr,expenditure,PUBLIC WORKS,Sanitary Sewer,SSW,Sewer Billing,,1350,1350,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Collection,425.000,237600,256608,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Refuse Disposal (DCSWA),425.100,108750,113125,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Center Wages,,8000,8000,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW ss,Recycling Collection,421.150,118800,128304,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Recycling Disposal Republic,421.155,33750,38700,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Wages,427.200,6000,6000,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Disposal,427.300,9500,9500,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Yard Waste Collection,427.350,70200,75816,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Leaf Collection,427.100,34000,34000,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,ssw,Compost Deliveries,427.110,7000,7000,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,Leaf Collection Operating Expenses,427.375,6000,6000,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,ssw,Composting Expense,427.381,2750,,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,ssw,Composting Site Wages,427.382,4500,4500,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,Allocated,Allocated Expenses,,89439,94767,,FAIL
+3017,2025,17,ocr,expenditure,PUBLIC WORKS,Solid Waste,SSW,ss Benefits,,34762,36127,,FAIL
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Allocated Expenses,,28700,28924,,no total
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Allocated,Insurance,7,1857,1977,,no total
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,Vehicle Operation and Maintenance,Oo Miscellaneous,,,30557,30901,,no total
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,,Allocated,Administration,,70372,70678,,FAIL
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,,Allocated,Insurance oo,,1077,1147,,FAIL
+3017,2025,18,ocr,expenditure,PUBLIC WORKS,,,Tools,1.000,,1000,,FAIL
+3017,2025,18,ocr,expenditure,COMMUNITY SERVICES,,General,Library,456.000,223258,236653,,ok
+3017,2025,18,ocr,expenditure,COMMUNITY SERVICES,,General,SRA,450.500,10000,10000,,ok
+3017,2025,18,ocr,expenditure,COMMUNITY SERVICES,,General,Senior Sitizens Assoc.,450.530,25000,25000,,ok
+3017,2025,18,ocr,expenditure,COMMUNITY SERVICES,,General,Town Center,450.540,46350,48102,,ok
+3017,2025,18,ocr,expenditure,COMMUNITY SERVICES,,General,PAC,,20000,20000,,ok
