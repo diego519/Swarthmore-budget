@@ -1,6 +1,6 @@
 [project]
 name = "swarthmore-budget"
-version = "0.1.0"
+version = "1.0.0"
 description = "Open, reproducible analysis of Swarthmore Borough (PA) public financial documents."
 readme = "README.md"
 requires-python = ">=3.11"

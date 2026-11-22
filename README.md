@@ -219,9 +219,47 @@ uv run scripts/fetch_documents.py download   # fetches only what's new
 git add data/ && git commit
 ```
 
+## Releases
+
+Changes are recorded in [CHANGELOG.md](CHANGELOG.md), and each release is
+tagged in git (`v1.0.0`, ...) and listed on the
+[releases page](../../releases). The version in `pyproject.toml` is printed
+at the bottom of every page of the website, so a figure quoted from the site
+can be traced to the release it came from, and that release's code and data
+can be checked out with `git checkout v1.0.0`.
+
+Version numbers follow [Semantic Versioning](https://semver.org), read for a
+data project:
+
+- **Major**: a change that breaks reuse. A column or file in
+  `data/processed/` is renamed, removed, or changes meaning, or links into the
+  website stop working.
+- **Minor**: new data or features. A newly posted budget or other document is
+  added, a new page or chart appears, or a change of method revises published
+  figures.
+- **Patch**: corrections. A misread or mismapped figure is fixed, or wording
+  and display are corrected.
+
+When figures change, the changelog lists which ones.
+
+To make a release:
+
+```sh
+# 1. Move the changelog's [Unreleased] notes under a new version heading,
+#    and set the same version in pyproject.toml.
+uv lock                          # records the new version in uv.lock
+uv run scripts/build_site.py     # prints the new version on the pages
+git commit -am "Release vX.Y.Z"
+git tag -a vX.Y.Z -m "vX.Y.Z"
+git push origin main vX.Y.Z
+# 2. Publish the release, with that version's changelog section as its notes:
+gh release create vX.Y.Z --title vX.Y.Z --notes-file <notes.md>
+```
+
 ## What's here
 
 ```
+CHANGELOG.md         What changed in each release
 data/
   sources.csv        Catalogue of documents (hand-curated, the source of truth)
   site_links.csv     Snapshot of document links on the borough website

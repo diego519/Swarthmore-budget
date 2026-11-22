@@ -20,6 +20,7 @@ Inputs:
     data/processed/proposed_budget_summary.csv
                                        the latest proposed budget, by category
                                        (from build_proposed_summary.py; optional)
+    pyproject.toml                     the release version, shown on each page
 
 Usage:
     uv run scripts/build_site.py
@@ -31,6 +32,7 @@ import calendar
 import datetime
 import json
 import sys
+import tomllib
 from collections import defaultdict
 from pathlib import Path
 
@@ -47,6 +49,7 @@ PROPOSED_CSV = PROCESSED_DIR / "proposed_budget_summary.csv"
 REPO_URL = "https://github.com/diego519/Swarthmore-budget"
 DOC_URL = "https://www.swarthmorepa.org/DocumentCenter/View/{doc_id}"
 DEFAULT_ITEM = "exp.total"
+VERSION = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
 
 
 def money(v: int) -> str:
@@ -377,6 +380,7 @@ def main() -> int:
         "/*__COMMON_JS__*/": (TEMPLATES / "common.js").read_text(encoding="utf-8"),
         "__DATA__": payload,
         "__REPO_URL__": REPO_URL,
+        "__VERSION__": VERSION,
         "__LAST_ESTIMATE_YEAR__": str(
             max(int(r["year"]) for r in series if r["measure"] == "estimated_actual")
         ),
