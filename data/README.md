@@ -114,4 +114,4 @@ borough added, removed or relabelled over time.
 | `bytes` | File size |
 | `content_type` | As reported by the server |
 | `original_filename` | The filename the borough uploaded, from the `Content-Disposition` header |
-| `retrieved_at_utc` | When we downloaded it |
+| `retrieved_at_utc` | When this exact version (this checksum) was first downloaded. Re-downloading identical bytes leaves it unchanged. |

@@ -346,6 +346,10 @@ def cmd_download(args: argparse.Namespace) -> int:
         if prev and prev["sha256"] != record["sha256"]:
             print(f"{label}  WARNING: content changed since {prev['retrieved_at_utc']}")
             changed += 1
+        elif prev:
+            # Same bytes as before: keep the original timestamp so that
+            # re-running the download doesn't create a spurious diff.
+            record["retrieved_at_utc"] = prev["retrieved_at_utc"]
 
         records[row["doc_id"]] = record
         downloaded += 1
