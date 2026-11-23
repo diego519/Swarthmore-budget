@@ -114,6 +114,23 @@ function proposedValue(id) {
 function proposedEstimated(id) { return !!PROPOSED && PROPOSED.items_estimated.includes(id); }
 function yearLabel(year) { return isProposed(year) ? `${year} (proposed)` : String(year); }
 
+// ---------------------------------------------------------------- analytics
+// Usage events, sent to Google Analytics where the page includes it (see
+// GA_MEASUREMENT_ID in build_site.py) and otherwise dropped. The README lists
+// each event and its parameters.
+
+function track(name, params) { if (window.gtag) window.gtag("event", name, params); }
+// Once per page load, for things done many times a visit (hovering a chart).
+const TRACKED = new Set();
+function trackOnce(name, params) {
+  const key = name + JSON.stringify(params);
+  if (!TRACKED.has(key)) { TRACKED.add(key); track(name, params); }
+}
+// Opening a "Table of values" (tables shown open to begin with aren't counted).
+document.querySelectorAll("details:not([open])").forEach((d) => {
+  d.addEventListener("toggle", () => { if (d.open) track("open_table", { table: d.querySelector("table").id }); });
+});
+
 // ---------------------------------------------------------------- page bits
 
 function setupSegmented(id, get, set) {
@@ -122,6 +139,7 @@ function setupSegmented(id, get, set) {
   box.addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (!b || b.disabled) return;
+    if (b.dataset.value !== get()) track("change_setting", { setting: id.replace(/-toggle$/, ""), choice: b.dataset.value });
     set(b.dataset.value);
     sync();
   });
@@ -203,6 +221,7 @@ function interact(fig, f, show, { crosshair = true, onLeave } = {}) {
   const hit = el("rect", { x: f.m.l - 16, y: 0, width: f.width - f.m.l - f.m.r + 32, height: f.height, fill: "transparent" }, f.svg);
   let current = f.n - 1;
   function at(i) {
+    trackOnce("chart_tooltip", { chart: fig.id });
     current = Math.max(0, Math.min(f.n - 1, i));
     if (cross) {
       cross.setAttribute("x1", f.x(current));

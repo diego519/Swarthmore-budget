@@ -19,6 +19,12 @@ data project (see [Releases](README.md#releases) in the README):
 
 ## [Unreleased]
 
+### Added
+
+- **Visitor analytics.** The website reports visits, and which of its
+  controls, charts and tables people use, to Google Analytics (see
+  [Analytics](README.md#analytics) in the README).
+
 ## [1.0.0] - 2026-11-22
 
 First public release.

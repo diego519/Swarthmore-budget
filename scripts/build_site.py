@@ -5,7 +5,8 @@ Each page is a single self-contained HTML file -- a template from
 scripts/templates/ with the shared stylesheet and script (common.css,
 common.js) and the budget data (as JSON) written into it. The pages need no
 server or external libraries: open them locally or host them anywhere
-(e.g. GitHub Pages, serving the docs/ folder).
+(e.g. GitHub Pages, serving the docs/ folder). With GA_MEASUREMENT_ID set,
+the published pages also report visits to Google Analytics.
 
     docs/index.html      overview: totals over time by broad category, and
                          what drove the change between two years
@@ -31,6 +32,7 @@ from __future__ import annotations
 import calendar
 import datetime
 import json
+import re
 import sys
 import tomllib
 from collections import defaultdict
@@ -48,6 +50,9 @@ PROPOSED_CSV = PROCESSED_DIR / "proposed_budget_summary.csv"
 
 REPO_URL = "https://github.com/diego519/Swarthmore-budget"
 DOC_URL = "https://www.swarthmorepa.org/DocumentCenter/View/{doc_id}"
+# Google Analytics (GA4) measurement ID, "G-..." (Admin > Data streams in the
+# GA property). Empty: the pages include no analytics. See the README.
+GA_MEASUREMENT_ID = "G-597GBN3XND"
 DEFAULT_ITEM = "exp.total"
 VERSION = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
 
@@ -214,6 +219,30 @@ def load_proposed(sources: dict) -> dict | None:
     }
 
 
+def analytics(measurement_id: str) -> str:
+    """The Google Analytics tag for each page's <head>, or nothing without an
+    ID. It loads only on the published site (https), not when a page is opened
+    from a file or a local server. Usage events are sent by track() in
+    common.js."""
+    if not measurement_id:
+        return ""
+    if not re.fullmatch(r"G-[A-Z0-9]+", measurement_id):
+        sys.exit(f"GA_MEASUREMENT_ID should look like G-XXXXXXXXXX, not {measurement_id!r}")
+    return f"""<script>
+if (location.protocol === "https:") {{
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {{ dataLayer.push(arguments); }};
+  gtag("js", new Date());
+  gtag("config", "{measurement_id}");
+  const tag = document.createElement("script");
+  tag.async = true;
+  tag.src = "https://www.googletagmanager.com/gtag/js?id={measurement_id}";
+  document.head.appendChild(tag);
+}}
+</script>
+"""
+
+
 def load_cpi() -> dict | None:
     """Annual averages of the monthly CPI-U; the latest year may be partial."""
     if not CPI_CSV.exists():
@@ -376,6 +405,7 @@ def main() -> int:
     # Embedding JSON in a <script> element: "</" must not appear literally.
     payload = json.dumps(data, separators=(",", ":"), sort_keys=True).replace("</", "<\\/")
     replacements = {
+        "<!--__ANALYTICS__-->\n": analytics(GA_MEASUREMENT_ID),
         "/*__COMMON_CSS__*/": (TEMPLATES / "common.css").read_text(encoding="utf-8"),
         "/*__COMMON_JS__*/": (TEMPLATES / "common.js").read_text(encoding="utf-8"),
         "__DATA__": payload,

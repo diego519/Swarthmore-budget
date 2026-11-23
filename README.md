@@ -204,11 +204,40 @@ The latest year's average uses the months published so far; months the BLS
 did not publish (October 2025, during the federal government shutdown) are
 left out of their year's average.
 
-Each page is one self-contained HTML file with no external dependencies: open
-it in a browser, or host it anywhere. The site is published with GitHub Pages
-from the `main` branch's `/docs` folder at
+Each page is one self-contained HTML file that needs nothing else to work:
+open it in a browser, or host it anywhere. The site is published with GitHub
+Pages from the `main` branch's `/docs` folder at
 <https://diego519.github.io/Swarthmore-budget/>; pushing rebuilt pages to
 `main` updates it.
+
+### Analytics
+
+With `GA_MEASUREMENT_ID` set in `scripts/build_site.py`, the published pages
+report visits to Google Analytics (GA4). Pages opened from a file or a local
+server report nothing. If you publish your own copy of the site, set
+`GA_MEASUREMENT_ID` to your own ID or to `""`. Besides GA's standard measures (page views, visitors,
+engagement time, and clicks on links to other sites, such as the borough's
+documents), the pages send these events:
+
+| Event | Parameters | Sent when someone... |
+| --- | --- | --- |
+| `change_setting` | `setting`, `choice` | changes a control. `setting` is `view` (spending or revenue), `years` (e.g. `2016-2027`), `detail` (break down by category or budget line), `dollars` (`nominal` or `real`), `budget_line` (the explorer's line, e.g. `exp.ps.police.subtotal`), `base` (change compared with the previous year, `yoy`, or the first, `since`) or `unit` (`pct` or `usd`). |
+| `chart_tooltip` | `chart` | first reads a chart's figures by hovering or with the keyboard (once per chart per page view): `stack-chart` and `drivers-chart` on the overview, `amount-chart` and `change-chart` in the explorer. |
+| `open_table` | `table` | opens a "Table of values" on the overview: `stack-table` or `drivers-table`. |
+
+To set it up:
+
+1. In [Google Analytics](https://analytics.google.com), create a property with
+   a **Web** data stream for `https://diego519.github.io`, and copy its
+   measurement ID (`G-...`) into `GA_MEASUREMENT_ID`.
+2. In that data stream's **Enhanced measurement** settings, open **Page
+   views**' advanced settings and turn off **Page changes based on browser
+   history events**. The pages keep their settings in the URL, so with it on
+   every click on a control counts as a page view.
+3. Under **Admin > Custom definitions**, create an event-scoped custom
+   dimension for each parameter (`setting`, `choice`, `chart`, `table`), so
+   they appear in reports. GA only records them from then on.
+4. Rebuild the site and push it to `main`.
 
 ### Updating when the borough posts something new
 
