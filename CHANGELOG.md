@@ -19,6 +19,8 @@ data project (see [Releases](README.md#releases) in the README):
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-23
+
 ### Added
 
 - **Actual vs. budget**, a new page of the website
@@ -158,6 +160,7 @@ First public release.
 - Audits, monthly financial reports and pension reports are downloaded but
   not yet parsed.
 
-[Unreleased]: https://github.com/diego519/Swarthmore-budget/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/diego519/Swarthmore-budget/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/diego519/Swarthmore-budget/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/diego519/Swarthmore-budget/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/diego519/Swarthmore-budget/releases/tag/v1.0.0
