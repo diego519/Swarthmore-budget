@@ -19,11 +19,15 @@ data project (see [Releases](README.md#releases) in the README):
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-22
+
 ### Added
 
 - **Visitor analytics.** The website reports visits, and which of its
   controls, charts and tables people use, to Google Analytics (see
-  [Analytics](README.md#analytics) in the README).
+  [Analytics](README.md#analytics) in the README). A note at the foot of each
+  page says so, and that no data is collected for commercial purposes. No
+  figures change.
 
 ## [1.0.0] - 2026-11-22
 
@@ -85,5 +89,6 @@ First public release.
 - Audits, monthly financial reports and pension reports are downloaded but
   not yet parsed.
 
-[Unreleased]: https://github.com/diego519/Swarthmore-budget/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/diego519/Swarthmore-budget/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/diego519/Swarthmore-budget/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/diego519/Swarthmore-budget/releases/tag/v1.0.0

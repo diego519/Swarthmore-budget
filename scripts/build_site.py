@@ -243,6 +243,16 @@ if (location.protocol === "https:") {{
 """
 
 
+def analytics_note(measurement_id: str) -> str:
+    """The notice on each page that it uses Google Analytics, if it does."""
+    if not measurement_id:
+        return ""
+    return (
+        '<p class="small">This site uses Google Analytics to follow usage trends: how many people visit, and which '
+        "of its features they use. No data is collected for commercial purposes.</p>"
+    )
+
+
 def load_cpi() -> dict | None:
     """Annual averages of the monthly CPI-U; the latest year may be partial."""
     if not CPI_CSV.exists():
@@ -406,6 +416,7 @@ def main() -> int:
     payload = json.dumps(data, separators=(",", ":"), sort_keys=True).replace("</", "<\\/")
     replacements = {
         "<!--__ANALYTICS__-->\n": analytics(GA_MEASUREMENT_ID),
+        "<!--__ANALYTICS_NOTE__-->": analytics_note(GA_MEASUREMENT_ID),
         "/*__COMMON_CSS__*/": (TEMPLATES / "common.css").read_text(encoding="utf-8"),
         "/*__COMMON_JS__*/": (TEMPLATES / "common.js").read_text(encoding="utf-8"),
         "__DATA__": payload,
