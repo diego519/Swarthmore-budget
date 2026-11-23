@@ -19,12 +19,13 @@
   <nav class="site-nav" aria-label="Pages">
     <a href="index.html" data-keep-dollars>Overview</a>
     <a href="explorer.html" aria-current="page">Explore a budget line</a>
+    <a href="actuals.html" data-keep-dollars>Actual vs. budget</a>
   </nav>
   <header>
     <h1>Explore a budget line</h1>
     <p class="lede">Choose any line of Swarthmore Borough's adopted budget to see its amount each year since 2016
-      and how much it rose or fell, and, where it can be matched, the latest proposed budget. Every figure links to the
-      page of the borough's budget it comes from.</p>
+      and how much it rose or fell, and, where it can be matched, the latest proposed budget and what was actually spent
+      or collected. Every figure links to its source.</p>
   </header>
 
   <div class="controls" role="group" aria-label="Chart options">
@@ -62,13 +63,15 @@
       <div class="item-path" id="item-path"></div>
       <h2 id="item-title"></h2>
       <div class="item-note" id="item-note"></div>
+      <div class="item-note" id="item-links"></div>
     </div>
     <figure id="amount-chart">
       <figcaption>
         <span class="small" id="amount-caption"></span>
         <span class="legend" id="amount-legend">
           <span><span class="key" style="background: var(--series-1)"></span>Adopted budget</span>
-          <span><span class="key" style="background: var(--series-2)"></span>Estimated actual</span>
+          <span id="estimate-legend"><span class="key" style="background: var(--series-3)"></span>Estimated actual</span>
+          <span id="monthly-legend" hidden><span class="key" style="background: var(--series-2)"></span>Actual (monthly reports)</span>
           <span id="proposed-legend" hidden><svg width="12" height="12" style="display:inline;vertical-align:-1px;margin-right:6px"><circle cx="6" cy="6" r="4" fill="var(--surface)" stroke="var(--series-1)" stroke-width="2"/></svg>Proposed</span>
         </span>
       </figcaption>
@@ -100,6 +103,12 @@
         It is a plan, not what was actually spent or collected.</li>
       <li><strong>Estimated actual</strong> is the borough's estimate, made late in the year, of what was actually spent or
         collected. It is printed in the following year's budget, so the latest available is for __LAST_ESTIMATE_YEAR__.</li>
+      <li><strong>Actual (monthly reports)</strong> is what was actually spent or collected: the year's total in the
+        borough's December monthly financial report to Council, before the year's audit. It is shown only where the
+        reports' ledger accounts cover the same things as the budget line, which is checked each year: their budget must
+        equal the line's adopted budget. Lines that include a share of costs the ledger records centrally, such as
+        employee benefits, don't qualify. Click a figure to see the accounts behind it on
+        <a href="actuals.html" data-keep-dollars>Actual vs. budget</a>.</li>
       <li>__DOLLARS_NOTE__</li>
       <li>__PROPOSED_NOTE__</li>
       <li>These are the <strong>summary lines</strong> of each budget ("Revenue/Expenditures - all operating funds"),
@@ -159,27 +168,32 @@ function changes(series) {
 function drawAmounts(series) {
   const fig = document.getElementById("amount-chart");
   document.getElementById("amount-caption").textContent = "Amount each year, " + dollarsPhrase();
-  const values = series.flatMap((d) => [d.adopted, d.estimate, d.isProposed ? d.proposed : null]).filter((v) => v !== null);
+  const values = series.flatMap((d) => [d.adopted, d.estimate, d.monthly, d.isProposed ? d.proposed : null])
+    .filter((v) => v !== null && v !== undefined);
   const { ticks, format } = moneyTicks(values);
   const f = frame(fig, { height: 280, labels: series.map((d) => d.year), yTicks: ticks, tickFormat: format });
   const hasEstimate = series.some((d) => d.estimate !== null);
+  const hasMonthly = series.some((d) => d.monthly != null);
   const prop = series.findIndex((d) => d.isProposed);
-  document.getElementById("amount-legend").hidden = !hasEstimate && prop < 0;
+  document.getElementById("amount-legend").hidden = !hasEstimate && !hasMonthly && prop < 0;
+  document.getElementById("estimate-legend").hidden = !hasEstimate;
+  document.getElementById("monthly-legend").hidden = !hasMonthly;
   document.getElementById("proposed-legend").hidden = prop < 0;
 
   const draw = (key, color) => {
     let path = "", pen = false;
     series.forEach((d, i) => {
-      if (d[key] === null) { pen = false; return; }
+      if (d[key] == null) { pen = false; return; }
       path += (pen ? "L" : "M") + f.x(i) + "," + f.y(d[key]);
       pen = true;
     });
     if (path) el("path", { d: path, fill: "none", stroke: color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, f.svg);
     series.forEach((d, i) => {
-      if (d[key] !== null) el("circle", { cx: f.x(i), cy: f.y(d[key]), r: 4, fill: color, stroke: "var(--surface)", "stroke-width": 2 }, f.svg);
+      if (d[key] != null) el("circle", { cx: f.x(i), cy: f.y(d[key]), r: 4, fill: color, stroke: "var(--surface)", "stroke-width": 2 }, f.svg);
     });
   };
-  draw("estimate", "var(--series-2)");
+  draw("estimate", "var(--series-3)");
+  draw("monthly", "var(--series-2)");
   draw("adopted", "var(--series-1)");
 
   // The proposal: a hollow point, joined faintly to the last adopted budget.
@@ -198,7 +212,8 @@ function drawAmounts(series) {
     t.textContent = moneyCompact(amount(last[0])) + (last[0].isProposed ? "*".repeat(last[0].estimated ? 1 : 0) : "");
   }
   f.svg.setAttribute("role", "img");
-  f.svg.setAttribute("aria-label", "Line chart of the adopted budget" + (hasEstimate ? " and estimated actual" : "") +
+  f.svg.setAttribute("aria-label", "Line chart of the adopted budget" + (hasEstimate ? ", estimated actual" : "") +
+    (hasMonthly ? ", actual from the monthly reports" : "") +
     " by year. Use the left and right arrow keys to read each year; the table below lists every value.");
 
   interact(fig, f, (i, tip) => {
@@ -211,7 +226,10 @@ function drawAmounts(series) {
       return;
     }
     tipRow(tip, "var(--series-1)", d.adopted === null ? "not in budget" : money(d.adopted), "Adopted budget");
-    if (hasEstimate) tipRow(tip, "var(--series-2)", d.estimate === null ? "not available" : money(d.estimate), "Estimated actual");
+    if (hasEstimate) tipRow(tip, "var(--series-3)", d.estimate === null ? "not available" : money(d.estimate), "Estimated actual");
+    if (hasMonthly) tipRow(tip, "var(--series-2)", d.monthly == null ? "not available" : money(d.monthly), "Actual (monthly reports)");
+    if (d.monthly != null && d.mRestated !== null) tipText(tip, "tt-note", `Actual restated a year later: ${money(adjust(d.mRestated, d.year))}`);
+    if (d.monthly != null && d.mUnconfirmed) tipText(tip, "tt-note", `${d.mUnconfirmed} of its accounts' figures unconfirmed`);
     if (DOLLARS.mode === "real" && d.adoptedNominal !== null) tipText(tip, "tt-note", "Budgeted as " + money(d.adoptedNominal) + " in " + d.year + " dollars");
     if (d.adopted !== null) tipText(tip, "tt-note", "Source: " + docLabel(d.aDoc) + ", page " + d.aPage);
     if (d.aCorrected || d.eCorrected) tipText(tip, "tt-note", "† Read by OCR and corrected by hand");
@@ -299,6 +317,12 @@ function drawTiles(series) {
     const p = itemPct(amount(last), amount(prev));
     addTile(tiles, "Change from " + prev.year, signedMoney(d, true), p === null ? "" : pct(p), signedMoney(d, false));
   }
+  const lastMonthly = [...series].reverse().find((d) => d.monthly != null);
+  if (lastMonthly) {
+    addTile(tiles, `${lastMonthly.year} actual (monthly reports)`, moneyCompact(lastMonthly.monthly),
+      lastMonthly.adopted ? `${((100 * lastMonthly.monthly) / lastMonthly.adopted).toFixed(1)}% of its adopted budget` : "",
+      money(lastMonthly.monthly));
+  }
   if (first.year < last.year) {
     const d = amount(last) - amount(first);
     const p = itemPct(amount(last), amount(first));
@@ -316,7 +340,10 @@ function drawTable(series) {
   const base = series.find((d) => d.adopted !== null && d.adopted > 0);
   const head = table.createTHead().insertRow();
   const since = base && !isNet() ? "Change since " + base.year : "";
-  for (const [h, span] of [["Year", 1], ["Adopted budget", 1], ["Change from previous year", 2], [since, 1], ["Estimated actual", 1]]) {
+  const hasMonthly = series.some((d) => d.monthly != null);
+  const item = ITEMS.get(state.item);
+  for (const [h, span] of [["Year", 1], ["Adopted budget", 1], ["Change from previous year", 2], [since, 1], ["Estimated actual", 1],
+    ...(hasMonthly ? [["Actual (monthly reports)", 1]] : [])]) {
     const th = document.createElement("th"); th.textContent = h; th.colSpan = span; head.appendChild(th);
   }
   const body = table.createTBody();
@@ -330,9 +357,9 @@ function drawTable(series) {
     if (marks) { const s = document.createElement("sup"); s.textContent = marks; td.appendChild(s); }
   };
   series.forEach((d, i) => {
-    if (amount(d) === null && d.estimate === null) return;
+    if (amount(d) === null && d.estimate === null && d.monthly == null) return;
     const tr = body.insertRow();
-    const cells = Array.from({ length: 6 }, () => tr.insertCell());
+    const cells = Array.from({ length: hasMonthly ? 7 : 6 }, () => tr.insertCell());
     cells[0].textContent = yearLabel(d.year);
     if (d.isProposed) {
       const a = document.createElement("a");
@@ -362,7 +389,20 @@ function drawTable(series) {
       if (d.eError) { marks += "§"; footnotes.push(`§ ${d.year} estimated actual: ${d.eError}`); }
       link(cells[5], d.estimate, d.eDoc, d.ePage, marks);
     }
+    if (hasMonthly && d.monthly != null) {
+      const a = document.createElement("a");
+      a.href = actualsUrl(item.actuals[0], item.actuals[1], d.year);
+      a.textContent = money(d.monthly);
+      a.title = `From the ${docLabel(d.mDoc)}; the accounts behind it are on the Actual vs. budget page`;
+      cells[6].appendChild(a);
+      if (d.mRestated !== null) {
+        const s = document.createElement("sup"); s.textContent = "‖"; cells[6].appendChild(s);
+        footnotes.push(`‖ ${d.year}: the next December's monthly report restates the year's actual as ${money(adjust(d.mRestated, d.year))}.`);
+      }
+    }
   });
+  if (hasMonthly) footnotes.push("Actual (monthly reports): the year's total in the December monthly financial report, shown " +
+    "for years in which the reports' budget for this line's accounts equals its adopted budget. Click a figure to see its accounts.");
   if (series.some((d) => d.aCorrected || d.eCorrected)) footnotes.unshift("† Read from a scanned page by OCR and corrected by hand after checking the page.");
   if (DOLLARS.mode === "real") footnotes.unshift(`Amounts are adjusted for inflation to ${CPI.ref_year} dollars; the linked budget pages show the amounts as budgeted.`);
   for (const n of footnotes) { const p = document.createElement("p"); p.textContent = n; notes.appendChild(p); }
@@ -378,6 +418,19 @@ function render() {
       ? (item.note ? " " : "") + `The ${PROPOSED.year} proposed budget is laid out differently and can't be matched to this ` +
         "line; the overview compares it by category."
       : "");
+  const links = document.getElementById("item-links");
+  links.textContent = "";
+  if (item.actuals) {
+    const [view, cat] = item.actuals;
+    const a = document.createElement("a");
+    a.href = actualsUrl(view, cat, "");
+    a.textContent = "Actual vs. budget";
+    const what = cat === "all"
+      ? `What the borough has actually ${view === "spending" ? "spent" : "collected"}`
+      : `What has actually been ${view === "spending" ? "spent on" : "collected in"} ` +
+        DATA.overview[view].broad.find((c) => c.key === cat).label.toLowerCase();
+    links.append(`${what}, month by month, with the accounts behind it: `, a);
+  }
   const pctButton = document.querySelector('#unit-toggle button[data-value="pct"]');
   pctButton.disabled = isNet();
   pctButton.title = isNet() ? "Percent change isn't meaningful for a surplus or deficit" : "";

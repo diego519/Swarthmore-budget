@@ -75,11 +75,16 @@ function annualRate(first, last, years) {
 function docLabel(docId) { return DATA.docs[docId].title; }
 function sourceUrl(docId, page) { return DATA.docs[docId].url + "#page=" + page; }
 function explorerUrl(itemId) { return `explorer.html#item=${encodeURIComponent(itemId)}&dollars=${DOLLARS.mode}`; }
+// The actuals page, showing a category (or "all") of spending or revenue.
+function actualsUrl(view, category, year) {
+  return `actuals.html#view=${view}&year=${year || ""}&category=${category}&dollars=${DOLLARS.mode}`;
+}
 
 // ---------------------------------------------------------------- data access
 
 // The figure for one budget line, year and measure ("a" adopted budget,
-// "e" estimated actual, "r" restated budget), in the current dollars mode.
+// "e" estimated actual, "r" restated budget, "m" actual from the monthly
+// reports), in the current dollars mode.
 function value(id, year, measure = "a") {
   const r = (DATA.values[id] || {})[year];
   return r && r[measure] !== undefined ? adjust(r[measure], year) : null;
@@ -95,6 +100,9 @@ function seriesFor(id) {
       adopted: adjust(r.a, y), adoptedNominal: r.a ?? null, aDoc: r.ad, aPage: r.ap, aCorrected: !!r.ac, aError: r.as || "",
       estimate: adjust(r.e, y), estimateNominal: r.e ?? null, eDoc: r.ed, ePage: r.ep, eCorrected: !!r.ec, eError: r.es || "",
       restated: r.r ?? null, rDoc: r.rd, rPage: r.rp, rError: r.rs || "",
+      // The year's total in the December monthly report, where it covers the same as the line.
+      monthly: adjust(r.m, y), monthlyNominal: r.m ?? null, mDoc: r.md, mRestated: r.mr ?? null,
+      mUnconfirmed: r.mu || 0,
     };
   });
 }

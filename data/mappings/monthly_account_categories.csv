@@ -1,5 +1,5 @@
 ledger_id,statement,description,category,payroll,note
-01-400-000,expense,INTERFUND OPERATING TRANSFER,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-400-000,expense,INTERFUND OPERATING TRANSFER,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
 01-400-009,expense,CODE ENFORCEMENT OFFICER,gg,yes,
 01-400-020,expense,ADMINISTRATIVE ASSISTANT,gg,yes,
 01-400-030,expense,BOOKKEEPER,gg,,"Not counted as payroll, following the 2027 proposal's mapping (contracted bookkeeper)."
@@ -96,7 +96,6 @@ ledger_id,statement,description,category,payroll,note
 01-436-100,expense,STORM SEWERS WAGES,streets,yes,
 01-437-250,expense,VEHICLE REPAIR,pw_vehicles,,
 01-437-252,expense,NEW MID SIZE DUMP TRUCK,pw_vehicles,,
-01-438-000,expense,ANNUAL STREET PAVING CONTRACT,streets,,"Annual street paving contract (2025 only, then budgeted under 01-439-000)."
 01-438-120,expense,STREET REPAIRS WAGES,streets,yes,
 01-438-220,expense,STREET REPAIRS,streets,,
 01-439-000,expense,ANNUAL STREET PAVING CONTRACT,streets,,
@@ -132,8 +131,8 @@ ledger_id,statement,description,category,payroll,note
 01-487-156,expense,HSA,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
 01-487-157,expense,POST-RETIREMENT HEALTH BENEFIT,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
 01-487-158,expense,CONTR. TO 457(b) PLAN,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
-01-492-000,expense,INTERFUND TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
-01-492-001,expense,TFR TO HIGHWAY FUND,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-492-000,expense,INTERFUND TRANSFERS,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
+01-492-001,expense,TFR TO HIGHWAY FUND,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
 01-492-280,expense,CONTRIB TO GRANT FUNDING,gg,,
 01-492-300,expense,CONTRIBUTION TO CAPITAL,gg,,
 04-400-020,expense,ADMINISTRATIVE ASSISTANT,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
@@ -268,7 +267,7 @@ ledger_id,statement,description,category,payroll,note
 01-380-700,revenue,CFA/LSA GRANT,misc_revenue,,
 01-387-000,revenue,SUPPLEMENTAL CONTRIBUTION,misc_revenue,,
 01-387-100,revenue,CONTRIBUTION FROM OTHER SOUR,misc_revenue,,
-01-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
 01-393-000,revenue,PROCEEDS OF GENERAL LONG-TERM,financing,,"Proceeds of borrowing: not revenue, so left out."
 01-395-000,revenue,REFUND OF PRIOR YEAR EXPENSES,misc_revenue,,
 04-341-010,revenue,INTEREST,misc_revenue,,
@@ -281,12 +280,12 @@ ledger_id,statement,description,category,payroll,note
 04-380-030,revenue,PERFORMANCE GRANT REVENUE,misc_revenue,,
 04-380-040,revenue,LEAF MULCH SALES,misc_revenue,,
 04-380-330,revenue,UNRESTRICTED FUND BALANCE,prior_year_funds,,Unrestricted fund balance: prior-year funds.
-04-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+04-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
 05-341-010,revenue,INTEREST,misc_revenue,,
 05-355-050,revenue,MOTOR VEHICLE FUEL TAXES,intergovernmental,,"State liquid fuels tax (Highway Aid): intergovernmental, as in the budget summaries."
 05-380-000,revenue,MISCELLANEOUS REVENUE,misc_revenue,,
-05-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
-05-392-001,revenue,TFR FROM GENERAL FUND,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+05-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
+05-392-001,revenue,TFR FROM GENERAL FUND,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."
 09-300-010,revenue,CURRENT YEAR REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
 09-300-030,revenue,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
 09-300-040,revenue,INTERIM REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
@@ -296,4 +295,4 @@ ledger_id,statement,description,category,payroll,note
 10-300-030,revenue,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,"Sinking Fund property tax: counted with property taxes, as in the budget summaries."
 10-300-040,revenue,INTERIM REAL ESTATE TAXES,property_taxes,,"Sinking Fund property tax: counted with property taxes, as in the budget summaries."
 10-380-330,revenue,UNRESTRICTED FUND BALANCE,prior_year_funds,,Unrestricted fund balance: prior-year funds.
-10-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+10-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,"Transfer between the borough's own funds: left out on both sides. Almost none moved money in 2020-2026; $196,000 was booked as a General Fund transfer in May 2026 and reversed by June."

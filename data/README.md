@@ -32,6 +32,8 @@
 | `mappings/monthly_account_categories.csv` | hand | Which overview category each ledger account in the monthly reports belongs to. |
 | `processed/monthly_summary.csv` | `build_monthly_summary.py` | Monthly budget and actuals to date, by overview category. |
 | `processed/monthly_summary_checks.csv` | `build_monthly_summary.py` | Each year's ledger budget by category against the adopted budget summary. |
+| `mappings/budget_line_accounts.csv` | hand | Which ledger accounts make up each budget line that can be traced to them. |
+| `processed/budget_line_actuals.csv` | `build_line_actuals.py` | Each such line's actual for the year, where its accounts' budget matches its adopted budget. |
 
 ## Coverage
 
@@ -333,6 +335,7 @@ for revenue and for expenses. Amounts are in dollars and cents, as printed
 | `prior_year_budget`, `prior_year_mtd`, `prior_year_ytd` | The same for the year before, to the same month. |
 | `percent`, `prior_year_percent` | The printed percentage of budget (year-to-date / budget), this year and last. |
 | `verified` | The amount columns the report's own arithmetic confirms: the row's printed percentage matches its year-to-date / budget (confirming both, to within the percentage's rounding), or its column adds up in a department or fund subtotal (confirming it exactly). Amounts not listed may be misread; `monthly_series.csv` has them reconciled. |
+| `corrected` | The amount columns read from a hand correction of the OCR (`corrections/ocr_corrections.csv`). |
 | `ledger_id_as_read`, `description_as_read` | The id and description as OCR read them. |
 
 Each line's ledger id is put together from its fund and department, which
@@ -396,7 +399,7 @@ The `_check` columns list, separated by `;`:
 | `repeat` | The same figure is printed identically in another report (exact). |
 | `difference` | A month-to-date total equals the difference between this month's and last month's year-to-date totals, both confirmed (exact). |
 | `percent` | The line's printed percentage equals year-to-date / budget (to within its rounding to 0.01%). |
-| `corrected` | The figure was misread and has been corrected (see `monthly_series_corrections.csv`). |
+| `corrected` | The figure was misread and has been corrected, by the reconciliation (see `monthly_series_corrections.csv`) or by hand (`corrections/ocr_corrections.csv`). |
 
 A figure with no check (0.5% of them, mostly month-to-date totals) may be
 misread.
@@ -443,7 +446,9 @@ when the scripts run.
 
 ### `mappings/monthly_account_categories.csv`
 
-One row per ledger account in the monthly reports.
+One row per ledger account in the monthly reports. Each department's code is
+settled across the reports by its name (see `parse_monthly_reports.py`), so an
+account seen under a misread department code is listed under its real one.
 
 | Column | Description |
 | --- | --- |
@@ -462,7 +467,9 @@ One row per ledger account in the monthly reports.
 | `budget`, `ytd` | The year's budget as of the month's report, and the year-to-date total as reported that month. |
 | `restated_ytd` | The year-to-date total as restated in the same month's report a year later (blank until that report is posted). |
 | `estimated` | `yes` if the category includes a share of employee benefits or Sewer & Solid Waste overhead. |
-| `accounts`, `unconfirmed` | How many ledger accounts the category combines, and how many of their year-to-date figures are unconfirmed (see `monthly_series.csv`). |
+| `accounts` | How many ledger accounts the category combines. |
+| `unconfirmed`, `restated_unconfirmed` | How many of their year-to-date figures (as reported, as restated) no check confirms or could not be read (see `monthly_series.csv`). |
+| `unmatched`, `restated_unmatched` | Where a department's lines don't add up to its printed subtotal (more than one misread beyond correction) and the subtotal is confirmed exactly, the subtotal is used: the difference, counted in this category, that is not matched to any line. |
 | `reported_doc_id`, `restated_doc_id` | The two reports. |
 
 ### `processed/monthly_summary_checks.csv`
@@ -479,3 +486,26 @@ category).
 | `estimated` | `yes` if the ledger figure includes shared-out amounts. |
 | `doc_id` | The monthly report the ledger budget is from. |
 | `note` | Why the two differ, where they do by more than $1. |
+
+### `mappings/budget_line_accounts.csv`
+
+| Column | Description |
+| --- | --- |
+| `item_id` | The budget line (see `budget_items.csv`). |
+| `accounts` | The ledger accounts that make it up, separated by spaces: ledger ids (`01-456-000`), whole departments (`01-450-*`), a category of `monthly_summary.csv` (`category:community`), or every account on one side (`all:expense`, `all:revenue`). |
+| `note` | What the accounts are, and why. |
+
+### `processed/budget_line_actuals.csv`
+
+One row per budget line in the mapping and year with a December monthly
+report.
+
+| Column | Description |
+| --- | --- |
+| `item_id`, `year` | The budget line and year. |
+| `accounts` | How many ledger accounts make it up. |
+| `ledger_budget`, `adopted_budget`, `difference` | The accounts' budget in the year's first monthly report, the line's adopted budget, and `ledger - adopted`. |
+| `match` | `yes` if the two are equal (within $5 of rounding): the line and its accounts cover the same things that year. Only then is the actual used. |
+| `actual`, `restated_actual` | The accounts' total for the year in the December report, and as the next December's report restates it. |
+| `unconfirmed` | How many of the accounts' December figures no check confirms. |
+| `doc_id`, `page` | The December report, and the page of the line's first account (blank for categories). |

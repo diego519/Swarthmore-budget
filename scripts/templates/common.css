@@ -16,8 +16,9 @@
   --cat-4: #eda100;
   --cat-5: #e87ba4;
   --cat-6: #008300;
-  --series-1: var(--cat-1);  /* adopted budget; increases */
-  --series-2: var(--cat-2);  /* estimated actual */
+  --series-1: var(--cat-1);  /* budget; increases */
+  --series-2: var(--cat-2);  /* actual, from the monthly reports */
+  --series-3: var(--cat-3);  /* the borough's estimated actual */
   --negative: #e34948;       /* decreases */
   --link: #1c5cab;
   --font: system-ui, -apple-system, "Segoe UI", sans-serif;

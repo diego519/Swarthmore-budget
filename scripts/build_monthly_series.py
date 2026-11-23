@@ -20,13 +20,16 @@ Each figure as printed in each report (a "reading") is settled in rounds:
    add up to its printed subtotal, the misread figure is looked for among the
    readings not already confirmed (by sum or repeat, below). Changed to the
    value that makes the column add up, a reading qualifies if the line's
-   printed percentage does not contradict the new value and it has one of:
+   printed percentage does not contradict the new value (it can only if the
+   line's other figure, its budget or year-to-date, is confirmed exactly: on
+   a badly scanned line both may be misread) and it has one of:
      - the same figure printed with that value in another report;
      - the line's printed percentage agreeing with the new value but not
        with the reading, the change being to at most two digits, none of
        them finer than the percentage can tell apart (the arithmetic may
        have absorbed a second misread there);
-     - weakest: a change to a single digit.
+     - weakest: a change to a single digit, or a figure that could not be
+       read at all while the column's other figures are all confirmed.
    A month-to-date or year-to-date reading is not changed to a value that
    contradicts a confirmed printing of the same figure in another report.
    If exactly one reading qualifies, or exactly one has support of the first
@@ -125,6 +128,7 @@ class Reading:
     checks: set[str] = field(default_factory=set)
     corrected: str = ""  # method, if corrected
     weak: bool = False  # corrected on arithmetic and a one-digit slip alone, with no independent support
+    by_hand: bool = False  # read from a hand correction of the OCR (data/corrections/ocr_corrections.csv)
 
     @property
     def doc(self) -> str:
@@ -294,7 +298,7 @@ class Reconciler:
             columns = [c for c in COLUMNS if not c.endswith("mtd") or any(x[c] for x in doc_rows)]
             for i, r in enumerate(doc_rows):
                 for col in columns:
-                    rd = Reading(r, col, cents(r[col]))
+                    rd = Reading(r, col, cents(r[col]), by_hand=col in r["corrected"].split(";"))
                     rd.value = rd.printed
                     self.readings[doc][(i, col)] = rd
                     self.by_row[id(r)][col] = rd
@@ -320,6 +324,18 @@ class Reconciler:
 
     def percent(self, rd: Reading, value: int | None) -> bool | None:
         return percent_agrees(rd.row, self.by_row[id(rd.row)], rd.column, value)
+
+    def percent_contradicts(self, rd: Reading, value: int) -> bool:
+        """Whether the line's printed percentage rules out `value`. It can only
+        if the line's other figure (its budget, for a year-to-date total, or
+        the reverse) is confirmed exactly: on a badly scanned line both may be
+        misread, and each would then wrongly rule out the other's correction."""
+        for budget_col, ytd_col, _ in YEARS:
+            if rd.column in (budget_col, ytd_col):
+                partner = self.by_row[id(rd.row)].get(ytd_col if rd.column == budget_col else budget_col)
+                if partner is None or not partner.checks & {"sum", "repeat", "difference"}:
+                    return False
+        return self.percent(rd, value) is False
 
     def ytd_difference(self, rd: Reading) -> int | None:
         """This month's year-to-date minus last month's, both confirmed, from the
@@ -367,9 +383,9 @@ class Reconciler:
                         x = s.total.value - known if c is not s.total else known
                     else:
                         x = c.value - diff if c is not s.total else c.value + diff
-                    pct = self.percent(c, x)
-                    if pct is False:
+                    if self.percent_contradicts(c, x):
                         continue
+                    pct = self.percent(c, x)
                     edits = digit_edits(c.printed, x) if c.printed is not None else None
                     others = self.others(c)
                     support = []
@@ -392,15 +408,24 @@ class Reconciler:
                             support.append(
                                 "the line's printed percentage agrees, as it did not with the reading"
                             )
-                    if support or edits == 1:
+                    # The one figure in the column that could not be read, the others all
+                    # confirmed: the arithmetic fixes it. (Not for a misread figure: the value
+                    # that makes the column add up would absorb any small misreading elsewhere
+                    # in it, which percentages cannot rule out.)
+                    lone = c.printed is None and all(o.checks for o in cells if o is not c)
+                    if support or edits == 1 or lone:
                         candidates.append((c, x, support))
                 if len(candidates) > 1 and sum(bool(sup) for _, _, sup in candidates) == 1:
                     candidates = [cand for cand in candidates if cand[2]]  # the one with independent support
                 if len(candidates) != 1:
                     continue
                 c, x, support = candidates[0]
+                if c.printed is None:
+                    weakest = "unreadable; the column's other figures are confirmed"
+                else:
+                    weakest = "one digit misread"
                 evidence = "; ".join([f"{s.check} adds up", *support] if support else
-                                     [f"{s.check} adds up", "one digit misread"])  # fmt: skip
+                                     [f"{s.check} adds up", weakest])  # fmt: skip
                 self.correct(c, x, "arithmetic", evidence)
                 c.weak = not support
                 changed += 1
@@ -490,7 +515,8 @@ def check_text(rd: Reading | None) -> str:
     if rd is None:
         return ""
     order = ["sum", "repeat", "difference", "percent"]
-    return ";".join((["corrected"] if rd.corrected else []) + [c for c in order if c in rd.checks])
+    corrected = ["corrected"] if rd.corrected or rd.by_hand else []
+    return ";".join(corrected + [c for c in order if c in rd.checks])
 
 
 def build_series(rec: Reconciler) -> list[dict]:

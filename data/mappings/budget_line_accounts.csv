@@ -1,0 +1,42 @@
+item_id,accounts,note
+exp.total,all:expense,"Every expense account in the monthly reports (all five funds, as in the budget summaries)."
+rev.total,all:revenue,"Every revenue account. The summaries' total also includes prior-year funds (fund balance used), which are not a ledger account, so the two match only in years without them."
+exp.cs.total,category:community,Community services: the library and the contributions in department 450.
+exp.cs.library,01-456-000,
+exp.cs.recreation,01-450-500,
+exp.cs.town_center_inc,01-450-540,
+exp.cs.seniors,01-450-530,
+exp.cs.pac_center,01-450-300,
+exp.cs.hra,01-450-600,
+exp.ps.fire.hydrants,01-413-140,
+exp.ps.fire.fire_company,01-413-200,
+exp.ps.fire.debt_service,01-413-471 01-413-472,The fire company's DVRFA loan.
+exp.ps.police.pension,09-487-050,"The police pension plan's minimum municipal obligation, paid by the Pension Fund. Until 2022 the summaries took the Sewer & Solid Waste Fund's share out of it, so the two match from 2023."
+exp.pw.streets.lighting,01-434-* 04-434-* 05-434-*,"Street light power and maintenance, budgeted in the General, Sewer & Solid Waste and Highway Aid funds in different years."
+exp.pw.streets.construction,01-439-* 05-439-*,The annual street paving contract and its engineering.
+exp.pw.sewer.treatment,04-422-* 04-421-000 04-421-200 04-421-220 04-421-440 04-401-300,"Sewer plant operations, the sewer crew, preventive maintenance and engineering, and sewer and trash billing."
+exp.pw.sewer.debt_service,04-471-* 04-472-*,The sewer system's DVRFA loan.
+exp.pw.solid_waste.trash,04-425-*,Refuse collection and disposal.
+exp.pw.misc.tools,05-430-260,
+exp.gg.tax_collection,01-401-*,
+exp.gg.debt_service,10-471-* 10-472-* 10-480-*,The Sinking Fund's debt service.
+exp.gg.contribution_capital,01-492-300,
+exp.gg.grants,01-492-280,
+exp.gg.misc,01-480-*,
+rev.property_taxes,category:property_taxes,"Real estate taxes of the General, Pension and Sinking funds, and the fire tax (until 2023)."
+rev.sewer_fees,category:sewer_fees,
+rev.trash_fees,category:trash_fees,
+rev.other_taxes,category:other_taxes,"Real estate transfer tax and local services tax, and from 2026 the emergency services tax."
+rev.intergovernmental,category:intergovernmental,"State and county aid: public utility realty tax, county aid, liquid fuels tax (Highway Aid Fund) and state pension aid."
+rev.misc.subtotal,category:misc_revenue,
+rev.misc.police_services,01-360-050,
+rev.misc.parking,01-360-030 01-360-031,
+rev.misc.licenses_permits,01-320-* 01-380-100 01-380-400 01-380-500,"Permits and licenses, and the zoning hearing, land development and stormwater application fees."
+rev.misc.fines,01-330-*,
+rev.misc.cable_franchise,01-380-010,
+rev.misc.recycling,04-380-000 04-380-020 04-380-030 04-380-040,"Sale of recyclables, the recycling performance grant and leaf mulch sales."
+rev.misc.college_authority,01-387-*,
+rev.misc.fire_ambulance,01-360-051,
+rev.misc.interest,01-341-* 04-341-* 05-341-*,
+rev.misc.street_trees,01-367-*,
+rev.misc.other,01-380-000 01-380-070 01-380-200 01-380-300 01-380-600 01-380-700 01-354-* 01-395-* 01-350-041,"Miscellaneous revenue, accident reports, grants and refunds. Includes the ALS revenue account, which had no budget until 2026."

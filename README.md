@@ -37,8 +37,9 @@ source PDF.
 | [`proposed_budget_lines.csv`](data/processed/proposed_budget_lines.csv) | 2027 proposed (advertised) budget | **Complete.** Every line of every fund, with the 2026 budget, 2026 year-to-date and 2025 actual columns; every fund subtotal reconciles. |
 | [`proposed_budget_summary.csv`](data/processed/proposed_budget_summary.csv) | 2027 proposed budget | The proposal totalled into the categories of the 2016–2026 summaries, for comparison (see [Comparing a proposed budget](#5-comparing-a-proposed-budget)). |
 | [`monthly_summary.csv`](data/processed/monthly_summary.csv) | June 2020 – October 2026, by month | Budget and actual spending and revenue to date, totalled into the overview's categories (police, streets, property taxes, ...). Categories that include shared-out benefits or overhead are marked as estimates (see [Actual spending by category](#7-actual-spending-by-category)). |
-| [`monthly_series.csv`](data/processed/monthly_series.csv) | June 2020 – October 2026, by month, from 59 monthly reports | **99.5% confirmed.** Every ledger account's (and department's and fund's) budget, month-to-date and year-to-date figures each month, as first reported and as restated a year later, with OCR misreadings corrected and the evidence confirming each figure (see [Monthly financial reports](#6-monthly-financial-reports)). |
-| [`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv) | the same reports | Each report's lines as printed (OCR misreadings included), with the figures that report's own arithmetic confirms (97.8%). |
+| [`budget_line_actuals.csv`](data/processed/budget_line_actuals.csv) | 2021–2025 | Each budget line's actual total for the year from the monthly reports, where the reports' accounts demonstrably cover the same things as the line (182 of 205 line-years, on 40 lines; see [Actual spending by category](#7-actual-spending-by-category)). |
+| [`monthly_series.csv`](data/processed/monthly_series.csv) | June 2020 – October 2026, by month, from 59 monthly reports | **99.6% confirmed.** Every ledger account's (and department's and fund's) budget, month-to-date and year-to-date figures each month, as first reported and as restated a year later, with OCR misreadings corrected and the evidence confirming each figure (see [Monthly financial reports](#6-monthly-financial-reports)). |
+| [`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv) | the same reports | Each report's lines as printed (OCR misreadings included), with the figures that report's own arithmetic confirms (97.9%). |
 | [`monthly_report_summary.csv`](data/processed/monthly_report_summary.csv) | the same reports | The cover pages: revenue and expenditure to date against the year's total budget, this year and last, and the cash balance. |
 
 ## Reproducing the analysis
@@ -70,6 +71,7 @@ uv run scripts/build_monthly_series.py        # reconcile the reports with each 
 #    same categories, and build the website
 uv run scripts/build_budget_series.py
 uv run scripts/build_monthly_summary.py
+uv run scripts/build_line_actuals.py
 uv run scripts/build_site.py                  # writes docs/index.html and docs/explorer.html
 ```
 
@@ -239,13 +241,21 @@ Each figure in [`monthly_series.csv`](data/processed/monthly_series.csv) says
 what confirms it (adding up to its subtotal, being printed identically in
 another report, and so on), and
 [`monthly_series_corrections.csv`](data/processed/monthly_series_corrections.csv)
-lists all 1,017 corrections with their evidence. In samples (mostly random), 46
+lists all 1,032 corrections with their evidence. In samples (mostly random), 52
 corrections were checked by eye against the scans, and all were right. (The
 rules are strict because looser ones went wrong on the worst scans, where
 several figures in one department are misread and the arithmetic can be made
-to add up the wrong way.) 99.5% of the figures are confirmed; the rest,
-mostly month-to-date totals, which have no percentage to check them
-against, are left as read.
+to add up the wrong way.) A few pages were scanned too badly for the rules to
+untangle, notably October 2026's: their misread figures, 64 in seven reports,
+were read off the page by eye and are corrected by hand in
+[`ocr_corrections.csv`](data/corrections/ocr_corrections.csv), like the
+budgets'. 99.6% of the figures are confirmed; the rest, mostly month-to-date
+totals, which have no percentage to check them against, are left as read.
+
+A department's code is read in several places (its heading, its subtotal, its
+lines' ledger ids), and the parser takes the majority; where two misreadings
+outvote the third, the department's name, which the other reports print with
+its code, settles it.
 
 As a final check, each report's cover page is compared with its detail
 ([`monthly_series_checks.csv`](data/processed/monthly_series_checks.csv)).
@@ -292,9 +302,35 @@ insurance are shared out: the summaries put part of the borough's insurance
 under police, fire and public works, and share benefits in proportions they
 do not publish. Each difference is explained in the check's note.
 
+Where a department's lines don't add up to its printed subtotal even after
+correction (several of them misread), and the subtotal is confirmed exactly,
+the subtotal is used, and the difference is reported as "not matched to a
+line" in the category of the department's doubtful lines. As a final check,
+every month's category totals agree with the totals printed on the report's
+cover to within $10, apart from the cover errors noted above and May 2026,
+when a $196,000 transfer between the borough's funds (left out here) was
+booked and then reversed.
+
+Individual budget lines are linked to the ledger accounts that make them up,
+where that can be done, in
+[`data/mappings/budget_line_accounts.csv`](data/mappings/budget_line_accounts.csv)
+(for example, the library contribution is account `01-456-000`, and fire
+hydrant rental `01-413-140`). `build_line_actuals.py` then tests each line,
+year by year: the accounts' budget in that year's monthly reports must equal
+the line's adopted budget, which shows that the two cover the same things.
+Where they do, the line gets the accounts' total for the year from the
+December report as its actual
+([`budget_line_actuals.csv`](data/processed/budget_line_actuals.csv)). Of 41
+lines tried, 40 pass in at least one year, 182 line-years in all. Lines that
+include shared-out costs such as employee benefits (police personnel, say)
+are not tried. Where a line fails in a year, the borough defined it
+differently that year; sewer treatment, for example, left out billing until
+2023.
+
 ## Website
 
-Two interactive pages, built from the summary series:
+Three interactive pages: two built from the budgets' summary series, and one
+from the monthly reports.
 
 - **Overview** ([`docs/index.html`](docs/index.html)): where the budget is
   headed. Total adopted spending or revenue each year, plus the latest
@@ -305,9 +341,18 @@ Two interactive pages, built from the summary series:
   single line, from total spending down to, say, police personnel, with its
   adopted budget and estimated actual each year and its change from year to
   year or since the first year. Every figure in its table links to the page of
-  the borough's budget it comes from.
+  the borough's budget it comes from. Where the monthly reports allow, it also
+  shows what was actually spent or collected (see above), linked to the
+  accounts behind it on the actuals page.
+- **Actual vs. budget** ([`docs/actuals.html`](docs/actuals.html)), from the
+  monthly reports: what was actually spent and collected in a year (or so far
+  this year) against the budget, by the overview's categories; any category,
+  or the total, month by month beside the year before; and the ledger
+  accounts behind a category, each figure linked to its page of the report.
+  Its budget is the one in the same reports, so the two are counted the same
+  way (see [Actual spending by category](#7-actual-spending-by-category)).
 
-Both pages can show figures **as budgeted** or **adjusted for inflation**, in
+The overview and the explorer can show figures **as budgeted** or **adjusted for inflation**, in
 the latest year's dollars. The adjustment uses the Consumer Price Index for
 All Urban Consumers (CPI-U, U.S. city average, not seasonally adjusted; BLS
 series `CUUR0000SA0`), averaged over each calendar year: a year's figure is
@@ -333,9 +378,9 @@ documents), the pages send these events:
 
 | Event | Parameters | Sent when someone... |
 | --- | --- | --- |
-| `change_setting` | `setting`, `choice` | changes a control. `setting` is `view` (spending or revenue), `years` (e.g. `2016-2027`), `detail` (break down by category or budget line), `dollars` (`nominal` or `real`), `budget_line` (the explorer's line, e.g. `exp.ps.police.subtotal`), `base` (change compared with the previous year, `yoy`, or the first, `since`) or `unit` (`pct` or `usd`). |
-| `chart_tooltip` | `chart` | first reads a chart's figures by hovering or with the keyboard (once per chart per page view): `stack-chart` and `drivers-chart` on the overview, `amount-chart` and `change-chart` in the explorer. |
-| `open_table` | `table` | opens a "Table of values" on the overview: `stack-table` or `drivers-table`. |
+| `change_setting` | `setting`, `choice` | changes a control. `setting` is `view` (spending or revenue), `years` (e.g. `2016-2027`), `detail` (break down by category or budget line), `dollars` (`nominal` or `real`), `budget_line` (the explorer's line, e.g. `exp.ps.police.subtotal`), `base` (change compared with the previous year, `yoy`, or the first, `since`), `unit` (`pct` or `usd`), `year` (the actuals page's year, e.g. `2025`) or `category` (its category, e.g. `police`, or `all`). |
+| `chart_tooltip` | `chart` | first reads a chart's figures by hovering or with the keyboard (once per chart per page view): `stack-chart` and `drivers-chart` on the overview, `amount-chart` and `change-chart` in the explorer, `category-chart` and `pace-chart` on the actuals page. |
+| `open_table` | `table` | opens a "Table of values": `stack-table` or `drivers-table` on the overview, `category-table` or `pace-table` on the actuals page. |
 
 To set it up:
 
@@ -416,6 +461,7 @@ data/
 docs/                (generated by build_site.py; do not edit by hand)
   index.html         Overview page
   explorer.html      Explore a budget line
+  actuals.html       Actual vs. budget, from the monthly reports
 scripts/
   fetch_documents.py      discover / download / verify source documents
   ocr_documents.py        OCR scanned pages
@@ -425,6 +471,7 @@ scripts/
   parse_monthly_reports.py   parse monthly financial reports and check their arithmetic
   build_monthly_series.py    reconcile the monthly reports into one series per account
   build_monthly_summary.py   total the monthly accounts into the overview's categories
+  build_line_actuals.py      give budget lines their actuals from the monthly reports, where they match
   build_proposed_summary.py  total a proposed budget into comparable categories
   fetch_cpi.py            download the Consumer Price Index
   build_site.py           build the website from templates/

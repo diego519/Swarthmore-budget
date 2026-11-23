@@ -21,19 +21,35 @@ data project (see [Releases](README.md#releases) in the README):
 
 ### Added
 
+- **Actual vs. budget**, a new page of the website
+  ([`docs/actuals.html`](docs/actuals.html)): what the borough actually spent
+  and collected in each year (or so far this year) against its budget, by the
+  overview's categories; any category month by month beside the year before;
+  and the ledger accounts behind it, each figure linked to its page of the
+  monthly report. The overview and the explorer link to it.
+- **Actuals in the explorer.** Where the monthly reports' ledger accounts
+  demonstrably cover the same things as a budget line (their budget equals the
+  line's adopted budget that year), the explorer shows what was actually spent
+  or collected, from the December report: 40 lines, 2021–2025
+  ([`budget_line_actuals.csv`](data/processed/budget_line_actuals.csv)). Each
+  figure links to the accounts behind it on the new page, and every line links
+  to its category there.
 - **Monthly financial reports, June 2021 – October 2026.** The 59 monthly
   reports that include the accounting system's budget-to-actual report are
   read from their scans: every ledger account of every fund, with this
   year's budget, month-to-date and year-to-date totals and the same for the
   year before.
   - [`monthly_series.csv`](data/processed/monthly_series.csv) brings the
-    reports together into one series per account (298 accounts, plus
+    reports together into one series per account (297 accounts, plus
     department and fund subtotals), by month from June 2020, as each figure
-    was first reported and as restated a year later. 1,017 OCR misreadings
+    was first reported and as restated a year later. 1,032 OCR misreadings
     are corrected, each only where the reports' own arithmetic or another
     report's printing of the same figure shows it was misread (listed in
-    [`monthly_series_corrections.csv`](data/processed/monthly_series_corrections.csv)).
-    99.5% of the figures are confirmed, and each says how.
+    [`monthly_series_corrections.csv`](data/processed/monthly_series_corrections.csv)),
+    and 64 more on the worst-scanned pages were read off the page by eye and
+    corrected by hand. 99.6% of the figures are confirmed, and each says how.
+    Every month's totals agree with the report's cover to within $10, except
+    where the cover itself is wrong.
   - [`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv)
     has each report's lines as printed, with the checks of each report's own
     arithmetic.
@@ -61,6 +77,10 @@ data project (see [Releases](README.md#releases) in the README):
   No published figures change.
 
 ### Changed
+
+- **Colors.** In the explorer, the borough's estimated actual is now drawn in
+  green, so that orange can mean actual spending (from the monthly reports) on
+  every page.
 
 - **OCR of monthly reports.** `ocr_documents.py` has a second set of settings
   for the monthly reports, whose scans are mostly black-and-white fax-quality

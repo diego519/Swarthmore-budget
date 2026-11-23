@@ -11,6 +11,8 @@ the published pages also report visits to Google Analytics.
     docs/index.html      overview: totals over time by broad category, and
                          what drove the change between two years
     docs/explorer.html   any single budget line, year by year
+    docs/actuals.html    actual spending and revenue against the budget, from
+                         the monthly financial reports
 
 Inputs:
     data/processed/budget_series.csv   (from build_budget_series.py)
@@ -21,6 +23,12 @@ Inputs:
     data/processed/proposed_budget_summary.csv
                                        the latest proposed budget, by category
                                        (from build_proposed_summary.py; optional)
+    data/processed/monthly_summary.csv the monthly reports' budget and actuals by
+                                       category (from build_monthly_summary.py)
+    data/processed/monthly_series.csv  their accounts (from build_monthly_series.py)
+    data/processed/budget_line_actuals.csv
+                                       budget lines' actuals from the monthly reports,
+                                       where they match (from build_line_actuals.py)
     pyproject.toml                     the release version, shown on each page
 
 Usage:
@@ -41,12 +49,16 @@ from pathlib import Path
 from common import DATA_DIR, PROCESSED_DIR, REPO_ROOT, read_csv, rel, sources_by_id
 
 TEMPLATES = Path(__file__).parent / "templates"
-PAGES = {"overview.html": "index.html", "explorer.html": "explorer.html"}
+PAGES = {"overview.html": "index.html", "explorer.html": "explorer.html", "actuals.html": "actuals.html"}
 OUTPUT_DIR = REPO_ROOT / "docs"
 SERIES_CSV = PROCESSED_DIR / "budget_series.csv"
 ITEMS_CSV = DATA_DIR / "mappings" / "budget_items.csv"
 CPI_CSV = DATA_DIR / "external" / "cpi_u.csv"
 PROPOSED_CSV = PROCESSED_DIR / "proposed_budget_summary.csv"
+MONTHLY_SUMMARY_CSV = PROCESSED_DIR / "monthly_summary.csv"
+MONTHLY_SERIES_CSV = PROCESSED_DIR / "monthly_series.csv"
+MONTHLY_MAPPING_CSV = DATA_DIR / "mappings" / "monthly_account_categories.csv"
+LINE_ACTUALS_CSV = PROCESSED_DIR / "budget_line_actuals.csv"
 
 REPO_URL = "https://github.com/diego519/Swarthmore-budget"
 DOC_URL = "https://www.swarthmorepa.org/DocumentCenter/View/{doc_id}"
@@ -219,6 +231,110 @@ def load_proposed(sources: dict) -> dict | None:
     }
 
 
+def overview_category(item_id: str) -> tuple[str, str] | None:
+    """The overview view and category a budget line belongs to ("all" for a
+    side's total or group), for linking to the actuals page."""
+    for view in ("spending", "revenue"):
+        if item_id == OVERVIEW[view]["total"]:
+            return view, "all"
+        for c in OVERVIEW[view]["broad"]:
+            for i in c["items"]:
+                parent = i.rsplit(".", 1)[0] + "." if i.endswith((".subtotal", ".total")) else None
+                if item_id == i or (parent and item_id.startswith(parent)):
+                    return view, c["key"]
+        for g in OVERVIEW[view]["groups"]:
+            if item_id in g["items"]:
+                return view, g["keys"][0] if len(g["keys"]) == 1 else "all"
+    return None
+
+
+def add_line_actuals(values: dict, docs: dict, sources: dict) -> None:
+    """Add each budget line's actual from the monthly reports (measure "m"),
+    for the years in which its accounts' budget matches its adopted budget."""
+    for r in read_csv(LINE_ACTUALS_CSV):
+        if r["match"] != "yes" or r["actual"] == "":
+            continue
+        v = values[r["item_id"]][int(r["year"])]
+        v["m"] = round(float(r["actual"]))
+        v["md"] = r["doc_id"]
+        if r["restated_actual"] and abs(float(r["restated_actual"]) - float(r["actual"])) > TOLERANCE:
+            v["mr"] = round(float(r["restated_actual"]))
+        if int(r["unconfirmed"] or 0):
+            v["mu"] = int(r["unconfirmed"])
+        docs[r["doc_id"]] = {
+            "title": sources[r["doc_id"]]["title"],
+            "url": DOC_URL.format(doc_id=r["doc_id"]),
+        }
+
+
+def amount(text: str) -> float | None:
+    return round(float(text), 2) if text else None
+
+
+def load_monthly(sources: dict) -> dict:
+    """The monthly reports' budget and actuals by category, month by month,
+    and each year's accounts as of its latest report (for the actuals page).
+    Compact rows keep the page small:
+
+      cells:    [year, month, side, category, budget, ytd, restated_ytd,
+                 estimated (0/1), unmatched, unconfirmed]
+      accounts: {year: [ledger id, description, side, category, budget, ytd,
+                 flags ("c" corrected, "u" unconfirmed), doc id, page]}
+    """
+    rows = read_csv(MONTHLY_SUMMARY_CSV)
+    if not rows:
+        sys.exit(f"{rel(MONTHLY_SUMMARY_CSV)} not found; run build_monthly_summary.py")
+    cells, month_docs, docs = [], {}, {}
+    for r in rows:
+        if r["side"] not in ("spending", "revenue"):
+            continue
+        year, month = int(r["year"]), int(r["month"])
+        cells.append([
+            year, month, r["side"], r["category"], amount(r["budget"]), amount(r["ytd"]), amount(r["restated_ytd"]),
+            1 if r["estimated"] else 0, amount(r["unmatched"]),
+            int(r["unconfirmed"]) if r["unconfirmed"] != "" else None,
+        ])  # fmt: skip
+        for key in ("reported_doc_id", "restated_doc_id"):
+            if r[key]:
+                docs[r[key]] = {"title": sources[r[key]]["title"], "url": DOC_URL.format(doc_id=r[key])}
+        if r["reported_doc_id"]:
+            month_docs[f"{year}-{month}"] = r["reported_doc_id"]
+    reported = defaultdict(list)
+    for c in cells:
+        if c[5] is not None and f"{c[0]}-{c[1]}" in month_docs:
+            reported[c[0]].append(c[1])
+    years = sorted(reported)
+    latest_month = {y: max(reported[y]) for y in years}
+
+    category = {m["ledger_id"]: m["category"] for m in read_csv(MONTHLY_MAPPING_CSV)}
+    accounts: dict[int, list] = defaultdict(list)
+    for r in read_csv(MONTHLY_SERIES_CSV):
+        if r["row_type"] != "item" or not r["reported_doc_id"]:
+            continue
+        year = int(r["year"])
+        if year not in latest_month or int(r["month"]) != latest_month[year]:
+            continue
+        checks = set(r["ytd_check"].split(";")) - {""}
+        flags = ("c" if "corrected" in checks else "") + ("" if checks - {"corrected"} else "u")
+        accounts[year].append([
+            r["ledger_id"], r["description"], "spending" if r["statement"] == "expense" else "revenue",
+            category[r["ledger_id"]], amount(r["budget"]), amount(r["ytd"]), flags, r["reported_doc_id"],
+            int(r["reported_page"]),
+        ])  # fmt: skip
+    return {
+        "years": years,
+        "latest_month": latest_month,
+        "categories": {
+            view: [{"key": c["key"], "label": c["label"]} for c in OVERVIEW[view]["broad"]]
+            for view in ("spending", "revenue")
+        },
+        "cells": cells,
+        "month_docs": month_docs,
+        "accounts": accounts,
+        "docs": docs,
+    }
+
+
 def analytics(measurement_id: str) -> str:
     """The Google Analytics tag for each page's <head>, or nothing without an
     ID. It loads only on the published site (https), not when a page is opened
@@ -303,6 +419,7 @@ def main() -> int:
         }
 
     years = list(range(min(int(r["year"]) for r in series), max(int(r["year"]) for r in series) + 1))
+    add_line_actuals(values, docs, sources)
 
     # The overview's categories must cover their totals exactly (to rounding).
     for view_name in ("spending", "revenue"):
@@ -401,6 +518,7 @@ def main() -> int:
                     if p
                 ),
                 "note": it["note"],
+                "actuals": overview_category(it["item_id"]),
             }
             for it in items
             if it["item_id"] in values
@@ -412,14 +530,51 @@ def main() -> int:
         "proposed": proposed,
     }
 
-    # Embedding JSON in a <script> element: "</" must not appear literally.
-    payload = json.dumps(data, separators=(",", ":"), sort_keys=True).replace("</", "<\\/")
+    monthly = load_monthly(sources)
+    months = sorted(tuple(map(int, k.split("-"))) for k in monthly["month_docs"])
+    month_name = calendar.month_name
+    span = [
+        (y, m)
+        for y in range(months[0][0], months[-1][0] + 1)
+        for m in range(1, 13)
+        if months[0] <= (y, m) <= months[-1]
+    ]
+    gaps = [f"{month_name[m]} {y}" for y, m in span if f"{y}-{m}" not in monthly["month_docs"]]
+    monthly_range = (
+        f"{len(set(monthly['month_docs'].values()))} reports, {month_name[months[0][1]]} {months[0][0]} to "
+        f"{month_name[months[-1][1]]} {months[-1][0]}"
+    )
+    monthly_gaps = (
+        (
+            f"No usable report is posted for {', '.join(gaps[:-1])} and {gaps[-1]} (some months' reports contain only "
+            "the bills list). "
+            if len(gaps) > 1
+            else f"No usable report is posted for {gaps[0]}. "
+            if gaps
+            else ""
+        )
+        + "Where a month's own report is missing, its year-to-date figures are taken from the same month's report a "
+        "year later, which repeats them as the previous year's."
+    )
+    # The actuals page has its own data; it shares the CPI only to carry the
+    # dollars setting between pages.
+    actuals_data = {"years": [], "items": [], "docs": monthly.pop("docs"), "cpi": cpi, "proposed": None,
+                    "monthly": monthly}  # fmt: skip
+
+    def embed(d: dict) -> str:
+        # Embedding JSON in a <script> element: "</" must not appear literally.
+        return json.dumps(d, separators=(",", ":"), sort_keys=True).replace("</", "<\\/")
+
+    payloads = {
+        "overview.html": embed(data),
+        "explorer.html": embed(data),
+        "actuals.html": embed(actuals_data),
+    }
     replacements = {
         "<!--__ANALYTICS__-->\n": analytics(GA_MEASUREMENT_ID),
         "<!--__ANALYTICS_NOTE__-->": analytics_note(GA_MEASUREMENT_ID),
         "/*__COMMON_CSS__*/": (TEMPLATES / "common.css").read_text(encoding="utf-8"),
         "/*__COMMON_JS__*/": (TEMPLATES / "common.js").read_text(encoding="utf-8"),
-        "__DATA__": payload,
         "__REPO_URL__": REPO_URL,
         "__VERSION__": VERSION,
         "__LAST_ESTIMATE_YEAR__": str(
@@ -428,13 +583,15 @@ def main() -> int:
         "__DOLLARS_NOTE__": dollars_note,
         "__CATEGORY_NOTE__": CATEGORY_NOTE,
         "__PROPOSED_NOTE__": proposed_note,
+        "__MONTHLY_RANGE__": monthly_range,
+        "__MONTHLY_GAPS__": monthly_gaps,
     }
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     for template, output in PAGES.items():
         html = (TEMPLATES / template).read_text(encoding="utf-8")
-        for placeholder, value in replacements.items():
+        for placeholder, value in {**replacements, "__DATA__": payloads[template]}.items():
             html = html.replace(placeholder, value)
-        leftover = [p for p in replacements if p in html]
+        leftover = [p for p in [*replacements, "__DATA__"] if p in html]
         if leftover:
             sys.exit(f"{template}: unreplaced placeholders {leftover}")
         out = OUTPUT_DIR / output

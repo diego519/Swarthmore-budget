@@ -25,9 +25,19 @@ a share are marked as estimates:
                     the two in the proportion those lines have in that year's
                     adopted budget.
 
-Accounts for transfers between the borough's own funds ("interfund", none
-of which moved money in 2020-2026) and proceeds of borrowing ("financing")
-are left out.
+Accounts for transfers between the borough's own funds ("interfund") and
+proceeds of borrowing ("financing") are left out. (Almost no transfers were
+made in 2020-2026: $196,000 was booked as a General Fund transfer in May
+2026 and reversed by June, so May's totals are that much less than the
+report's cover.)
+
+Where OCR misread more than one line of a department, so that its lines do
+not add up to the department's printed subtotal and no single misreading
+could be corrected, the subtotal (if it is confirmed exactly: it adds up
+with the fund's other departments, or another report prints the same
+figure) is taken as the
+department's total: the difference is counted in the category of the
+department's unconfirmed lines, and reported in the "unmatched" columns.
 
 Every account in data/processed/monthly_series.csv must be mapped exactly
 once; the script stops otherwise. As a check on the mapping, each year's
@@ -49,7 +59,7 @@ Usage:
 from __future__ import annotations
 
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from decimal import Decimal
 
 from build_site import OVERVIEW
@@ -69,7 +79,8 @@ MEASURES = {"budget": "budget", "ytd": "ytd", "restated_ytd": "restated_ytd"}
 
 SUMMARY_FIELDS = [
     "year", "month", "side", "category", "budget", "ytd", "restated_ytd", "estimated", "accounts",
-    "unconfirmed", "reported_doc_id", "restated_doc_id",
+    "unconfirmed", "restated_unconfirmed", "unmatched", "restated_unmatched", "reported_doc_id",
+    "restated_doc_id",
 ]  # fmt: skip
 CHECK_FIELDS = [
     "year", "side", "category", "ledger_budget", "adopted_budget", "difference", "estimated", "doc_id", "note",
@@ -147,6 +158,37 @@ def categorize(values: dict[str, int], mapping: dict[str, dict], sewer_share: fl
     return totals, estimated
 
 
+def unmatched(
+    rows: list[dict], subtotals: list[dict], column: str, mapping: dict
+) -> dict[str, tuple[int, str, str]]:
+    """For each department whose lines do not add up to its printed, confirmed
+    subtotal, the difference (cents) and the category it belongs to: that of
+    the department's unconfirmed lines, or failing a single one, of most of
+    its lines, and the statement. Keyed by a pseudo-account id."""
+    out = {}
+    check = f"{column}_check"
+    for sub in subtotals:
+        if sub[column] == "" or not {"sum", "repeat", "difference"} & set(sub[check].split(";")):
+            continue  # no exactly confirmed subtotal to go by (a percentage can't vouch for it to the dollar)
+        key = (sub["statement"], sub["fund_code"], sub["department_code"])
+        lines = [r for r in rows if (r["statement"], r["fund_code"], r["department_code"]) == key]
+        if not lines:
+            continue
+        diff = cents(sub[column]) - sum(cents(r[column]) or 0 for r in lines)
+        if abs(diff) < 100:  # within a dollar: cents misread, not worth a line
+            continue
+        doubtful = {
+            mapping[r["ledger_id"]]["category"]
+            for r in lines
+            if r[column] == "" or r[check] in ("", "corrected")
+        }
+        cats = Counter(mapping[r["ledger_id"]]["category"] for r in lines)
+        category = next(iter(doubtful)) if len(doubtful) == 1 else cats.most_common(1)[0][0]
+        key = f"unmatched:{sub['statement']}:{sub['fund_code']}-{sub['department_code']}"
+        out[key] = (diff, category, sub["statement"])
+    return out
+
+
 def side_of(category: str, statement: str) -> str:
     if category in SPENDING:
         return "spending"
@@ -156,7 +198,12 @@ def side_of(category: str, statement: str) -> str:
 
 
 def main() -> int:
-    series = [r for r in read_csv(SERIES_CSV) if r["row_type"] == "item"]
+    everything = read_csv(SERIES_CSV)
+    series = [r for r in everything if r["row_type"] == "item"]
+    dept_subtotals: dict[tuple[int, int], list[dict]] = defaultdict(list)
+    for r in everything:
+        if r["row_type"] == "department_subtotal":
+            dept_subtotals[(int(r["year"]), int(r["month"]))].append(r)
     mapping = {m["ledger_id"]: m for m in read_csv(MAPPING_CSV)}
     problems = sorted({r["ledger_id"] for r in series} - set(mapping))
     extra = sorted(set(mapping) - {r["ledger_id"] for r in series})
@@ -197,15 +244,21 @@ def main() -> int:
             )
             return 1
         per_measure = {}
+        residuals = {}
         for measure, column in MEASURES.items():
+            extra = unmatched(rows, dept_subtotals[(year, month)], column, mapping)
             for statement in ("expense", "revenue"):
                 values = {
                     r["ledger_id"]: cents(r[column])
                     for r in rows
                     if r["statement"] == statement and r[column] != ""
                 }
+                found = {k: (diff, cat) for k, (diff, cat, st) in extra.items() if st == statement}
+                ext = dict(mapping) | {k: {"category": cat, "payroll": ""} for k, (_, cat) in found.items()}
+                values |= {k: diff for k, (diff, _) in found.items()}
+                residuals[(measure, statement)] = found
                 per_measure[(measure, statement)] = (
-                    categorize(values, mapping, shares[year]),
+                    categorize(values, ext, shares[year]),
                     values,
                 )
         docs = {
@@ -230,9 +283,20 @@ def main() -> int:
                     if r["statement"] == statement and mapping[r["ledger_id"]]["category"] == cat
                 ]  # fmt: skip
                 row["accounts"] = len(accounts)
-                row["unconfirmed"] = sum(
-                    1 for r in accounts if r["ytd"] and r["ytd_check"] in ("", "corrected")
-                )
+                for measure, col in (("ytd", "unmatched"), ("restated_ytd", "restated_unmatched")):
+                    amount = sum(d for d, c in residuals[(measure, statement)].values() if c == cat)
+                    row[col] = dollars(amount) if amount else ""
+                # Year-to-date figures that no check confirms, or that could not be read.
+                for col, doc in (("ytd", "reported_doc_id"), ("restated_ytd", "restated_doc_id")):
+                    row[col.replace("ytd", "unconfirmed")] = (
+                        sum(
+                            1
+                            for r in accounts
+                            if r[doc] and (r[col] == "" or r[f"{col}_check"] in ("", "corrected"))
+                        )
+                        if any(r[doc] for r in accounts)
+                        else ""
+                    )
                 row["estimated"] = "yes" if estimated else ""
                 out.append(row)
 

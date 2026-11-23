@@ -79,7 +79,7 @@ SOURCE_ERRORS_CSV = CORRECTIONS_DIR / "monthly_report_source_errors.csv"
 AMOUNTS = ["budget", "mtd", "ytd", "prior_year_budget", "prior_year_mtd", "prior_year_ytd"]
 LINE_FIELDS = [
     "doc_id", "period", "page", "statement", "fund_code", "fund", "department_code", "department",
-    "ledger_id", "description", "row_type", *AMOUNTS, "percent", "prior_year_percent", "verified",
+    "ledger_id", "description", "row_type", *AMOUNTS, "percent", "prior_year_percent", "verified", "corrected",
     "ledger_id_as_read", "description_as_read",
 ]  # fmt: skip
 CHECK_FIELDS = [
@@ -116,6 +116,7 @@ class Figure:
     value: int
     text: str
     clean: bool
+    corrected: bool = False  # read from a hand correction (data/corrections/ocr_corrections.csv)
 
 
 def parse_money(text: str) -> Figure | None:
@@ -331,6 +332,7 @@ def parse_comparison_page(page_number: int, lines: list[Line]) -> tuple[list[Row
             col = layout[i]
             parsed = parse_percent(w.text) if col.endswith("%") else parse_money(w.text)
             if parsed and cells[col] is None:
+                parsed.corrected = w.corrected
                 cells[col] = parsed
         if sum(v is not None for v in cells.values()) < 2:
             continue  # a stray mark, not a row
@@ -647,6 +649,48 @@ def letters(text: str) -> str:
     return re.sub(r"[^a-z]", "", text.lower())
 
 
+def settle_department_codes(docs_rows: list[tuple[dict, Row]]) -> list[str]:
+    """Correct department codes that the section vote got wrong.
+
+    Within one report a department's code is decided by vote among its
+    heading, subtotal and lines (assign_sections), so two misread codes can
+    outvote a correct one: in January 2025, "(439) Construction & Rebuilding"
+    was printed with a subtotal and a line both misread as 438. A
+    department's name is read more reliably than its code, and each name is
+    printed with the same code in report after report. So where a
+    department's name is one that the other reports print, at least nine
+    times in ten, with a different code, that code is used. Returns a
+    description of each change."""
+    votes: dict[tuple[str, str], Counter] = defaultdict(Counter)
+    for _, r in docs_rows:
+        if r.kind == "department_subtotal" and r.department_code and letters(r.label):
+            votes[(r.statement, letters(r.label))][r.department_code] += 1
+    popular = {k: c for k, c in votes.items() if sum(c.values()) >= 10}
+    blocks: dict[tuple[str, int], list[Row]] = defaultdict(list)
+    for doc, r in docs_rows:
+        if r.kind in ("item", "department_subtotal", "department_heading"):
+            blocks[(doc["doc_id"], r.dept_block)].append(r)
+    changes = []
+    for (doc_id, _), block in blocks.items():
+        name = next((r.department for r in block if r.department), "")
+        statement = block[0].statement
+        key = (statement, letters(name))
+        if key not in popular:
+            close = difflib.get_close_matches(
+                key[1], [k[1] for k in popular if k[0] == statement], n=1, cutoff=0.85
+            )
+            key = (statement, close[0]) if close else key
+        if key not in popular:
+            continue
+        code, n = popular[key].most_common(1)[0]
+        current = block[0].department_code
+        if code != current and n >= 0.9 * sum(popular[key].values()):
+            for r in block:
+                r.department_code = code
+            changes.append(f"{doc_id}: {name!r} {current} -> {code}")
+    return changes
+
+
 def settle_ledger_ids(rows: list[Row]) -> None:
     """Give each line a ledger id and description that are consistent across
     reports.
@@ -796,6 +840,8 @@ def main() -> int:
             f"checks {ok}/{len(checks)} ok" + "".join(f"\n  warning: {w}" for w in warnings)
         )
 
+    for change in settle_department_codes(all_rows):
+        print(f"department code settled by name: {change}")
     settle_ledger_ids([r for _, r in all_rows])
     out_rows = []
     for doc, r in all_rows:
@@ -816,6 +862,7 @@ def main() -> int:
                 "percent": fmt(value(r, "%")),
                 "prior_year_percent": fmt(value(r, "prior_%")),
                 "verified": ";".join(c for c in AMOUNTS if c in r.verified),
+                "corrected": ";".join(c for c in AMOUNTS if r.cells.get(c) and r.cells[c].corrected),
                 "ledger_id_as_read": r.code if r.kind == "item" else "",
                 "description_as_read": r.label if r.kind == "item" else "",
             }
