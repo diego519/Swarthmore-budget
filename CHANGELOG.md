@@ -19,6 +19,55 @@ data project (see [Releases](README.md#releases) in the README):
 
 ## [Unreleased]
 
+### Added
+
+- **Monthly financial reports, June 2021 – October 2026.** The 59 monthly
+  reports that include the accounting system's budget-to-actual report are
+  read from their scans: every ledger account of every fund, with this
+  year's budget, month-to-date and year-to-date totals and the same for the
+  year before.
+  - [`monthly_series.csv`](data/processed/monthly_series.csv) brings the
+    reports together into one series per account (298 accounts, plus
+    department and fund subtotals), by month from June 2020, as each figure
+    was first reported and as restated a year later. 1,017 OCR misreadings
+    are corrected, each only where the reports' own arithmetic or another
+    report's printing of the same figure shows it was misread (listed in
+    [`monthly_series_corrections.csv`](data/processed/monthly_series_corrections.csv)).
+    99.5% of the figures are confirmed, and each says how.
+  - [`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv)
+    has each report's lines as printed, with the checks of each report's own
+    arithmetic.
+  - The cover pages' consolidated totals and cash balances are in
+    [`monthly_report_summary.csv`](data/processed/monthly_report_summary.csv).
+    The totals match the funds' detail to the dollar in 190 cases
+    ([`monthly_series_checks.csv`](data/processed/monthly_series_checks.csv)).
+    Six cover totals that do not, and eight cover percentages that disagree
+    with the cover's own figures, are mistakes in the borough's documents,
+    explained in
+    [`monthly_report_source_errors.csv`](data/corrections/monthly_report_source_errors.csv).
+
+  - Every ledger account is assigned to one of the overview's categories
+    ([`monthly_account_categories.csv`](data/mappings/monthly_account_categories.csv)),
+    and [`monthly_summary.csv`](data/processed/monthly_summary.csv) totals
+    each month's budget and actuals to date by category, so actual spending
+    can be compared with the budget. Employee benefits and the Sewer & Solid
+    Waste Fund's administration are shared out, as estimates. As a check,
+    the ledger's total spending budget matches the adopted budget exactly in
+    2021, 2022, 2024 and 2025, and its revenue categories match in 2021–2025
+    except for $750 in 2023;
+    [`monthly_summary_checks.csv`](data/processed/monthly_summary_checks.csv)
+    explains each difference.
+
+  No published figures change.
+
+### Changed
+
+- **OCR of monthly reports.** `ocr_documents.py` has a second set of settings
+  for the monthly reports, whose scans are mostly black-and-white fax-quality
+  images: those pages are read at a higher resolution and smoothed, and pages
+  scanned askew are straightened. The budgets' OCR is unchanged, byte for
+  byte.
+
 ## [1.1.0] - 2026-11-22
 
 ### Added

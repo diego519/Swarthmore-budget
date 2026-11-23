@@ -33,3 +33,6 @@ doc_id,page,line_contains,ocr_text,corrected_text,x,note
 3017,8,"6,328,868",,TOTAL EXPENDITURES,61,Row label lost by OCR; page shows 'TOTAL EXPENDITURES'.
 3017,1,Fines,Fines,Fines,59,"Word read correctly, but OCR placed it 11 points left of where it is printed (it merged the row number '13' into its box). That made the row look un-indented and broke the grouping under 'Other Revenue'. Position set to match the other indented rows (x=59)."
 3017,6,Grants,Ss,-,,"Grants, 2025 budget: page shows '$ -' (zero); OCR read the dash as 'Ss'. Checked by eye; the 2026 budget also reports 2025 grants as $0."
+2226,1,"$4,076,838","55,563,815","$5,563,815",,"Monthly report cover, September 2022: total 2021 budget for expenditures. OCR read the '$' as a 5. Page shows $5,563,815, as on the other 2021 covers; $4,076,838 is the printed 73.3% of it."
+2542,1,"556,408",>,$,,"Monthly report cover, July 2023: cash beginning balance. OCR read the '$' as '>'. Page shows $ 556,408, as on the other 2023 covers."
+3206,1,"$451,526",71%,7.1%,,"Monthly report cover, January 2025: 2024 expenditures as a percentage of budget. OCR dropped the decimal point. Page shows 7.1%, which is $451,526 / $6,328,868."

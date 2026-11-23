@@ -1,0 +1,121 @@
+year,side,category,ledger_budget,adopted_budget,difference,estimated,doc_id,note
+2021,spending,police,2036874.86,1968802.00,68072.86,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,fire,347904.00,373404.00,-25500.00,,2133,"The summaries include a fire insurance line; the ledger budgets the borough's insurance centrally, and it is counted under general government here."
+2021,spending,gg,588003.43,599956.00,-11952.57,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,streets,328600.99,324225.00,4375.99,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,sewer,1149631.83,1200964.00,-51332.17,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,solid_waste,628217.64,635314.00,-7096.36,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,parks,100425.20,101824.00,-1398.80,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,pw_vehicles,44800.63,28397.00,16403.63,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,pw_other,82306.43,73879.00,8427.43,yes,2133,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2021,spending,community,270700.00,270700.00,0.00,,2133,
+2021,spending,total,5577465.01,5577465.00,0.01,,2133,
+2022,spending,police,2071760.11,2060012.00,11748.11,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,fire,327373.00,348373.00,-21000.00,,2140,"The summaries include a fire insurance line; the ledger budgets the borough's insurance centrally, and it is counted under general government here."
+2022,spending,gg,592883.38,574864.00,18019.38,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,streets,328365.21,324904.00,3461.21,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,sewer,1188617.75,1207609.00,-18991.25,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,solid_waste,596588.04,611947.00,-15358.96,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,parks,100343.79,100530.00,-186.21,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,pw_vehicles,44750.15,29609.00,15141.15,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,pw_other,81151.58,73986.00,7165.58,yes,2140,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2022,spending,community,297040.00,297040.00,0.00,,2140,
+2022,spending,total,5628873.01,5628873.00,0.01,,2140,
+2023,spending,police,2125701.36,2100027.00,25674.36,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,fire,477606.00,500965.00,-23359.00,,2398,"The summaries include a fire insurance line; the ledger budgets the borough's insurance centrally, and it is counted under general government here."
+2023,spending,gg,722942.48,794733.00,-71790.52,yes,2398,"The adopted budget includes a $100,000 contribution to capital; the ledger budgets that account (01-492-300) at $0 all year, although $100,000 was paid in October."
+2023,spending,streets,330820.46,333705.00,-2884.54,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,sewer,1185419.76,1209511.00,-24091.24,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,solid_waste,707202.78,725994.00,-18791.22,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,parks,110323.61,110400.00,-76.39,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,pw_vehicles,45760.64,30922.00,14838.64,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,pw_other,70214.90,69736.00,478.90,yes,2398,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2023,spending,community,337516.00,337516.00,0.00,,2398,
+2023,spending,total,6113507.99,6213508.00,-100000.01,,2398,"The adopted budget includes a $100,000 contribution to capital; the ledger budgets that account (01-492-300) at $0 all year, although $100,000 was paid in October."
+2024,spending,police,2341838.03,2310479.00,31359.03,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,fire,441518.00,472774.00,-31256.00,,2779,"The summaries include a fire insurance line; the ledger budgets the borough's insurance centrally, and it is counted under general government here."
+2024,spending,gg,724411.78,681140.00,43271.78,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,streets,313456.68,325198.00,-11741.32,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,sewer,1227144.96,1252430.00,-25285.04,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,solid_waste,750444.37,770826.00,-20381.63,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,parks,87426.45,88406.00,-979.55,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,pw_vehicles,44948.40,30557.00,14391.40,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,pw_other,73071.33,72449.00,622.33,yes,2779,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2024,spending,community,324608.00,324608.00,0.00,,2779,
+2024,spending,total,6328868.00,6328868.00,0.00,,2779,
+2025,spending,police,2538637.31,2485155.00,53482.31,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,fire,554067.00,583750.00,-29683.00,,3206,"The summaries include a fire insurance line; the ledger budgets the borough's insurance centrally, and it is counted under general government here."
+2025,spending,gg,770039.35,741867.00,28172.35,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,streets,326257.14,331808.00,-5550.86,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,sewer,1222327.25,1253087.00,-30759.75,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,solid_waste,796602.56,821195.00,-24592.44,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,parks,89790.47,91279.00,-1488.53,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,pw_vehicles,44140.00,30901.00,13239.00,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,pw_other,70006.78,72825.00,-2818.22,yes,3206,"Includes shared-out employee benefits or Sewer & Solid Waste overhead, which the summaries share out differently."
+2025,spending,community,339755.00,339755.00,0.00,,3206,
+2025,spending,total,6751622.86,6751623.00,-0.14,,3206,
+2026,spending,police,2815615.99,2763133.00,52482.99,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,fire,925824.00,828300.00,97524.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,gg,1713626.87,1877602.00,-163975.13,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,streets,369380.87,238030.00,131350.87,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,sewer,1228447.74,1276936.00,-48488.26,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,solid_waste,972087.12,967310.00,4777.12,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,parks,100718.94,101396.00,-677.06,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,pw_vehicles,66169.48,46252.00,19917.48,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,pw_other,72481.00,74467.00,-1986.00,yes,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,spending,community,389244.00,389244.00,0.00,,3610,
+2026,spending,total,8653596.01,8562670.00,90926.01,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2021,revenue,property_taxes,2151600.00,2151600.00,0.00,,2133,
+2021,revenue,eit,0.00,,,,2133,
+2021,revenue,sewer_fees,1202579.00,1202579.00,0.00,,2133,
+2021,revenue,trash_fees,628500.00,628500.00,0.00,,2133,
+2021,revenue,other_taxes,260000.00,260000.00,0.00,,2133,
+2021,revenue,intergovernmental,252007.00,252007.00,0.00,,2133,
+2021,revenue,misc_revenue,939425.00,939425.00,0.00,,2133,
+2021,revenue,prior_year_funds,0.00,143300.00,-143300.00,,2133,Fund balances carried over from earlier years are budgeted in the summaries but are not a ledger account.
+2021,revenue,total,5434111.00,5577411.00,-143300.00,,2133,"The summaries' total includes prior-year funds, which are not a ledger account."
+2022,revenue,property_taxes,2226907.00,2226906.00,1.00,,2140,
+2022,revenue,eit,0.00,,,,2140,
+2022,revenue,sewer_fees,1207528.00,1207528.00,0.00,,2140,
+2022,revenue,trash_fees,628500.00,628500.00,0.00,,2140,
+2022,revenue,other_taxes,290000.00,290000.00,0.00,,2140,
+2022,revenue,intergovernmental,249089.00,249089.00,0.00,,2140,
+2022,revenue,misc_revenue,989183.00,989183.00,0.00,,2140,
+2022,revenue,prior_year_funds,0.00,37500.00,-37500.00,,2140,Fund balances carried over from earlier years are budgeted in the summaries but are not a ledger account.
+2022,revenue,total,5591207.00,5628705.00,-37498.00,,2140,"The summaries' total includes prior-year funds, which are not a ledger account."
+2023,revenue,property_taxes,2444963.00,2445713.00,-750.00,,2398,"Interim real estate taxes: $1,500 in the adopted budget, $750 in the ledger."
+2023,revenue,eit,0.00,,,,2398,
+2023,revenue,sewer_fees,1219298.00,1219298.00,0.00,,2398,
+2023,revenue,trash_fees,752660.00,752660.00,0.00,,2398,
+2023,revenue,other_taxes,290000.00,290000.00,0.00,,2398,
+2023,revenue,intergovernmental,224233.00,224233.00,0.00,,2398,
+2023,revenue,misc_revenue,1222123.00,1222123.00,0.00,,2398,
+2023,revenue,prior_year_funds,0.00,147124.00,-147124.00,,2398,Fund balances carried over from earlier years are budgeted in the summaries but are not a ledger account.
+2023,revenue,total,6153277.00,6301151.00,-147874.00,,2398,"The summaries' total includes prior-year funds, which are not a ledger account."
+2024,revenue,property_taxes,2507199.00,2507199.00,0.00,,2779,
+2024,revenue,eit,0.00,,,,2779,
+2024,revenue,sewer_fees,1263354.00,1263354.00,0.00,,2779,
+2024,revenue,trash_fees,776116.00,776116.00,0.00,,2779,
+2024,revenue,other_taxes,290000.00,290000.00,0.00,,2779,
+2024,revenue,intergovernmental,249422.00,249422.00,0.00,,2779,
+2024,revenue,misc_revenue,1260826.00,1260826.00,0.00,,2779,
+2024,revenue,prior_year_funds,0.00,0.00,0.00,,2779,
+2024,revenue,total,6346917.00,6346916.00,1.00,,2779,
+2025,revenue,property_taxes,2615226.00,2615226.00,0.00,,3206,
+2025,revenue,eit,0.00,,,,3206,
+2025,revenue,sewer_fees,1281706.00,1281706.00,0.00,,3206,
+2025,revenue,trash_fees,828892.00,828892.00,0.00,,3206,
+2025,revenue,other_taxes,300000.00,300000.00,0.00,,3206,
+2025,revenue,intergovernmental,295142.00,295142.00,0.00,,3206,
+2025,revenue,misc_revenue,1466972.00,1466972.00,0.00,,3206,
+2025,revenue,prior_year_funds,0.00,0.00,0.00,,3206,
+2025,revenue,total,6787938.00,6787938.00,0.00,,3206,
+2026,revenue,property_taxes,2743997.00,2743997.00,0.00,,3610,
+2026,revenue,eit,0.00,,,,3610,
+2026,revenue,sewer_fees,1301520.00,1301520.00,0.00,,3610,
+2026,revenue,trash_fees,921250.00,936766.00,-15516.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,revenue,other_taxes,450000.00,745946.00,-295946.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,revenue,intergovernmental,306896.00,140465.00,166431.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,revenue,misc_revenue,2989923.00,2693977.00,295946.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."
+2026,revenue,prior_year_funds,0.00,0.00,0.00,,3610,
+2026,revenue,total,8713586.00,8562670.00,150916.00,,3610,"The 2026 adopted budget is laid out differently: its summary leaves out the Highway Aid (liquid fuels) Fund, and the ledger budgets several lines differently (the emergency services tax, for example, was first budgeted under the ALS revenue account)."

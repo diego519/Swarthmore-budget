@@ -1,0 +1,299 @@
+ledger_id,statement,description,category,payroll,note
+01-400-000,expense,INTERFUND OPERATING TRANSFER,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-400-009,expense,CODE ENFORCEMENT OFFICER,gg,yes,
+01-400-020,expense,ADMINISTRATIVE ASSISTANT,gg,yes,
+01-400-030,expense,BOOKKEEPER,gg,,"Not counted as payroll, following the 2027 proposal's mapping (contracted bookkeeper)."
+01-400-050,expense,MAYOR SALARY,gg,yes,
+01-400-051,expense,COUNCIL SALARIES,gg,yes,
+01-400-060,expense,SALARY OF MANAGER/SECRETARY,gg,yes,
+01-400-090,expense,OVERTIME,gg,yes,
+01-400-100,expense,OFFICE SUPPLIES,gg,,
+01-400-101,expense,POSTAGE,gg,,
+01-400-200,expense,MEETING VIDEO,gg,,
+01-400-201,expense,PROFESSIONAL DUES,gg,,
+01-400-202,expense,CONFERENCE FEES/CONTINUING ED,gg,,
+01-400-203,expense,IT SERVICE,gg,,
+01-400-204,expense,MISC ADMIN EXP,gg,,
+01-400-205,expense,AM LEGAL,gg,,
+01-400-206,expense,ADMIN UNIFORMS,gg,,
+01-400-210,expense,LEGAL ADVERTISING,gg,,
+01-400-238,expense,CLOTHING AND UNIFORMS,gg,,
+01-400-280,expense,AUDITING SERVICES,gg,,
+01-400-290,expense,LEGAL SERVICES,gg,,
+01-400-291,expense,SPECIAL LEGAL SERVICES,gg,,
+01-400-300,expense,COMMUNICATION EXPENDITURES,gg,,
+01-400-400,expense,OFFICE EQUIPMENT,gg,,
+01-401-020,expense,SALARY OF TAX COLLECTOR,gg,yes,
+01-401-040,expense,LOCAL SERVICES TAX EXPENSE,gg,,
+01-401-150,expense,TAX COLLECTOR'S BOND/INS,gg,,
+01-401-200,expense,GENERAL EXPENSE:TAX COLLECTOR,gg,,
+01-402-000,expense,BORO BLDG MAINTENANCE: WAGES,gg,yes,"Borough buildings: general government, as in the budget summaries."
+01-402-100,expense,MUNICIPAL BLDG:MATERIALS AND S,gg,,"Borough buildings: general government, as in the budget summaries."
+01-402-110,expense,MUNICIPAL BLDG:GAS,gg,,"Borough buildings: general government, as in the budget summaries."
+01-402-120,expense,MUNICIPAL BLDG:ELECTRICITY,gg,,"Borough buildings: general government, as in the budget summaries."
+01-402-130,expense,MUNICIPAL BLDG:WATER,gg,,"Borough buildings: general government, as in the budget summaries."
+01-402-400,expense,PROPERTY MAINTENANCE,gg,,"Borough buildings: general government, as in the budget summaries."
+01-410-010,expense,CHIEF,police,yes,
+01-410-020,expense,SERGEANT,police,yes,
+01-410-021,expense,RUTLEDGE BONUS,police,yes,
+01-410-040,expense,PATROL OFFICER,police,yes,
+01-410-050,expense,CLERK/CROSSING GUARDS,police,yes,
+01-410-051,expense,ANIMAL CONTROL,police,,
+01-410-052,expense,CLERK/METER ENFORCEMENT,police,yes,
+01-410-180,expense,LONGEVITY PAY,police,yes,
+01-410-181,expense,SHIFT DIFFERENTIAL,police,yes,
+01-410-182,expense,FESTIVE HOLIDAY PAY,police,yes,
+01-410-183,expense,OVERTIME,police,yes,
+01-410-184,expense,OUTSIDE OVERTIME,police,yes,
+01-410-185,expense,REIMBURSE OUTSIDE OVERTIME,police,yes,
+01-410-186,expense,ON CALL TIME,police,yes,
+01-410-188,expense,COMMUNITY EXPENSES,police,,
+01-410-200,expense,OFFICE MATERIALS AND SUPPLIES,police,,
+01-410-220,expense,GENERAL EXPENDITURES,police,,
+01-410-221,expense,CONTINUING EDUCATION,police,,
+01-410-222,expense,PROF DUES/CONFERENCE FEES,police,,
+01-410-230,expense,EDUCATIONAL REIMBURSEMENT,police,,
+01-410-238,expense,UNIFORMS,police,,
+01-410-242,expense,AMMUNITION/POLICE SUPPLIES,police,,
+01-410-251,expense,VEHICLE OPERATION EXPENSE,police,,
+01-410-252,expense,PAYMENT TO CAPITAL,police,,Police payment to capital (vehicles): police.
+01-410-320,expense,COMMUNICATIONS EXPENSE,police,,
+01-410-371,expense,METER MAINTENANCE WAGES,police,yes,
+01-410-373,expense,HEADQUARTERS EXPENSE,police,,
+01-410-374,expense,SPECIAL LEGAL FEES,police,,
+01-411-000,expense,FIRE RELIEF,fire,,
+01-413-140,expense,HYDRANT RENTAL,fire,,
+01-413-200,expense,CONTRIBUTION TO SF&PA,fire,,
+01-413-201,expense,ALS EXPENSE,fire,,
+01-413-202,expense,FIRE TRUCK REPAIR,fire,,
+01-413-471,expense,DEBT PRINCIPAL DVRFA,fire,,"Fire company loan (DVRFA): fire debt service, as in the budget summaries."
+01-413-472,expense,DEBT INTEREST DVRFA,fire,,"Fire company loan (DVRFA): fire debt service, as in the budget summaries."
+01-414-100,expense,CODE INSPECTOR,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-102,expense,ZONING OFFICER,gg,yes,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-110,expense,DRAINAGE PLAN REVIEW,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-120,expense,CONTRACTED BUILDING INSPECTION,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-150,expense,MISCELLANEOUS ENGINEERING,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-200,expense,EXPENSES FOR ZHB,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-220,expense,PLANNING AND ZONING/GEN EXPENS,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-414-290,expense,ZONING LEGAL SERVICES,gg,,"Planning, zoning, code enforcement and engineering: general government, as in the budget summaries."
+01-421-100,expense,HEALTH OFFICER,gg,,Health officer: general government.
+01-430-120,expense,HIGHWAY DEPT ADMIN DUTIES,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-121,expense,BEEPER PAY,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-172,expense,HIGHWAY DEPT VACATION,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-176,expense,HIGHWAY DEPT PERSONAL/COMP T,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-177,expense,HIGHWAY DEPT SICK LEAVE,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-179,expense,HIGHWAY DEPT HOLIDAY,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-180,expense,HIGHWAY DEPT LONGEVITY,pw_other,yes,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-430-990,expense,AGILITY,pw_other,,"Public works director's pay, on-call pay and crew leave; budget summaries show public works administration under public works, other."
+01-431-100,expense,STREET CLEANING WAGES,streets,yes,
+01-432-100,expense,SNOW REMOVAL WAGES,streets,yes,
+01-433-110,expense,STREET SIGNS/MARKINGS WAGES,streets,yes,
+01-434-000,expense,STREET LIGHT POWER,streets,,
+01-434-100,expense,STREET LIGHT MAINTENANCE,streets,,
+01-435-100,expense,TOWN CENTER MAINTENANCE WAG,streets,yes,"Town center maintenance, including parking meters: streets, as in the budget summaries."
+01-435-105,expense,METER MAINT WAGES,streets,yes,"Town center maintenance, including parking meters: streets, as in the budget summaries."
+01-435-110,expense,METER EXPENSES,streets,,"Town center maintenance, including parking meters: streets, as in the budget summaries."
+01-436-100,expense,STORM SEWERS WAGES,streets,yes,
+01-437-250,expense,VEHICLE REPAIR,pw_vehicles,,
+01-437-252,expense,NEW MID SIZE DUMP TRUCK,pw_vehicles,,
+01-438-000,expense,ANNUAL STREET PAVING CONTRACT,streets,,"Annual street paving contract (2025 only, then budgeted under 01-439-000)."
+01-438-120,expense,STREET REPAIRS WAGES,streets,yes,
+01-438-220,expense,STREET REPAIRS,streets,,
+01-439-000,expense,ANNUAL STREET PAVING CONTRACT,streets,,
+01-450-300,expense,PAC CONTRIBUTION,community,,
+01-450-500,expense,SRA:CONTRIBUTION,community,,
+01-450-530,expense,SENIOR SERVICES,community,,
+01-450-540,expense,TOWN CENTER CONTRIBUTION,community,,
+01-450-600,expense,CONTRIBUTION TO HRC,community,,
+01-454-100,expense,MOWING:WAGES,parks,yes,
+01-454-110,expense,PARK MAINT:WAGES,parks,yes,
+01-454-200,expense,PARK MATERIALS AND SUPPLIES,parks,,
+01-454-260,expense,PARK EQUIP MAINT/REPLACEMENT/R,parks,,
+01-454-270,expense,PROFESSIONAL PARK MAINTENANCE,parks,,
+01-455-100,expense,STREET TREES:WAGES,parks,yes,"Street trees: parks & street trees, as in the budget summaries."
+01-455-221,expense,STREET TREE PLANTING,parks,,"Street trees: parks & street trees, as in the budget summaries."
+01-455-250,expense,TREE EQIUIP: MAINT AND REPLACE,parks,,"Street trees: parks & street trees, as in the budget summaries."
+01-455-451,expense,STREET TREE MAINTENANCE AND RE,parks,,"Street trees: parks & street trees, as in the budget summaries."
+01-456-000,expense,CONT TO SWARTHMORE LIBRARY,community,,
+01-471-000,expense,PRINCIPAL PAYMENT,gg,,
+01-472-000,expense,INTEREST PAYMENT,gg,,
+01-480-000,expense,MISCELLANEOUS EXPENDITURES,gg,,
+01-480-100,expense,FINANCE CHARGE,gg,,
+01-480-200,expense,ZHB/SPECIAL EXCEPTION EXPENSE,gg,,
+01-480-401,expense,SUBDIVISION/LAND DEVELOPMENT E,gg,,
+01-486-040,expense,UNEMPLOYMENT INSURANCE,payroll_benefits,,"Unemployment insurance: an employee benefit, shared out by salaries (as in the 2027 proposal's mapping)."
+01-486-203,expense,PROP/CASUALTY/LIABILITY/AUTO,gg,,"Property, casualty, liability and auto insurance for the whole borough, budgeted centrally: general government, as in the 2027 proposal's mapping. (The 2016-2026 budget summaries share part of it out as insurance lines under police, fire and public works, so those categories are lower here, and general government higher, than in the summaries.)"
+01-487-000,expense,SOCIAL SECURITY TAXES,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-020,expense,DISABILITY & LIFE INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-021,expense,SHORT TERM DISABILITY PAYMENTS,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-040,expense,HEALTH INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-070,expense,WORKER'S COMPENSATION,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-071,expense,WORKERS COMP REIMBURSEMENTS,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-156,expense,HSA,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-157,expense,POST-RETIREMENT HEALTH BENEFIT,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-487-158,expense,CONTR. TO 457(b) PLAN,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+01-492-000,expense,INTERFUND TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-492-001,expense,TFR TO HIGHWAY FUND,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-492-280,expense,CONTRIB TO GRANT FUNDING,gg,,
+01-492-300,expense,CONTRIBUTION TO CAPITAL,gg,,
+04-400-020,expense,ADMINISTRATIVE ASSISTANT,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-400-030,expense,BOOKKEEPER,ssw_overhead,,"Not counted as payroll, following the 2027 proposal's mapping (contracted bookkeeper)."
+04-400-060,expense,SALARY OF MANAGER/SECRETARY,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-400-090,expense,OVERTIME,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-400-280,expense,AUDITING SERVICES,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-400-290,expense,LEGAL SERVICES,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-401-020,expense,SALARY OF TAX COLLECTOR,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-401-150,expense,TAX COLLECTOR'S BOND/INS,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-401-200,expense,GENERAL EXPENSE:TAX COLLECTOR,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-401-300,expense,BILLING EXPENSES,sewer,,"Sewer and trash billing: counted under sanitary sewer treatment, as in the budget summaries."
+04-402-100,expense,BDG MATERIALS & SUPPLIES,pw_other,,Public works building supplies and utilities (as in the 2027 proposal's mapping).
+04-402-110,expense,MUNICIPAL BUILDING GAS,pw_other,,Public works building supplies and utilities (as in the 2027 proposal's mapping).
+04-402-120,expense,MUNICIPAL BUILDING ELECTRIC,pw_other,,Public works building supplies and utilities (as in the 2027 proposal's mapping).
+04-402-130,expense,MUNICIPAL BLDG WATER,pw_other,,Public works building supplies and utilities (as in the 2027 proposal's mapping).
+04-421-000,expense,SEWER:BOROUGH CREW WAGES,sewer,yes,
+04-421-060,expense,BOROUGH CREW RECYCLING:WAGE,solid_waste,yes,
+04-421-150,expense,RECYCLING COLLECTION,solid_waste,,
+04-421-155,expense,RECYCLING DISPOSAL,solid_waste,,
+04-421-200,expense,SEWER:MATERIAL & SUPPLIES,sewer,,
+04-421-220,expense,PREV SEWER MAINT & ENGINEERING,sewer,,
+04-421-440,expense,SEWER EQUIP MAINT & REPAIR,sewer,,
+04-422-300,expense,SEWER:PLANT OPERATIONS,sewer,,
+04-425-000,expense,REFUSE COLLECTION,solid_waste,,
+04-425-100,expense,REFUSE DISPOSAL/DCSWA,solid_waste,,
+04-427-100,expense,LEAF COLLECTION WAGES,solid_waste,yes,
+04-427-110,expense,COMPOST DELIVERY:WAGES,solid_waste,yes,
+04-427-200,expense,YARD WASTE RECYCLING WAGES,solid_waste,yes,
+04-427-300,expense,YARD WASTE DISPOSAL,solid_waste,,
+04-427-350,expense,YARD WASTE COLLECTION,solid_waste,,
+04-427-370,expense,COLLECTOR MAINT:WAGES,solid_waste,yes,
+04-427-375,expense,COLLECTOR OPERATING EXPENSE,solid_waste,,
+04-427-380,expense,RENTALS,solid_waste,,
+04-427-381,expense,COMPOSTING EXPENSE,solid_waste,,
+04-427-382,expense,COMPOSTING/SITE MAINT. WAGES,solid_waste,yes,
+04-430-120,expense,HIGHWAY DEPT ADMIN DUTIES,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-121,expense,BEEPER PAY,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-172,expense,HIGHWAY DEPT VACATION,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-176,expense,HIGHWAY DEPT PERSONAL/COMP T,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-177,expense,HIGHWAY DEPT SICK LEAVE,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-179,expense,HIGHWAY DEPT HOLIDAY,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-430-180,expense,HIGHWAY DEPT LONGEVITY,ssw_overhead,yes,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-434-000,expense,STREET LIGHT POWER,streets,,"Street light power, budgeted in the Sewer & Solid Waste Fund (with no money) in 2021-2023."
+04-437-250,expense,VEHICLE REPAIR,pw_vehicles,,"Vehicle repair, fuel and maintenance: public works vehicles."
+04-437-252,expense,NEW MID SIZE DUMP TRUCK,pw_vehicles,,"Vehicle repair, fuel and maintenance: public works vehicles."
+04-437-259,expense,,pw_vehicles,,Its description was never read; under Department 437 (vehicles).
+04-438-250,expense,FUEL EXPENSE,pw_vehicles,,"Vehicle repair, fuel and maintenance: public works vehicles."
+04-438-251,expense,VEHICLE MAINT: WAGES,pw_vehicles,yes,"Vehicle repair, fuel and maintenance: public works vehicles."
+04-471-000,expense,DVRFA PRINCIPAL,sewer,,"Sewer debt (DVRFA loan): sanitary sewer debt service, as in the budget summaries."
+04-472-000,expense,DVRFA INTEREST,sewer,,"Sewer debt (DVRFA loan): sanitary sewer debt service, as in the budget summaries."
+04-480-000,expense,MISCELLANEOUS EXPENDITURES,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-486-040,expense,UNEMPLOYMENT INSURANCE,payroll_benefits,,"Unemployment insurance: an employee benefit, shared out by salaries (as in the 2027 proposal's mapping)."
+04-486-203,expense,PROP/CASUALTY/LIABILITY/AUTO,ssw_overhead,,"The Sewer & Solid Waste Fund's share of administration, tax collection, public works leave and insurance; budget summaries show it as 'allocated expenses' under sewer and solid waste, and it is split between them in the same proportion."
+04-487-000,expense,SOCIAL SECURITY TAXES,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+04-487-020,expense,DISABILITY & LIFE INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+04-487-040,expense,HEALTH INSURANCE,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+04-487-050,expense,MINIMUM MUNICIPAL OBLIGATION,payroll_benefits,,"The Sewer & Solid Waste Fund's minimum municipal obligation to the non-uniformed pension plan (2020-2022): an employee benefit, shared out by salaries."
+04-487-070,expense,WORKER'S COMPENSATION,payroll_benefits,,"Employee benefits, budgeted centrally in the ledger; earlier budget summaries included them in each department's personnel costs, so they are shared out in proportion to salaries."
+04-492-280,expense,TRANSFER TO CAPITAL,ssw_overhead,,"The Sewer & Solid Waste Fund's contribution to capital, split between sewer and solid waste like its overhead."
+05-430-260,expense,SMALL TOOLS AND EQUIPMENT,pw_other,,"Small tools: public works, other, as in the budget summaries."
+05-430-990,expense,AGILITY WAGES,pw_other,yes,"Small tools: public works, other, as in the budget summaries."
+05-431-100,expense,BOROUGH STREET CLEANING WAGE,streets,yes,
+05-431-201,expense,TOWN CENTER MAINTENANCE WAGE,streets,yes,
+05-431-300,expense,CONTRACTED STREET SWEEPING,streets,,
+05-432-000,expense,CONTRACTED SNOW REMOVAL,streets,,
+05-432-100,expense,SNOW REMOVAL:WAGES,streets,yes,
+05-432-110,expense,SNOW REMOVAL REIMBURSEMENT,streets,,
+05-432-200,expense,SNOW REMOVAL:MAT & SUPPLIES,streets,,
+05-432-330,expense,SNOW EQUIP MAINT:MAT & SUPPLIE,streets,,
+05-433-000,expense,TRAFFIC SIGNAL MAINT & POWER,streets,,
+05-433-110,expense,STREET SIGNS & MARKINGS:WAGES,streets,yes,
+05-433-200,expense,STREET SIGNS & MARKINGS,streets,,
+05-433-300,expense,ANNUAL STREET STRIPING,streets,,
+05-434-000,expense,STREET LIGHT POWER,streets,,
+05-434-100,expense,STREET LIGHT MAINTENANCE,streets,,
+05-436-100,expense,STORM SEWERS:WAGES,streets,yes,
+05-436-200,expense,STORM SEWERS:MATERIALS AND SU,streets,,
+05-436-300,expense,STORM SEWERS:ENGINEERING AND,streets,,
+05-437-250,expense,REPAIRS OF TOOLS & MACHINERY,pw_vehicles,,
+05-438-120,expense,STREET REPAIR:WAGES,streets,yes,
+05-438-220,expense,STREET REPAIR:MAT & SUPPLIES,streets,,
+05-439-000,expense,ANNUAL STREET PAVING CONTRACT,streets,,
+05-439-313,expense,ENGINEERING,streets,,
+05-480-000,expense,MISCELLANEOUS EXPENDITURES,streets,,Highway Aid (liquid fuels) engineering: streets.
+05-480-100,expense,MISCELLANEOUS ENGINEERING,streets,,Highway Aid (liquid fuels) engineering: streets.
+09-487-050,expense,MINIMUM MUNICIPAL OBLIGATION,police,,"The police pension plan's minimum municipal obligation, paid by the Pension Fund: police, as in the budget summaries ('municipal pension obligation')."
+09-487-051,expense,401 A PLAN,payroll_benefits,,"401(a) plan contribution (2026): an employee benefit, shared out by salaries."
+10-471-000,expense,DEBT REPAYMENT PRINCIPAL,gg,,"Sinking Fund debt service: general government, as in the budget summaries."
+10-472-000,expense,DEBT INTEREST,gg,,"Sinking Fund debt service: general government, as in the budget summaries."
+10-480-100,expense,FINANCE CHARGE,gg,,"Sinking Fund debt service: general government, as in the budget summaries."
+01-300-010,revenue,CURRENT YEAR REAL ESTATE TAXE,property_taxes,,
+01-300-020,revenue,EMERGENCY SERVICES TAX,other_taxes,,"Emergency services tax, from 2026: other taxes, as in the 2026 budget."
+01-300-030,revenue,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,
+01-300-040,revenue,INTERIM REAL ESTATE TAXES,property_taxes,,
+01-301-030,revenue,PRIOR YEAR FIRE TAX,property_taxes,,"Fire tax: a property tax millage, counted with property taxes as in the budget summaries."
+01-301-100,revenue,CURRENT YEAR FIRE TAX,property_taxes,,"Fire tax: a property tax millage, counted with property taxes as in the budget summaries."
+01-301-400,revenue,INTERIM FIRE TAX,property_taxes,,"Fire tax: a property tax millage, counted with property taxes as in the budget summaries."
+01-310-030,revenue,REAL ESTATE TRANSFER TAX,other_taxes,,
+01-310-040,revenue,LST/LOCAL SERVICES TAX,other_taxes,,
+01-320-020,revenue,BUILDING PERMITS,misc_revenue,,
+01-320-021,revenue,CONTRACTOR'S LICENSE,misc_revenue,,
+01-320-022,revenue,USE AND OCCUPANCY CERTIFICATE,misc_revenue,,
+01-320-023,revenue,POLICE SERVICES,misc_revenue,,
+01-320-100,revenue,RENTAL INSPECTION,misc_revenue,,
+01-320-820,revenue,STREET OPENING,misc_revenue,,
+01-330-010,revenue,MOTOR VEHICLE FINES,misc_revenue,,
+01-330-020,revenue,VIOLATION OF ORDINANCES,misc_revenue,,
+01-341-010,revenue,INTEREST,misc_revenue,,
+01-350-020,revenue,PUBLIC UTILITES REALTY TAX,intergovernmental,,
+01-350-030,revenue,COUNTY AID,intergovernmental,,
+01-350-041,revenue,D.A.R.E. GRANT,misc_revenue,,"ALS (advanced life support) revenue; labelled D.A.R.E. grant until 2025, when it first received money ($177,968). Counted with the fire & ambulance service revenue in miscellaneous revenue."
+01-354-170,revenue,Grant Income,misc_revenue,,
+01-355-120,revenue,401 A REIMBURSEMENT,intergovernmental,,
+01-355-130,revenue,FOREIGN FIRE INS. PREMIUM TAX/,intergovernmental,,
+01-360-030,revenue,PARKING METER REVENUE,misc_revenue,,
+01-360-031,revenue,PARKING PERMITS,misc_revenue,,
+01-360-050,revenue,POLICE SERVICES,misc_revenue,,
+01-360-051,revenue,LIFE SAFETY SERVICES,misc_revenue,,
+01-367-000,revenue,TREE COMMITTEE SALES,misc_revenue,,
+01-367-100,revenue,CHARGE FOR TREE REMOVAL,misc_revenue,,
+01-380-000,revenue,MISCELLLANEOUS REVENUE,misc_revenue,,
+01-380-010,revenue,CABLE FRANCHISE FEES,misc_revenue,,
+01-380-070,revenue,ACCIDENT REPORTS,misc_revenue,,
+01-380-100,revenue,ZHB/SPECIAL EXCEPTION,misc_revenue,,
+01-380-200,revenue,CONDITIONAL USE APPLICATION,misc_revenue,,
+01-380-300,revenue,PRIOR YEAR FOREIGN CASUALTY,misc_revenue,,
+01-380-330,revenue,UNRESTRICTED FUND BALANCE,prior_year_funds,,Unrestricted fund balance: prior-year funds.
+01-380-400,revenue,SUB/LAND DEVELOPMENT APP.FEE,misc_revenue,,
+01-380-500,revenue,STORM WATER MGNT APP. FEE,misc_revenue,,
+01-380-600,revenue,ARPA PAYBACK,misc_revenue,,
+01-380-700,revenue,CFA/LSA GRANT,misc_revenue,,
+01-387-000,revenue,SUPPLEMENTAL CONTRIBUTION,misc_revenue,,
+01-387-100,revenue,CONTRIBUTION FROM OTHER SOUR,misc_revenue,,
+01-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+01-393-000,revenue,PROCEEDS OF GENERAL LONG-TERM,financing,,"Proceeds of borrowing: not revenue, so left out."
+01-395-000,revenue,REFUND OF PRIOR YEAR EXPENSES,misc_revenue,,
+04-341-010,revenue,INTEREST,misc_revenue,,
+04-360-011,revenue,CURRENT YEAR SOLID WASTE FEES,trash_fees,,
+04-360-012,revenue,PRIOR YEAR SOLID WASTE FEES,trash_fees,,
+04-360-081,revenue,CURRENT YEAR SEWER FEES,sewer_fees,,
+04-360-082,revenue,PRIOR YEAR SEWER FEES,sewer_fees,,
+04-380-000,revenue,MISCELLLANEOUS REVENUE,misc_revenue,,
+04-380-020,revenue,SALE OF RECYCLABLES,misc_revenue,,
+04-380-030,revenue,PERFORMANCE GRANT REVENUE,misc_revenue,,
+04-380-040,revenue,LEAF MULCH SALES,misc_revenue,,
+04-380-330,revenue,UNRESTRICTED FUND BALANCE,prior_year_funds,,Unrestricted fund balance: prior-year funds.
+04-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+05-341-010,revenue,INTEREST,misc_revenue,,
+05-355-050,revenue,MOTOR VEHICLE FUEL TAXES,intergovernmental,,"State liquid fuels tax (Highway Aid): intergovernmental, as in the budget summaries."
+05-380-000,revenue,MISCELLANEOUS REVENUE,misc_revenue,,
+05-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+05-392-001,revenue,TFR FROM GENERAL FUND,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).
+09-300-010,revenue,CURRENT YEAR REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
+09-300-030,revenue,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
+09-300-040,revenue,INTERIM REAL ESTATE TAXES,property_taxes,,"Pension Fund property tax: counted with property taxes, as in the budget summaries."
+09-355-120,revenue,FOREIGN CASUALTY INSURANCE TAX,intergovernmental,,"State pension aid: intergovernmental, as in the budget summaries."
+09-392-000,revenue,INTERFUND OPERATING TRANSFERS,intergovernmental,,"Budgeted at $25,000 in 2025 and counted as intergovernmental in the 2025 budget summary; in 2026 the same $25,000 is budgeted as the state's 401(a) reimbursement (01-355-120). No transfer was made."
+10-300-010,revenue,CURRENT YEAR REAL ESTATE TAXE,property_taxes,,"Sinking Fund property tax: counted with property taxes, as in the budget summaries."
+10-300-030,revenue,PRIOR YEAR REAL ESTATE TAXES,property_taxes,,"Sinking Fund property tax: counted with property taxes, as in the budget summaries."
+10-300-040,revenue,INTERIM REAL ESTATE TAXES,property_taxes,,"Sinking Fund property tax: counted with property taxes, as in the budget summaries."
+10-380-330,revenue,UNRESTRICTED FUND BALANCE,prior_year_funds,,Unrestricted fund balance: prior-year funds.
+10-392-000,revenue,INTERFUND OPERATING TRANSFERS,interfund,,Transfer between the borough's own funds: left out on both sides (none was made in 2020-2026).

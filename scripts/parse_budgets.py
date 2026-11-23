@@ -54,16 +54,14 @@ from dataclasses import dataclass, field
 import pdfplumber
 from common import (
     CORRECTIONS_DIR,
-    OCR_DIR,
-    OCR_MANIFEST_CSV,
     PROCESSED_DIR,
     Line,
     Word,
+    check_ocr_is_current,
     downloaded_path,
     ocr_lines,
     read_csv,
     rel,
-    sha256_of,
     sources_by_id,
     text_layer_lines,
     write_csv,
@@ -202,17 +200,6 @@ def load_pages(doc_id: str) -> list[Page]:
                 ocr = ocr_lines(doc_id)
             pages.append(Page(doc_id, number, "ocr", ocr.get(number, [])))
     return pages
-
-
-def check_ocr_is_current(doc_id: str, path) -> None:
-    for r in read_csv(OCR_MANIFEST_CSV):
-        if r["doc_id"] == doc_id:
-            if r["source_sha256"] != sha256_of(path):
-                sys.exit(
-                    f"{rel(OCR_DIR / (doc_id + '.csv'))} was made from a different version of the PDF; re-run OCR"
-                )
-            return
-    sys.exit(f"no OCR output for document {doc_id}; run: uv run scripts/ocr_documents.py --doc-id {doc_id}")
 
 
 def page_kind(page: Page) -> str:

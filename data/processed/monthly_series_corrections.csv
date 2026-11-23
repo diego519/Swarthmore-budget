@@ -1,0 +1,1018 @@
+doc_id,period,page,statement,fund_code,department_code,row_type,ledger_id,column,printed,corrected,method,evidence
+2133,2021-06,3,revenue,01,380,item,01-380-000,budget,98500.00,9500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2134,2021-07,9,expense,01,487,item,01-487-040,budget,387475.00,357475.00,arithmetic,department subtotal adds up; same figure printed in another report
+2134,2021-07,11,expense,04,400,item,04-400-030,budget,14002.00,11002.00,arithmetic,department subtotal adds up; same figure printed in another report
+2134,2021-07,13,expense,04,492,item,04-492-280,budget,414000.00,41000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2134,2021-07,13,expense,04,487,item,04-487-040,ytd,32203.00,32209.00,arithmetic,department subtotal adds up; same figure printed in another report
+2134,2021-07,9,expense,01,486,department_subtotal,,prior_year_ytd,,36130.40,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2135,2021-08,3,revenue,01,380,item,01-380-100,ytd,5560.00,5500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2137,2021-10,6,expense,01,413,item,01-413-472,budget,,2894.00,arithmetic,department subtotal adds up; same figure printed in another report
+2137,2021-10,8,expense,01,438,department_subtotal,,budget,5000.06,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2137,2021-10,14,expense,04,487,item,04-487-050,ytd,25888.06,25888.00,arithmetic,department subtotal adds up; same figure printed in another report
+2137,2021-10,9,expense,01,480,item,01-480-200,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2138,2021-11,12,expense,04,401,department_subtotal,,prior_year_budget,8968.00,8969.00,arithmetic,department subtotal adds up; same figure printed in another report
+2139,2021-12,2,revenue,01,300,item,01-300-010,ytd,13014056.71,1301056.71,arithmetic,department subtotal adds up; same figure printed in another report
+2139,2021-12,16,expense,05,430,item,05-430-260,ytd,763.36,753.36,arithmetic,department subtotal adds up; same figure printed in another report
+2140,2022-01,9,expense,01,471,department_subtotal,,budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2140,2022-01,2,revenue,01,350,department_subtotal,,ytd,7965.06,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+2142,2022-03,2,revenue,01,310,department_subtotal,,prior_year_ytd,87485.29,57485.29,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2142,2022-03,6,expense,01,410,item,01-410-182,prior_year_ytd,11483.18,11433.18,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2143,2022-04,3,revenue,01,387,department_subtotal,,ytd,345.00,945.00,arithmetic,department subtotal adds up; same figure printed in another report
+2143,2022-04,6,expense,01,410,item,01-410-182,prior_year_ytd,11483.18,11433.18,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2081,2022-05,6,expense,01,410,item,01-410-200,prior_year_ytd,1162.11,1152.11,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2096,2022-06,2,revenue,01,300,item,01-300-010,budget,,1447488.00,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,12,expense,04,401,department_subtotal,,budget,,8951.00,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,13,expense,04,427,item,04-427-370,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,9,expense,01,487,department_subtotal,,budget,,654059.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2096,2022-06,7,expense,01,434,item,01-434-100,ytd,,9357.78,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,8,expense,01,450,department_subtotal,,ytd,,96340.00,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,9,expense,01,487,item,01-487-020,ytd,,8569.74,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,12,expense,04,401,item,04-401-150,ytd,,998.54,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,6,expense,01,410,department_subtotal,,prior_year_budget,168643.00,1168643.00,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,5,expense,01,402,item,01-402-120,prior_year_ytd,,5500.77,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,7,expense,01,434,department_subtotal,,prior_year_ytd,,15508.74,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,9,expense,01,487,item,01-487-070,prior_year_ytd,,35373.50,arithmetic,department subtotal adds up; same figure printed in another report
+2096,2022-06,15,revenue,05,341,department_subtotal,,prior_year_ytd,,12.85,arithmetic,department subtotal adds up; same figure printed in another report
+2151,2022-07,6,expense,01,410,item,01-410-200,budget,,5500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2151,2022-07,3,revenue,01,367,item,01-367-000,ytd,,3000.00,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2151,2022-07,5,expense,01,400,item,01-400-400,ytd,3487.83,3437.83,arithmetic,department subtotal adds up; same figure printed in another report
+2151,2022-07,7,expense,01,414,department_subtotal,,ytd,,32067.31,arithmetic,department subtotal adds up; same figure printed in another report
+2151,2022-07,9,expense,01,487,department_subtotal,,ytd,359332.41,359382.41,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,2,revenue,01,310,item,01-310-040,budget,,110000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,9,expense,01,472,department_subtotal,,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,16,expense,05,438,department_subtotal,,budget,,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,6,expense,01,410,department_subtotal,,budget,,1261724.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2195,2022-08,2,revenue,01,350,department_subtotal,,ytd,,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,5,expense,01,400,item,01-400-200,ytd,,25047.91,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,5,expense,01,401,item,01-401-200,ytd,,2060.13,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,7,expense,01,414,item,01-414-220,ytd,,1647.50,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,8,expense,01,454,item,01-454-100,ytd,,9244.14,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,9,expense,01,486,item,01-486-203,ytd,,35556.66,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,14,expense,04,487,item,04-487-040,ytd,,44535.06,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,16,expense,05,439,item,05-439-313,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,2,revenue,01,300,item,01-300-030,prior_year_budget,,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,2,revenue,01,330,item,01-330-020,prior_year_budget,,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,9,expense,01,487,item,01-487-071,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,20,revenue,10,300,department_subtotal,,prior_year_budget,,81525.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,19,expense,09,,fund_subtotal,,prior_year_budget,,372591.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2195,2022-08,6,expense,01,410,item,01-410-020,prior_year_ytd,,62996.80,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,8,expense,01,450,item,01-450-540,prior_year_ytd,,26000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,11,revenue,04,380,item,04-380-040,prior_year_ytd,,24094.67,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,12,expense,04,422,department_subtotal,,prior_year_ytd,,709662.75,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,13,expense,04,434,department_subtotal,,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,14,expense,04,487,item,04-487-040,prior_year_ytd,33073.61,38073.61,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,16,expense,05,439,department_subtotal,,prior_year_ytd,119150.60,110150.60,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,14,expense,04,486,department_subtotal,,prior_year_ytd,39640.22,9640.22,arithmetic,fund subtotal adds up; same figure printed in another report
+2195,2022-08,20,revenue,10,,fund_subtotal,,prior_year_ytd,,76207.47,arithmetic,fund subtotal adds up; same figure printed in another report
+2226,2022-09,14,expense,04,487,item,04-487-000,budget,,12579.00,arithmetic,department subtotal adds up; same figure printed in another report
+2226,2022-09,16,expense,05,432,item,05-432-330,budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2226,2022-09,12,expense,04,400,item,04-400-090,ytd,309.59,399.59,arithmetic,department subtotal adds up; same figure printed in another report
+2226,2022-09,13,expense,04,427,item,04-427-381,ytd,,2689.51,arithmetic,department subtotal adds up; same figure printed in another report
+2226,2022-09,13,expense,04,427,item,04-427-381,prior_year_budget,2780.00,2750.00,arithmetic,department subtotal adds up; same figure printed in another report
+2226,2022-09,16,expense,05,432,item,05-432-330,prior_year_ytd,218.94,1218.94,arithmetic,department subtotal adds up; same figure printed in another report
+2245,2022-10,9,expense,01,487,item,01-487-040,prior_year_ytd,,273033.76,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,12,expense,04,402,department_subtotal,,budget,,9360.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2262,2022-11,3,revenue,01,360,item,01-360-031,ytd,,22635.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,8,expense,01,454,item,01-454-260,ytd,,1161.37,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,14,expense,04,486,item,04-486-040,ytd,,645.01,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,14,expense,04,487,item,04-487-070,ytd,,5666.22,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,20,revenue,10,392,department_subtotal,,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,21,expense,10,471,department_subtotal,,ytd,,47700.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,7,expense,01,430,department_subtotal,,ytd,,42706.26,arithmetic,fund subtotal adds up; same figure printed in another report
+2262,2022-11,14,expense,04,480,department_subtotal,,ytd,,0.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2262,2022-11,11,revenue,04,360,item,04-360-011,prior_year_budget,,623500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,12,expense,04,421,item,04-421-000,prior_year_budget,,11500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,14,expense,04,486,item,04-486-040,prior_year_budget,,600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,16,expense,05,431,department_subtotal,,prior_year_budget,,550.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,7,expense,01,430,item,01-430-121,prior_year_ytd,,1175.00,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,12,expense,04,402,department_subtotal,,prior_year_ytd,,6461.55,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,15,revenue,05,355,item,05-355-050,prior_year_ytd,,158481.83,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,5,expense,01,400,item,01-400-009,budget,,6000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,2,revenue,01,301,item,01-301-100,ytd,,344860.21,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,5,expense,01,400,item,01-400-291,ytd,,14486.00,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,7,expense,01,414,item,01-414-220,ytd,,2876.00,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,12,expense,04,400,item,04-400-090,ytd,,599.86,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,12,expense,04,401,item,04-401-150,ytd,,998.54,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,2,revenue,01,350,department_subtotal,,prior_year_budget,,10500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,9,expense,01,486,department_subtotal,,prior_year_ytd,,40546.44,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,9,expense,01,492,item,01-492-001,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2364,2022-12,13,expense,04,425,department_subtotal,,prior_year_ytd,268838.87,268888.87,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,9,expense,01,480,item,01-480-401,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,9,expense,01,487,item,01-487-021,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,15,expense,05,431,department_subtotal,,budget,,550.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2398,2023-01,3,revenue,01,367,department_subtotal,,ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,3,revenue,01,380,item,01-380-010,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,6,expense,01,402,department_subtotal,,ytd,,6347.62,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,6,expense,01,410,item,01-410-040,ytd,,38647.68,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,7,expense,01,414,item,01-414-120,ytd,,821.60,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,7,expense,01,430,item,01-430-176,ytd,,122.72,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,8,expense,01,439,department_subtotal,,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,10,revenue,04,341,item,04-341-010,ytd,,533.87,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,15,expense,05,432,item,05-432-000,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,6,expense,01,410,item,01-410-040,prior_year_budget,,453393.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,7,expense,01,432,item,01-432-100,prior_year_budget,,13000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,8,expense,01,450,item,01-450-540,prior_year_budget,,41340.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,16,expense,05,480,department_subtotal,,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,4,revenue,01,392,item,01-392-000,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,7,expense,01,414,department_subtotal,,prior_year_ytd,,2647.23,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,7,expense,01,432,department_subtotal,,prior_year_ytd,,2797.65,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,9,expense,01,487,item,01-487-070,prior_year_ytd,,9541.24,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,12,expense,04,427,item,04-427-380,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,20,expense,10,472,item,10-472-000,prior_year_ytd,,496.72,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,5,expense,01,400,item,01-400-200,budget,,7200.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,6,expense,01,410,item,01-410-181,budget,,51341.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,6,expense,01,413,item,01-413-471,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,7,expense,01,414,department_subtotal,,budget,,47000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,7,expense,01,434,item,01-434-000,budget,,58800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,13,expense,04,486,item,04-486-203,budget,114200.00,11200.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,19,revenue,10,300,item,10-300-040,budget,,125.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,8,expense,01,435,department_subtotal,,budget,,26600.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2423,2023-02,5,expense,01,402,item,01-402-110,ytd,,3213.28,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,9,expense,01,487,department_subtotal,,ytd,,143498.34,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,11,expense,04,422,department_subtotal,,ytd,,248030.50,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,13,expense,04,487,department_subtotal,,ytd,,22883.27,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,2,revenue,01,301,item,01-301-030,prior_year_budget,,250.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,2,revenue,01,320,item,01-320-020,prior_year_budget,,175000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,9,expense,01,487,item,01-487-020,prior_year_budget,,21120.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,15,expense,05,437,department_subtotal,,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,17,revenue,09,392,department_subtotal,,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,20,expense,10,480,department_subtotal,,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,2,revenue,01,341,department_subtotal,,prior_year_ytd,,5.43,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,2,revenue,01,350,department_subtotal,,prior_year_ytd,,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,4,revenue,01,393,department_subtotal,,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,4,revenue,01,395,item,01-395-000,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,7,expense,01,430,item,01-430-120,prior_year_ytd,,930.80,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,9,expense,01,487,item,01-487-071,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,13,expense,04,486,item,04-486-040,prior_year_ytd,,553.60,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,20,expense,10,471,department_subtotal,,prior_year_ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2468,2023-03,9,expense,01,480,item,01-480-401,ytd,0.90,0.00,arithmetic,department subtotal adds up; one digit misread
+2468,2023-03,12,expense,04,427,department_subtotal,,ytd,,25980.77,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2468,2023-03,12,expense,04,430,item,04-430-172,ytd,867.56,807.56,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2468,2023-03,15,expense,05,439,item,05-439-313,ytd,30.00,0.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2468,2023-03,14,revenue,05,380,department_subtotal,,ytd,30.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+2468,2023-03,3,revenue,01,380,department_subtotal,,prior_year_budget,,117500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2492,2023-04,9,expense,01,492,department_subtotal,,ytd,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2492,2023-04,9,expense,01,,fund_subtotal,,prior_year_budget,3208764.00,3298764.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2492,2023-04,7,expense,01,414,item,01-414-220,prior_year_ytd,,444.00,arithmetic,department subtotal adds up; same figure printed in another report
+2514,2023-05,9,expense,01,480,item,01-480-401,budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2514,2023-05,13,expense,04,486,department_subtotal,,ytd,10495.88,10496.88,arithmetic,department subtotal adds up; same figure printed in another report
+2514,2023-05,13,expense,04,487,department_subtotal,,ytd,45954.54,45954.84,arithmetic,department subtotal adds up; same figure printed in another report
+2514,2023-05,15,expense,05,432,item,05-432-330,ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2514,2023-05,19,revenue,10,392,item,10-392-000,prior_year_ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,9,expense,01,487,item,01-487-071,budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,15,expense,05,439,item,05-439-000,budget,399035.00,99035.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,4,revenue,01,395,department_subtotal,,ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,5,expense,01,400,item,01-400-206,ytd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,7,expense,01,414,item,01-414-290,ytd,2275.09,2275.00,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,7,expense,01,435,item,01-435-110,ytd,1554.61,1551.61,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,9,expense,01,487,item,01-487-070,ytd,48982.36,18982.36,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,10,revenue,04,,fund_subtotal,,prior_year_budget,1873445.00,1873446.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2529,2023-06,13,expense,04,486,item,04-486-203,prior_year_ytd,7080.50,7080.56,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,301,department_subtotal,,budget,509.00,500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,341,item,01-341-010,budget,20000.60,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,360,item,01-360-031,budget,20090.00,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,4,revenue,01,392,item,01-392-000,budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,6,expense,01,410,item,01-410-221,budget,4009.00,4000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,6,expense,01,413,item,01-413-472,budget,2355.00,2356.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,8,expense,01,454,item,01-454-270,budget,3000.00,8000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,10,revenue,04,341,department_subtotal,,budget,20009.00,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,10,revenue,04,360,item,04-360-012,budget,5000.09,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,13,expense,04,492,item,04-492-280,budget,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,438,item,05-438-220,budget,7000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,439,item,05-439-000,budget,93035.00,99035.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,16,expense,05,480,item,05-480-000,budget,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,20,expense,10,480,department_subtotal,,budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,301,item,01-301-100,ytd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,354,item,01-354-170,ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,360,item,01-360-051,ytd,55900.00,55000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,387,item,01-387-100,ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,6,expense,01,410,item,01-410-186,ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,431,item,01-431-100,ytd,,2746.53,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,9,expense,01,486,item,01-486-203,ytd,50020.84,50020.94,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,9,expense,01,492,item,01-492-280,ytd,0.09,6.09,arithmetic,department subtotal adds up; one digit misread
+2542,2023-07,11,expense,04,422,item,04-422-300,ytd,496081.00,496061.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,12,expense,04,425,department_subtotal,,ytd,185150.63,185150.83,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,13,expense,04,487,item,04-487-050,ytd,0.06,0.00,arithmetic,department subtotal adds up; one digit misread
+2542,2023-07,14,revenue,05,341,item,05-341-010,ytd,34263.82,4263.82,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,14,revenue,05,380,item,05-380-000,ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,14,revenue,05,392,item,05-392-001,ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,432,item,05-432-000,ytd,0.09,0.00,arithmetic,department subtotal adds up; one digit misread
+2542,2023-07,15,expense,05,433,item,05-433-300,ytd,2895.09,2895.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,17,revenue,09,392,department_subtotal,,ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,4,revenue,01,,fund_subtotal,,ytd,3721029.57,3721099.67,arithmetic,fund subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,341,department_subtotal,,prior_year_budget,2500.09,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,387,department_subtotal,,prior_year_budget,115000.09,115000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,4,revenue,01,392,item,01-392-000,prior_year_budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,5,expense,01,402,item,01-402-100,prior_year_budget,4409.00,4400.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,6,expense,01,410,item,01-410-373,prior_year_budget,1800.09,1800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,6,expense,01,413,item,01-413-472,prior_year_budget,2423.00,2123.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,414,item,01-414-100,prior_year_budget,6009.00,6000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,8,expense,01,436,item,01-436-100,prior_year_budget,92000.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,8,expense,01,455,department_subtotal,,prior_year_budget,49302.00,49300.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,8,expense,01,456,department_subtotal,,prior_year_budget,200709.00,200700.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,9,expense,01,487,item,01-487-158,prior_year_budget,12684.09,12684.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,11,expense,04,402,item,04-402-100,prior_year_budget,1109.00,1100.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,12,expense,04,471,item,04-471-000,prior_year_budget,5399.00,5300.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,13,expense,04,487,item,04-487-040,prior_year_budget,54569.00,64569.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,436,item,05-436-300,prior_year_budget,6500.09,6500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,437,item,05-437-250,prior_year_budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,15,expense,05,438,item,05-438-220,prior_year_budget,1009.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,19,revenue,10,300,item,10-300-040,prior_year_budget,125.09,125.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,320,department_subtotal,,prior_year_budget,197000.00,191000.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2542,2023-07,2,revenue,01,341,item,01-341-010,prior_year_ytd,2935.27,2936.27,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,3,revenue,01,367,item,01-367-000,prior_year_ytd,3000.09,3000.00,arithmetic,department subtotal adds up; one digit misread
+2542,2023-07,4,revenue,01,393,department_subtotal,,prior_year_ytd,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,5,expense,01,402,item,01-402-000,prior_year_ytd,17903.52,17903.59,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,430,department_subtotal,,prior_year_ytd,31773.68,31773.69,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,9,expense,01,487,item,01-487-157,prior_year_ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,11,expense,04,421,item,04-421-000,prior_year_ytd,3651.53,3661.53,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,12,expense,04,471,department_subtotal,,prior_year_ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,13,expense,04,487,item,04-487-000,prior_year_ytd,6894.35,6894.85,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,14,revenue,05,392,department_subtotal,,prior_year_ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,9,expense,01,455,item,01-455-250,budget,2809.00,2800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,7,expense,01,414,item,01-414-100,mtd,377.89,877.89,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,2,revenue,01,310,item,01-310-040,ytd,89170.53,89176.53,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,9,expense,01,480,item,01-480-100,ytd,0.06,0.00,arithmetic,department subtotal adds up; one digit misread
+2591,2023-08,15,revenue,05,341,department_subtotal,,ytd,6213.72,5213.72,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,6,expense,01,410,item,01-410-181,prior_year_budget,344644.00,44644.00,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,16,expense,05,430,item,05-430-260,prior_year_budget,31000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,19,expense,09,487,item,09-487-050,prior_year_budget,2931782.00,291782.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,11,revenue,04,380,item,04-380-040,mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,9,expense,01,480,item,01-480-401,ytd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+2629,2023-09,3,revenue,01,360,item,01-360-030,prior_year_budget,,95000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,3,revenue,01,380,item,01-380-070,prior_year_budget,,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,15,revenue,05,355,department_subtotal,,prior_year_budget,,157089.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,20,revenue,10,300,department_subtotal,,prior_year_budget,,73667.00,arithmetic,department subtotal adds up; same figure printed in another report
+2629,2023-09,20,revenue,10,,fund_subtotal,,prior_year_budget,,73667.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,301,department_subtotal,,budget,590.00,500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,310,item,01-310-040,budget,110600.00,110000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,330,item,01-330-010,budget,36000.00,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,355,department_subtotal,,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,387,item,01-387-000,budget,750000.00,150000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,9,expense,01,456,department_subtotal,,budget,,206721.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,367,department_subtotal,,budget,40060.00,40000.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,301,item,01-301-030,mtd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,360,item,01-360-051,mtd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,367,item,01-367-000,mtd,609.00,600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,380,item,01-380-200,mtd,0.60,0.00,arithmetic,department subtotal adds up; one digit misread
+2642,2023-10,4,revenue,01,395,item,01-395-000,mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,18,revenue,09,355,department_subtotal,,mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,301,item,01-301-100,ytd,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,310,item,01-310-030,ytd,201432.99,201432.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,350,item,01-350-041,ytd,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,360,item,01-360-031,ytd,29678.06,29678.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,387,item,01-387-100,ytd,735660.00,135660.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,392,item,01-392-000,ytd,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,4,revenue,01,395,department_subtotal,,ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,14,expense,04,486,item,04-486-040,ytd,435.96,435.90,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,300,department_subtotal,,prior_year_budget,1478428.00,1478488.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,301,department_subtotal,,prior_year_budget,349277.06,349277.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,310,item,01-310-040,prior_year_budget,,110000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,320,department_subtotal,,prior_year_budget,,191000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,330,item,01-330-020,prior_year_budget,2500.90,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,2,revenue,01,350,department_subtotal,,prior_year_budget,10506.00,10500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,387,department_subtotal,,prior_year_budget,,115000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,392,item,01-392-000,prior_year_budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,8,expense,01,454,item,01-454-100,prior_year_budget,310000.00,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,9,expense,01,487,item,01-487-020,prior_year_budget,21420.00,21120.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,14,expense,04,486,item,04-486-040,prior_year_budget,606.00,600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,15,revenue,05,355,department_subtotal,,prior_year_budget,157089.06,157089.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,20,revenue,10,300,department_subtotal,,prior_year_budget,,73667.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,18,revenue,09,,fund_subtotal,,prior_year_budget,406975.06,406975.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2642,2023-10,20,revenue,10,,fund_subtotal,,prior_year_budget,,73667.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2642,2023-10,20,revenue,10,,total,,prior_year_budget,,73667.00,arithmetic,total adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,380,item,01-380-010,prior_year_mtd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+2642,2023-10,2,revenue,01,320,item,01-320-022,prior_year_ytd,,7300.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,367,item,01-367-000,prior_year_ytd,7697.59,7697.50,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,4,revenue,01,395,department_subtotal,,prior_year_ytd,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,13,expense,04,427,item,04-427-370,prior_year_ytd,0.60,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,21,expense,10,,fund_subtotal,,ytd,,62227.38,arithmetic,fund subtotal adds up; the line's printed percentage agrees
+2671,2023-11,2,revenue,01,301,item,01-301-100,prior_year_budget,,348776.94,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2671,2023-11,2,revenue,01,350,item,01-350-041,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,3,revenue,01,360,item,01-360-030,prior_year_budget,,95000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,3,revenue,01,367,item,01-367-100,prior_year_budget,,31000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,3,revenue,01,387,item,01-387-100,prior_year_budget,,115000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,15,revenue,05,355,department_subtotal,,prior_year_budget,,157089.00,arithmetic,department subtotal adds up; same figure printed in another report
+2671,2023-11,13,expense,04,437,department_subtotal,,prior_year_mtd,733.02,738.02,arithmetic,fund subtotal adds up; one digit misread
+2671,2023-11,17,expense,05,439,item,05-439-313,prior_year_ytd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2738,2023-12,17,expense,05,439,department_subtotal,,ytd,,78527.34,arithmetic,department subtotal adds up; same figure printed in another report
+2738,2023-12,2,revenue,01,301,item,01-301-100,prior_year_budget,,348777.00,arithmetic,department subtotal adds up; same figure printed in another report
+2738,2023-12,11,revenue,04,360,item,04-360-012,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2738,2023-12,20,revenue,10,300,item,10-300-040,prior_year_budget,125.06,125.00,arithmetic,department subtotal adds up; same figure printed in another report
+2738,2023-12,20,revenue,10,,total,,prior_year_budget,,73667.00,arithmetic,total adds up; same figure printed in another report
+2779,2024-01,18,expense,04,487,item,04-487-020,budget,2889.00,2880.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,22,expense,09,487,item,09-487-050,budget,307489.00,307499.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,6,revenue,01,310,item,01-310-030,prior_year_budget,,180000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,6,revenue,01,320,department_subtotal,,prior_year_budget,189500.06,189500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,7,revenue,01,367,department_subtotal,,prior_year_budget,40000.06,40000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,18,expense,04,487,department_subtotal,,prior_year_budget,89268.00,99268.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,21,revenue,09,300,department_subtotal,,prior_year_budget,3725.06,3725.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,23,revenue,10,300,item,10-300-040,prior_year_budget,125.06,125.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,8,revenue,01,,fund_subtotal,,prior_year_budget,,3905083.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2779,2024-01,19,revenue,05,355,department_subtotal,,prior_year_budget,,165795.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2816,2024-02,13,expense,01,432,item,01-432-100,budget,16000.00,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2816,2024-02,17,revenue,04,380,item,04-380-020,budget,31000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2816,2024-02,9,revenue,01,355,item,01-355-130,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2816,2024-02,25,revenue,10,300,department_subtotal,,prior_year_budget,,3525.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,4,revenue,01,393,department_subtotal,,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,5,expense,01,400,item,01-400-210,budget,3090.00,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,8,expense,01,436,department_subtotal,,budget,9000.90,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,9,expense,01,455,item,01-455-451,budget,,22000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,13,expense,04,472,item,04-472-000,budget,41140.00,4140.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,433,department_subtotal,,budget,14405.00,11400.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,430,item,01-430-176,mtd,768.93,168.93,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,9,expense,01,455,item,01-455-451,mtd,,2880.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,15,expense,05,438,item,05-438-220,mtd,0.60,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,6,expense,01,410,item,01-410-320,ytd,10587.97,10587.07,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,413,item,01-413-140,ytd,36756.19,6756.19,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,430,item,01-430-120,ytd,5269.26,5869.26,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,12,expense,04,427,item,04-427-375,ytd,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,2,revenue,01,330,item,01-330-020,prior_year_budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,3,revenue,01,380,item,01-380-070,prior_year_budget,,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,3,revenue,01,387,item,01-387-100,prior_year_budget,,125660.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,3,revenue,01,392,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,3,revenue,01,393,item,01-393-000,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,413,item,01-413-140,prior_year_budget,25250.06,25250.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,414,item,01-414-200,prior_year_budget,4006.00,4000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,11,expense,04,400,item,04-400-030,prior_year_budget,12097.06,12097.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,11,expense,04,402,item,04-402-100,prior_year_budget,,900.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,11,expense,04,421,item,04-421-150,prior_year_budget,,110000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,12,expense,04,425,item,04-425-000,prior_year_budget,,220000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,12,expense,04,438,item,04-438-250,prior_year_budget,,7000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,14,revenue,05,341,department_subtotal,,prior_year_budget,,800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,8,expense,01,435,department_subtotal,,budget,327600.00,27600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,18,revenue,10,392,item,10-392-000,mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+2872,2024-05,13,expense,04,486,department_subtotal,,mtd,31.84,1.84,arithmetic,fund subtotal adds up; one digit misread
+2872,2024-05,2,revenue,01,320,item,01-320-820,prior_year_budget,1500.06,1500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,2,revenue,01,330,item,01-330-020,prior_year_budget,2000.06,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,8,expense,01,434,item,01-434-000,prior_year_budget,,58800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,8,expense,01,450,item,01-450-500,prior_year_budget,,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,9,expense,01,487,item,01-487-157,prior_year_budget,87720.06,87720.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,10,revenue,04,341,department_subtotal,,prior_year_budget,,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,10,revenue,04,380,item,04-380-020,prior_year_budget,,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,11,expense,04,400,item,04-400-020,prior_year_budget,14905.06,14905.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,11,expense,04,402,item,04-402-110,prior_year_budget,,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,13,expense,04,486,department_subtotal,,prior_year_budget,311800.00,11800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,19,expense,10,471,department_subtotal,,prior_year_budget,,48600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2872,2024-05,18,revenue,10,,fund_subtotal,,prior_year_budget,3525.06,3525.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2872,2024-05,19,expense,10,471,item,10-471-000,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+2911,2024-06,11,expense,04,400,item,04-400-020,budget,316120.00,16120.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,3,revenue,01,387,department_subtotal,,prior_year_budget,,275660.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,5,expense,01,401,department_subtotal,,prior_year_budget,,10369.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,7,expense,01,410,department_subtotal,,prior_year_budget,,1274747.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,10,revenue,04,380,item,04-380-000,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,12,expense,04,427,department_subtotal,,prior_year_budget,,133750.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,12,expense,04,430,item,04-430-176,prior_year_budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,16,revenue,09,300,item,09-300-030,prior_year_budget,,3600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,5,expense,01,400,department_subtotal,,prior_year_budget,,255867.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2911,2024-06,18,revenue,10,,total,,prior_year_budget,,3525.00,arithmetic,total adds up; same figure printed in another report
+2911,2024-06,11,expense,04,400,item,04-400-030,prior_year_mtd,31165.00,1165.00,arithmetic,department subtotal adds up; one digit misread
+2926,2024-07,10,revenue,04,360,item,04-360-081,budget,31256854.00,1256854.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,9,expense,01,480,item,01-480-000,mtd,114000.00,11000.00,arithmetic,department subtotal adds up; one digit misread
+2926,2024-07,8,expense,01,455,item,01-455-100,ytd,,4898.25,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2926,2024-07,2,revenue,01,320,item,01-320-020,prior_year_budget,,175000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,2,revenue,01,330,department_subtotal,,prior_year_budget,,32000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,2,revenue,01,350,item,01-350-030,prior_year_budget,,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,3,revenue,01,387,department_subtotal,,prior_year_budget,275660.06,275660.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,5,expense,01,400,item,01-400-210,prior_year_budget,,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,5,expense,01,402,item,01-402-100,prior_year_budget,,3600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,8,expense,01,434,item,01-434-000,prior_year_budget,58800.06,58800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,8,expense,01,435,item,01-435-100,prior_year_budget,15000.06,15000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,8,expense,01,439,department_subtotal,,prior_year_budget,7965.06,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,8,expense,01,454,item,01-454-110,prior_year_budget,12500.06,12500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,9,expense,01,487,item,01-487-040,prior_year_budget,446331.06,446331.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,11,expense,04,401,item,04-401-300,prior_year_budget,1350.06,1350.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,11,expense,04,421,department_subtotal,,prior_year_budget,,193750.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,13,expense,04,472,item,04-472-000,prior_year_budget,,3312.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,19,expense,10,471,item,10-471-000,prior_year_budget,,48600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,19,expense,10,472,department_subtotal,,prior_year_budget,,12350.00,arithmetic,department subtotal adds up; same figure printed in another report
+2926,2024-07,4,revenue,01,,total,,prior_year_budget,,3905083.00,arithmetic,total adds up; same figure printed in another report
+2960,2024-08,6,expense,01,410,item,01-410-252,budget,37060.00,37000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,471,item,04-471-000,budget,22300.06,22300.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,7,expense,01,432,department_subtotal,,mtd,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,11,expense,04,421,department_subtotal,,ytd,,138233.52,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,3,revenue,01,354,item,01-354-170,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,5,expense,01,400,item,01-400-200,prior_year_budget,7200.06,7200.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,6,expense,01,402,item,01-402-110,prior_year_budget,,12000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,8,expense,01,434,department_subtotal,,prior_year_budget,,77300.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,8,expense,01,454,department_subtotal,,prior_year_budget,,41500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,9,expense,01,487,item,01-487-000,prior_year_budget,,114132.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,427,item,04-427-350,prior_year_budget,,65000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,430,item,04-430-120,prior_year_budget,,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,437,department_subtotal,,prior_year_budget,,15000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,471,item,04-471-000,prior_year_budget,35400.00,5400.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,19,expense,10,471,department_subtotal,,prior_year_budget,,48600.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,438,department_subtotal,,prior_year_budget,22500.90,22500.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2960,2024-08,14,revenue,05,,fund_subtotal,,prior_year_budget,,166595.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2960,2024-08,12,expense,04,430,item,04-430-177,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,3,revenue,01,392,item,01-392-000,prior_year_ytd,0.05,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2960,2024-08,5,expense,01,401,item,01-401-200,prior_year_ytd,1364.04,1361.04,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,3,revenue,01,392,item,01-392-000,budget,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,6,expense,01,410,item,01-410-242,budget,21500.06,21500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,14,revenue,05,380,item,05-380-000,mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,7,expense,01,432,department_subtotal,,ytd,7242.86,7242.85,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,2,revenue,01,320,item,01-320-021,prior_year_budget,6500.06,6500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,2,revenue,01,330,department_subtotal,,prior_year_budget,32000.06,32000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,2,revenue,01,350,item,01-350-020,prior_year_budget,2506.00,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,4,revenue,01,395,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,5,expense,01,400,item,01-400-100,prior_year_budget,,4499.94,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2990,2024-09,6,expense,01,402,item,01-402-120,prior_year_budget,17040.06,17040.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,6,expense,01,410,item,01-410-373,prior_year_budget,1800.06,1800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,8,expense,01,455,item,01-455-250,prior_year_budget,2800.06,2800.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,9,expense,01,480,item,01-480-000,prior_year_budget,13412.06,13412.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,11,expense,04,401,item,04-401-020,prior_year_budget,5619.06,5619.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,11,expense,04,402,department_subtotal,,prior_year_budget,9660.06,9660.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,11,expense,04,421,item,04-421-220,prior_year_budget,30000.06,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,12,expense,04,425,department_subtotal,,prior_year_budget,323750.06,323750.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,15,expense,05,434,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,18,revenue,10,392,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,10,revenue,04,,total,,prior_year_budget,2026376.06,2026376.00,arithmetic,total adds up; same figure printed in another report
+2990,2024-09,13,expense,04,,fund_subtotal,,prior_year_budget,1952488.06,1952488.00,arithmetic,total adds up; same figure printed in another report
+2990,2024-09,16,revenue,09,,fund_subtotal,,prior_year_budget,51698.06,51698.00,arithmetic,fund subtotal adds up; same figure printed in another report
+2990,2024-09,15,expense,05,480,item,05-480-100,prior_year_mtd,928.06,928.00,arithmetic,department subtotal adds up; same figure printed in another report
+2990,2024-09,12,expense,04,471,item,04-471-000,prior_year_ytd,35400.00,5400.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,12,expense,04,471,item,04-471-000,budget,22306.00,22300.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,3,revenue,01,392,item,01-392-000,mtd,0.90,0.00,arithmetic,department subtotal adds up; one digit misread
+3011,2024-10,19,expense,10,471,item,10-471-000,ytd,349500.00,49500.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,5,expense,01,400,item,01-400-280,prior_year_budget,,11060.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,5,expense,01,401,item,01-401-200,prior_year_budget,1250.06,1250.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,6,expense,01,402,item,01-402-110,prior_year_budget,,12000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,8,expense,01,434,item,01-434-000,prior_year_budget,,58800.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,8,expense,01,435,department_subtotal,,prior_year_budget,,26600.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,9,expense,01,486,department_subtotal,,prior_year_budget,74200.06,74200.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,10,revenue,04,360,item,04-360-012,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,11,expense,04,400,department_subtotal,,prior_year_budget,74717.06,74717.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,12,expense,04,425,item,04-425-000,prior_year_budget,,220000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,12,expense,04,427,item,04-427-382,prior_year_budget,,4500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+3011,2024-10,7,expense,01,410,department_subtotal,,prior_year_budget,1274747.06,1274747.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3011,2024-10,16,revenue,09,,fund_subtotal,,prior_year_budget,,51698.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3011,2024-10,2,revenue,01,300,item,01-300-030,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,2,revenue,01,350,item,01-350-030,ytd,12744.06,12744.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,2,revenue,01,300,department_subtotal,,prior_year_budget,2437213.06,2437213.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,2,revenue,01,301,department_subtotal,,prior_year_budget,500.06,500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,5,expense,01,400,item,01-400-400,prior_year_budget,,8224.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,7,expense,01,410,department_subtotal,,prior_year_budget,,1274747.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,7,expense,01,432,department_subtotal,,prior_year_budget,,11000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,8,expense,01,439,item,01-439-000,prior_year_budget,7965.06,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,12,expense,04,427,item,04-427-300,prior_year_budget,39500.00,9500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,14,revenue,05,355,department_subtotal,,prior_year_budget,165795.06,165795.00,arithmetic,department subtotal adds up; same figure printed in another report
+3114,2024-12,15,expense,05,480,item,05-480-100,prior_year_mtd,1047.09,1047.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,2,revenue,01,360,item,01-360-051,budget,244650.00,241650.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,18,expense,10,,fund_subtotal,,mtd,4373.68,4373.69,arithmetic,fund subtotal adds up; one digit misread
+3206,2025-01,5,expense,01,410,item,01-410-320,ytd,4550.88,1550.88,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3206,2025-01,12,expense,04,487,department_subtotal,,ytd,19362.52,19352.52,arithmetic,department subtotal adds up; one digit misread
+3206,2025-01,2,revenue,01,360,item,01-360-030,prior_year_budget,,75000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,9,revenue,04,341,item,04-341-010,prior_year_budget,,35000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,14,expense,05,439,item,05-439-000,prior_year_budget,98035.00,99035.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,13,revenue,05,355,department_subtotal,,prior_year_budget,,166431.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3206,2025-01,7,expense,01,435,item,01-435-100,prior_year_mtd,1946.14,1946.11,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,17,revenue,10,392,department_subtotal,,prior_year_mtd,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,5,expense,01,410,item,01-410-050,prior_year_ytd,1483.60,1433.60,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,8,expense,01,486,item,01-486-040,prior_year_ytd,2613.24,2613.21,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,9,revenue,04,360,item,04-360-081,budget,31275206.00,1275206.00,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,3,revenue,01,387,item,01-387-000,prior_year_budget,,157500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,9,revenue,04,341,department_subtotal,,prior_year_budget,,35000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,9,revenue,04,380,item,04-380-040,prior_year_budget,,24000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,13,revenue,05,355,item,05-355-050,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3155,2025-02,16,expense,09,487,department_subtotal,,prior_year_budget,307489.00,307499.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,2,revenue,01,320,item,01-320-021,budget,39000.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,2,revenue,01,350,department_subtotal,,budget,310465.00,10465.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,2,revenue,01,330,item,01-330-020,mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,11,expense,04,425,item,04-425-100,ytd,,25727.68,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,12,expense,04,487,item,04-487-040,ytd,340371.87,40371.87,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,2,revenue,01,320,department_subtotal,,prior_year_budget,,264500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,2,revenue,01,360,item,01-360-031,prior_year_budget,,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3224,2025-03,9,revenue,04,341,item,04-341-010,prior_year_ytd,38866.59,8866.59,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3224,2025-03,9,revenue,04,380,item,04-380-000,prior_year_ytd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3224,2025-03,10,expense,04,400,item,04-400-090,prior_year_ytd,,94.62,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3239,2025-04,2,revenue,01,320,item,01-320-820,mtd,71500.00,1500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,3,revenue,01,367,department_subtotal,,ytd,36992.00,6992.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,2,revenue,01,320,item,01-320-021,prior_year_budget,36500.00,6500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,2,revenue,01,360,item,01-360-031,prior_year_budget,,20000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,3,revenue,01,380,item,01-380-010,prior_year_budget,,90000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,9,revenue,04,360,item,04-360-081,prior_year_budget,,1256854.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,13,revenue,05,355,department_subtotal,,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,8,expense,01,487,item,01-487-158,prior_year_mtd,4084.73,4054.73,arithmetic,department subtotal adds up; same figure printed in another report
+3239,2025-04,12,expense,04,486,item,04-486-040,prior_year_mtd,31.84,1.84,arithmetic,department subtotal adds up; same figure printed in another report
+3304,2025-06,12,expense,04,487,item,04-487-040,budget,391289.00,91289.00,arithmetic,department subtotal adds up; same figure printed in another report
+3304,2025-06,12,expense,04,472,item,04-472-000,ytd,36080.75,6080.75,arithmetic,department subtotal adds up; same figure printed in another report
+3304,2025-06,3,revenue,01,387,item,01-387-100,prior_year_budget,,122000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3304,2025-06,12,expense,04,472,item,04-472-000,prior_year_budget,34140.00,4140.00,arithmetic,department subtotal adds up; same figure printed in another report
+3304,2025-06,16,revenue,09,,total,,prior_year_budget,,72526.00,arithmetic,total adds up; same figure printed in another report
+3304,2025-06,9,revenue,04,360,item,04-360-012,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,3,revenue,01,380,item,01-380-000,prior_year_budget,,9500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,6,expense,01,414,item,01-414-200,prior_year_budget,4060.00,4000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,9,revenue,04,360,item,04-360-012,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,9,revenue,04,380,item,04-380-040,prior_year_budget,,24000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,13,revenue,05,341,item,05-341-010,prior_year_budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,13,revenue,05,380,department_subtotal,,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3343,2025-08,9,revenue,04,,total,,prior_year_budget,,2108888.00,arithmetic,total adds up; same figure printed in another report
+3343,2025-08,11,expense,04,427,department_subtotal,,prior_year_ytd,71486.93,71436.93,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,8,expense,01,455,item,01-455-451,ytd,16520.60,16520.00,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,10,expense,04,400,item,04-400-020,ytd,,11736.76,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,3,revenue,01,387,item,01-387-100,prior_year_budget,,122000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,13,revenue,05,341,department_subtotal,,prior_year_budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,13,revenue,05,355,department_subtotal,,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3378,2025-09,3,revenue,01,367,department_subtotal,,prior_year_budget,,25000.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3378,2025-09,13,revenue,05,,total,,prior_year_budget,,168431.00,arithmetic,total adds up; same figure printed in another report
+3378,2025-09,4,expense,01,400,item,01-400-020,prior_year_ytd,28203.48,28293.48,arithmetic,department subtotal adds up; same figure printed in another report
+3442,2025-11,9,revenue,04,380,item,04-380-000,budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3442,2025-11,2,revenue,01,350,department_subtotal,,prior_year_budget,10465.06,10465.00,arithmetic,department subtotal adds up; same figure printed in another report
+3442,2025-11,3,revenue,01,380,item,01-380-100,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3442,2025-11,9,revenue,04,360,item,04-360-012,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3442,2025-11,13,revenue,05,,total,,prior_year_budget,,168431.00,arithmetic,total adds up; same figure printed in another report
+3522,2025-12,2,revenue,01,310,item,01-310-040,budget,778000.00,110000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,3,revenue,01,380,item,01-380-700,budget,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,3,revenue,01,387,item,01-387-000,budget,278.00,165375.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,2,revenue,01,310,item,01-310-040,mtd,18168.97,18166.97,arithmetic,department subtotal adds up; one digit misread
+3522,2025-12,3,revenue,01,380,item,01-380-700,mtd,0.09,0.00,arithmetic,department subtotal adds up; one digit misread
+3522,2025-12,2,revenue,01,320,item,01-320-021,ytd,715126.00,15126.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3522,2025-12,2,revenue,01,330,department_subtotal,,ytd,,47922.14,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3522,2025-12,7,expense,01,433,item,01-433-110,ytd,,17977.66,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3522,2025-12,13,revenue,05,392,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,9,revenue,04,,total,,prior_year_budget,,2108888.00,arithmetic,total adds up; same figure printed in another report
+3522,2025-12,13,revenue,05,,total,,prior_year_budget,,168431.00,arithmetic,total adds up; same figure printed in another report
+3522,2025-12,2,revenue,01,310,item,01-310-040,prior_year_mtd,16248.64,18248.89,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,3,revenue,01,380,item,01-380-700,prior_year_mtd,60.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3522,2025-12,3,revenue,01,387,item,01-387-000,prior_year_mtd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,3,revenue,01,367,department_subtotal,,prior_year_ytd,12845.50,12945.50,arithmetic,department subtotal adds up; same figure printed in another report
+3610,2026-02,16,revenue,09,392,item,09-392-000,ytd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3610,2026-02,3,revenue,01,380,item,01-380-010,prior_year_budget,,80000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3610,2026-02,14,revenue,05,,fund_subtotal,,prior_year_budget,,168931.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3610,2026-02,14,revenue,05,,total,,prior_year_budget,,168931.00,arithmetic,total adds up; same figure printed in another report
+3610,2026-02,16,revenue,09,,fund_subtotal,,prior_year_budget,,118246.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3638,2026-03,2,revenue,01,350,department_subtotal,,prior_year_budget,10465.06,10465.00,arithmetic,department subtotal adds up; same figure printed in another report
+3638,2026-03,3,revenue,01,380,item,01-380-700,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3638,2026-03,10,revenue,04,341,department_subtotal,,prior_year_budget,,40000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3638,2026-03,2,revenue,01,341,department_subtotal,,prior_year_budget,,40000.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3638,2026-03,7,expense,01,450,department_subtotal,,prior_year_ytd,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,11,expense,04,401,item,04-401-200,budget,31250.00,1250.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,19,expense,10,472,item,10-472-000,mtd,34180.24,4180.24,arithmetic,department subtotal adds up; one digit misread
+3651,2026-04,3,revenue,01,380,item,01-380-010,ytd,77965.36,17965.36,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3651,2026-04,2,revenue,01,330,item,01-330-020,prior_year_budget,,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,4,expense,01,400,item,01-400-205,prior_year_budget,7000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,10,revenue,04,360,department_subtotal,,prior_year_budget,,2110598.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,14,revenue,05,355,item,05-355-050,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,16,revenue,09,355,item,09-355-120,prior_year_budget,,93246.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,14,revenue,05,,fund_subtotal,,prior_year_budget,,168931.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3651,2026-04,9,expense,01,492,department_subtotal,,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,10,revenue,04,380,item,04-380-040,prior_year_mtd,5004.74,5004.71,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,19,expense,10,471,department_subtotal,,prior_year_mtd,349500.00,49500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3666,2026-05,2,revenue,01,341,department_subtotal,,ytd,316900.95,16900.95,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3666,2026-05,3,revenue,01,380,item,01-380-500,ytd,32000.00,2000.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3666,2026-05,8,expense,01,456,item,01-456-000,ytd,276884.09,276884.00,arithmetic,department subtotal adds up; one digit misread
+3666,2026-05,15,expense,05,439,department_subtotal,,ytd,37904.25,7904.25,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3666,2026-05,2,revenue,01,300,department_subtotal,,prior_year_budget,,2615226.00,arithmetic,department subtotal adds up; same figure printed in another report
+3666,2026-05,3,revenue,01,380,item,01-380-010,prior_year_budget,,80000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3666,2026-05,13,expense,04,,fund_subtotal,,prior_year_budget,92083548.10,2083548.10,arithmetic,fund subtotal adds up; same figure printed in another report
+3666,2026-05,16,revenue,09,,total,,prior_year_budget,,118246.00,arithmetic,total adds up; same figure printed in another report
+3666,2026-05,19,expense,10,472,item,10-472-000,prior_year_mtd,4440.98,34440.98,arithmetic,department subtotal adds up; one digit misread
+3666,2026-05,19,expense,10,,total,,prior_year_mtd,4440.98,34440.98,arithmetic,total adds up; one digit misread
+3718,2026-06,3,expense,01,410,item,01-410-242,budget,21500.09,21500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,4,expense,01,430,department_subtotal,,budget,40285.09,40285.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,5,expense,01,435,item,01-435-105,budget,9090.90,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,9,revenue,01,380,item,01-380-400,budget,4000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,10,expense,04,401,item,04-401-200,budget,1259.00,1250.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,11,expense,04,422,department_subtotal,,budget,1025590.00,1025690.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,13,revenue,04,360,item,04-360-012,budget,5600.00,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,355,item,05-355-050,budget,165431.00,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,392,department_subtotal,,budget,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,4,expense,01,414,department_subtotal,,budget,45009.00,45000.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,,fund_subtotal,,budget,2281543.00,2281513.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,14,expense,05,,total,,budget,148285.00,146285.00,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,14,expense,05,436,item,05-436-200,mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,15,revenue,05,380,item,05-380-000,mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,19,revenue,10,300,item,10-300-040,mtd,50.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,8,revenue,01,330,department_subtotal,,mtd,3529.96,3529.95,arithmetic,fund subtotal adds up; one digit misread
+3718,2026-06,4,expense,01,430,item,01-430-120,ytd,43901.77,13901.77,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,7,expense,01,492,item,01-492-300,ytd,0.90,0.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,9,revenue,01,380,item,01-380-000,ytd,102427.23,102127.23,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,14,expense,05,433,item,05-433-200,ytd,7490.41,1490.41,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,8,revenue,01,350,department_subtotal,,ytd,321748.11,21748.11,arithmetic,"fund subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,16,expense,09,,total,,ytd,168155.80,168156.80,arithmetic,total adds up; one digit misread
+3718,2026-06,4,expense,01,410,item,01-410-373,prior_year_budget,71800.00,1800.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,4,expense,01,413,item,01-413-472,prior_year_budget,3087.00,3067.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,4,expense,01,431,item,01-431-100,prior_year_budget,9090.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,5,expense,01,437,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,5,expense,01,450,item,01-450-500,prior_year_budget,10006.00,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,310,item,01-310-030,prior_year_budget,190009.00,190000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,320,department_subtotal,,prior_year_budget,,322250.06,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3718,2026-06,8,revenue,01,350,item,01-350-030,prior_year_budget,7955.00,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,355,item,01-355-120,prior_year_budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,10,expense,04,401,item,04-401-150,prior_year_budget,14000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,11,expense,04,427,department_subtotal,,prior_year_budget,145565.00,145566.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,11,expense,04,438,department_subtotal,,prior_year_budget,20962.00,20952.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,487,item,04-487-000,prior_year_budget,12581.00,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,13,revenue,04,380,item,04-380-020,prior_year_budget,7000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,14,expense,05,432,item,05-432-200,prior_year_budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,14,expense,05,434,item,05-434-100,prior_year_budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,341,item,05-341-010,prior_year_budget,2500.06,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,355,department_subtotal,,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,19,revenue,10,392,item,10-392-000,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,13,revenue,04,,total,,prior_year_budget,2165016.00,2185016.00,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,,fund_subtotal,,prior_year_budget,168931.06,168931.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,,total,,prior_year_budget,168031.00,168931.00,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,16,expense,09,,fund_subtotal,,prior_year_budget,335182.00,336182.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,2,expense,01,400,item,01-400-300,prior_year_mtd,852.91,862.91,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,3,expense,01,410,item,01-410-230,prior_year_mtd,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,5,expense,01,439,item,01-439-000,prior_year_mtd,8.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,6,expense,01,487,item,01-487-000,prior_year_mtd,11288.95,11288.96,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,10,expense,04,421,item,04-421-155,prior_year_mtd,3336.31,3336.91,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,487,item,04-487-000,prior_year_mtd,563.00,663.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,320,department_subtotal,,prior_year_mtd,703776.50,103776.50,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,,fund_subtotal,,prior_year_mtd,26466.18,86466.18,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,,total,,prior_year_mtd,85466.18,86466.18,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,14,expense,05,,total,,prior_year_mtd,3627.36,3637.36,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,15,revenue,05,,total,,prior_year_mtd,1008.44,1008.41,arithmetic,total adds up; same figure printed in another report
+3718,2026-06,2,expense,01,400,item,01-400-300,prior_year_ytd,5166.59,5168.59,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,4,expense,01,410,department_subtotal,,prior_year_ytd,802739.45,802739.49,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,330,item,01-330-010,prior_year_ytd,21058.44,21058.41,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,9,revenue,01,367,department_subtotal,,prior_year_ytd,18629.00,18829.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,10,expense,04,421,department_subtotal,,prior_year_ytd,95143.00,99143.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,11,expense,04,427,item,04-427-381,prior_year_ytd,2858.10,2868.10,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,11,expense,04,430,item,04-430-177,prior_year_ytd,1269.71,1289.71,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,487,item,04-487-040,prior_year_ytd,77664.24,77864.24,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,13,revenue,04,360,item,04-360-011,prior_year_ytd,802635.12,802636.12,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,14,expense,05,436,item,05-436-300,prior_year_ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,17,revenue,09,355,item,09-355-120,prior_year_ytd,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,12,expense,04,,fund_subtotal,,prior_year_ytd,31117855.88,1117855.88,arithmetic,fund subtotal adds up; same figure printed in another report
+3718,2026-06,19,revenue,10,,total,,prior_year_ytd,0.06,0.00,arithmetic,total adds up; same figure printed in another report
+3719,2026-07,19,expense,10,471,item,10-471-000,budget,571300.00,51300.00,arithmetic,department subtotal adds up; same figure printed in another report
+3719,2026-07,14,revenue,05,,total,,budget,176437.00,176431.00,arithmetic,total adds up; same figure printed in another report
+3719,2026-07,11,expense,04,422,item,04-422-300,ytd,,543297.50,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3719,2026-07,12,expense,04,438,department_subtotal,,ytd,10081.53,10061.53,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3719,2026-07,15,expense,05,433,item,05-433-200,ytd,31490.41,1490.41,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3719,2026-07,3,revenue,01,380,item,01-380-500,prior_year_budget,,3000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3719,2026-07,10,revenue,04,360,item,04-360-081,prior_year_budget,1275206.06,1275206.00,arithmetic,department subtotal adds up; same figure printed in another report
+3719,2026-07,14,revenue,05,355,item,05-355-050,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3719,2026-07,18,revenue,10,,fund_subtotal,,prior_year_budget,0.06,0.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3719,2026-07,5,expense,01,410,item,01-410-040,prior_year_mtd,344720.00,44720.00,arithmetic,department subtotal adds up; one digit misread
+3719,2026-07,12,expense,04,425,item,04-425-100,prior_year_mtd,39859.97,9859.97,arithmetic,department subtotal adds up; one digit misread
+3719,2026-07,16,revenue,09,392,item,09-392-000,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3719,2026-07,7,expense,01,437,department_subtotal,,prior_year_ytd,30.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+3744,2026-08,2,revenue,01,300,department_subtotal,,budget,,3039943.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,9,expense,01,402,item,01-402-000,budget,39000.00,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,413,item,01-413-140,budget,40006.09,40006.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,433,department_subtotal,,budget,71400.00,11400.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,12,expense,01,486,department_subtotal,,budget,100293.09,100293.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,12,expense,01,487,item,01-487-040,budget,559248.00,559948.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,13,expense,01,492,item,01-492-280,budget,83734.00,837340.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,15,expense,04,430,department_subtotal,,budget,46285.00,40285.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,17,expense,05,439,item,05-439-313,budget,8490.00,8400.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,8,expense,01,400,department_subtotal,,budget,238715.00,338715.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,414,item,01-414-150,mtd,6.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,16,expense,04,487,item,04-487-070,mtd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,17,expense,05,432,item,05-432-330,mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,2,revenue,01,300,item,01-300-010,ytd,2564204.78,2564804.78,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,2,revenue,01,341,department_subtotal,,ytd,29321.14,29331.14,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,2,revenue,01,355,item,01-355-130,ytd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,11,expense,01,439,item,01-439-000,ytd,9.00,0.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,12,expense,01,454,item,01-454-270,ytd,,0.00,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3744,2026-08,15,expense,04,437,department_subtotal,,ytd,73434.87,13434.87,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,16,expense,04,487,item,04-487-050,ytd,53548.22,53545.22,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,17,expense,05,480,item,05-480-100,ytd,45327.50,45337.50,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,3,revenue,01,,total,,ytd,5616123.80,5610123.80,arithmetic,"total adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,6,revenue,09,,fund_subtotal,,ytd,9.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+3744,2026-08,7,revenue,10,392,department_subtotal,,ytd,30.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+3744,2026-08,18,expense,09,,total,,ytd,275247.24,275247.26,arithmetic,total adds up; one digit misread
+3744,2026-08,2,revenue,01,350,item,01-350-030,prior_year_budget,,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,3,revenue,01,380,item,01-380-010,prior_year_budget,80000.06,80000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,4,revenue,04,360,item,04-360-011,prior_year_budget,,823891.94,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3744,2026-08,10,expense,01,410,item,01-410-320,prior_year_budget,40060.00,40000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,414,item,01-414-150,prior_year_budget,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,436,department_subtotal,,prior_year_budget,9090.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,14,expense,04,400,item,04-400-280,prior_year_budget,5739.00,5730.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,439,department_subtotal,,prior_year_budget,,7965.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3744,2026-08,5,revenue,05,392,item,05-392-001,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,410,item,01-410-373,prior_year_mtd,204.28,204.98,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,436,item,01-436-100,prior_year_mtd,,688.49,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,12,expense,01,454,department_subtotal,,prior_year_mtd,34639.86,4639.86,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,12,expense,01,456,department_subtotal,,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,3,revenue,01,,fund_subtotal,,prior_year_mtd,243107.42,213107.42,arithmetic,fund subtotal adds up; same figure printed in another report
+3744,2026-08,2,revenue,01,300,item,01-300-010,prior_year_ytd,2495633.39,2496633.39,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,2,revenue,01,320,item,01-320-021,prior_year_ytd,11726.90,11726.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,2,revenue,01,341,item,01-341-010,prior_year_ytd,,34230.67,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,3,revenue,01,387,item,01-387-100,prior_year_ytd,122900.00,122000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,4,revenue,04,341,item,04-341-010,prior_year_ytd,32886.32,32888.32,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,5,revenue,05,355,department_subtotal,,prior_year_ytd,,167021.01,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,9,expense,01,410,item,01-410-222,prior_year_ytd,4878.06,878.06,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,430,item,01-430-176,prior_year_ytd,1144.12,1141.12,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,434,item,01-434-000,prior_year_ytd,,35691.52,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,12,expense,01,487,item,01-487-020,prior_year_ytd,12251.99,12291.99,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,15,expense,04,437,item,04-437-252,prior_year_ytd,0.90,0.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,17,expense,05,436,item,05-436-200,prior_year_ytd,6.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,13,expense,01,,total,,prior_year_ytd,3213153.92,3213153.02,arithmetic,total adds up; same figure printed in another report
+3793,2026-09,2,revenue,01,350,item,01-350-020,budget,7900.00,2900.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,3,revenue,01,355,department_subtotal,,budget,,25000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,4,expense,01,400,item,01-400-203,budget,20800.60,20800.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,410,item,01-410-373,budget,2000.09,2000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,430,item,01-430-177,budget,,8585.30,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3793,2026-09,6,expense,01,431,department_subtotal,,budget,10009.00,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,7,expense,01,434,item,01-434-000,budget,61000.09,61000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,454,department_subtotal,,budget,46060.60,46000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,487,department_subtotal,,budget,884466.00,884496.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,13,expense,04,471,department_subtotal,,budget,,5700.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,13,expense,04,480,department_subtotal,,budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,14,revenue,05,392,item,05-392-000,budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,18,revenue,10,300,item,10-300-010,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,3,revenue,01,,fund_subtotal,,budget,6127110.00,6127116.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3793,2026-09,3,revenue,01,387,item,01-387-100,mtd,0.06,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,8,expense,01,455,item,01-455-100,mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,11,expense,04,402,item,04-402-110,mtd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,13,expense,04,487,item,04-487-020,mtd,6.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,14,revenue,05,341,item,05-341-010,mtd,991.65,991.63,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,15,expense,05,439,item,05-439-313,mtd,0.06,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,9,expense,01,,total,,mtd,506148.63,606148.63,arithmetic,total adds up; one digit misread
+3793,2026-09,2,revenue,01,355,item,01-355-130,ytd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,5,expense,01,402,item,01-402-400,ytd,47974.00,47974.09,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,7,expense,01,434,item,01-434-000,ytd,26433.90,26438.90,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,7,expense,01,439,item,01-439-000,ytd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,8,expense,01,454,item,01-454-100,ytd,109421.96,10421.96,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,8,expense,01,456,item,01-456-000,ytd,276684.00,276884.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,8,expense,01,480,item,01-480-401,ytd,2438.00,2538.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,11,expense,04,421,item,04-421-440,ytd,5209.00,5200.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,12,expense,04,422,department_subtotal,,ytd,819369.24,810369.24,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,14,revenue,05,341,item,05-341-010,ytd,8053.64,8053.61,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,18,revenue,10,300,item,10-300-040,ytd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,3,revenue,01,,total,,ytd,5465250.54,5465250.84,arithmetic,total adds up; one digit misread
+3793,2026-09,10,revenue,04,,fund_subtotal,,ytd,2206657.36,2206657.86,arithmetic,fund subtotal adds up; one digit misread
+3793,2026-09,2,revenue,01,300,item,01-300-040,prior_year_budget,1000.06,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,2,revenue,01,330,department_subtotal,,prior_year_budget,,32000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,4,expense,01,401,department_subtotal,,prior_year_budget,12230.06,12230.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,430,department_subtotal,,prior_year_budget,238709.00,38709.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,431,department_subtotal,,prior_year_budget,9060.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,454,item,01-454-100,prior_year_budget,10000.06,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,455,item,01-455-451,prior_year_budget,22900.00,22000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,487,item,01-487-040,prior_year_budget,517302.90,517302.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,11,expense,04,400,item,04-400-290,prior_year_budget,39000.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,12,expense,04,437,department_subtotal,,prior_year_budget,15000.50,15000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,18,revenue,10,300,item,10-300-030,prior_year_budget,30.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,14,revenue,05,355,department_subtotal,,prior_year_budget,,166431.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,413,item,01-413-201,prior_year_mtd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,414,item,01-414-110,prior_year_mtd,3906.00,3900.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,430,item,01-430-172,prior_year_mtd,,447.64,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,7,expense,01,432,department_subtotal,,prior_year_mtd,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,7,expense,01,439,department_subtotal,,prior_year_mtd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,456,department_subtotal,,prior_year_mtd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,18,revenue,10,300,item,10-300-010,prior_year_mtd,39.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,14,revenue,05,,total,,prior_year_mtd,975.94,975.91,arithmetic,total adds up; same figure printed in another report
+3793,2026-09,2,revenue,01,300,department_subtotal,,prior_year_ytd,2535991.42,2535931.42,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,2,revenue,01,310,department_subtotal,,prior_year_ytd,272221.55,272221.56,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,2,revenue,01,350,item,01-350-020,prior_year_ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,3,revenue,01,387,item,01-387-100,prior_year_ytd,,122000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,413,item,01-413-140,prior_year_ytd,21576.59,21576.50,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,431,item,01-431-100,prior_year_ytd,1901.48,1901.45,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,455,item,01-455-250,prior_year_ytd,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,8,expense,01,480,item,01-480-401,prior_year_ytd,0.60,0.00,arithmetic,department subtotal adds up; one digit misread
+3793,2026-09,12,expense,04,422,department_subtotal,,prior_year_ytd,526150.50,826150.50,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,15,expense,05,432,item,05-432-200,prior_year_ytd,8832.09,8832.69,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,18,revenue,10,300,department_subtotal,,prior_year_ytd,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,19,expense,10,472,department_subtotal,,prior_year_ytd,35983.25,38983.25,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,430,department_subtotal,,prior_year_ytd,,41052.12,arithmetic,fund subtotal adds up; same figure printed in another report
+3814,2026-10,5,expense,01,410,item,01-410-010,budget,,177839.95,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3814,2026-10,6,expense,01,430,item,01-430-172,budget,16571.00,10571.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,434,item,01-434-000,budget,7000.00,61000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,436,item,01-436-100,budget,9900.90,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,8,expense,01,456,department_subtotal,,budget,276854.00,276884.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,11,expense,04,401,item,04-401-150,budget,1009.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,13,expense,04,487,item,04-487-050,budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,14,revenue,05,341,item,05-341-010,budget,10000.90,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,15,expense,05,430,item,05-430-260,budget,71000.00,1000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,18,revenue,10,300,department_subtotal,,budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,18,revenue,10,392,item,10-392-000,budget,0.60,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,439,department_subtotal,,budget,,5914.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3814,2026-10,18,revenue,10,,total,,budget,30.00,0.00,arithmetic,total adds up; same figure printed in another report
+3814,2026-10,14,revenue,05,355,item,05-355-050,mtd,0.90,0.00,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,12,expense,04,422,department_subtotal,,mtd,256648.75,256848.75,arithmetic,fund subtotal adds up; one digit misread
+3814,2026-10,18,revenue,10,392,department_subtotal,,mtd,30.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+3814,2026-10,7,expense,01,434,item,01-434-000,ytd,26500.46,26506.46,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,7,expense,01,437,item,01-437-252,ytd,44048.00,14048.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,8,expense,01,455,item,01-455-451,ytd,42729.91,42729.01,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,19,expense,10,472,item,10-472-000,ytd,342960.31,42960.31,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,2,revenue,01,341,item,01-341-010,prior_year_budget,40000.06,40000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,2,revenue,01,350,item,01-350-020,prior_year_budget,2500.06,2500.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,3,revenue,01,380,item,01-380-000,prior_year_budget,11759.06,11759.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,6,expense,01,414,item,01-414-110,prior_year_budget,5800.09,5800.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,436,department_subtotal,,prior_year_budget,9060.00,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,439,department_subtotal,,prior_year_budget,7965.90,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,8,expense,01,455,department_subtotal,,prior_year_budget,39360.00,39300.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,8,expense,01,456,department_subtotal,,prior_year_budget,736653.00,236653.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,8,expense,01,487,department_subtotal,,prior_year_budget,652444.04,852444.04,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,10,revenue,04,360,item,04-360-081,prior_year_budget,,1275205.94,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3814,2026-10,11,expense,04,400,item,04-400-280,prior_year_budget,5720.00,5730.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,11,expense,04,421,item,04-421-150,prior_year_budget,126304.00,128304.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,12,expense,04,425,item,04-425-000,prior_year_budget,256508.00,256608.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,13,expense,04,480,department_subtotal,,prior_year_budget,9.00,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,14,revenue,05,392,department_subtotal,,prior_year_budget,0.06,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,13,expense,04,471,department_subtotal,,prior_year_budget,5600.90,5600.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3814,2026-10,14,revenue,05,,fund_subtotal,,prior_year_budget,,168931.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3814,2026-10,16,revenue,09,,fund_subtotal,,prior_year_budget,,118246.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3814,2026-10,18,revenue,10,,total,,prior_year_budget,0.06,0.00,arithmetic,total adds up; same figure printed in another report
+3814,2026-10,12,expense,04,427,item,04-427-382,prior_year_mtd,9.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,13,expense,04,480,item,04-480-000,prior_year_mtd,0.06,0.00,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,6,expense,01,430,item,01-430-177,prior_year_ytd,7852.66,7552.66,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,7,expense,01,438,department_subtotal,,prior_year_ytd,2075.86,2076.86,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,8,expense,01,454,item,01-454-270,prior_year_ytd,45800.00,5800.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,8,expense,01,486,department_subtotal,,prior_year_ytd,,74298.65,arithmetic,department subtotal adds up; the line's printed percentage agrees
+3814,2026-10,11,expense,04,401,department_subtotal,,prior_year_ytd,9265.88,9263.88,arithmetic,department subtotal adds up; one digit misread
+3814,2026-10,13,expense,04,487,item,04-487-020,prior_year_ytd,53662.83,3662.83,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,9,expense,01,,total,,prior_year_ytd,34141322.33,4141322.33,arithmetic,total adds up; one digit misread
+3814,2026-10,14,revenue,05,355,department_subtotal,,prior_year_ytd,,167021.01,arithmetic,fund subtotal adds up; the line's printed percentage agrees
+3814,2026-10,16,revenue,09,,total,,prior_year_ytd,159976.08,159976.05,arithmetic,total adds up; one digit misread
+2096,2022-06,9,expense,01,487,item,01-487-020,budget,,21120.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,3,revenue,01,380,item,01-380-100,ytd,,4000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-181,prior_year_budget,,44908.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-182,prior_year_budget,,25920.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-186,prior_year_budget,,1500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-320,budget,,23500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-373,budget,,1800.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,8,expense,01,438,department_subtotal,,prior_year_ytd,38144.39,3144.39,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,9,expense,01,487,department_subtotal,,prior_year_ytd,,341733.54,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,14,expense,04,486,item,04-486-040,prior_year_ytd,,633.47,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,5,expense,01,400,item,01-400-009,prior_year_budget,,6000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,5,expense,01,400,item,01-400-020,prior_year_budget,,31621.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,5,expense,01,400,item,01-400-210,prior_year_budget,,2000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,6,expense,01,410,item,01-410-186,prior_year_budget,,1500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,6,expense,01,410,item,01-410-188,prior_year_budget,,650.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,7,expense,01,430,item,01-430-990,ytd,,161.55,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2262,2022-11,12,expense,04,402,item,04-402-130,budget,,1500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2398,2023-01,12,expense,04,427,item,04-427-350,ytd,,5398.34,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2398,2023-01,12,expense,04,427,item,04-427-375,ytd,,0.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,3,revenue,01,360,item,01-360-031,budget,,20000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,3,revenue,01,360,item,01-360-051,budget,,110000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,5,expense,01,400,item,01-400-060,prior_year_budget,,92614.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,5,expense,01,400,item,01-400-090,prior_year_budget,,420.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,6,expense,01,410,item,01-410-020,prior_year_ytd,,15225.60,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,6,expense,01,410,item,01-410-222,prior_year_ytd,,75.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,7,expense,01,435,item,01-435-105,budget,,8000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,12,expense,04,427,item,04-427-110,ytd,,35.75,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2423,2023-02,12,expense,04,427,item,04-427-382,ytd,,2382.19,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2529,2023-06,13,expense,04,487,department_subtotal,,ytd,52155.22,53155.22,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,2,revenue,01,320,item,01-320-020,budget,175090.00,175000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,2,revenue,01,320,item,01-320-820,budget,1500.09,1500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,5,expense,01,400,item,01-400-280,ytd,11278.09,11218.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,414,item,01-414-120,ytd,15145.80,15115.80,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,414,department_subtotal,,ytd,74127.20,74121.20,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,430,item,01-430-121,ytd,850.00,650.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,430,item,01-430-990,prior_year_budget,1009.00,1000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,434,item,01-434-000,prior_year_budget,55060.00,55000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,435,item,01-435-110,ytd,,1623.55,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,7,expense,01,435,item,01-435-110,prior_year_budget,3009.00,3000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,8,expense,01,480,item,01-480-000,prior_year_budget,5090.00,5000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,9,expense,01,487,item,01-487-157,ytd,9.00,0.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,12,expense,04,427,department_subtotal,,ytd,59693.10,59603.10,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,12,expense,04,430,item,04-430-121,ytd,350.60,350.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,12,expense,04,438,item,04-438-251,ytd,5193.00,6193.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2542,2023-07,12,expense,04,471,item,04-471-000,ytd,5409.09,5400.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,2,revenue,01,300,item,01-300-010,prior_year_ytd,,1423014.73,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,2,revenue,01,300,department_subtotal,,prior_year_ytd,,1440688.86,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,4,revenue,01,,fund_subtotal,,prior_year_ytd,,2752480.17,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,6,expense,01,410,item,01-410-021,ytd,9.00,0.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,11,revenue,04,360,item,04-360-081,prior_year_ytd,,1196841.39,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,11,revenue,04,360,department_subtotal,,prior_year_ytd,,1813508.06,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2591,2023-08,11,revenue,04,,fund_subtotal,,prior_year_ytd,,1840622.06,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2642,2023-10,2,revenue,01,320,item,01-320-020,budget,178000.00,175000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2642,2023-10,3,revenue,01,367,item,01-367-000,ytd,6800.00,5800.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2642,2023-10,3,revenue,01,367,item,01-367-000,prior_year_budget,,9000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2642,2023-10,3,revenue,01,380,item,01-380-010,ytd,51351.11,61351.11,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,6,expense,01,410,item,01-410-040,prior_year_budget,,468494.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,6,expense,01,410,item,01-410-180,prior_year_budget,,56261.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,6,expense,01,410,item,01-410-182,budget,28600.00,28000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,7,expense,01,414,item,01-414-290,ytd,9.00,0.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,12,expense,04,427,item,04-427-100,prior_year_budget,,33000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2852,2024-04,12,expense,04,427,item,04-427-382,prior_year_budget,,4500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2872,2024-05,5,expense,01,400,item,01-400-200,prior_year_budget,37200.00,7200.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2872,2024-05,5,expense,01,400,item,01-400-291,prior_year_budget,,22000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2872,2024-05,5,expense,01,400,department_subtotal,,prior_year_budget,,255867.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2872,2024-05,9,expense,01,456,item,01-456-000,prior_year_budget,,206721.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2872,2024-05,9,expense,01,456,department_subtotal,,prior_year_budget,,206721.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2911,2024-06,5,expense,01,400,item,01-400-290,prior_year_budget,,21000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2911,2024-06,5,expense,01,400,item,01-400-291,prior_year_budget,,22000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2911,2024-06,13,expense,04,487,item,04-487-000,prior_year_budget,,12681.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2911,2024-06,13,expense,04,487,item,04-487-040,prior_year_budget,,78764.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2960,2024-08,6,expense,01,410,item,01-410-238,prior_year_budget,,11700.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2960,2024-08,6,expense,01,410,item,01-410-251,prior_year_budget,23459.00,23450.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2960,2024-08,12,expense,04,438,item,04-438-251,prior_year_budget,75500.00,15500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2990,2024-09,2,revenue,01,301,item,01-301-030,prior_year_budget,250.06,250.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2990,2024-09,9,expense,01,487,item,01-487-040,prior_year_budget,,446331.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2990,2024-09,9,expense,01,487,item,01-487-070,prior_year_budget,,44483.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,6,expense,01,410,item,01-410-051,prior_year_budget,,3000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,6,expense,01,410,item,01-410-052,prior_year_budget,,35470.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,6,expense,01,410,item,01-410-220,prior_year_budget,,19100.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,6,expense,01,410,item,01-410-238,prior_year_budget,,11700.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,6,expense,01,410,item,01-410-252,prior_year_budget,,37000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,12,expense,04,430,item,04-430-177,prior_year_budget,,9000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3011,2024-10,12,expense,04,430,item,04-430-179,prior_year_budget,,6500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3378,2025-09,3,revenue,01,367,item,01-367-100,prior_year_budget,,18000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3638,2026-03,2,revenue,01,341,item,01-341-010,prior_year_budget,,40000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3651,2026-04,2,revenue,01,320,item,01-320-021,budget,3000.00,9000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,2,expense,01,400,item,01-400-203,prior_year_budget,2100.00,3100.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,2,expense,01,400,item,01-400-290,prior_year_budget,21900.00,21000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,2,expense,01,401,item,01-401-150,prior_year_budget,7000.00,1000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,4,expense,01,414,item,01-414-220,budget,71000.00,1000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,8,revenue,01,320,item,01-320-020,budget,300090.00,300000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,8,revenue,01,320,item,01-320-021,budget,9090.00,9000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3718,2026-06,12,expense,04,487,item,04-487-000,budget,12661.00,12681.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,8,expense,01,400,item,01-400-300,prior_year_ytd,,8186.52,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,10,expense,01,430,item,01-430-172,prior_year_budget,10030.00,10000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,10,expense,01,430,item,01-430-177,prior_year_budget,3296.00,8296.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,10,expense,01,430,item,01-430-179,prior_year_budget,7797.00,7707.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,10,expense,01,430,department_subtotal,,prior_year_mtd,,5341.65,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3744,2026-08,13,expense,01,492,item,01-492-300,prior_year_mtd,14069.00,14000.00,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3744,2026-08,14,expense,04,421,item,04-421-200,budget,500.90,500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,14,expense,04,421,item,04-421-200,prior_year_mtd,37.01,31.01,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3744,2026-08,14,expense,04,421,item,04-421-220,prior_year_mtd,,1500.00,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3744,2026-08,15,expense,04,427,item,04-427-382,budget,4658.90,4658.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,15,expense,04,427,department_subtotal,,budget,288706.00,289706.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,16,expense,04,487,item,04-487-000,budget,42681.00,12681.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,16,expense,04,487,item,04-487-020,budget,2880.30,2880.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3744,2026-08,16,expense,04,487,item,04-487-070,prior_year_mtd,283.03,-283.03,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,4,expense,01,400,item,01-400-203,prior_year_mtd,,-255.57,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,4,expense,01,400,item,01-400-290,prior_year_mtd,4160.25,1260.25,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,4,expense,01,401,item,01-401-020,prior_year_mtd,,523.08,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,4,expense,01,401,item,01-401-200,prior_year_mtd,30.00,0.00,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,5,expense,01,402,item,01-402-100,budget,3200.90,3200.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,5,expense,01,402,item,01-402-130,budget,6200.00,6800.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,5,expense,01,410,item,01-410-180,prior_year_mtd,314364.31,14364.31,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,5,expense,01,410,item,01-410-181,prior_year_budget,52440.00,59440.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,5,expense,01,410,item,01-410-200,prior_year_mtd,158.83,158.88,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,5,expense,01,410,item,01-410-222,prior_year_ytd,1127.06,1128.06,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,5,expense,01,410,item,01-410-230,prior_year_ytd,6251.20,6231.20,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,5,expense,01,410,item,01-410-238,prior_year_budget,15800.00,15600.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,6,expense,01,414,item,01-414-100,prior_year_budget,6000.60,6000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,6,expense,01,430,item,01-430-179,prior_year_ytd,7984.34,7954.34,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,7,expense,01,450,item,01-450-500,prior_year_budget,13000.00,10000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,11,expense,04,421,item,04-421-200,prior_year_budget,500.60,500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,14,revenue,05,355,item,05-355-050,prior_year_budget,,166431.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,5,expense,01,402,item,01-402-130,prior_year_budget,6090.00,6000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,5,expense,01,402,item,01-402-400,prior_year_budget,53690.00,53000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,5,expense,01,410,item,01-410-220,prior_year_budget,19190.00,19100.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,6,expense,01,414,item,01-414-110,budget,6000.90,6000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,6,expense,01,414,item,01-414-290,budget,4006.06,4000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,7,expense,01,450,item,01-450-500,budget,15060.00,15000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,8,expense,01,487,item,01-487-020,budget,,21120.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,8,expense,01,487,item,01-487-070,budget,39466.00,50466.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,9,expense,01,492,item,01-492-300,prior_year_budget,,14000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,9,expense,01,,total,,prior_year_budget,,4074864.77,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3814,2026-10,11,expense,04,421,item,04-421-200,budget,500.60,500.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+2195,2022-08,6,expense,01,410,item,01-410-371,budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,3,revenue,01,380,item,01-380-600,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,6,expense,01,410,item,01-410-230,prior_year_budget,,5000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,8,expense,01,438,item,01-438-120,prior_year_ytd,,3144.39,arithmetic,department subtotal adds up; same figure printed in another report
+2195,2022-08,9,expense,01,487,item,01-487-020,prior_year_ytd,,11479.92,arithmetic,department subtotal adds up; same figure printed in another report
+2262,2022-11,14,expense,04,480,item,04-480-000,ytd,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2398,2023-01,15,expense,05,431,item,05-431-300,budget,,550.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,5,expense,01,400,item,01-400-206,prior_year_budget,,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2423,2023-02,6,expense,01,410,item,01-410-220,prior_year_ytd,2998.54,2998.51,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,13,expense,04,487,item,04-487-020,ytd,1164.59,1164.50,arithmetic,department subtotal adds up; same figure printed in another report
+2529,2023-06,13,expense,04,480,department_subtotal,,ytd,9.00,0.00,arithmetic,fund subtotal adds up; one digit misread
+2542,2023-07,2,revenue,01,320,item,01-320-020,ytd,667463.03,667463.09,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,5,expense,01,400,item,01-400-290,ytd,12425.08,12425.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,12,expense,04,427,item,04-427-370,ytd,0.09,0.00,arithmetic,department subtotal adds up; one digit misread
+2542,2023-07,2,revenue,01,320,item,01-320-020,prior_year_budget,175000.09,175000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,430,department_subtotal,,prior_year_budget,48550.09,48550.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,434,department_subtotal,,prior_year_budget,72500.09,72500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2542,2023-07,7,expense,01,435,item,01-435-100,prior_year_budget,15000.09,15000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2591,2023-08,4,revenue,01,,total,,prior_year_ytd,,2752480.17,arithmetic,total adds up; the line's printed percentage agrees
+2591,2023-08,11,revenue,04,,total,,prior_year_ytd,,1840622.06,arithmetic,total adds up; the line's printed percentage agrees
+2642,2023-10,2,revenue,01,320,item,01-320-021,budget,6500.60,6500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,367,item,01-367-100,ytd,79239.50,19239.50,arithmetic,department subtotal adds up; same figure printed in another report
+2642,2023-10,3,revenue,01,380,item,01-380-200,ytd,0.90,0.00,arithmetic,"department subtotal adds up; the line's printed percentage agrees, as it did not with the reading"
+2642,2023-10,3,revenue,01,367,item,01-367-100,prior_year_budget,0.00,31000.00,arithmetic,department subtotal adds up; same figure printed in another report
+2779,2024-01,19,revenue,05,355,item,05-355-050,prior_year_budget,,165795.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,6,expense,01,410,item,01-410-320,budget,23500.06,23500.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,433,item,01-433-110,budget,11400.06,11400.00,arithmetic,department subtotal adds up; same figure printed in another report
+2852,2024-04,7,expense,01,414,item,01-414-200,ytd,0.09,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+2911,2024-06,5,expense,01,400,item,01-400-400,prior_year_budget,8224.06,8224.00,arithmetic,department subtotal adds up; same figure printed in another report
+3206,2025-01,13,revenue,05,355,item,05-355-050,prior_year_budget,,166431.00,arithmetic,department subtotal adds up; same figure printed in another report
+3522,2025-12,3,revenue,01,367,department_subtotal,,prior_year_budget,25000.50,25000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3651,2026-04,2,revenue,01,320,item,01-320-100,budget,3750.90,3750.00,arithmetic,department subtotal adds up; same figure printed in another report
+3718,2026-06,8,revenue,01,350,item,01-350-030,ytd,5914.60,5914.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,8,revenue,01,355,item,01-355-130,ytd,0.90,0.00,arithmetic,department subtotal adds up; one digit misread
+3718,2026-06,8,revenue,01,320,item,01-320-023,prior_year_mtd,30.00,0.00,arithmetic,department subtotal adds up; one digit misread
+3744,2026-08,8,expense,01,400,item,01-400-020,budget,40473.00,40478.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,14,expense,04,421,item,04-421-220,budget,30000.09,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,16,expense,04,471,department_subtotal,,budget,5790.00,5700.00,arithmetic,fund subtotal adds up; same figure printed in another report
+3744,2026-08,11,expense,01,439,item,01-439-000,prior_year_budget,7965.06,7965.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,10,expense,01,430,item,01-430-120,prior_year_mtd,3566.62,-817.66,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,8,expense,01,400,item,01-400-020,prior_year_ytd,26029.95,26029.96,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,5,expense,01,402,item,01-402-000,budget,30000.90,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,5,expense,01,410,item,01-410-021,prior_year_budget,2400.00,26400.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,7,expense,01,450,item,01-450-530,prior_year_budget,25009.00,25000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,11,expense,04,421,item,04-421-220,prior_year_budget,30000.90,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,7,expense,01,450,item,01-450-500,prior_year_ytd,10000.02,10000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,7,expense,01,439,item,01-439-000,budget,35914.00,5914.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,11,expense,04,421,item,04-421-220,budget,30000.20,30000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,9,expense,01,492,item,01-492-280,prior_year_budget,0.90,0.00,arithmetic,department subtotal adds up; same figure printed in another report
+3814,2026-10,14,revenue,05,355,item,05-355-050,prior_year_ytd,,167021.01,arithmetic,department subtotal adds up; the line's printed percentage agrees
+2642,2023-10,3,revenue,01,367,item,01-367-100,budget,,31000.00,other report,"same figure confirmed in another report; the line's printed percentage agrees, as it did not with the reading"
+3793,2026-09,4,expense,01,400,item,01-400-300,prior_year_mtd,951.70,961.70,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+3793,2026-09,5,expense,01,410,item,01-410-230,prior_year_mtd,0.09,0.00,other report,same figure confirmed in another report; the month's year-to-date difference agrees
+2642,2023-10,3,revenue,01,367,item,01-367-000,budget,9000.09,9000.00,arithmetic,department subtotal adds up; same figure printed in another report
+3744,2026-08,16,expense,04,471,item,04-471-000,budget,,5700.00,arithmetic,department subtotal adds up; same figure printed in another report
+3793,2026-09,6,expense,01,410,item,01-410-373,prior_year_mtd,116.38,118.38,arithmetic,department subtotal adds up; same figure printed in another report

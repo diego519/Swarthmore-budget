@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import statistics
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -148,6 +149,19 @@ def text_layer_lines(pdf_page) -> list[Line]:
         for w in pdf_page.extract_words(x_tolerance=1.5, y_tolerance=2)
     ]
     return group_into_lines(words)
+
+
+def check_ocr_is_current(doc_id: str, path: Path) -> None:
+    """Stop if a document has no OCR output, or its OCR was made from a
+    different version of the PDF than the one downloaded."""
+    for r in read_csv(OCR_MANIFEST_CSV):
+        if r["doc_id"] == doc_id:
+            if r["source_sha256"] != sha256_of(path):
+                sys.exit(
+                    f"{rel(OCR_DIR / (doc_id + '.csv'))} was made from a different version of the PDF; re-run OCR"
+                )
+            return
+    sys.exit(f"no OCR output for document {doc_id}; run: uv run scripts/ocr_documents.py --doc-id {doc_id}")
 
 
 def ocr_lines(doc_id: str) -> dict[int, list[Line]]:

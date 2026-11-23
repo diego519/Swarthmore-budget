@@ -16,8 +16,8 @@ website.
 
 1. **Collect** every publicly posted budget, audit, and monthly financial
    report. *(done)*
-2. **Parse** them into clean, machine-readable tables. *(adopted budgets: in
-   progress; see [status](#status))*
+2. **Parse** them into clean, machine-readable tables. *(budgets and monthly
+   reports: in progress; see [status](#status))*
 3. **Summarize** the top-level picture: revenue, spending, fund balances, and
    how they change over time. *(adopted budgets: done)*
 4. **Visualize** it on a public, interactive website. *(see
@@ -36,6 +36,10 @@ source PDF.
 | [`budget_series.csv`](data/processed/budget_series.csv) | 2016–2026, one series per summary line | **Complete.** The summary lines linked across years (renamed lines combined), with adopted budget, estimated actual, and each figure's source page. |
 | [`proposed_budget_lines.csv`](data/processed/proposed_budget_lines.csv) | 2027 proposed (advertised) budget | **Complete.** Every line of every fund, with the 2026 budget, 2026 year-to-date and 2025 actual columns; every fund subtotal reconciles. |
 | [`proposed_budget_summary.csv`](data/processed/proposed_budget_summary.csv) | 2027 proposed budget | The proposal totalled into the categories of the 2016–2026 summaries, for comparison (see [Comparing a proposed budget](#5-comparing-a-proposed-budget)). |
+| [`monthly_summary.csv`](data/processed/monthly_summary.csv) | June 2020 – October 2026, by month | Budget and actual spending and revenue to date, totalled into the overview's categories (police, streets, property taxes, ...). Categories that include shared-out benefits or overhead are marked as estimates (see [Actual spending by category](#7-actual-spending-by-category)). |
+| [`monthly_series.csv`](data/processed/monthly_series.csv) | June 2020 – October 2026, by month, from 59 monthly reports | **99.5% confirmed.** Every ledger account's (and department's and fund's) budget, month-to-date and year-to-date figures each month, as first reported and as restated a year later, with OCR misreadings corrected and the evidence confirming each figure (see [Monthly financial reports](#6-monthly-financial-reports)). |
+| [`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv) | the same reports | Each report's lines as printed (OCR misreadings included), with the figures that report's own arithmetic confirms (97.8%). |
+| [`monthly_report_summary.csv`](data/processed/monthly_report_summary.csv) | the same reports | The cover pages: revenue and expenditure to date against the year's total budget, this year and last, and the cash balance. |
 
 ## Reproducing the analysis
 
@@ -58,8 +62,14 @@ uv run scripts/parse_budgets.py
 uv run scripts/parse_proposed_budget.py
 uv run scripts/build_proposed_summary.py
 
-# 4. Link each budget line across years, and build the website
+# 4. Parse the monthly financial reports
+uv run scripts/parse_monthly_reports.py
+uv run scripts/build_monthly_series.py        # reconcile the reports with each other
+
+# 5. Link each budget line across years, total the monthly actuals into the
+#    same categories, and build the website
 uv run scripts/build_budget_series.py
+uv run scripts/build_monthly_summary.py
 uv run scripts/build_site.py                  # writes docs/index.html and docs/explorer.html
 ```
 
@@ -67,13 +77,13 @@ The inflation adjustment uses consumer price data saved in
 `data/external/cpi_u.csv`. To refresh it (e.g. when a new month is published),
 run `uv run scripts/fetch_cpi.py` before `build_site.py`.
 
-Step 2 reads the OCR output committed in `data/ocr/`, so it does not need any
-OCR software. To redo the OCR as well, install
+Steps 2 and 4 read the OCR output committed in `data/ocr/`, so they do not
+need any OCR software. To redo the OCR as well, install
 [Tesseract](https://tesseract-ocr.github.io/) (`brew install tesseract` or
 `apt install tesseract-ocr`) and run:
 
 ```sh
-uv run scripts/ocr_documents.py --category budget_adopted --force
+uv run scripts/ocr_documents.py --category budget_adopted --category monthly_report --force
 ```
 
 With Tesseract 5.5.4 (the version recorded in `data/ocr/manifest.csv`) this
@@ -179,6 +189,108 @@ for like:
 Comparisons are firmest for the totals and the department groups. Within
 public works, for example, crew wages are now budgeted together (and counted
 under streets), which moves money between public works categories.
+
+### 6. Monthly financial reports
+
+Each month the borough's council receives a financial report (most months
+since June 2021 are posted; see [data/README.md](data/README.md#gaps)). Its
+core is the accounting system's *Current/Prior Year Comparison Report*: every
+ledger account of every fund, under its department, with this year's budget,
+the month's and the year-to-date totals, and the same figures for the year
+before. `parse_monthly_reports.py` reads it, and the cover page's
+consolidated totals, from the scans.
+
+The scans are poor (from 2023 most are black-and-white fax-quality images),
+so OCR misreads some figures, most often "$1" as "$7". For these reports
+`ocr_documents.py` renders those pages at a higher resolution, smooths them
+and straightens any that are askew, which roughly halved the misreads in
+trials. To catch the rest, every figure is checked against the others printed
+with it: each line's printed percentage against its year-to-date and budget,
+each department's lines against its subtotal, and each fund's departments
+against its total. The `verified` column of
+[`monthly_report_lines.csv`](data/processed/monthly_report_lines.csv) lists
+which of a line's figures those checks confirm, and every check is in
+[`monthly_report_checks.csv`](data/processed/monthly_report_checks.csv).
+
+OCR also misreads ledger ids, so each line's id is decided from the section
+it is printed in and from how the same account is printed in the other
+reports.
+
+`build_monthly_series.py` then brings the reports together. Every figure is
+printed at least twice: a month's totals in that month's report and again,
+as the prior year, in the same month's report a year later; a budget in
+every report of its year. The two printings of a month's totals are kept
+apart (*reported* and *restated*), because they are not always the same:
+the books can change after a report is printed, and in about 3% of
+year-to-date figures they did. A figure is corrected only with proof that it
+was misread:
+
+- **By arithmetic.** Where a department's or fund's column does not add up,
+  the one figure that can be changed to make it add up, and is supported by
+  the same figure printed in another report, by the line's printed
+  percentage, or by being a single-digit slip, is corrected.
+- **From another report.** An unconfirmed figure takes the value printed in
+  another report if that one is confirmed, the two differ by at most two
+  digits, and this line's own percentage (or, for a month's total, the
+  difference between this month's and last month's year-to-date) agrees with
+  it.
+
+Each figure in [`monthly_series.csv`](data/processed/monthly_series.csv) says
+what confirms it (adding up to its subtotal, being printed identically in
+another report, and so on), and
+[`monthly_series_corrections.csv`](data/processed/monthly_series_corrections.csv)
+lists all 1,017 corrections with their evidence. In samples (mostly random), 46
+corrections were checked by eye against the scans, and all were right. (The
+rules are strict because looser ones went wrong on the worst scans, where
+several figures in one department are misread and the arithmetic can be made
+to add up the wrong way.) 99.5% of the figures are confirmed; the rest,
+mostly month-to-date totals, which have no percentage to check them
+against, are left as read.
+
+As a final check, each report's cover page is compared with its detail
+([`monthly_series_checks.csv`](data/processed/monthly_series_checks.csv)).
+The cover's consolidated totals are the sum of every fund's year-to-date
+total, and they match to the dollar in 190 cases. Six cover figures differ
+(by $9 to $47,430) from the detail they summarise, which is confirmed; they
+are mistakes in the borough's own documents, and each is repeated a year
+later, since the cover's prior-year figures are copied from the year before.
+Eight cover percentages also disagree with the cover's own figures (one is
+last month's, not updated). All of these were checked by eye and are
+explained in
+[`monthly_report_source_errors.csv`](data/corrections/monthly_report_source_errors.csv).
+
+### 7. Actual spending by category
+
+To set actual spending and revenue beside the budget, every ledger account
+in the monthly reports is assigned by hand to one of the overview's
+categories in
+[`data/mappings/monthly_account_categories.csv`](data/mappings/monthly_account_categories.csv),
+with a note wherever the choice needed judgment. Where the budget summaries
+show which department an account belongs to, the mapping follows them, and
+otherwise it follows the 2027 proposal's mapping. `build_monthly_summary.py`
+then totals each month's budget and year-to-date actuals by category
+([`monthly_summary.csv`](data/processed/monthly_summary.csv)). Two kinds of
+cost are shared out, and the categories that receive a share are marked as
+estimates:
+
+- **Employee benefits**, budgeted and paid centrally, are shared in
+  proportion to each category's salaries, as for the 2027 proposal.
+- **The Sewer & Solid Waste Fund's administration** (its share of staff,
+  tax collection and insurance) is split between sewer and solid waste in
+  the proportion the budget summaries give their "allocated expenses".
+
+The budget and the actuals are totalled with the same mapping, so they can
+be compared with each other. As a check on the mapping, each year's ledger
+budget by category is compared with the adopted budget summary
+([`monthly_summary_checks.csv`](data/processed/monthly_summary_checks.csv)).
+Total spending agrees exactly in 2021, 2022, 2024 and 2025, and every
+revenue category agrees in 2021–2025 except for $750 of 2023 property taxes
+(the summaries' revenue totals also include prior-year funds, which are not a
+ledger account). The 2026 adopted budget is laid out differently and does not
+match the ledger as closely. Spending categories differ by how benefits and
+insurance are shared out: the summaries put part of the borough's insurance
+under police, fire and public works, and share benefits in proportions they
+do not publish. Each difference is explained in the check's note.
 
 ## Website
 
@@ -296,7 +408,8 @@ data/
   raw/               Downloaded documents (not committed; ~400 MB)
   ocr/               OCR output: every word on every scanned page, with position
   corrections/       Hand corrections to OCR, and known errors in the source documents
-  mappings/          Which rows in different years' budgets are the same budget line
+  mappings/          Which rows in different years' budgets are the same budget line, and
+                     which category each proposed-budget line and ledger account belongs to
   external/          Consumer Price Index (for the inflation adjustment)
   processed/         Parsed tables, linked series, and the arithmetic checks
   README.md          Column definitions and known data issues
@@ -309,6 +422,9 @@ scripts/
   parse_budgets.py        parse adopted budgets and check their arithmetic
   build_budget_series.py  link budget lines across years
   parse_proposed_budget.py   parse proposed budgets (fund-by-fund layout, from 2027)
+  parse_monthly_reports.py   parse monthly financial reports and check their arithmetic
+  build_monthly_series.py    reconcile the monthly reports into one series per account
+  build_monthly_summary.py   total the monthly accounts into the overview's categories
   build_proposed_summary.py  total a proposed budget into comparable categories
   fetch_cpi.py            download the Consumer Price Index
   build_site.py           build the website from templates/
